@@ -1,13 +1,14 @@
-##Mayer and Wiberg fractional bond order
+## Mayer and Wiberg fractional bond order
 
 Configurations were generated with Omega. 
 Wiberg Lowden and Mayer indices were calculated at hf3c/def2-svp level of theory
 for all configurations. 
 
-###Manifest
+### Manifest
 * `psi4_input.py` - script that generated psi4 inputs and submitted jobs on cluster
 * `bond_order_bsub.lsf` - dummy lsf script to submit jobs
 * `run_psi4.py` - script to launch psi4 and save output
+* `psi4_bond_order.ipynb` - notebook used to generate plots. 
 
 * `*_bond_orders.pdf` - pdf file of bond order results for FDA approved kinase inhibitors. 
  The title of each histogram corresponds bond atom indices which corresponds to the numbers
