@@ -1,25 +1,25 @@
 {
   "dihedrals": [
     [
-      10,
-      9,
-      11,
-      12
+      8,
+      6,
+      7,
+      14
     ]
   ],
   "elements": [
-    "H",
     "C",
     "C",
     "C",
     "C",
     "C",
     "C",
-    "H",
-    "H",
     "C",
-    "O",
     "N",
+    "O",
+    "H",
+    "H",
+    "H",
     "H",
     "H",
     "H",
@@ -31,113 +31,70 @@
   "grid_status": {},
   "init_coords": [
     [
-      1.9183833599090576,
-      -1.0198185443878174,
-      -1.197840929031372,
       1.8851408958435059,
       -1.0363065004348755,
       -0.11244039237499237,
       2.9210050106048584,
       -1.630865454673767,
       0.6081435084342957,
-      2.8782858848571777,
-      -1.6519924402236938,
-      2.002187490463257,
-      1.7997000217437744,
-      -1.0786398649215698,
-      2.675675868988037,
-      0.7638294100761414,
-      -0.4841383099555969,
-      1.9550546407699585,
       0.8065561652183533,
       -0.46301063895225525,
       0.5610063076019287,
-      0.00021737648057751358,
-      5.1890514441765845e-05,
-      -0.000218351895455271,
-      -0.08142600208520889,
-      -0.03444596007466316,
-      2.469722032546997,
+      2.8782858848571777,
+      -1.6519924402236938,
+      2.002187490463257,
+      0.7638294100761414,
+      -0.4841383099555969,
+      1.9550546407699585,
+      1.7997000217437744,
+      -1.0786398649215698,
+      2.675675868988037,
       1.7551172971725464,
       -1.1005809307098389,
       4.129096508026123,
-      0.7985686659812927,
-      -0.6119863986968994,
-      4.7558369636535645,
       2.813547372817993,
       -1.7058711051940918,
       4.800436019897461,
+      0.7985686659812927,
+      -0.6119863986968994,
+      4.7558369636535645,
+      1.9183833599090576,
+      -1.0198185443878174,
+      -1.197840929031372,
+      3.7606759071350098,
+      -2.0775327682495117,
+      0.08377476781606674,
+      0.00021737648057751358,
+      5.1890514441765845e-05,
+      -0.000218351895455271,
+      3.691086530685425,
+      -2.1179146766662598,
+      2.5533735752105713,
+      -0.08142600208520889,
+      -0.03444596007466316,
+      2.469722032546997,
       3.5921108722686768,
       -2.139341354370117,
       4.316039085388184,
       2.8323493003845215,
       -1.7675983905792236,
-      5.81328010559082,
-      3.691086530685425,
-      -2.1179146766662598,
-      2.5533735752105713,
-      3.7606759071350098,
-      -2.0775327682495117,
-      0.08377476781606674
+      5.81328010559082
     ]
   ],
   "provenance": {
     "SMILES": {
-      "canonical_SMILES": "c1ccc(cc1)C(=O)N",
-      "canonical_explicit_hydrogen_SMILES": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
-      "canonical_isomeric_SMILES": "c1ccc(cc1)C(=O)N",
-      "canonical_isomeric_explicit_hydrogen_SMILES": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
-      "canonical_isomeric_explicit_hydrogen_mapped_SMILES": "[H:1][c:2]1[c:7]([c:6]([c:5]([c:4]([c:3]1[H:16])[H:15])[C:10](=[O:11])[N:12]([H:13])[H:14])[H:9])[H:8]"
-    },
-    "canonicalization_details": {
-      "canonical_SMILES": {
-        "Flags": [
-          "DEFAULT",
-          "Canonical",
-          "AtomMaps",
-          "RGroups"
-        ],
-        "oe_function": "openeye.oechem.OECreateCanSmiString(molecule)"
-      },
-      "canonical_explicit_hydrogen_SMILES": {
-        "Flags": [
-          "Hydrogens",
-          "Canonical",
-          "RGroups"
-        ],
-        "oe_function": "openeye.oechem.OECreateSmiString()"
-      },
-      "canonical_isomeric_SMILES": {
-        "Flags": [
-          "ISOMERIC",
-          "Isotopes",
-          "AtomStereo",
-          "BondStereo",
-          "Canonical",
-          "AtomMaps",
-          "RGroups"
-        ],
-        "oe_function": "openeye.oechem.OEMolToSmiles(molecule)"
-      },
-      "canonical_isomeric_explicit_hydrogen_SMILES": {
-        "Flags": [
-          "Hydrogens",
-          "Isotopes",
-          "AtomStereo",
-          "BondStereo",
-          "Canonical",
-          "RGroups"
-        ],
-        "oe_function": "openeye.oechem.OECreateSmiString()"
-      },
-      "notes": "All other available OESMIELSFlag are set to False",
-      "package": "openeye-v2018.Feb.1"
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:12])[H:14])[C:7](=[O:9])[N:8]([H:15])[H:16])[H:13])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)C(=O)N",
+      "canonical_smiles": "c1ccc(cc1)C(=O)N",
+      "provenance": "cmiles_0.0.0+8.g258e340_openeye_2018.Feb.1"
     },
     "creator": "fragmenter",
     "routine": {
       "enumerate_fragments": {
         "hostname": "lski1497",
-        "job_id": "8a50f633-e197-4338-9789-fde159146cad",
+        "job_id": "92f23dc2-64ac-4859-9c9b-4a611953a7f0",
         "keywords": {
           "MAX_ROTORS": 2,
           "combinatorial": true,
@@ -150,7 +107,7 @@
       },
       "enumerate_states": {
         "hostname": "lski1497",
-        "job_id": "07c2d95b-505a-456f-b1eb-b53953635683",
+        "job_id": "9109fea1-ba3e-4b4b-a79d-3d8db51fb6ff",
         "keywords": {
           "carbon_hybridization": true,
           "level": 0,
@@ -167,7 +124,7 @@
       },
       "generate_crank_jobs": {
         "hostname": "lski1497",
-        "job_id": "847c9c1d-560f-4f1c-a47e-e5231bdcb60b",
+        "job_id": "64d14ee8-5ede-4681-bc78-c9bae8216f16",
         "keywords": {
           "internal_torsion_resolution": 30,
           "max_conf": 1,
