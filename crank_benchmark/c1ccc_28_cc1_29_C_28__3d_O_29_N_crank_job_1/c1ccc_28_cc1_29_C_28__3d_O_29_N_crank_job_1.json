@@ -88,13 +88,13 @@
       "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
       "canonical_isomeric_smiles": "c1ccc(cc1)C(=O)N",
       "canonical_smiles": "c1ccc(cc1)C(=O)N",
-      "provenance": "cmiles_0.0.0+8.g258e340_openeye_2018.Feb.1"
+      "provenance": "cmiles_v0.1.0+0.g258e340.dirty_openeye_2018.Feb.1"
     },
     "creator": "fragmenter",
     "routine": {
       "enumerate_fragments": {
         "hostname": "lski1497",
-        "job_id": "92f23dc2-64ac-4859-9c9b-4a611953a7f0",
+        "job_id": "5e4815db-6fb9-44d0-bd82-3bf01c7e97df",
         "keywords": {
           "MAX_ROTORS": 2,
           "combinatorial": true,
@@ -107,7 +107,7 @@
       },
       "enumerate_states": {
         "hostname": "lski1497",
-        "job_id": "9109fea1-ba3e-4b4b-a79d-3d8db51fb6ff",
+        "job_id": "361a1d98-a26e-470e-8296-23344462bfbd",
         "keywords": {
           "carbon_hybridization": true,
           "level": 0,
@@ -124,7 +124,7 @@
       },
       "generate_crank_jobs": {
         "hostname": "lski1497",
-        "job_id": "64d14ee8-5ede-4681-bc78-c9bae8216f16",
+        "job_id": "16f20248-cc92-4d00-bb13-08e90791bdca",
         "keywords": {
           "internal_torsion_resolution": 30,
           "max_conf": 1,
