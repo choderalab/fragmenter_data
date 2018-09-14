@@ -1,0 +1,202 @@
+[
+  {
+    "QCJSON_molecule": {
+      "geometry": [
+        0.31914281845092773,
+        -1.093637466430664,
+        -1.5644147396087646,
+        -0.290915846824646,
+        1.0967583656311035,
+        1.5677818059921265,
+        0.09283685684204102,
+        -0.7512494325637817,
+        -0.10052239894866943,
+        -0.09279406070709229,
+        0.7513599395751953,
+        0.1004934310913086,
+        -0.5198796391487122,
+        -0.7551677227020264,
+        -2.180879592895508,
+        1.2282583713531494,
+        -0.6067847013473511,
+        -1.931321620941162,
+        0.43323153257369995,
+        -2.1737723350524902,
+        -1.7016046047210693,
+        0.5667701959609985,
+        0.7567803859710693,
+        2.1565542221069336,
+        -1.1891424655914307,
+        0.6146343350410461,
+        1.9665193557739258,
+        -0.39070430397987366,
+        2.1780941486358643,
+        1.7062841653823853,
+        0.9486593008041382,
+        -1.1027858257293701,
+        0.48745453357696533,
+        -0.7917245626449585,
+        -1.287994146347046,
+        0.26173627376556396,
+        -0.960730254650116,
+        1.099387764930725,
+        -0.47136321663856506,
+        0.7833671569824219,
+        1.2891098260879517,
+        -0.28042128682136536
+      ],
+      "molecular_charge": 0,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "molecule_ID": {
+      "InChIKey": "IJDNQMDRQITEOD-UHFFFAOYSA-N",
+      "Standard_InChI": "InChI=1S/C4H10/c1-3-4-2/h3-4H2,1-2H3",
+      "canonical_explicit_hydrogen_smiles": "[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:5][C:1]([H:6])([H:7])[C:3]([H:11])([H:12])[C:4]([H:13])([H:14])[C:2]([H:8])([H:9])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H]",
+      "canonical_isomeric_smiles": "CCCC",
+      "canonical_smiles": "CCCC"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.0+36.g955c805_openeye_2018.Feb.1",
+      "creator": "fragmenter",
+      "hostname": "lski1497",
+      "job_id": "f9047356-b394-4bfd-a1eb-7f0f19a3f3cf",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "CCCC",
+          "parent_molecule_name": "butane",
+          "version": "0.0.0+105.g4652e4b.dirty"
+        },
+        "enumerate_states": {
+          "parent_molecule": "CCCC",
+          "parent_molecule_name": "butane",
+          "version": "0.0.0+105.g4652e4b.dirty"
+        },
+        "torsiondriver_input": {
+          "version": "0.0.0+105.g4652e4b.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "workflow_1"
+    },
+    "torsions_to_drive": "{(0, 2, 3, 1): 30}",
+    "workflow_ID": "workflow_1"
+  },
+  {
+    "QCJSON_molecule": {
+      "geometry": [
+        0.31914281845092773,
+        -1.093637466430664,
+        -1.5644147396087646,
+        -0.290915846824646,
+        1.0967583656311035,
+        1.5677818059921265,
+        0.09283685684204102,
+        -0.7512494325637817,
+        -0.10052239894866943,
+        -0.09279406070709229,
+        0.7513599395751953,
+        0.1004934310913086,
+        -0.5198796391487122,
+        -0.7551677227020264,
+        -2.180879592895508,
+        1.2282583713531494,
+        -0.6067847013473511,
+        -1.931321620941162,
+        0.43323153257369995,
+        -2.1737723350524902,
+        -1.7016046047210693,
+        0.5667701959609985,
+        0.7567803859710693,
+        2.1565542221069336,
+        -1.1891424655914307,
+        0.6146343350410461,
+        1.9665193557739258,
+        -0.39070430397987366,
+        2.1780941486358643,
+        1.7062841653823853,
+        0.9486593008041382,
+        -1.1027858257293701,
+        0.48745453357696533,
+        -0.7917245626449585,
+        -1.287994146347046,
+        0.26173627376556396,
+        -0.960730254650116,
+        1.099387764930725,
+        -0.47136321663856506,
+        0.7833671569824219,
+        1.2891098260879517,
+        -0.28042128682136536
+      ],
+      "molecular_charge": 0,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "molecule_ID": {
+      "InChIKey": "IJDNQMDRQITEOD-UHFFFAOYSA-N",
+      "Standard_InChI": "InChI=1S/C4H10/c1-3-4-2/h3-4H2,1-2H3",
+      "canonical_explicit_hydrogen_smiles": "[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:5][C:1]([H:6])([H:7])[C:3]([H:11])([H:12])[C:4]([H:13])([H:14])[C:2]([H:8])([H:9])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H]",
+      "canonical_isomeric_smiles": "CCCC",
+      "canonical_smiles": "CCCC"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.0+36.g955c805_openeye_2018.Feb.1",
+      "creator": "fragmenter",
+      "hostname": "lski1497",
+      "job_id": "f9047356-b394-4bfd-a1eb-7f0f19a3f3cf",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "CCCC",
+          "parent_molecule_name": "butane",
+          "version": "0.0.0+105.g4652e4b.dirty"
+        },
+        "enumerate_states": {
+          "parent_molecule": "CCCC",
+          "parent_molecule_name": "butane",
+          "version": "0.0.0+105.g4652e4b.dirty"
+        },
+        "torsiondriver_input": {
+          "version": "0.0.0+105.g4652e4b.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "workflow_1"
+    },
+    "torsions_to_drive": "{(3, 2, 0, 4): 30, (2, 3, 1, 7): 30}",
+    "workflow_ID": "workflow_1"
+  }
+]
