@@ -1,0 +1,28 @@
+{
+  "c1ccc(cc1)C(=O)N": {
+    "SMILES": {
+      "InChIKey": "KXDAEFPNCMNJSK-UHFFFAOYSA-N",
+      "Standard_InChI": "InChI=1S/C7H7NO/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H2,8,9)",
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:12])[H:14])[C:7](=[O:9])[N:8]([H:15])[H:16])[H:13])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)C(=O)N",
+      "canonical_smiles": "c1ccc(cc1)C(=O)N"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.0+36.g955c805_openeye_2018.Feb.1",
+      "creator": "fragmenter",
+      "hostname": "lski1497",
+      "job_id": "6d693f3e-d5bb-4c43-ad5a-c12031628d2b",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "c1ccccc1(C(=O)(N))",
+          "parent_molecule_name": "benzamide",
+          "version": "0.0.0+108.g9f345b8.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "workflow_1"
+    }
+  }
+}
