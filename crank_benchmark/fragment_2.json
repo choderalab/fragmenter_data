@@ -13,12 +13,12 @@
       "canonicalization": "cmiles_v0.1.0+36.g955c805_openeye_2018.Feb.1",
       "creator": "fragmenter",
       "hostname": "lski1497",
-      "job_id": "6d693f3e-d5bb-4c43-ad5a-c12031628d2b",
+      "job_id": "338d50e5-b020-456d-ab4c-c67b65ccb2b0",
       "routine": {
         "enumerate_fragments": {
           "parent_molecule": "c1ccccc1(C(=O)(N))",
           "parent_molecule_name": "benzamide",
-          "version": "0.0.0+108.g9f345b8.dirty"
+          "version": "0.0.0+109.g30b86f2.dirty"
         }
       },
       "username": "chayastern",
