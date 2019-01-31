@@ -1,0 +1,106 @@
+{
+  "torsiondrive_rdkit": {
+    "enumerate_states": {
+      "version": "",
+      "options": {}
+    },
+    "enumerate_fragments": {
+      "version": "",
+      "options": {}
+    },
+    "torsiondrive_input": {
+      "version": "v0.0.1",
+      "restricted": false,
+      "torsiondrive_options": {
+        "max_conf": 1,
+        "terminal_torsion_resolution": 0,
+        "internal_torsion_resolution": 15,
+        "scan_internal_terminal_combination": 0,
+        "scan_dimension": 1
+      },
+      "restricted_optimization_options": {
+        "maximum_rotation": 0,
+        "interval": 0
+      }
+    },
+    "torsiondrive_static_options": {
+      "torsiondrive_meta": {},
+      "optimization_meta": {
+        "program": "geometric",
+        "coordsys": "tric"
+      },
+      "qc_meta": {
+        "driver": "gradient",
+        "method": "UFF",
+        "basis": "",
+        "options": null,
+        "program": "rdkit"
+      }
+    },
+    "optimization_static_options": {
+      "optimization_meta": {
+        "program": "geometric",
+        "coordsys": "tric"
+      },
+      "qc_meta": {
+        "driver": "gradient",
+        "method": "UFF",
+        "basis": "",
+        "options": null,
+        "program": "rdkit"
+      }
+    }
+  },
+  "torsiondrive_psi4": {
+    "enumerate_states": {
+      "version": "",
+      "options": {}
+    },
+    "enumerate_fragments": {
+      "version": "",
+      "options": {}
+    },
+    "torsiondrive_input": {
+      "version": "v0.0.1",
+      "restricted": false,
+      "torsiondrive_options": {
+        "max_conf": 1,
+        "terminal_torsion_resolution": 0,
+        "internal_torsion_resolution": 15,
+        "scan_internal_terminal_combination": 0,
+        "scan_dimension": 1
+      },
+      "restricted_optimization_options": {
+        "maximum_rotation": 0,
+        "interval": 0
+      }
+    },
+    "torsiondrive_static_options": {
+      "torsiondrive_meta": {},
+      "optimization_meta": {
+        "program": "geometric",
+        "coordsys": "tric"
+      },
+      "qc_meta": {
+        "driver": "gradient",
+        "method": "B3LYP-D3",
+        "basis": "def2-svp",
+        "options": null,
+        "program": "psi4"
+      }
+    },
+    "optimization_static_options": {
+      "optimization_meta": {
+        "program": "geometric",
+        "coordsys": "tric"
+      },
+      "qc_meta": {
+        "driver": "gradient",
+        "method": "B3LYP-D3",
+        "basis": "def2-svp",
+        "options": null,
+        "program": "psi4"
+      }
+    }
+  }
+}
