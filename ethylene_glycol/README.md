@@ -1,7 +1,7 @@
 ## Torsion scan of ethylene glycol
 
 The global minimum of ethylene glycol is not the trans conformation but the
-cis conformation can form intramolecular hydrogen bonding. Here I tested
+cis conformation that can form intramolecular hydrogen bonding. Here I tested
 the wavefront propagation of torsiondrive to find the global minimum.
 
 1. Using only one omega generated starting conformation did not find the global minumum
