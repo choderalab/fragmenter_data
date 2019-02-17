@@ -12,6 +12,7 @@ For the kinase inhibitor set it generated 24,000 fragments. To decrease cost:
     2. At least 4 rotatable bond and at most 8 rotatable bonds
     3. Ring systems up to 14 atoms
     4. Remove carbon chains with more than 4 carbons
+    (For the first try I removed Trametinib from the list because of the amount of fragments it produced with combinatorial fragmentation)
     
 1. Create list of functional groups not to fragment (lives in yam file)
     1. amide
