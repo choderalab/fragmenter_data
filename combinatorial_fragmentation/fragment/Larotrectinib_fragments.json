@@ -1,0 +1,838 @@
+{
+  "C1C[N@](C[C@H]1O)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(N(C(C1([H])O[H])([H])[H])C(=O)N([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][C@@:5]1([C:2]([C:3]([N@:6]([C:4]1([H:14])[H:15])[C:1](=[O:8])[N:7]([H:17])[H:18])([H:12])[H:13])([H:10])[H:11])[O:9][H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H][C@@]1(C(C([N@](C1([H])[H])C(=O)N([H])[H])([H])[H])([H])[H])O[H]",
+      "canonical_isomeric_smiles": "C1C[N@](C[C@H]1O)C(=O)N",
+      "canonical_smiles": "C1CN(CC1O)C(=O)N",
+      "inchi_key": "YWFPGZXICYWLAP-BYPYZUCNSA-N",
+      "molecular_formula": "C5H10N2O2",
+      "standard_inchi": "InChI=1S/C5H10N2O2/c6-5(9)7-2-1-4(8)3-7/h4,8H,1-3H2,(H2,6,9)/t4-/m0/s1",
+      "unique_protomer_representation": "C1C[N@](C[C@H]1O)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)N1CC[C@H](O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:51][C@@:21]1([C:16]([C:18]([N@:26]([C:19]1([H:48])[H:49])[C:13](=[O:28])[NH:27][H:52])([H:46])[H:47])([H:42])[H:43])[O:29][H:53]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)N)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N(C1([H])[H])C(=O)N([H])[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][C@:3]1([C:5]([N@@:6]([C:4]([C:2]1([H:9])[H:10])([H:13])[H:14])[C:1](=[O:8])[N:7]([H:17])[H:18])([H:15])[H:16])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H][C@]1(C([N@@](C(C1([H])[H])([H])[H])C(=O)N([H])[H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)N)[H]",
+      "canonical_smiles": "C1CCN(C1)C(=O)N",
+      "inchi_key": "LCDCPQHFCOBUEF-UHFFFAOYSA-N",
+      "molecular_formula": "C5H10N2O",
+      "standard_inchi": "InChI=1S/C5H10N2O/c6-5(8)7-3-1-2-4-7/h1-4H2,(H2,6,8)",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)N)[H]",
+      "unique_tautomer_representation": "NC(=O)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:51][C@:21]1([C:19]([N@@:26]([C:18]([C:16]1([H:42])[H:43])([H:46])[H:47])[C:13](=[O:28])[NH:27][H:52])([H:48])[H:49])[H]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@@](CCC4)([H])[H])[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n2c(c(c(n2)[H])N([H])C(=O)N3C(C(C(C3([H])[H])([H])[H])([H])[H])([H])[H])nc1N4C(C(C(C4([H])[H])([H])[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:6]([n:17][c:5]2[n:18]([c:3]1[H:25])[n:16][c:2]([c:4]2[N:21]([C:7](=[O:22])[N@@:20]3[C:15]([C:11]([C@@:10]([C:14]3([H:38])[H:39])([H:30])[H:31])([H:32])[H:33])([H:40])[H:41])[H:42])[H:24])[N@:19]4[C:13]([C:9]([C:8]([C@:12]4([H:34])[H:35])([H:26])[H:27])([H:28])[H:29])([H:36])[H:37]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2n(c1[H])nc(c2N(C(=O)[N@@]3C(C([C@@](C3([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[N@]4C(C(C([C@]4([H])[H])([H])[H])([H])[H])([H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@@](CCC4)([H])[H])[H]",
+      "canonical_smiles": "c1cn2c(c(cn2)NC(=O)N3CCCC3)nc1N4CCCC4",
+      "inchi_key": "CHUXPVCFLGEWNP-UHFFFAOYSA-N",
+      "molecular_formula": "C15H20N6O",
+      "standard_inchi": "InChI=1S/C15H20N6O/c22-15(20-8-3-4-9-20)17-12-11-16-21-10-5-13(18-14(12)21)19-6-1-2-7-19/h5,10-11H,1-4,6-9H2,(H,17,22)",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@@](CCC4)([H])[H])[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCCC3)nc12)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:3]1[c:12]([n:23][c:11]2[n:24]([c:6]1[H:37])[n:22][c:5]([c:8]2[N:27]([C:13](=[O:28])[N@@:26]3[C:18]([C:16]([C@@:21]([C:19]3([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[N@:25]4[C:17]([C:14]([C:15]([C@:20]4([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5c(ccc(c5)F)F)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:31][c:1]1[c:9]([c:4]([c:7]([c:10]([c:2]1[H:32])[F:30])[C@@:21]2([N@:25]([C:18]([C:16]([C:17]2([H:43])[H:44])([H:41])[H:42])([H:45])[H:46])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:20]([C:15]([C@@:14]([C:19]5([H:47])[H:48])([H:37])[H:38])([H:39])[H:40])([H:49])[H:50])[H:52])[H:35])[c:6]([c:3]3[H:33])[H:36])[H:51])[H:34])[F:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[C@@]2([N@](C(C(C2([H])[H])([H])[H])([H])[H])c3nc4n(nc(c4N(C(=O)[N@@]5C(C([C@@](C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])c(c3[H])[H])[H])[H])F",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5c(ccc(c5)F)F)[H]",
+      "canonical_smiles": "c1cc(c(cc1F)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCCC5)F",
+      "inchi_key": "OJMQTZQKDKKSLW-GOSISDBHSA-N",
+      "molecular_formula": "C21H22F2N6O",
+      "standard_inchi": "InChI=1S/C21H22F2N6O/c22-14-5-6-16(23)15(12-14)18-4-3-10-28(18)19-7-11-29-20(26-19)17(13-24-29)25-21(30)27-8-1-2-9-27/h5-7,11-13,18H,1-4,8-10H2,(H,25,30)/t18-/m1/s1",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5c(ccc(c5)F)F)[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cc(F)ccc3F)nc12)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[c:9]([c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[H:35])[F:30]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5c(cccc5)F)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:3]([c:8]([c:10]([c:4]([c:2]1[H:31])[H:33])[F:29])[C@@:21]2([N@:25]([C:18]([C:16]([C:17]2([H:43])[H:44])([H:41])[H:42])([H:45])[H:46])[c:12]3[n:23][c:11]4[n:24]([n:22][c:6]([c:9]4[N:27]([C:13](=[O:28])[N@@:26]5[C:20]([C:15]([C@@:14]([C:19]5([H:47])[H:48])([H:37])[H:38])([H:39])[H:40])([H:49])[H:50])[H:52])[H:35])[c:7]([c:5]3[H:34])[H:36])[H:51])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])F)[C@@]2([N@](C(C(C2([H])[H])([H])[H])([H])[H])c3nc4n(nc(c4N(C(=O)[N@@]5C(C([C@@](C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])c(c3[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5c(cccc5)F)[H]",
+      "canonical_smiles": "c1ccc(c(c1)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCCC5)F",
+      "inchi_key": "FBYIIJGJFKWNPE-GOSISDBHSA-N",
+      "molecular_formula": "C21H23FN6O",
+      "standard_inchi": "InChI=1S/C21H23FN6O/c22-16-7-2-1-6-15(16)18-8-5-12-27(18)19-9-13-28-20(25-19)17(14-23-28)24-21(29)26-10-3-4-11-26/h1-2,6-7,9,13-14,18H,3-5,8,10-12H2,(H,24,29)/t18-/m1/s1",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5c(cccc5)F)[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3F)nc12)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[c:2]([c:10]([c:7]([c:4]([cH:9]1)[H:35])[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[F:31])[H:33]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5cc(ccc5)F)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:3]([c:10]([c:5]([c:8]([c:2]1[H:31])[C@@:21]2([N@:25]([C:18]([C:16]([C:17]2([H:43])[H:44])([H:41])[H:42])([H:45])[H:46])[c:12]3[n:23][c:11]4[n:24]([n:22][c:6]([c:9]4[N:27]([C:13](=[O:28])[N@@:26]5[C:20]([C:15]([C@@:14]([C:19]5([H:47])[H:48])([H:37])[H:38])([H:39])[H:40])([H:49])[H:50])[H:52])[H:35])[c:7]([c:4]3[H:33])[H:36])[H:51])[H:34])[F:29])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[C@@]2([N@](C(C(C2([H])[H])([H])[H])([H])[H])c3nc4n(nc(c4N(C(=O)[N@@]5C(C([C@@](C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])c(c3[H])[H])[H])[H])F)[H]",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5cc(ccc5)F)[H]",
+      "canonical_smiles": "c1cc(cc(c1)F)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCCC5",
+      "inchi_key": "AARJWOLZSMNLAH-GOSISDBHSA-N",
+      "molecular_formula": "C21H23FN6O",
+      "standard_inchi": "InChI=1S/C21H23FN6O/c22-16-6-3-5-15(13-16)18-7-4-11-27(18)19-8-12-28-20(25-19)17(14-23-28)24-21(29)26-9-1-2-10-26/h3,5-6,8,12-14,18H,1-2,4,7,9-11H2,(H,24,29)/t18-/m1/s1",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5cc(ccc5)F)[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cccc(F)c3)nc12)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:2]1[c:1]([c:9]([c:4]([c:7]([cH:10]1)[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[H:35])[F:30])[H:32]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5ccccc5)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:2]([c:4]([c:9]([c:5]([c:3]1[H:31])[H:33])[C@@:21]2([N@:25]([C:18]([C:16]([C:17]2([H:43])[H:44])([H:41])[H:42])([H:45])[H:46])[c:12]3[n:23][c:11]4[n:24]([n:22][c:7]([c:10]4[N:27]([C:13](=[O:28])[N@@:26]5[C:20]([C:15]([C@@:14]([C:19]5([H:47])[H:48])([H:37])[H:38])([H:39])[H:40])([H:49])[H:50])[H:52])[H:35])[c:8]([c:6]3[H:34])[H:36])[H:51])[H:32])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])[C@@]2([N@](C(C(C2([H])[H])([H])[H])([H])[H])c3nc4n(nc(c4N(C(=O)[N@@]5C(C([C@@](C5([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])c(c3[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5ccccc5)[H]",
+      "canonical_smiles": "c1ccc(cc1)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCCC5",
+      "inchi_key": "POBQZKILNSJMJE-GOSISDBHSA-N",
+      "molecular_formula": "C21H24N6O",
+      "standard_inchi": "InChI=1S/C21H24N6O/c28-21(25-11-4-5-12-25)23-17-15-22-27-14-10-19(24-20(17)27)26-13-6-9-18(26)16-7-2-1-3-8-16/h1-3,7-8,10,14-15,18H,4-6,9,11-13H2,(H,23,28)/t18-/m1/s1",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)ccc(n3)[N@@]4[C@H](CCC4)c5ccccc5)[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3)nc12)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[c:2]([cH:10][c:7]([c:4]([cH:9]1)[H:35])[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[H:33]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)cccn3)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(nn2c1[H])[H])N([H])C(=O)N3C(C(C(C3([H])[H])([H])[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:4]([n:14]2[n:13][c:3]([c:5]([c:6]2[n:12][c:2]1[H:19])[N:16]([C:7](=[O:17])[N@@:15]3[C:11]([C:9]([C@@:8]([C:10]3([H:26])[H:27])([H:22])[H:23])([H:24])[H:25])([H:28])[H:29])[H:30])[H:20])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n2nc(c(c2nc1[H])N(C(=O)[N@@]3C(C([C@@](C3([H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)cccn3)[H]",
+      "canonical_smiles": "c1cnc2c(cnn2c1)NC(=O)N3CCCC3",
+      "inchi_key": "DXWGAEUFBAZRSU-UHFFFAOYSA-N",
+      "molecular_formula": "C11H13N5O",
+      "standard_inchi": "InChI=1S/C11H13N5O/c17-11(15-5-1-2-6-15)14-9-8-13-16-7-3-4-12-10(9)16/h3-4,7-8H,1-2,5-6H2,(H,14,17)",
+      "unique_protomer_representation": "[H][C@]1(C[N@@](CC1)C(=O)Nc2c3n(nc2)cccn3)[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2cccnc12)N1CCCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:3]1[c:6]([n:24]2[n:22][c:5]([c:8]([c:11]2[n:23][cH:12]1)[N:27]([C:13](=[O:28])[N@@:26]3[C:18]([C:16]([C@@:21]([C:19]3([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[H:37]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1([N@](CCC1)c2nc3n(ncc3)cc2)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn2c1nc(c(c2[H])[H])N3C(C(C(C3([H])[H])([H])[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:5]2[n:13]([n:11][c:3]1[H:17])[c:4]([c:2]([c:6]([n:12]2)[N@:14]3[C:10]([C:8]([C:7]([C@:9]3([H:23])[H:24])([H:19])[H:20])([H:21])[H:22])([H:25])[H:26])[H:16])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c2n(nc1[H])c(c(c(n2)[N@]3C(C(C([C@]3([H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1([N@](CCC1)c2nc3n(ncc3)cc2)[H]",
+      "canonical_smiles": "c1cnn2c1nc(cc2)N3CCCC3",
+      "inchi_key": "RUULJSJFDZPJEJ-UHFFFAOYSA-N",
+      "molecular_formula": "C10H12N4",
+      "standard_inchi": "InChI=1S/C10H12N4/c1-2-7-13(6-1)9-4-8-14-10(12-9)3-5-11-14/h3-5,8H,1-2,6-7H2",
+      "unique_protomer_representation": "[H][C@]1([N@](CCC1)c2nc3n(ncc3)cc2)[H]",
+      "unique_tautomer_representation": "c1cc2nc(N3CCCC3)ccn2n1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:5]1[n:22][n:24]2[c:11]([cH:8]1)[n:23][c:12]([c:3]([c:6]2[H:37])[H:34])[N@:25]3[C:17]([C:14]([C:15]([C@:20]3([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1([N@](CCC1)c2nc3n(ncc3NC(=O)[N@]4C[C@H](CC4)O)cc2)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n2c(c(c(n2)[H])N([H])C(=O)N3C(C(C(C3([H])[H])([H])O[H])([H])[H])([H])[H])nc1N4C(C(C(C4([H])[H])([H])[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:6]([n:17][c:5]2[n:18]([c:3]1[H:26])[n:16][c:2]([c:4]2[N:21]([C:7](=[O:22])[N@@:20]3[C:13]([C:10]([C@@:15]([C:14]3([H:39])[H:40])([O:23][H:43])[H:41])([H:31])[H:32])([H:37])[H:38])[H:42])[H:25])[N@:19]4[C:12]([C:9]([C:8]([C@:11]4([H:33])[H:34])([H:27])[H:28])([H:29])[H:30])([H:35])[H:36]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2n(c1[H])nc(c2N(C(=O)[N@@]3C(C([C@@](C3([H])[H])(O[H])[H])([H])[H])([H])[H])[H])[H])[N@]4C(C(C([C@]4([H])[H])([H])[H])([H])[H])([H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1([N@](CCC1)c2nc3n(ncc3NC(=O)[N@]4C[C@H](CC4)O)cc2)[H]",
+      "canonical_smiles": "c1cn2c(c(cn2)NC(=O)N3CCC(C3)O)nc1N4CCCC4",
+      "inchi_key": "HBAVZSHSHHRBMP-NSHDSACASA-N",
+      "molecular_formula": "C15H20N6O2",
+      "standard_inchi": "InChI=1S/C15H20N6O2/c22-11-3-7-20(10-11)15(23)17-12-9-16-21-8-4-13(18-14(12)21)19-5-1-2-6-19/h4,8-9,11,22H,1-3,5-7,10H2,(H,17,23)/t11-/m0/s1",
+      "unique_protomer_representation": "[H][C@]1([N@](CCC1)c2nc3n(ncc3NC(=O)[N@]4C[C@H](CC4)O)cc2)[H]",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCCC3)nc12)N1CC[C@H](O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:3]1[c:12]([n:23][c:11]2[n:24]([c:6]1[H:37])[n:22][c:5]([c:8]2[N:27]([C:13](=[O:28])[N@@:26]3[C:18]([C:16]([C@@:21]([C:19]3([H:48])[H:49])([O:29][H:53])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[N@:25]4[C:17]([C:14]([C:15]([C@:20]4([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H][C@]1([N@](CCC1)c2nc3n(ncc3NC=O)cc2)[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n2c(c(c(n2)[H])N([H])C(=O)[H])nc1N3C(C(C(C3([H])[H])([H])[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:6]([n:13][c:5]2[n:14]([c:3]1[H:20])[n:12][c:2]([c:4]2[N:16]([C:7](=[O:17])[H:21])[H:30])[H:19])[N@:15]3[C:11]([C:9]([C:8]([C@:10]3([H:26])[H:27])([H:22])[H:23])([H:24])[H:25])([H:28])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2n(c1[H])nc(c2N(C(=O)[H])[H])[H])[N@]3C(C(C([C@]3([H])[H])([H])[H])([H])[H])([H])[H]",
+      "canonical_isomeric_smiles": "[H][C@]1([N@](CCC1)c2nc3n(ncc3NC=O)cc2)[H]",
+      "canonical_smiles": "c1cn2c(c(cn2)NC=O)nc1N3CCCC3",
+      "inchi_key": "RUKMYBUIYZLBCA-UHFFFAOYSA-N",
+      "molecular_formula": "C11H13N5O",
+      "standard_inchi": "InChI=1S/C11H13N5O/c17-8-12-9-7-13-16-6-3-10(14-11(9)16)15-4-1-2-5-15/h3,6-8H,1-2,4-5H2,(H,12,17)",
+      "unique_protomer_representation": "[H][C@]1([N@](CCC1)c2nc3n(ncc3NC=O)cc2)[H]",
+      "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCCC3)nc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:3]1[c:12]([n:23][c:11]2[n:24]([c:6]1[H:37])[n:22][c:5]([c:8]2[N:27]([CH:13]=[O:28])[H:52])[H:36])[N@:25]3[C:17]([C:14]([C:15]([C@:20]3([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1F)[C@H]2CCCN2)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])C2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:6]([c:4]([c:3]([c:5]1[F:12])[H:16])[C@:10]2([C:8]([C:7]([C:9]([N:11]2[H:24])([H:21])[H:22])([H:17])[H:18])([H:19])[H:20])[H:23])[F:13])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])[C@]2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1F)[C@H]2CCCN2)F",
+      "canonical_smiles": "c1cc(c(cc1F)C2CCCN2)F",
+      "inchi_key": "NCXSNNVYILYEBC-SNVBAGLBSA-N",
+      "molecular_formula": "C10H11F2N",
+      "standard_inchi": "InChI=1S/C10H11F2N/c11-7-3-4-9(12)8(6-7)10-2-1-5-13-10/h3-4,6,10,13H,1-2,5H2/t10-/m1/s1",
+      "unique_protomer_representation": "c1cc(c(cc1F)[C@H]2CCCN2)F",
+      "unique_tautomer_representation": "Fc1ccc(F)c([C@H]2CCCN2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:2]([c:10]([c:7]([c:4]([c:9]1[F:24])[H:29])[C@:17]2([C:15]([C:14]([C:16]([N@@:21]2[c:12]3[c:3]([c:6]([n:20]4[c:11]([n:19]3)[c:8]([c:5]([n:18]4)[H:30])[N:22]([H:40])[C:13](=[O:23])[H:32])[H:31])[H:28])([H:37])[H:38])([H:33])[H:34])([H:35])[H:36])[H:39])[F:25])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O)F",
+      "canonical_smiles": "c1cc(c(cc1F)C2CCCN2c3ccn4c(n3)c(cn4)NC=O)F",
+      "inchi_key": "BRMSINUNUUDPFO-OAHLLOKOSA-N",
+      "molecular_formula": "C17H15F2N5O",
+      "standard_inchi": "InChI=1S/C17H15F2N5O/c18-11-3-4-13(19)12(8-11)15-2-1-6-23(15)16-5-7-24-17(22-16)14(9-21-24)20-10-25/h3-5,7-10,15H,1-2,6H2,(H,20,25)/t15-/m1/s1",
+      "unique_protomer_representation": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O)F",
+      "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3cc(F)ccc3F)nc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[c:2]([c:10]([c:7]([c:4]([c:9]1[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[F:31])[H:33]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:10]([c:8]([c:5]([c:9]1[F:21])[H:27])[C@:16]2([C:14]([C:13]([C:15]([N@@:20]2[c:12]3[c:4]([c:7]([n:19]4[c:11]([n:18]3)[c:3]([c:6]([n:17]4)[H:28])[H:25])[H:29])[H:26])([H:34])[H:35])([H:30])[H:31])([H:32])[H:33])[H:36])[F:22])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1F)[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4)F",
+      "canonical_smiles": "c1cc(c(cc1F)C2CCCN2c3ccn4c(n3)ccn4)F",
+      "inchi_key": "CLGVHZDADLOTAY-CQSZACIVSA-N",
+      "molecular_formula": "C16H14F2N4",
+      "standard_inchi": "InChI=1S/C16H14F2N4/c17-11-3-4-13(18)12(10-11)14-2-1-8-21(14)15-6-9-22-16(20-15)5-7-19-22/h3-7,9-10,14H,1-2,8H2/t14-/m1/s1",
+      "unique_protomer_representation": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4)F",
+      "unique_tautomer_representation": "Fc1ccc(F)c([C@H]2CCCN2c2ccn3nccc3n2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:5]1[cH:8][c:11]2[n:23][c:12]([c:3]([c:6]([n:24]2[n:22]1)[H:37])[H:34])[N@@:25]3[C@@:20]([C:15]([C:14]([C:17]3([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])([H:50])[c:7]4[c:4]([c:9]([c:1]([c:2]([c:10]4[F:31])[H:33])[H:32])[F:30])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)F)[C@H]2CCCN2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])C2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:5]([c:4]([c:6]([c:3]1[H:15])[F:12])[H:16])[C@:10]2([C:8]([C:7]([C:9]([N:11]2[H:24])([H:21])[H:22])([H:17])[H:18])([H:19])[H:20])[H:23])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])[C@]2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)F)[C@H]2CCCN2",
+      "canonical_smiles": "c1cc(cc(c1)F)C2CCCN2",
+      "inchi_key": "OADZVVBVXBBMPW-SNVBAGLBSA-N",
+      "molecular_formula": "C10H12FN",
+      "standard_inchi": "InChI=1S/C10H12FN/c11-9-4-1-3-8(7-9)10-5-2-6-12-10/h1,3-4,7,10,12H,2,5-6H2/t10-/m1/s1",
+      "unique_protomer_representation": "c1cc(cc(c1)F)[C@H]2CCCN2",
+      "unique_tautomer_representation": "Fc1cccc([C@H]2CCCN2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])O[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:31][c:1]1[c:2]([c:8]([c:5]([c:10]([c:3]1[H:33])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:4]([c:7]([n:24]4[c:11]([n:23]3)[c:9]([c:6]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[N@]5C([C@@](C(C5([H])[H])([H])[H])([H])O[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O",
+      "canonical_smiles": "c1cc(cc(c1)F)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCC(C5)O",
+      "inchi_key": "LJNMKHUCFZMZMG-FUHWJXTLSA-N",
+      "molecular_formula": "C21H23FN6O2",
+      "standard_inchi": "InChI=1S/C21H23FN6O2/c22-15-4-1-3-14(11-15)18-5-2-8-27(18)19-7-10-28-20(25-19)17(12-23-28)24-21(30)26-9-6-16(29)13-26/h1,3-4,7,10-12,16,18,29H,2,5-6,8-9,13H2,(H,24,30)/t16-,18+/m0/s1",
+      "unique_protomer_representation": "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cccc(F)c3)nc12)N1CC[C@H](O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:2]([c:8]([c:5]([c:10]([c:3]1[H:27])[F:24])[H:29])[C@:17]2([C:15]([C:14]([C:16]([N@@:21]2[c:12]3[c:4]([c:7]([n:20]4[c:11]([n:19]3)[c:9]([c:6]([n:18]4)[H:30])[N:22]([H:40])[C:13](=[O:23])[H:32])[H:31])[H:28])([H:37])[H:38])([H:33])[H:34])([H:35])[H:36])[H:39])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O",
+      "canonical_smiles": "c1cc(cc(c1)F)C2CCCN2c3ccn4c(n3)c(cn4)NC=O",
+      "inchi_key": "RQBPFRIUOKOVKK-OAHLLOKOSA-N",
+      "molecular_formula": "C17H16FN5O",
+      "standard_inchi": "InChI=1S/C17H16FN5O/c18-13-4-1-3-12(9-13)15-5-2-7-22(15)16-6-8-23-17(21-16)14(10-20-23)19-11-24/h1,3-4,6,8-11,15H,2,5,7H2,(H,19,24)/t15-/m1/s1",
+      "unique_protomer_representation": "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O",
+      "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3cccc(F)c3)nc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:9]([c:6]([c:10]([c:3]1[H:24])[F:21])[H:27])[C@:16]2([C:14]([C:13]([C:15]([N@@:20]2[c:12]3[c:5]([c:8]([n:19]4[c:11]([n:18]3)[c:4]([c:7]([n:17]4)[H:28])[H:25])[H:29])[H:26])([H:34])[H:35])([H:30])[H:31])([H:32])[H:33])[H:36])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4",
+      "canonical_smiles": "c1cc(cc(c1)F)C2CCCN2c3ccn4c(n3)ccn4",
+      "inchi_key": "SXCJZESUMCQTCE-CQSZACIVSA-N",
+      "molecular_formula": "C16H15FN4",
+      "standard_inchi": "InChI=1S/C16H15FN4/c17-13-4-1-3-12(11-13)14-5-2-9-20(14)15-7-10-21-16(19-15)6-8-18-21/h1,3-4,6-8,10-11,14H,2,5,9H2/t14-/m1/s1",
+      "unique_protomer_representation": "c1cc(cc(c1)F)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4",
+      "unique_tautomer_representation": "Fc1cccc([C@H]2CCCN2c2ccn3nccc3n2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[cH:8][c:5]([n:22]4)[H:36])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)[C@H]2CCCN2)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:15])[C@:10]2([C:8]([C:7]([C:9]([N:11]2[H:24])([H:21])[H:22])([H:17])[H:18])([H:19])[H:20])[H:23])[F:12])[H:16])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[C@]2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)[C@H]2CCCN2)F",
+      "canonical_smiles": "c1ccc(c(c1)C2CCCN2)F",
+      "inchi_key": "NOJCVVKIBLHAGW-SNVBAGLBSA-N",
+      "molecular_formula": "C10H12FN",
+      "standard_inchi": "InChI=1S/C10H12FN/c11-9-5-2-1-4-8(9)10-6-3-7-12-10/h1-2,4-5,10,12H,3,6-7H2/t10-/m1/s1",
+      "unique_protomer_representation": "c1ccc(c(c1)[C@H]2CCCN2)F",
+      "unique_tautomer_representation": "Fc1ccccc1[C@H]1CCCN1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])O[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:31][c:1]1[c:2]([c:4]([c:10]([c:8]([c:3]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:5]([c:7]([n:24]4[c:11]([n:23]3)[c:9]([c:6]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:35])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[F:30])[H:34])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[N@]5C([C@@](C(C5([H])[H])([H])[H])([H])O[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+      "canonical_smiles": "c1ccc(c(c1)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCC(C5)O)F",
+      "inchi_key": "TYAGZFFHDRZOTI-KBXCAEBGSA-N",
+      "molecular_formula": "C21H23FN6O2",
+      "standard_inchi": "InChI=1S/C21H23FN6O2/c22-16-5-2-1-4-15(16)18-6-3-9-27(18)19-8-11-28-20(25-19)17(12-23-28)24-21(30)26-10-7-14(29)13-26/h1-2,4-5,8,11-12,14,18,29H,3,6-7,9-10,13H2,(H,24,30)/t14-,18+/m0/s1",
+      "unique_protomer_representation": "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3F)nc12)N1CC[C@H](O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:2]([c:4]([c:10]([c:8]([c:3]1[H:27])[C@:17]2([C:15]([C:14]([C:16]([N@@:21]2[c:12]3[c:5]([c:7]([n:20]4[c:11]([n:19]3)[c:9]([c:6]([n:18]4)[H:30])[N:22]([H:40])[C:13](=[O:23])[H:32])[H:31])[H:29])([H:37])[H:38])([H:33])[H:34])([H:35])[H:36])[H:39])[F:24])[H:28])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O)F",
+      "canonical_smiles": "c1ccc(c(c1)C2CCCN2c3ccn4c(n3)c(cn4)NC=O)F",
+      "inchi_key": "KFCPSPXOLSSVMR-OAHLLOKOSA-N",
+      "molecular_formula": "C17H16FN5O",
+      "standard_inchi": "InChI=1S/C17H16FN5O/c18-13-5-2-1-4-12(13)15-6-3-8-22(15)16-7-9-23-17(21-16)14(10-20-23)19-11-24/h1-2,4-5,7,9-11,15H,3,6,8H2,(H,19,24)/t15-/m1/s1",
+      "unique_protomer_representation": "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O)F",
+      "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3ccccc3F)nc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:4]([c:10]([c:9]([c:3]1[H:24])[C@:16]2([C:14]([C:13]([C:15]([N@@:20]2[c:12]3[c:6]([c:8]([n:19]4[c:11]([n:18]3)[c:5]([c:7]([n:17]4)[H:28])[H:26])[H:29])[H:27])([H:34])[H:35])([H:30])[H:31])([H:32])[H:33])[H:36])[F:21])[H:25])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4)F",
+      "canonical_smiles": "c1ccc(c(c1)C2CCCN2c3ccn4c(n3)ccn4)F",
+      "inchi_key": "QNQCEPPBXIWYPP-CQSZACIVSA-N",
+      "molecular_formula": "C16H15FN4",
+      "standard_inchi": "InChI=1S/C16H15FN4/c17-13-5-2-1-4-12(13)14-6-3-10-20(14)15-8-11-21-16(19-15)7-9-18-21/h1-2,4-5,7-9,11,14H,3,6,10H2/t14-/m1/s1",
+      "unique_protomer_representation": "c1ccc(c(c1)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4)F",
+      "unique_tautomer_representation": "Fc1ccccc1[C@H]1CCCN1c1ccn2nccc2n1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[cH:8][c:5]([n:22]4)[H:36])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)[C@H]2CCCN2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[H:16])[C@:10]2([C:8]([C:7]([C:9]([N:11]2[H:24])([H:21])[H:22])([H:17])[H:18])([H:19])[H:20])[H:23])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])[C@]2(C(C(C(N2[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)[C@H]2CCCN2",
+      "canonical_smiles": "c1ccc(cc1)C2CCCN2",
+      "inchi_key": "JUTDHSGANMHVIC-SNVBAGLBSA-N",
+      "molecular_formula": "C10H13N",
+      "standard_inchi": "InChI=1S/C10H13N/c1-2-5-9(6-3-1)10-7-4-8-11-10/h1-3,5-6,10-11H,4,7-8H2/t10-/m1/s1",
+      "unique_protomer_representation": "c1ccc(cc1)[C@H]2CCCN2",
+      "unique_tautomer_representation": "c1ccc([C@H]2CCCN2)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)N5C(C(C(C5([H])[H])([H])O[H])([H])[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:2]([c:4]([c:9]([c:5]([c:3]1[H:32])[H:34])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:6]([c:8]([n:24]4[c:11]([n:23]3)[c:10]([c:7]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:35])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:33])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[N@]5C([C@@](C(C5([H])[H])([H])[H])([H])O[H])([H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O",
+      "canonical_smiles": "c1ccc(cc1)C2CCCN2c3ccn4c(n3)c(cn4)NC(=O)N5CCC(C5)O",
+      "inchi_key": "AFCSKUYEYZLFHI-FUHWJXTLSA-N",
+      "molecular_formula": "C21H24N6O2",
+      "standard_inchi": "InChI=1S/C21H24N6O2/c28-16-8-11-25(14-16)21(29)23-17-13-22-27-12-9-19(24-20(17)27)26-10-4-7-18(26)15-5-2-1-3-6-15/h1-3,5-6,9,12-13,16,18,28H,4,7-8,10-11,14H2,(H,23,29)/t16-,18+/m0/s1",
+      "unique_protomer_representation": "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O",
+      "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3)nc12)N1CC[C@H](O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:4]([c:9]([c:5]([c:3]1[H:26])[H:28])[C@:17]2([C:15]([C:14]([C:16]([N@@:21]2[c:12]3[c:6]([c:8]([n:20]4[c:11]([n:19]3)[c:10]([c:7]([n:18]4)[H:30])[N:22]([H:40])[C:13](=[O:23])[H:32])[H:31])[H:29])([H:37])[H:38])([H:33])[H:34])([H:35])[H:36])[H:39])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])N([H])C(=O)[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O",
+      "canonical_smiles": "c1ccc(cc1)C2CCCN2c3ccn4c(n3)c(cn4)NC=O",
+      "inchi_key": "OGAOTMKTPOBFKV-OAHLLOKOSA-N",
+      "molecular_formula": "C17H17N5O",
+      "standard_inchi": "InChI=1S/C17H17N5O/c23-12-18-14-11-19-22-10-8-16(20-17(14)22)21-9-4-7-15(21)13-5-2-1-3-6-13/h1-3,5-6,8,10-12,15H,4,7,9H2,(H,18,23)/t15-/m1/s1",
+      "unique_protomer_representation": "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC=O",
+      "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3ccccc3)nc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C2(C(C(C(N2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:2]([c:4]([c:10]([c:5]([c:3]1[H:23])[H:25])[C@:16]2([C:14]([C:13]([C:15]([N@@:20]2[c:12]3[c:7]([c:9]([n:19]4[c:11]([n:18]3)[c:6]([c:8]([n:17]4)[H:28])[H:26])[H:29])[H:27])([H:34])[H:35])([H:30])[H:31])([H:32])[H:33])[H:36])[H:24])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])[C@]2(C(C(C([N@@]2c3c(c(n4c(n3)c(c(n4)[H])[H])[H])[H])([H])[H])([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4",
+      "canonical_smiles": "c1ccc(cc1)C2CCCN2c3ccn4c(n3)ccn4",
+      "inchi_key": "NNSAZMZFAVCYSN-CQSZACIVSA-N",
+      "molecular_formula": "C16H16N4",
+      "standard_inchi": "InChI=1S/C16H16N4/c1-2-5-13(6-3-1)14-7-4-11-19(14)15-9-12-20-16(18-15)8-10-17-20/h1-3,5-6,8-10,12,14H,4,7,11H2/t14-/m1/s1",
+      "unique_protomer_representation": "c1ccc(cc1)[C@H]2CCC[N@@]2c3ccn4c(n3)ccn4",
+      "unique_tautomer_representation": "c1ccc([C@H]2CCCN2c2ccn3nccc3n2)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[cH:8][c:5]([n:22]4)[H:36])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnc2c(cnn2c1)NC(=O)[N@@]3CC[C@@H](C3)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(nn2c1[H])[H])N([H])C(=O)N3C(C(C(C3([H])[H])([H])O[H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([n:12][c:6]2[c:5]([c:3]([n:13][n:14]2[c:4]1[H:22])[H:21])[N:16]([H:30])[C:7](=[O:17])[N@:15]3[C:10]([C@@:11]([C:8]([C:9]3([H:25])[H:26])([H:23])[H:24])([H:29])[O:18][H:31])([H:27])[H:28])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(nn2c1[H])[H])N([H])C(=O)[N@]3C([C@@](C(C3([H])[H])([H])[H])([H])O[H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cnc2c(cnn2c1)NC(=O)[N@@]3CC[C@@H](C3)O",
+      "canonical_smiles": "c1cnc2c(cnn2c1)NC(=O)N3CCC(C3)O",
+      "inchi_key": "FQUCXOWQDGDUMK-QMMMGPOBSA-N",
+      "molecular_formula": "C11H13N5O2",
+      "standard_inchi": "InChI=1S/C11H13N5O2/c17-8-2-5-15(7-8)11(18)14-9-6-13-16-4-1-3-12-10(9)16/h1,3-4,6,8,17H,2,5,7H2,(H,14,18)/t8-/m0/s1",
+      "unique_protomer_representation": "c1cnc2c(cnn2c1)NC(=O)[N@@]3CC[C@@H](C3)O",
+      "unique_tautomer_representation": "O=C(Nc1cnn2cccnc12)N1CC[C@H](O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:3]1[cH:12][n:23][c:11]2[c:8]([c:5]([n:22][n:24]2[c:6]1[H:37])[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]3[C:19]([C@@:21]([C:16]([C:18]3([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnc2c(cnn2c1)NC=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(nn2c1[H])[H])N([H])C(=O)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([n:8][c:6]2[c:5]([c:3]([n:9][n:10]2[c:4]1[H:16])[H:15])[N:11]([H:18])[C:7](=[O:12])[H:17])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(nn2c1[H])[H])N([H])C(=O)[H])[H]",
+      "canonical_isomeric_smiles": "c1cnc2c(cnn2c1)NC=O",
+      "canonical_smiles": "c1cnc2c(cnn2c1)NC=O",
+      "inchi_key": "VATFSEMDCRIALX-UHFFFAOYSA-N",
+      "molecular_formula": "C7H6N4O",
+      "standard_inchi": "InChI=1S/C7H6N4O/c12-5-9-6-4-10-11-3-1-2-8-7(6)11/h1-5H,(H,9,12)",
+      "unique_protomer_representation": "c1cnc2c(cnn2c1)NC=O",
+      "unique_tautomer_representation": "O=CNc1cnn2cccnc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:3]1[cH:12][n:23][c:11]2[c:8]([c:5]([n:22][n:24]2[c:6]1[H:37])[H:36])[N:27]([H:52])[CH:13]=[O:28]",
+          "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
+          "parent_molecule_name": "Larotrectinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  }
+}

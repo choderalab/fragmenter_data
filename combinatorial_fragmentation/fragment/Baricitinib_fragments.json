@@ -1,0 +1,1112 @@
+{
+  "C1C(CN1)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][C:2]1([C:4]([C:3]([N:7]1[H:15])([H:10])[H:11])([H:12])[C:5]([H:13])([H:14])[C:1]#[N:6])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "C1C(CN1)CC#N",
+      "canonical_smiles": "C1C(CN1)CC#N",
+      "inchi_key": "DAKLTKIALMRNMH-UHFFFAOYSA-N",
+      "molecular_formula": "C5H8N2",
+      "standard_inchi": "InChI=1S/C5H8N2/c6-2-1-5-3-7-4-5/h5,7H,1,3-4H2",
+      "unique_protomer_representation": "C1C(CN1)CC#N",
+      "unique_tautomer_representation": "N#CCC1CNC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][C:12]1([CH:13]([C:11]([NH:23]1)([H:32])[H:33])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "C1C(CN1S(=O)=O)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][C:2]1([C:4]([C:3]([N:7]1[S:10](=[O:8])(=[O:9])[H:18])([H:13])[H:14])([H:15])[C:5]([H:16])([H:17])[C:1]#[N:6])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "C1C(CN1S(=O)=O)CC#N",
+      "canonical_smiles": "C1C(CN1S(=O)=O)CC#N",
+      "inchi_key": "VTFUCWJINULANT-UHFFFAOYSA-N",
+      "molecular_formula": "C5H8N2O2S",
+      "standard_inchi": "InChI=1S/C5H8N2O2S/c6-2-1-5-3-7(4-5)10(8)9/h5,10H,1,3-4H2",
+      "unique_protomer_representation": "C1C(CN1S(=O)=O)CC#N",
+      "unique_tautomer_representation": "N#CCC1CN([SH](=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][C:12]1([CH:13]([C:11]([N:23]1[SH:26](=[O:24])=[O:25])([H:32])[H:33])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "C1CN(C1)S(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(N(C1([H])[H])S(=O)(=O)[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][C:1]1([C:2]([N:4]([C:3]1([H:12])[H:13])[S:7](=[O:5])(=[O:6])[H:14])([H:10])[H:11])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(N(C1([H])[H])S(=O)(=O)[H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "C1CN(C1)S(=O)=O",
+      "canonical_smiles": "C1CN(C1)S(=O)=O",
+      "inchi_key": "NBOCZMNKKRIHEH-UHFFFAOYSA-N",
+      "molecular_formula": "C3H7NO2S",
+      "standard_inchi": "InChI=1S/C3H7NO2S/c5-7(6)4-2-1-3-4/h7H,1-3H2",
+      "unique_protomer_representation": "C1CN(C1)S(=O)=O",
+      "unique_tautomer_representation": "O=[SH](=O)N1CCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][C:12]1([CH2:13][C:11]([N:23]1[SH:26](=[O:24])=[O:25])([H:32])[H:33])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1(CN(C1)S(=O)(=O)C)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:3]([n:18]([c:9]2[c:6]1[c:8]([n:16][c:5]([n:17]2)[H:28])[c:7]3[c:2]([n:15][n:19]([c:4]3[H:27])[C:12]4([C:10]([N:20]([C:11]4([H:31])[H:32])[S:23](=[O:21])(=[O:22])[C:14]([H:36])([H:37])[H:38])([H:29])[H:30])[C:13]([H:33])([H:34])[H:35])[H:25])[H:39])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1(CN(C1)S(=O)(=O)C)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CC1(CN(C1)S(=O)(=O)C)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "HHEGXNSLEWPBPA-UHFFFAOYSA-N",
+      "molecular_formula": "C14H16N6O2S",
+      "standard_inchi": "InChI=1S/C14H16N6O2S/c1-14(7-19(8-14)23(2,21)22)20-6-10(5-18-20)12-11-3-4-15-13(11)17-9-16-12/h3-6,9H,7-8H2,1-2H3,(H,15,16,17)",
+      "unique_protomer_representation": "CC1(CN(C1)S(=O)(=O)C)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CC1(n2cc(-c3ncnc4[nH]ccc34)cn2)CN(S(C)(=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([N:23]([C:11]4([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1(CN(C1)S(=O)(=O)C)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([n:9][n:10]([c:3]1[H:17])[C:6]2([C:4]([N:11]([C:5]2([H:20])[H:21])[S:14](=[O:12])(=[O:13])[C:8]([H:25])([H:26])[H:27])([H:18])[H:19])[C:7]([H:22])([H:23])[H:24])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1(CN(C1)S(=O)(=O)C)n2cccn2",
+      "canonical_smiles": "CC1(CN(C1)S(=O)(=O)C)n2cccn2",
+      "inchi_key": "GZMBONCUWWGGBI-UHFFFAOYSA-N",
+      "molecular_formula": "C8H13N3O2S",
+      "standard_inchi": "InChI=1S/C8H13N3O2S/c1-8(11-5-3-4-9-11)6-10(7-8)14(2,12)13/h3-5H,6-7H2,1-2H3",
+      "unique_protomer_representation": "CC1(CN(C1)S(=O)(=O)C)n2cccn2",
+      "unique_tautomer_representation": "CC1(n2cccn2)CN(S(C)(=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([N:23]([C:11]2([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1(CN(C1)S(=O)=O)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:3]([n:17]([c:9]2[c:6]1[c:8]([n:15][c:5]([n:16]2)[H:27])[c:7]3[c:2]([n:14][n:18]([c:4]3[H:26])[C:12]4([C:10]([N:19]([C:11]4([H:30])[H:31])[S:22](=[O:20])(=[O:21])[H:36])([H:28])[H:29])[C:13]([H:32])([H:33])[H:34])[H:24])[H:35])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1(CN(C1)S(=O)=O)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CC1(CN(C1)S(=O)=O)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "BMZDPAFAPCMHIW-UHFFFAOYSA-N",
+      "molecular_formula": "C13H14N6O2S",
+      "standard_inchi": "InChI=1S/C13H14N6O2S/c1-13(6-18(7-13)22(20)21)19-5-9(4-17-19)11-10-2-3-14-12(10)16-8-15-11/h2-5,8,22H,6-7H2,1H3,(H,14,15,16)",
+      "unique_protomer_representation": "CC1(CN(C1)S(=O)=O)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CC1(n2cc(-c3ncnc4[nH]ccc34)cn2)CN([SH](=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([N:23]([C:11]4([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1(CN(C1)S(=O)=O)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([n:8][n:9]([c:3]1[H:16])[C:6]2([C:4]([N:10]([C:5]2([H:19])[H:20])[S:13](=[O:11])(=[O:12])[H:24])([H:17])[H:18])[C:7]([H:21])([H:22])[H:23])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1(CN(C1)S(=O)=O)n2cccn2",
+      "canonical_smiles": "CC1(CN(C1)S(=O)=O)n2cccn2",
+      "inchi_key": "GLFCSANBRCNYGE-UHFFFAOYSA-N",
+      "molecular_formula": "C7H11N3O2S",
+      "standard_inchi": "InChI=1S/C7H11N3O2S/c1-7(10-4-2-3-8-10)5-9(6-7)13(11)12/h2-4,13H,5-6H2,1H3",
+      "unique_protomer_representation": "CC1(CN(C1)S(=O)=O)n2cccn2",
+      "unique_tautomer_representation": "CC1(n2cccn2)CN([SH](=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([N:23]([C:11]2([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1(CNC1)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:3]([n:17]([c:9]2[c:6]1[c:8]([n:15][c:5]([n:16]2)[H:24])[c:7]3[c:2]([n:14][n:18]([c:4]3[H:23])[C:12]4([C:10]([N:19]([C:11]4([H:27])[H:28])[H:33])([H:25])[H:26])[C:13]([H:29])([H:30])[H:31])[H:21])[H:32])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1(CNC1)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CC1(CNC1)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "WTNRMUJSEHDFOK-UHFFFAOYSA-N",
+      "molecular_formula": "C13H14N6",
+      "standard_inchi": "InChI=1S/C13H14N6/c1-13(6-14-7-13)19-5-9(4-18-19)11-10-2-3-15-12(10)17-8-16-11/h2-5,8,14H,6-7H2,1H3,(H,15,16,17)",
+      "unique_protomer_representation": "CC1(CNC1)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CC1(n2cc(-c3ncnc4[nH]ccc34)cn2)CNC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([NH:23][C:11]4([H:32])[H:33])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1(CNC1)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([n:8][n:9]([c:3]1[H:13])[C:6]2([C:4]([N:10]([C:5]2([H:16])[H:17])[H:21])([H:14])[H:15])[C:7]([H:18])([H:19])[H:20])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1(CNC1)n2cccn2",
+      "canonical_smiles": "CC1(CNC1)n2cccn2",
+      "inchi_key": "WSAURVCIEMMWJU-UHFFFAOYSA-N",
+      "molecular_formula": "C7H11N3",
+      "standard_inchi": "InChI=1S/C7H11N3/c1-7(5-8-6-7)10-4-2-3-9-10/h2-4,8H,5-6H2,1H3",
+      "unique_protomer_representation": "CC1(CNC1)n2cccn2",
+      "unique_tautomer_representation": "CC1(n2cccn2)CNC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([NH:23][C:11]2([H:32])[H:33])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1CN(C1)S(=O)(=O)C": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][C:1]1([C:3]([C:2]([N:6]1[S:9](=[O:7])(=[O:8])[C:5]([H:18])([H:19])[H:20])([H:12])[H:13])([H:14])[C:4]([H:15])([H:16])[H:17])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1CN(C1)S(=O)(=O)C",
+      "canonical_smiles": "CC1CN(C1)S(=O)(=O)C",
+      "inchi_key": "BKRLIFABIHYQPG-UHFFFAOYSA-N",
+      "molecular_formula": "C5H11NO2S",
+      "standard_inchi": "InChI=1S/C5H11NO2S/c1-5-3-6(4-5)9(2,7)8/h5H,3-4H2,1-2H3",
+      "unique_protomer_representation": "CC1CN(C1)S(=O)(=O)C",
+      "unique_tautomer_representation": "CC1CN(S(C)(=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][CH:15]([H:40])[CH:13]1[C:12]([N:23]([C:11]1([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1CN(C1)S(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:9][C:1]1([C:3]([C:2]([N:5]1[S:8](=[O:6])(=[O:7])[H:17])([H:11])[H:12])([H:13])[C:4]([H:14])([H:15])[H:16])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1CN(C1)S(=O)=O",
+      "canonical_smiles": "CC1CN(C1)S(=O)=O",
+      "inchi_key": "HBXFDPDPQDMIIE-UHFFFAOYSA-N",
+      "molecular_formula": "C4H9NO2S",
+      "standard_inchi": "InChI=1S/C4H9NO2S/c1-4-2-5(3-4)8(6)7/h4,8H,2-3H2,1H3",
+      "unique_protomer_representation": "CC1CN(C1)S(=O)=O",
+      "unique_tautomer_representation": "CC1CN([SH](=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][CH:15]([H:40])[CH:13]1[C:12]([N:23]([C:11]1([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC1CNC1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:6][C:1]1([C:3]([C:2]([N:5]1[H:14])([H:8])[H:9])([H:10])[C:4]([H:11])([H:12])[H:13])[H:7]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC1CNC1",
+      "canonical_smiles": "CC1CNC1",
+      "inchi_key": "HTHMVKNHGOVITA-UHFFFAOYSA-N",
+      "molecular_formula": "C4H9N",
+      "standard_inchi": "InChI=1S/C4H9N/c1-4-2-5-3-4/h4-5H,2-3H2,1H3",
+      "unique_protomer_representation": "CC1CNC1",
+      "unique_tautomer_representation": "CC1CNC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][CH:15]([H:40])[CH:13]1[C:12]([NH:23][C:11]1([H:32])[H:33])([H:34])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)(C)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:3]([n:19]([c:9]2[c:6]1[c:8]([n:17][c:5]([n:18]2)[H:29])[c:7]3[c:2]([n:16][n:20]([c:4]3[H:28])[C:12]4([C:10]([N:21]([C:11]4([H:32])[H:33])[S:24](=[O:22])(=[O:23])[C:15]([H:40])([H:41])[C:14]([H:37])([H:38])[H:39])([H:30])[H:31])[C:13]([H:34])([H:35])[H:36])[H:26])[H:42])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)(C)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)(C)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "HYYRBFYCGNINNR-UHFFFAOYSA-N",
+      "molecular_formula": "C15H18N6O2S",
+      "standard_inchi": "InChI=1S/C15H18N6O2S/c1-3-24(22,23)20-8-15(2,9-20)21-7-11(6-19-21)13-12-4-5-16-14(12)18-10-17-13/h4-7,10H,3,8-9H2,1-2H3,(H,16,17,18)",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)(C)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(C)(n2cc(-c3ncnc4[nH]ccc34)cn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([N:23]([C:11]4([H:32])[H:33])[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)(C)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:2]([n:10][n:11]([c:3]1[H:18])[C:6]2([C:4]([N:12]([C:5]2([H:21])[H:22])[S:15](=[O:13])(=[O:14])[C:9]([H:29])([H:30])[C:8]([H:26])([H:27])[H:28])([H:19])[H:20])[C:7]([H:23])([H:24])[H:25])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)(C)n2cccn2",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)(C)n2cccn2",
+      "inchi_key": "AIXGJPUKDGBJCZ-UHFFFAOYSA-N",
+      "molecular_formula": "C9H15N3O2S",
+      "standard_inchi": "InChI=1S/C9H15N3O2S/c1-3-15(13,14)11-7-9(2,8-11)12-6-4-5-10-12/h4-6H,3,7-8H2,1-2H3",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)(C)n2cccn2",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(C)(n2cccn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([N:23]([C:11]2([H:32])[H:33])[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:34])[H:35])[CH:15]([H:39])[H:40])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)(CC#N)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:2]1[c:3]([n:12][n:13]([c:4]1[H:20])[C:7]2([C:5]([N:14]([C:6]2([H:23])[H:24])[S:17](=[O:15])(=[O:16])[C:10]([H:30])([H:31])[C:8]([H:25])([H:26])[H:27])([H:21])[H:22])[C:9]([H:28])([H:29])[C:1]#[N:11])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cccn2",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cccn2",
+      "inchi_key": "MEOKHOLCKCXESK-UHFFFAOYSA-N",
+      "molecular_formula": "C10H14N4O2S",
+      "standard_inchi": "InChI=1S/C10H14N4O2S/c1-2-17(15,16)13-8-10(9-13,4-5-11)14-7-3-6-12-14/h3,6-7H,2,4,8-9H2,1H3",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cccn2",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(CC#N)(n2cccn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([N:23]([C:11]2([H:32])[H:33])[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)C": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][C:1]1([C:3]([C:2]([N:7]1[S:10](=[O:8])(=[O:9])[C:6]([H:22])([H:23])[C:5]([H:19])([H:20])[H:21])([H:13])[H:14])([H:15])[C:4]([H:16])([H:17])[H:18])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])([H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)C",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)C",
+      "inchi_key": "CWIGREWPBLDDLV-UHFFFAOYSA-N",
+      "molecular_formula": "C6H13NO2S",
+      "standard_inchi": "InChI=1S/C6H13NO2S/c1-3-10(8,9)7-4-6(2)5-7/h6H,3-5H2,1-2H3",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)C",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(C)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][CH:15]([H:40])[CH:13]1[C:12]([N:23]([C:11]1([H:32])[H:33])[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:34])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][C:2]1([C:4]([C:3]([N:9]1[S:12](=[O:10])(=[O:11])[C:7]([H:23])([H:24])[C:5]([H:18])([H:19])[H:20])([H:15])[H:16])([H:17])[C:6]([H:21])([H:22])[C:1]#[N:8])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)CC#N",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)CC#N",
+      "inchi_key": "KLFRDMGSQKVORW-UHFFFAOYSA-N",
+      "molecular_formula": "C7H12N2O2S",
+      "standard_inchi": "InChI=1S/C7H12N2O2S/c1-2-12(10,11)9-5-7(6-9)3-4-8/h7H,2-3,5-6H2,1H3",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)CC#N",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(CC#N)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][C:12]1([CH:13]([C:11]([N:23]1[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:32])[H:33])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:3]([n:18]([c:9]2[c:6]1[c:8]([n:16][c:5]([n:17]2)[H:28])[c:7]3[c:2]([n:15][n:19]([c:4]3[H:27])[C:12]4([C:10]([N:20]([C:11]4([H:31])[H:32])[S:23](=[O:21])(=[O:22])[C:14]([H:37])([H:38])[C:13]([H:34])([H:35])[H:36])([H:29])[H:30])[H:33])[H:25])[H:39])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "CHBKKSCVXKZYQC-UHFFFAOYSA-N",
+      "molecular_formula": "C14H16N6O2S",
+      "standard_inchi": "InChI=1S/C14H16N6O2S/c1-2-23(21,22)19-7-11(8-19)20-6-10(5-18-20)13-12-3-4-15-14(12)17-9-16-13/h3-6,9,11H,2,7-8H2,1H3,(H,15,16,17)",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(n2cc(-c3ncnc4[nH]ccc34)cn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[CH:13]4[C:12]([N:23]([C:11]4([H:32])[H:33])[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:34])[H:35])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CC(C1)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([n:9][n:10]([c:3]1[H:17])[C:6]2([C:4]([N:11]([C:5]2([H:20])[H:21])[S:14](=[O:12])(=[O:13])[C:8]([H:26])([H:27])[C:7]([H:23])([H:24])[H:25])([H:18])[H:19])[H:22])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CC(C1)n2cccn2",
+      "canonical_smiles": "CCS(=O)(=O)N1CC(C1)n2cccn2",
+      "inchi_key": "LMJHYFWZRWUNBX-UHFFFAOYSA-N",
+      "molecular_formula": "C8H13N3O2S",
+      "standard_inchi": "InChI=1S/C8H13N3O2S/c1-2-14(12,13)10-6-8(7-10)11-5-3-4-9-11/h3-5,8H,2,6-7H2,1H3",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CC(C1)n2cccn2",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CC(n2cccn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[CH:13]2[C:12]([N:23]([C:11]2([H:32])[H:33])[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:34])[H:35])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)(=O)N1CCC1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(N(C1([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][C:1]1([C:2]([N:6]([C:3]1([H:14])[H:15])[S:9](=[O:7])(=[O:8])[C:5]([H:19])([H:20])[C:4]([H:16])([H:17])[H:18])([H:12])[H:13])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(N(C1([H])[H])S(=O)(=O)C([H])([H])C([H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CCS(=O)(=O)N1CCC1",
+      "canonical_smiles": "CCS(=O)(=O)N1CCC1",
+      "inchi_key": "SFMNHCLLSKRLRN-UHFFFAOYSA-N",
+      "molecular_formula": "C5H11NO2S",
+      "standard_inchi": "InChI=1S/C5H11NO2S/c1-2-9(7,8)6-4-3-5-6/h2-5H2,1H3",
+      "unique_protomer_representation": "CCS(=O)(=O)N1CCC1",
+      "unique_tautomer_representation": "CCS(=O)(=O)N1CCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][C:12]1([CH2:13][C:11]([N:23]1[S:26](=[O:24])(=[O:25])[C:16]([H:41])([H:42])[C:14]([H:36])([H:37])[H:38])([H:32])[H:33])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CCS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C([H])([H])C([H])([H])S(=O)(=O)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:6][C:1]([H:7])([H:8])[C:2]([H:9])([H:10])[S:5](=[O:3])(=[O:4])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C([H])([H])C([H])([H])S(=O)(=O)[H]",
+      "canonical_isomeric_smiles": "CCS(=O)=O",
+      "canonical_smiles": "CCS(=O)=O",
+      "inchi_key": "VCRTUEWZYXRBFN-UHFFFAOYSA-N",
+      "molecular_formula": "C2H6O2S",
+      "standard_inchi": "InChI=1S/C2H6O2S/c1-2-5(3)4/h5H,2H2,1H3",
+      "unique_protomer_representation": "CCS(=O)=O",
+      "unique_tautomer_representation": "CC[SH](=O)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][C:14]([H:37])([H:38])[C:16]([H:41])([H:42])[SH:26](=[O:24])=[O:25]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])C#N)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:2]1[c:4]([n:20]([c:10]2[c:7]1[c:9]([n:18][c:6]([n:19]2)[H:30])[c:8]3[c:3]([n:17][n:21]([c:5]3[H:29])[C:13]4([C:11]([N:22]([C:12]4([H:33])[H:34])[S:25](=[O:23])(=[O:24])[C:14]([H:35])([H:36])[H:37])([H:31])[H:32])[C:15]([H:38])([H:39])[C:1]#[N:16])[H:27])[H:40])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])C#N)[H])[H])[H]",
+      "canonical_isomeric_smiles": "CS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "IVCUSPDRVUNRLN-UHFFFAOYSA-N",
+      "molecular_formula": "C15H15N7O2S",
+      "standard_inchi": "InChI=1S/C15H15N7O2S/c1-25(23,24)21-8-15(9-21,3-4-16)22-7-11(6-20-22)13-12-2-5-17-14(12)19-10-18-13/h2,5-7,10H,3,8-9H2,1H3,(H,17,18,19)",
+      "unique_protomer_representation": "CS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CS(=O)(=O)N1CC(CC#N)(n2cc(-c3ncnc4[nH]ccc34)cn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([N:23]([C:11]4([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)(=O)N1CC(C1)(CC#N)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:2]1[c:3]([n:11][n:12]([c:4]1[H:19])[C:7]2([C:5]([N:13]([C:6]2([H:22])[H:23])[S:16](=[O:14])(=[O:15])[C:8]([H:24])([H:25])[H:26])([H:20])[H:21])[C:9]([H:27])([H:28])[C:1]#[N:10])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "CS(=O)(=O)N1CC(C1)(CC#N)n2cccn2",
+      "canonical_smiles": "CS(=O)(=O)N1CC(C1)(CC#N)n2cccn2",
+      "inchi_key": "OOIWMEJVFBNFQE-UHFFFAOYSA-N",
+      "molecular_formula": "C9H12N4O2S",
+      "standard_inchi": "InChI=1S/C9H12N4O2S/c1-16(14,15)12-7-9(8-12,3-4-10)13-6-2-5-11-13/h2,5-6H,3,7-8H2,1H3",
+      "unique_protomer_representation": "CS(=O)(=O)N1CC(C1)(CC#N)n2cccn2",
+      "unique_tautomer_representation": "CS(=O)(=O)N1CC(CC#N)(n2cccn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([N:23]([C:11]2([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)(=O)N1CC(C1)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][C:2]1([C:4]([C:3]([N:8]1[S:11](=[O:9])(=[O:10])[C:5]([H:17])([H:18])[H:19])([H:14])[H:15])([H:16])[C:6]([H:20])([H:21])[C:1]#[N:7])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C(N1S(=O)(=O)C([H])([H])[H])([H])[H])([H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "CS(=O)(=O)N1CC(C1)CC#N",
+      "canonical_smiles": "CS(=O)(=O)N1CC(C1)CC#N",
+      "inchi_key": "DRIKJJMGJFSDJR-UHFFFAOYSA-N",
+      "molecular_formula": "C6H10N2O2S",
+      "standard_inchi": "InChI=1S/C6H10N2O2S/c1-11(9,10)8-4-6(5-8)2-3-7/h6H,2,4-5H2,1H3",
+      "unique_protomer_representation": "CS(=O)(=O)N1CC(C1)CC#N",
+      "unique_tautomer_representation": "CS(=O)(=O)N1CC(CC#N)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH:16]([H:42])[S:26](=[O:24])(=[O:25])[N:23]1[C:12]([CH:13]([C:11]1([H:32])[H:33])[C:15]([H:39])([H:40])[C:1]#[N:17])([H:34])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)(=O)N1CC(C1)n2cc(cn2)c3c4cc[nH]c4ncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:3]([n:17]([c:9]2[c:6]1[c:8]([n:15][c:5]([n:16]2)[H:27])[c:7]3[c:2]([n:14][n:18]([c:4]3[H:26])[C:12]4([C:10]([N:19]([C:11]4([H:30])[H:31])[S:22](=[O:20])(=[O:21])[C:13]([H:33])([H:34])[H:35])([H:28])[H:29])[H:32])[H:24])[H:36])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CS(=O)(=O)N1CC(C1)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "canonical_smiles": "CS(=O)(=O)N1CC(C1)n2cc(cn2)c3c4cc[nH]c4ncn3",
+      "inchi_key": "UFDWMXPEHZWTQR-UHFFFAOYSA-N",
+      "molecular_formula": "C13H14N6O2S",
+      "standard_inchi": "InChI=1S/C13H14N6O2S/c1-22(20,21)18-6-10(7-18)19-5-9(4-17-19)12-11-2-3-14-13(11)16-8-15-12/h2-5,8,10H,6-7H2,1H3,(H,14,15,16)",
+      "unique_protomer_representation": "CS(=O)(=O)N1CC(C1)n2cc(cn2)c3c-4ccnc4nc[nH]3",
+      "unique_tautomer_representation": "CS(=O)(=O)N1CC(n2cc(-c3ncnc4[nH]ccc34)cn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[CH:13]4[C:12]([N:23]([C:11]4([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)(=O)N1CC(C1)n2cccn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([n:8][n:9]([c:3]1[H:16])[C:6]2([C:4]([N:10]([C:5]2([H:19])[H:20])[S:13](=[O:11])(=[O:12])[C:7]([H:22])([H:23])[H:24])([H:17])[H:18])[H:21])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CS(=O)(=O)N1CC(C1)n2cccn2",
+      "canonical_smiles": "CS(=O)(=O)N1CC(C1)n2cccn2",
+      "inchi_key": "NHEGVGJOGXKFLA-UHFFFAOYSA-N",
+      "molecular_formula": "C7H11N3O2S",
+      "standard_inchi": "InChI=1S/C7H11N3O2S/c1-13(11,12)9-5-7(6-9)10-4-2-3-8-10/h2-4,7H,5-6H2,1H3",
+      "unique_protomer_representation": "CS(=O)(=O)N1CC(C1)n2cccn2",
+      "unique_tautomer_representation": "CS(=O)(=O)N1CC(n2cccn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[CH:13]2[C:12]([N:23]([C:11]2([H:32])[H:33])[S:26](=[O:24])(=[O:25])[CH:16]([H:41])[H:42])([H:34])[H:35])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)(=O)N1CCC1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(N(C1([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:9][C:1]1([C:2]([N:5]([C:3]1([H:13])[H:14])[S:8](=[O:6])(=[O:7])[C:4]([H:15])([H:16])[H:17])([H:11])[H:12])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(N(C1([H])[H])S(=O)(=O)C([H])([H])[H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CS(=O)(=O)N1CCC1",
+      "canonical_smiles": "CS(=O)(=O)N1CCC1",
+      "inchi_key": "RNCROYMBTHIPDN-UHFFFAOYSA-N",
+      "molecular_formula": "C4H9NO2S",
+      "standard_inchi": "InChI=1S/C4H9NO2S/c1-8(6,7)5-3-2-4-5/h2-4H2,1H3",
+      "unique_protomer_representation": "CS(=O)(=O)N1CCC1",
+      "unique_tautomer_representation": "CS(=O)(=O)N1CCC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH:16]([H:42])[S:26](=[O:24])(=[O:25])[N:23]1[C:12]([CH2:13][C:11]1([H:32])[H:33])([H:34])[H:35]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C([H])([H])S(=O)(=O)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:5][C:1]([H:6])([H:7])[S:4](=[O:2])(=[O:3])[H:8]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C([H])([H])S(=O)(=O)[H]",
+      "canonical_isomeric_smiles": "CS(=O)=O",
+      "canonical_smiles": "CS(=O)=O",
+      "inchi_key": "KEIVLHIFSZBKGU-UHFFFAOYSA-N",
+      "molecular_formula": "CH4O2S",
+      "standard_inchi": "InChI=1S/CH4O2S/c1-4(2)3/h4H,1H3",
+      "unique_protomer_representation": "CS(=O)=O",
+      "unique_tautomer_representation": "C[SH](=O)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH:16]([H:42])[SH:26](=[O:24])=[O:25]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1c[nH]c2c1c(ncn2)c3c[nH]nc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:3]([n:13]([c:9]2[c:6]1[c:8]([n:11][c:5]([n:12]2)[H:19])[c:7]3[c:2]([n:10][n:14]([c:4]3[H:18])[H:21])[H:16])[H:20])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1c[nH]c2c1c(ncn2)c3c[nH]nc3",
+      "canonical_smiles": "c1c[nH]c2c1c(ncn2)c3c[nH]nc3",
+      "inchi_key": "FKZDJXVOWLWXHB-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7N5",
+      "standard_inchi": "InChI=1S/C9H7N5/c1-2-10-9-7(1)8(11-5-12-9)6-3-13-14-4-6/h1-5H,(H,13,14)(H,10,11,12)",
+      "unique_protomer_representation": "c1cnc-2nc[nH]c(c12)c3c[nH]nc3",
+      "unique_tautomer_representation": "c1nc(-c2cn[nH]c2)c2cc[nH]c2n1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:5]([nH:22][n:18][c:3]3[H:28])[H:30])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4(CN(C4)S(=O)=O)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])C#N)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:2]1[c:4]([n:19]([c:10]2[c:7]1[c:9]([n:17][c:6]([n:18]2)[H:29])[c:8]3[c:3]([n:16][n:20]([c:5]3[H:28])[C:13]4([C:11]([N:21]([C:12]4([H:32])[H:33])[S:24](=[O:22])(=[O:23])[H:37])([H:30])[H:31])[C:14]([H:34])([H:35])[C:1]#[N:15])[H:26])[H:36])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])C#N)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4(CN(C4)S(=O)=O)CC#N",
+      "canonical_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4(CN(C4)S(=O)=O)CC#N",
+      "inchi_key": "LCNSVMQUOSGQQH-UHFFFAOYSA-N",
+      "molecular_formula": "C14H13N7O2S",
+      "standard_inchi": "InChI=1S/C14H13N7O2S/c15-3-2-14(7-20(8-14)24(22)23)21-6-10(5-19-21)12-11-1-4-16-13(11)18-9-17-12/h1,4-6,9,24H,2,7-8H2,(H,16,17,18)",
+      "unique_protomer_representation": "c1cnc-2nc[nH]c(c12)c3cnn(c3)C4(CN(C4)S(=O)=O)CC#N",
+      "unique_tautomer_representation": "N#CCC1(n2cc(-c3ncnc4[nH]ccc34)cn2)CN([SH](=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([N:23]([C:11]4([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4(CNC4)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])[H])([H])[H])C([H])([H])C#N)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:2]1[c:4]([n:19]([c:10]2[c:7]1[c:9]([n:17][c:6]([n:18]2)[H:26])[c:8]3[c:3]([n:16][n:20]([c:5]3[H:25])[C:13]4([C:11]([N:21]([C:12]4([H:29])[H:30])[H:34])([H:27])[H:28])[C:14]([H:31])([H:32])[C:1]#[N:15])[H:23])[H:33])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])[H])([H])[H])C([H])([H])C#N)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4(CNC4)CC#N",
+      "canonical_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4(CNC4)CC#N",
+      "inchi_key": "JGPYLNFYLAFBTC-UHFFFAOYSA-N",
+      "molecular_formula": "C14H13N7",
+      "standard_inchi": "InChI=1S/C14H13N7/c15-3-2-14(7-16-8-14)21-6-10(5-20-21)12-11-1-4-17-13(11)19-9-18-12/h1,4-6,9,16H,2,7-8H2,(H,17,18,19)",
+      "unique_protomer_representation": "c1cnc-2nc[nH]c(c12)c3cnn(c3)C4(CNC4)CC#N",
+      "unique_tautomer_representation": "N#CCC1(n2cc(-c3ncnc4[nH]ccc34)cn2)CNC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[C:13]4([C:12]([NH:23][C:11]4([H:32])[H:33])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4CN(C4)S(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:3]([n:16]([c:9]2[c:6]1[c:8]([n:14][c:5]([n:15]2)[H:26])[c:7]3[c:2]([n:13][n:17]([c:4]3[H:25])[C:12]4([C:10]([N:18]([C:11]4([H:29])[H:30])[S:21](=[O:19])(=[O:20])[H:33])([H:27])[H:28])[H:31])[H:23])[H:32])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])S(=O)(=O)[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4CN(C4)S(=O)=O",
+      "canonical_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4CN(C4)S(=O)=O",
+      "inchi_key": "SXAYKTLCCFXCLA-UHFFFAOYSA-N",
+      "molecular_formula": "C12H12N6O2S",
+      "standard_inchi": "InChI=1S/C12H12N6O2S/c19-21(20)17-5-9(6-17)18-4-8(3-16-18)11-10-1-2-13-12(10)15-7-14-11/h1-4,7,9,21H,5-6H2,(H,13,14,15)",
+      "unique_protomer_representation": "c1cnc-2nc[nH]c(c12)c3cnn(c3)C4CN(C4)S(=O)=O",
+      "unique_tautomer_representation": "O=[SH](=O)N1CC(n2cc(-c3ncnc4[nH]ccc34)cn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[CH:13]4[C:12]([N:23]([C:11]4([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4CNC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:3]([n:16]([c:9]2[c:6]1[c:8]([n:14][c:5]([n:15]2)[H:23])[c:7]3[c:2]([n:13][n:17]([c:4]3[H:22])[C:12]4([C:10]([N:18]([C:11]4([H:26])[H:27])[H:30])([H:24])[H:25])[H:28])[H:20])[H:29])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(n(c2c1c(nc(n2)[H])c3c(nn(c3[H])C4(C(N(C4([H])[H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4CNC4",
+      "canonical_smiles": "c1c[nH]c2c1c(ncn2)c3cnn(c3)C4CNC4",
+      "inchi_key": "OQOHGQLPSDSDMQ-UHFFFAOYSA-N",
+      "molecular_formula": "C12H12N6",
+      "standard_inchi": "InChI=1S/C12H12N6/c1-2-14-12-10(1)11(15-7-16-12)8-3-17-18(6-8)9-4-13-5-9/h1-3,6-7,9,13H,4-5H2,(H,14,15,16)",
+      "unique_protomer_representation": "c1cnc-2nc[nH]c(c12)c3cnn(c3)C4CNC4",
+      "unique_tautomer_representation": "c1nc(-c2cnn(C3CNC3)c2)c2cc[nH]c2n1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:27][c:2]1[c:4]([n:21]([c:10]2[c:7]1[c:9]([n:19][c:6]([n:20]2)[H:31])[c:8]3[c:3]([n:18][n:22]([c:5]3[H:30])[CH:13]4[C:12]([NH:23][C:11]4([H:32])[H:33])([H:34])[H:35])[H:28])[H:43])[H:29]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnn(c1)C2(CN(C2)S(=O)=O)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:2]1[c:3]([n:10][n:11]([c:4]1[H:18])[C:7]2([C:5]([N:12]([C:6]2([H:21])[H:22])[S:15](=[O:13])(=[O:14])[H:25])([H:19])[H:20])[C:8]([H:23])([H:24])[C:1]#[N:9])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "c1cnn(c1)C2(CN(C2)S(=O)=O)CC#N",
+      "canonical_smiles": "c1cnn(c1)C2(CN(C2)S(=O)=O)CC#N",
+      "inchi_key": "DNIAUOYWKXWZGW-UHFFFAOYSA-N",
+      "molecular_formula": "C8H10N4O2S",
+      "standard_inchi": "InChI=1S/C8H10N4O2S/c9-3-2-8(12-5-1-4-10-12)6-11(7-8)15(13)14/h1,4-5,15H,2,6-7H2",
+      "unique_protomer_representation": "c1cnn(c1)C2(CN(C2)S(=O)=O)CC#N",
+      "unique_tautomer_representation": "N#CCC1(n2cccn2)CN([SH](=O)=O)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([N:23]([C:11]2([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnn(c1)C2(CNC2)CC#N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:2]1[c:3]([n:10][n:11]([c:4]1[H:15])[C:7]2([C:5]([N:12]([C:6]2([H:18])[H:19])[H:22])([H:16])[H:17])[C:8]([H:20])([H:21])[C:1]#[N:9])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])[H])([H])[H])C([H])([H])C#N)[H]",
+      "canonical_isomeric_smiles": "c1cnn(c1)C2(CNC2)CC#N",
+      "canonical_smiles": "c1cnn(c1)C2(CNC2)CC#N",
+      "inchi_key": "LWZHCYKFELYAEC-UHFFFAOYSA-N",
+      "molecular_formula": "C8H10N4",
+      "standard_inchi": "InChI=1S/C8H10N4/c9-3-2-8(6-10-7-8)12-5-1-4-11-12/h1,4-5,10H,2,6-7H2",
+      "unique_protomer_representation": "c1cnn(c1)C2(CNC2)CC#N",
+      "unique_tautomer_representation": "N#CCC1(n2cccn2)CNC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[C:13]2([C:12]([NH:23][C:11]2([H:32])[H:33])([H:34])[H:35])[C:15]([H:39])([H:40])[C:1]#[N:17])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnn(c1)C2CN(C2)S(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([n:7][n:8]([c:3]1[H:15])[C:6]2([C:4]([N:9]([C:5]2([H:18])[H:19])[S:12](=[O:10])(=[O:11])[H:21])([H:16])[H:17])[H:20])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])S(=O)(=O)[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cnn(c1)C2CN(C2)S(=O)=O",
+      "canonical_smiles": "c1cnn(c1)C2CN(C2)S(=O)=O",
+      "inchi_key": "ONLKGRCZYKNBIR-UHFFFAOYSA-N",
+      "molecular_formula": "C6H9N3O2S",
+      "standard_inchi": "InChI=1S/C6H9N3O2S/c10-12(11)8-4-6(5-8)9-3-1-2-7-9/h1-3,6,12H,4-5H2",
+      "unique_protomer_representation": "c1cnn(c1)C2CN(C2)S(=O)=O",
+      "unique_tautomer_representation": "O=[SH](=O)N1CC(n2cccn2)C1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[CH:13]2[C:12]([N:23]([C:11]2([H:32])[H:33])[SH:26](=[O:24])=[O:25])([H:34])[H:35])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnn(c1)C2CNC2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][c:1]1[c:2]([n:7][n:8]([c:3]1[H:12])[C:6]2([C:4]([N:9]([C:5]2([H:15])[H:16])[H:18])([H:13])[H:14])[H:17])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nn(c1[H])C2(C(N(C2([H])[H])[H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cnn(c1)C2CNC2",
+      "canonical_smiles": "c1cnn(c1)C2CNC2",
+      "inchi_key": "BTVFEBGEHBKUDA-UHFFFAOYSA-N",
+      "molecular_formula": "C6H9N3",
+      "standard_inchi": "InChI=1S/C6H9N3/c1-2-8-9(3-1)6-4-7-5-6/h1-3,6-7H,4-5H2",
+      "unique_protomer_representation": "c1cnn(c1)C2CNC2",
+      "unique_tautomer_representation": "c1cnn(C2CNC2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "af3e1a7a-70cf-4af7-b721-18044e4e9581",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:28][c:3]1[cH:8][c:5]([n:22]([n:18]1)[CH:13]2[C:12]([NH:23][C:11]2([H:32])[H:33])([H:34])[H:35])[H:30]",
+          "parent_molecule": "CCS(=O)(=O)N1CC(C1)(CC#N)n2cc(cn2)c3c4cc[nH]c4ncn3",
+          "parent_molecule_name": "Baricitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  }
+}

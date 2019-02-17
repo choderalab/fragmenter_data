@@ -1,0 +1,782 @@
+{
+  "CNC(=O)c1ccccc1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[H:15])[C:7](=[O:10])[N:9]([H:19])[C:8]([H:16])([H:17])[H:18])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CNC(=O)c1ccccc1",
+      "canonical_smiles": "CNC(=O)c1ccccc1",
+      "inchi_key": "NCCHARWOCKOHIH-UHFFFAOYSA-N",
+      "molecular_formula": "C8H9NO",
+      "standard_inchi": "InChI=1S/C8H9NO/c1-9-8(10)7-5-3-2-4-6-7/h2-6H,1H3,(H,9,10)",
+      "unique_protomer_representation": "CNC(=O)c1ccccc1",
+      "unique_tautomer_representation": "CNC(=O)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:7]1[cH:16][c:13]([c:6]([c:1]([c:2]1[H:30])[H:29])[H:34])[C:21](=[O:27])[N:26]([H:46])[C:22]([H:42])([H:43])[H:44]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CNC(=O)c1ccccc1S": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])S[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[C:7](=[O:10])[N:9]([H:19])[C:8]([H:16])([H:17])[H:18])[S:11][H:20])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])S[H])[H])[H]",
+      "canonical_isomeric_smiles": "CNC(=O)c1ccccc1S",
+      "canonical_smiles": "CNC(=O)c1ccccc1S",
+      "inchi_key": "VIFOAZNEQRHREM-UHFFFAOYSA-N",
+      "molecular_formula": "C8H9NOS",
+      "standard_inchi": "InChI=1S/C8H9NOS/c1-9-8(10)6-4-2-3-5-7(6)11/h2-5,11H,1H3,(H,9,10)",
+      "unique_protomer_representation": "CNC(=O)c1ccccc1S",
+      "unique_tautomer_representation": "CNC(=O)c1ccccc1S"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[N:26]([H:46])[C:22]([H:42])([H:43])[H:44])[SH:28])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CNC(=O)c1ccccc1Sc2ccc3cn[nH]c3c2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])Sc2c(c(c3c(nn(c3c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:2]([c:5]([c:13]([c:10]([c:4]1[H:24])[C:14](=[O:19])[N:18]([H:33])[C:15]([H:29])([H:30])[H:31])[S:20][c:12]2[c:6]([c:3]([c:9]3[c:8]([n:16][n:17]([c:11]3[c:7]2[H:27])[H:32])[H:28])[H:23])[H:26])[H:25])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])Sc2c(c(c3c(nn(c3c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CNC(=O)c1ccccc1Sc2ccc3cn[nH]c3c2",
+      "canonical_smiles": "CNC(=O)c1ccccc1Sc2ccc3cn[nH]c3c2",
+      "inchi_key": "JBFLDDCNCFRBIG-UHFFFAOYSA-N",
+      "molecular_formula": "C15H13N3OS",
+      "standard_inchi": "InChI=1S/C15H13N3OS/c1-16-15(19)12-4-2-3-5-14(12)20-11-7-6-10-9-17-18-13(10)8-11/h2-9H,1H3,(H,16,19)(H,17,18)",
+      "unique_protomer_representation": "CNC(=O)c1ccccc1Sc2ccc3cn[nH]c3c2",
+      "unique_tautomer_representation": "CNC(=O)c1ccccc1Sc1ccc2c[nH]nc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[N:26]([H:46])[C:22]([H:42])([H:43])[H:44])[S:28][c:15]2[c:8]([c:5]([c:12]3[cH:18][n:24][n:25]([c:14]3[c:10]2[H:38])[H:45])[H:33])[H:36])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CNC=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C(=O)N([H])C([H])([H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:5][C:1](=[O:4])[N:3]([H:9])[C:2]([H:6])([H:7])[H:8]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C(=O)N([H])C([H])([H])[H]",
+      "canonical_isomeric_smiles": "CNC=O",
+      "canonical_smiles": "CNC=O",
+      "inchi_key": "ATHHXGZTWNVVOU-UHFFFAOYSA-N",
+      "molecular_formula": "C2H5NO",
+      "standard_inchi": "InChI=1S/C2H5NO/c1-3-2-4/h2H,1H3,(H,3,4)",
+      "unique_protomer_representation": "CNC=O",
+      "unique_tautomer_representation": "CNC=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:42][C:22]([H:43])([H:44])[N:26]([H:46])[CH:21]=[O:27]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "Cc1c2ccc(cc2[nH]n1)S": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(nn2[H])C([H])([H])[H])[H])S[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:6]([c:3]([c:5]2[c:4]1[c:7]([n:9][n:10]2[H:18])[C:8]([H:15])([H:16])[H:17])[H:14])[S:11][H:19])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(nn2[H])C([H])([H])[H])[H])S[H])[H]",
+      "canonical_isomeric_smiles": "Cc1c2ccc(cc2[nH]n1)S",
+      "canonical_smiles": "Cc1c2ccc(cc2[nH]n1)S",
+      "inchi_key": "MTTUNGBKKGSOHS-UHFFFAOYSA-N",
+      "molecular_formula": "C8H8N2S",
+      "standard_inchi": "InChI=1S/C8H8N2S/c1-5-7-3-2-6(11)4-8(7)10-9-5/h2-4,11H,1H3,(H,9,10)",
+      "unique_protomer_representation": "Cc1c-2ccc(=S)cc2[nH][nH]1",
+      "unique_tautomer_representation": "Cc1[nH]nc2cc(S)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH2:20][c:18]1[c:12]2[c:5]([c:8]([c:15]([c:10]([c:14]2[n:25]([n:24]1)[H:45])[H:38])[SH:28])[H:36])[H:33]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(c2[H])n(nc3C([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:2]([c:5]([c:11]([c:6]([c:3]1[H:20])[H:23])[S:17][c:12]2[c:7]([c:4]([c:9]3[c:10]([c:8]2[H:25])[n:16]([n:15][c:13]3[C:14]([H:26])([H:27])[H:28])[H:29])[H:21])[H:24])[H:22])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(c2[H])n(nc3C([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3",
+      "canonical_smiles": "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3",
+      "inchi_key": "WNBGMBGPPKANSP-UHFFFAOYSA-N",
+      "molecular_formula": "C14H12N2S",
+      "standard_inchi": "InChI=1S/C14H12N2S/c1-10-13-8-7-12(9-14(13)16-15-10)17-11-5-3-2-4-6-11/h2-9H,1H3,(H,15,16)",
+      "unique_protomer_representation": "Cc1c2ccc(cc2n[nH]1)Sc3ccccc3",
+      "unique_tautomer_representation": "Cc1[nH]nc2cc(Sc3ccccc3)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH2:20][c:18]1[c:12]2[c:5]([c:8]([c:15]([c:10]([c:14]2[n:25]([n:24]1)[H:45])[H:38])[S:28][c:16]3[cH:13][c:6]([c:1]([c:2]([c:7]3[H:35])[H:30])[H:29])[H:34])[H:36])[H:33]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(c2[H])n(nc3C([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:2]([c:5]([c:12]([c:9]([c:4]1[H:24])[C:14](=[O:19])[N:18]([H:32])[H:33])[S:20][c:11]2[c:6]([c:3]([c:8]3[c:10]([c:7]2[H:27])[n:17]([n:16][c:13]3[C:15]([H:28])([H:29])[H:30])[H:31])[H:23])[H:26])[H:25])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(c2[H])n(nc3C([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)N",
+      "canonical_smiles": "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)N",
+      "inchi_key": "OLVUOLYHNORMIX-UHFFFAOYSA-N",
+      "molecular_formula": "C15H13N3OS",
+      "standard_inchi": "InChI=1S/C15H13N3OS/c1-9-11-7-6-10(8-13(11)18-17-9)20-14-5-3-2-4-12(14)15(16)19/h2-8H,1H3,(H2,16,19)(H,17,18)",
+      "unique_protomer_representation": "Cc1c2ccc(cc2n[nH]1)Sc3ccccc3C(=O)N",
+      "unique_tautomer_representation": "Cc1[nH]nc2cc(Sc3ccccc3C(N)=O)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH2:20][c:18]1[c:12]2[c:5]([c:8]([c:15]([c:10]([c:14]2[n:25]([n:24]1)[H:45])[H:38])[S:28][c:16]3[c:7]([c:2]([c:1]([c:6]([c:13]3[C:21](=[O:27])[NH:26][H:46])[H:34])[H:29])[H:30])[H:35])[H:36])[H:33]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)NC": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])Sc2c(c(c3c(c2[H])n(nc3C([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:5]([c:12]([c:9]([c:4]1[H:25])[C:14](=[O:20])[N:19]([H:36])[C:16]([H:32])([H:33])[H:34])[S:21][c:11]2[c:6]([c:3]([c:8]3[c:10]([c:7]2[H:28])[n:18]([n:17][c:13]3[C:15]([H:29])([H:30])[H:31])[H:35])[H:24])[H:27])[H:26])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])Sc2c(c(c3c(c2[H])n(nc3C([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)NC",
+      "canonical_smiles": "Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)NC",
+      "inchi_key": "KHQNCIJINLWZOQ-UHFFFAOYSA-N",
+      "molecular_formula": "C16H15N3OS",
+      "standard_inchi": "InChI=1S/C16H15N3OS/c1-10-12-8-7-11(9-14(12)19-18-10)21-15-6-4-3-5-13(15)16(20)17-2/h3-9H,1-2H3,(H,17,20)(H,18,19)",
+      "unique_protomer_representation": "Cc1c2ccc(cc2n[nH]1)Sc3ccccc3C(=O)NC",
+      "unique_tautomer_representation": "CNC(=O)c1ccccc1Sc1ccc2c(C)[nH]nc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH2:20][c:18]1[c:12]2[c:5]([c:8]([c:15]([c:10]([c:14]2[n:25]([n:24]1)[H:45])[H:38])[S:28][c:16]3[c:7]([c:2]([c:1]([c:6]([c:13]3[C:21](=[O:27])[N:26]([H:46])[C:22]([H:42])([H:43])[H:44])[H:34])[H:29])[H:30])[H:35])[H:36])[H:33]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "Cc1c2ccccc2[nH]n1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(nn2[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]2[c:5]([c:3]1[H:13])[c:7]([n:9][n:10]2[H:18])[C:8]([H:15])([H:16])[H:17])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(nn2[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "Cc1c2ccccc2[nH]n1",
+      "canonical_smiles": "Cc1c2ccccc2[nH]n1",
+      "inchi_key": "FWOPJXVQGMZKEP-UHFFFAOYSA-N",
+      "molecular_formula": "C8H8N2",
+      "standard_inchi": "InChI=1S/C8H8N2/c1-6-7-4-2-3-5-8(7)10-9-6/h2-5H,1H3,(H,9,10)",
+      "unique_protomer_representation": "Cc1c2ccccc2n[nH]1",
+      "unique_tautomer_representation": "Cc1[nH]nc2ccccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][CH2:20][c:18]1[c:12]2[c:5]([c:8]([cH:15][c:10]([c:14]2[n:25]([n:24]1)[H:45])[H:38])[H:36])[H:33]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "Cc1ccccn1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][c:1]1[c:2]([c:4]([n:7][c:5]([c:3]1[H:10])[C:6]([H:12])([H:13])[H:14])[H:11])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "Cc1ccccn1",
+      "canonical_smiles": "Cc1ccccn1",
+      "inchi_key": "BSKHPKMHTQYZBB-UHFFFAOYSA-N",
+      "molecular_formula": "C6H7N",
+      "standard_inchi": "InChI=1S/C6H7N/c1-6-4-2-3-5-7-6/h2-5H,1H3",
+      "unique_protomer_representation": "Cc1ccccn1",
+      "unique_tautomer_representation": "Cc1ccccn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:40][CH2:19][c:17]1[c:9]([c:3]([c:4]([c:11]([n:23]1)[H:39])[H:32])[H:31])[H:37]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H]/C(=C\\c1c2ccc(cc2[nH]n1)S)/[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(nn2[H])C(=C([H])[H])[H])[H])S[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:6]([c:3]([c:5]2[c:4]1[c:7]([n:10][n:11]2[H:19])/[C:9](=[C:8](\\[H:16])/[H:17])/[H:18])[H:15])[S:12][H:20])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(nn2[H])/C(=C(\\[H])/[H])/[H])[H])S[H])[H]",
+      "canonical_isomeric_smiles": "[H]/C(=C\\c1c2ccc(cc2[nH]n1)S)/[H]",
+      "canonical_smiles": "C=Cc1c2ccc(cc2[nH]n1)S",
+      "inchi_key": "UHDWYAQBHOAAGB-UHFFFAOYSA-N",
+      "molecular_formula": "C9H8N2S",
+      "standard_inchi": "InChI=1S/C9H8N2S/c1-2-8-7-4-3-6(12)5-9(7)11-10-8/h2-5,12H,1H2,(H,10,11)",
+      "unique_protomer_representation": "CC=C1c2ccc(cc2N=N1)S",
+      "unique_tautomer_representation": "[H]C=Cc1[nH]nc2cc(S)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:5]1[c:8]([c:15]([c:10]([c:14]2[c:12]1[c:18]([n:24][n:25]2[H:45])/[C:20](=[C:19](\\[H:40])/[H])/[H:41])[H:38])[SH:28])[H:36]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H]/C(=C\\c1c2ccc(cc2[nH]n1)Sc3ccccc3)/[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(c2[H])n(nc3C(=C([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:5]([c:11]([c:6]([c:3]1[H:21])[H:24])[S:18][c:12]2[c:7]([c:4]([c:9]3[c:10]([c:8]2[H:26])[n:17]([n:16][c:13]3/[C:15](=[C:14](\\[H:27])/[H:28])/[H:29])[H:30])[H:22])[H:25])[H:23])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(c2[H])n(nc3/C(=C(\\[H])/[H])/[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H]/C(=C\\c1c2ccc(cc2[nH]n1)Sc3ccccc3)/[H]",
+      "canonical_smiles": "C=Cc1c2ccc(cc2[nH]n1)Sc3ccccc3",
+      "inchi_key": "HUOCCBJLWRYYBA-UHFFFAOYSA-N",
+      "molecular_formula": "C15H12N2S",
+      "standard_inchi": "InChI=1S/C15H12N2S/c1-2-14-13-9-8-12(10-15(13)17-16-14)18-11-6-4-3-5-7-11/h2-10H,1H2,(H,16,17)",
+      "unique_protomer_representation": "CC=C1c2ccc(cc2N=N1)Sc3ccccc3",
+      "unique_tautomer_representation": "[H]C=Cc1[nH]nc2cc(Sc3ccccc3)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:6]1[cH:13][c:16]([c:7]([c:2]([c:1]1[H:29])[H:30])[H:35])[S:28][c:15]2[c:8]([c:5]([c:12]3[c:14]([c:10]2[H:38])[n:25]([n:24][c:18]3/[C:20](=[C:19](\\[H:40])/[H])/[H:41])[H:45])[H:33])[H:36]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H]/C(=C\\c1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)N)/[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(c2[H])n(nc3C(=C([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:5]([c:12]([c:9]([c:4]1[H:25])[C:16](=[O:20])[N:19]([H:33])[H:34])[S:21][c:11]2[c:6]([c:3]([c:8]3[c:10]([c:7]2[H:28])[n:18]([n:17][c:13]3/[C:15](=[C:14](\\[H:29])/[H:30])/[H:31])[H:32])[H:24])[H:27])[H:26])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(c2[H])n(nc3/C(=C(\\[H])/[H])/[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H]/C(=C\\c1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)N)/[H]",
+      "canonical_smiles": "C=Cc1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)N",
+      "inchi_key": "OSOOXEWSZMQSGU-UHFFFAOYSA-N",
+      "molecular_formula": "C16H13N3OS",
+      "standard_inchi": "InChI=1S/C16H13N3OS/c1-2-13-11-8-7-10(9-14(11)19-18-13)21-15-6-4-3-5-12(15)16(17)20/h2-9H,1H2,(H2,17,20)(H,18,19)",
+      "unique_protomer_representation": "CC=C1c2ccc(cc2N=N1)Sc3ccccc3C(=O)N",
+      "unique_tautomer_representation": "[H]C=Cc1[nH]nc2cc(Sc3ccccc3C(N)=O)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[NH:26][H:46])[S:28][c:15]2[c:8]([c:5]([c:12]3[c:14]([c:10]2[H:38])[n:25]([n:24][c:18]3/[C:20](=[C:19](\\[H:40])/[H])/[H:41])[H:45])[H:33])[H:36])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H]/C(=C\\c1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)NC)/[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])Sc2c(c(c3c(c2[H])n(nc3C(=C([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:5]([c:12]([c:9]([c:4]1[H:26])[C:16](=[O:21])[N:20]([H:37])[C:17]([H:33])([H:34])[H:35])[S:22][c:11]2[c:6]([c:3]([c:8]3[c:10]([c:7]2[H:29])[n:19]([n:18][c:13]3/[C:15](=[C:14](\\[H:30])/[H:31])/[H:32])[H:36])[H:25])[H:28])[H:27])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])C([H])([H])[H])Sc2c(c(c3c(c2[H])n(nc3/C(=C(\\[H])/[H])/[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H]/C(=C\\c1c2ccc(cc2[nH]n1)Sc3ccccc3C(=O)NC)/[H]",
+      "canonical_smiles": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3C=C",
+      "inchi_key": "ZHZYFLJWWZFFOA-UHFFFAOYSA-N",
+      "molecular_formula": "C17H15N3OS",
+      "standard_inchi": "InChI=1S/C17H15N3OS/c1-3-14-12-9-8-11(10-15(12)20-19-14)22-16-7-5-4-6-13(16)17(21)18-2/h3-10H,1H2,2H3,(H,18,21)(H,19,20)",
+      "unique_protomer_representation": "CC=C1c2ccc(cc2N=N1)Sc3ccccc3C(=O)NC",
+      "unique_tautomer_representation": "[H]C=Cc1[nH]nc2cc(Sc3ccccc3C(=O)NC)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[N:26]([H:46])[C:22]([H:42])([H:43])[H:44])[S:28][c:15]2[c:8]([c:5]([c:12]3[c:14]([c:10]2[H:38])[n:25]([n:24][c:18]3/[C:20](=[C:19](\\[H:40])/[H])/[H:41])[H:45])[H:33])[H:36])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H]/C(=C\\c1c2ccccc2[nH]n1)/[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(nn2[H])C(=C([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]2[c:5]([c:3]1[H:14])[c:7]([n:10][n:11]2[H:19])/[C:9](=[C:8](\\[H:16])/[H:17])/[H:18])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(nn2[H])/C(=C(\\[H])/[H])/[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H]/C(=C\\c1c2ccccc2[nH]n1)/[H]",
+      "canonical_smiles": "C=Cc1c2ccccc2[nH]n1",
+      "inchi_key": "ULHIQSSXUYRECA-UHFFFAOYSA-N",
+      "molecular_formula": "C9H8N2",
+      "standard_inchi": "InChI=1S/C9H8N2/c1-2-8-7-5-3-4-6-9(7)11-10-8/h2-6H,1H2,(H,10,11)",
+      "unique_protomer_representation": "CC=C1c2ccccc2N=N1",
+      "unique_tautomer_representation": "[H]C=Cc1[nH]nc2ccccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:8]1[cH:15][c:10]([c:14]2[c:12]([c:5]1[H:33])[c:18]([n:24][n:25]2[H:45])/[C:20](=[C:19](\\[H:40])/[H])/[H:41])[H:38]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "[H]/C(=C\\c1ccccn1)/[H]": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1[H])C(=C([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:9][c:1]1[c:2]([c:4]([n:8][c:5]([c:3]1[H:11])/[C:7](=[C:6](\\[H:13])/[H:14])/[H:15])[H:12])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1[H])/C(=C(\\[H])/[H])/[H])[H])[H]",
+      "canonical_isomeric_smiles": "[H]/C(=C\\c1ccccn1)/[H]",
+      "canonical_smiles": "C=Cc1ccccn1",
+      "inchi_key": "KGIGUEBEKRSTEW-UHFFFAOYSA-N",
+      "molecular_formula": "C7H7N",
+      "standard_inchi": "InChI=1S/C7H7N/c1-2-7-5-3-4-6-8-7/h2-6H,1H2",
+      "unique_protomer_representation": "[H]/C(=C\\c1ccccn1)/[H]",
+      "unique_tautomer_representation": "[H]/C=C/c1ccccn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:3]1[c:4]([c:11]([n:23][c:17]([c:9]1[H:37])/[C:19](=[C:20](\\[H:41])/[H])/[H:40])[H:39])[H:32]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2cn[nH]c2cc1S": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(nn2[H])[H])[H])S[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:7]([c:3]([c:6]2[c:5]1[c:4]([n:8][n:9]2[H:15])[H:14])[H:13])[S:10][H:16])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(nn2[H])[H])[H])S[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2cn[nH]c2cc1S",
+      "canonical_smiles": "c1cc2cn[nH]c2cc1S",
+      "inchi_key": "HMCZVFMYNFBEOS-UHFFFAOYSA-N",
+      "molecular_formula": "C7H6N2S",
+      "standard_inchi": "InChI=1S/C7H6N2S/c10-6-2-1-5-4-8-9-7(5)3-6/h1-4,10H,(H,8,9)",
+      "unique_protomer_representation": "c1cc-2c[nH][nH]c2cc1=S",
+      "unique_tautomer_representation": "Sc1ccc2c[nH]nc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:5]1[c:8]([c:15]([c:10]([c:14]2[c:12]1[cH:18][n:24][n:25]2[H:45])[H:38])[SH:28])[H:36]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)C(=O)N)S": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])S[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[C:7](=[O:9])[N:8]([H:15])[H:16])[S:10][H:17])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])S[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)C(=O)N)S",
+      "canonical_smiles": "c1ccc(c(c1)C(=O)N)S",
+      "inchi_key": "RIDMSOMIFFTEJO-UHFFFAOYSA-N",
+      "molecular_formula": "C7H7NOS",
+      "standard_inchi": "InChI=1S/C7H7NOS/c8-7(9)5-3-1-2-4-6(5)10/h1-4,10H,(H2,8,9)",
+      "unique_protomer_representation": "c1ccc(c(c1)C(=O)N)S",
+      "unique_tautomer_representation": "NC(=O)c1ccccc1S"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[NH:26][H:46])[SH:28])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)C(=O)N)Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(c2[H])n(nc3C(=C([H])c4c(c(c(c(n4)[H])[H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:33])[C:21](=[O:26])[N:25]([H:42])[H:43])[S:27][c:15]2[c:8]([c:5]([c:12]3[c:14]([c:10]2[H:37])[n:24]([n:23][c:18]3/[C:20](=[C:19](\\[H:39])/[c:17]4[c:9]([c:3]([c:4]([c:11]([n:22]4)[H:38])[H:31])[H:30])[H:36])/[H:40])[H:41])[H:32])[H:35])[H:34])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(c2[H])n(nc3/C(=C(\\[H])/c4c(c(c(c(n4)[H])[H])[H])[H])/[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)C(=O)N)Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+      "canonical_smiles": "c1ccc(c(c1)C(=O)N)Sc2ccc3c(c2)[nH]nc3C=Cc4ccccn4",
+      "inchi_key": "FYHCCBZVJQITPS-DHZHZOJOSA-N",
+      "molecular_formula": "C21H16N4OS",
+      "standard_inchi": "InChI=1S/C21H16N4OS/c22-21(26)17-6-1-2-7-20(17)27-15-9-10-16-18(24-25-19(16)13-15)11-8-14-5-3-4-12-23-14/h1-13H,(H2,22,26)(H,24,25)/b11-8+",
+      "unique_protomer_representation": "c1ccc(c(c1)C(=O)N)Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+      "unique_tautomer_representation": "NC(=O)c1ccccc1Sc1ccc2c(C=Cc3ccccn3)[nH]nc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[NH:26][H:46])[S:28][c:15]2[c:8]([c:5]([c:12]3[c:14]([c:10]2[H:38])[n:25]([n:24][c:18]3/[C:20](=[C:19](\\[H:40])/[c:17]4[c:9]([c:3]([c:4]([c:11]([n:23]4)[H:39])[H:32])[H:31])[H:37])/[H:41])[H:45])[H:33])[H:36])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)C(=O)N)Sc2ccc3cn[nH]c3c2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(nn(c3c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:5]([c:13]([c:10]([c:4]1[H:23])[C:14](=[O:18])[N:17]([H:29])[H:30])[S:19][c:12]2[c:6]([c:3]([c:9]3[c:8]([n:15][n:16]([c:11]3[c:7]2[H:26])[H:28])[H:27])[H:22])[H:25])[H:24])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])C(=O)N([H])[H])Sc2c(c(c3c(nn(c3c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)C(=O)N)Sc2ccc3cn[nH]c3c2",
+      "canonical_smiles": "c1ccc(c(c1)C(=O)N)Sc2ccc3cn[nH]c3c2",
+      "inchi_key": "BAQLTEHXEDLKPX-UHFFFAOYSA-N",
+      "molecular_formula": "C14H11N3OS",
+      "standard_inchi": "InChI=1S/C14H11N3OS/c15-14(18)11-3-1-2-4-13(11)19-10-6-5-9-8-16-17-12(9)7-10/h1-8H,(H2,15,18)(H,16,17)",
+      "unique_protomer_representation": "c1ccc(c(c1)C(=O)N)Sc2ccc3cn[nH]c3c2",
+      "unique_tautomer_representation": "NC(=O)c1ccccc1Sc1ccc2c[nH]nc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:13]([c:6]1[H:34])[C:21](=[O:27])[NH:26][H:46])[S:28][c:15]2[c:8]([c:5]([c:12]3[cH:18][n:24][n:25]([c:14]3[c:10]2[H:38])[H:45])[H:33])[H:36])[H:35])[H:30]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:12])[H:14])[C:7](=[O:9])[N:8]([H:15])[H:16])[H:13])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)C(=O)N",
+      "canonical_smiles": "c1ccc(cc1)C(=O)N",
+      "inchi_key": "KXDAEFPNCMNJSK-UHFFFAOYSA-N",
+      "molecular_formula": "C7H7NO",
+      "standard_inchi": "InChI=1S/C7H7NO/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H2,8,9)",
+      "unique_protomer_representation": "c1ccc(cc1)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:7]1[cH:16][c:13]([c:6]([c:1]([c:2]1[H:30])[H:29])[H:34])[C:21](=[O:27])[NH:26][H:46]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:10])[H:12])[S:7][H:13])[H:11])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S",
+      "canonical_smiles": "c1ccc(cc1)S",
+      "inchi_key": "RMVRSNDYEFQCLF-UHFFFAOYSA-N",
+      "molecular_formula": "C6H6S",
+      "standard_inchi": "InChI=1S/C6H6S/c7-6-4-2-1-3-5-6/h1-5,7H",
+      "unique_protomer_representation": "c1ccc(cc1)S",
+      "unique_tautomer_representation": "Sc1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:6]1[cH:13][c:16]([c:7]([c:2]([c:1]1[H:29])[H:30])[H:35])[SH:28]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(c2[H])n(nc3C(=C([H])c4c(c(c(c(n4)[H])[H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:2]([c:7]([c:15]([c:8]([c:3]1[H:27])[H:32])[S:24][c:16]2[c:9]([c:6]([c:13]3[c:14]([c:11]2[H:35])[n:23]([n:22][c:18]3/[C:20](=[C:19](\\[H:37])/[c:17]4[c:10]([c:4]([c:5]([c:12]([n:21]4)[H:36])[H:29])[H:28])[H:34])/[H:38])[H:39])[H:30])[H:33])[H:31])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(c2[H])n(nc3/C(=C(\\[H])/c4c(c(c(c(n4)[H])[H])[H])[H])/[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+      "canonical_smiles": "c1ccc(cc1)Sc2ccc3c(c2)[nH]nc3C=Cc4ccccn4",
+      "inchi_key": "KUFCBNDXGOEXEH-FMIVXFBMSA-N",
+      "molecular_formula": "C20H15N3S",
+      "standard_inchi": "InChI=1S/C20H15N3S/c1-2-7-16(8-3-1)24-17-10-11-18-19(22-23-20(18)14-17)12-9-15-6-4-5-13-21-15/h1-14H,(H,22,23)/b12-9+",
+      "unique_protomer_representation": "c1ccc(cc1)Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+      "unique_tautomer_representation": "C(=Cc1[nH]nc2cc(Sc3ccccc3)ccc12)c1ccccn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:6]1[cH:13][c:16]([c:7]([c:2]([c:1]1[H:29])[H:30])[H:35])[S:28][c:15]2[c:8]([c:5]([c:12]3[c:14]([c:10]2[H:38])[n:25]([n:24][c:18]3/[C:20](=[C:19](\\[H:40])/[c:17]4[c:9]([c:3]([c:4]([c:11]([n:23]4)[H:39])[H:32])[H:31])[H:37])/[H:41])[H:45])[H:33])[H:36]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)Sc2ccc3cn[nH]c3c2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(nn(c3c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:2]([c:5]([c:12]([c:6]([c:3]1[H:19])[H:22])[S:16][c:13]2[c:7]([c:4]([c:10]3[c:9]([n:14][n:15]([c:11]3[c:8]2[H:24])[H:26])[H:25])[H:20])[H:23])[H:21])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Sc2c(c(c3c(nn(c3c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)Sc2ccc3cn[nH]c3c2",
+      "canonical_smiles": "c1ccc(cc1)Sc2ccc3cn[nH]c3c2",
+      "inchi_key": "XTKHHFIULVVUJI-UHFFFAOYSA-N",
+      "molecular_formula": "C13H10N2S",
+      "standard_inchi": "InChI=1S/C13H10N2S/c1-2-4-11(5-3-1)16-12-7-6-10-9-14-15-13(10)8-12/h1-9H,(H,14,15)",
+      "unique_protomer_representation": "c1ccc(cc1)Sc2ccc3cn[nH]c3c2",
+      "unique_tautomer_representation": "c1ccc(Sc2ccc3c[nH]nc3c2)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:6]1[cH:13][c:16]([c:7]([c:2]([c:1]1[H:29])[H:30])[H:35])[S:28][c:15]2[c:8]([c:5]([c:12]3[cH:18][n:24][n:25]([c:14]3[c:10]2[H:38])[H:45])[H:33])[H:36]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(n[nH]2)/C=C/c3ccccn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(nn2[H])C(=C([H])c3c(c(c(c(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:2]([c:6]([c:10]2[c:9]([c:5]1[H:22])[c:12]([n:16][n:17]2[H:28])/[C:14](=[C:13](\\[H:26])/[c:11]3[c:7]([c:3]([c:4]([c:8]([n:15]3)[H:25])[H:21])[H:20])[H:24])/[H:27])[H:23])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(nn2[H])/C(=C(\\[H])/c3c(c(c(c(n3)[H])[H])[H])[H])/[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(n[nH]2)/C=C/c3ccccn3",
+      "canonical_smiles": "c1ccc2c(c1)c(n[nH]2)C=Cc3ccccn3",
+      "inchi_key": "DOFVDAFLHFASDH-CMDGGOBGSA-N",
+      "molecular_formula": "C14H11N3",
+      "standard_inchi": "InChI=1S/C14H11N3/c1-2-7-13-12(6-1)14(17-16-13)9-8-11-5-3-4-10-15-11/h1-10H,(H,16,17)/b9-8+",
+      "unique_protomer_representation": "c1ccc2c(c1)c(n[nH]2)/C=C/c3ccccn3",
+      "unique_tautomer_representation": "C(=Cc1[nH]nc2ccccc12)c1ccccn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:8]1[cH:15][c:10]([c:14]2[c:12]([c:5]1[H:33])[c:18]([n:24][n:25]2[H:45])/[C:20](=[C:19](\\[H:40])/[c:17]3[c:9]([c:3]([c:4]([c:11]([n:23]3)[H:39])[H:32])[H:31])[H:37])/[H:41])[H:38]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccnc(c1)/C=C/c2c3ccc(cc3[nH]n2)S": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1[H])C(=C([H])c2c3c(c(c(c(c3n(n2)[H])[H])S[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:7]([n:15][c:11]([c:5]1[H:23])/[C:13](=[C:14](\\[H:27])/[c:12]2[c:8]3[c:3]([c:4]([c:10]([c:6]([c:9]3[n:17]([n:16]2)[H:28])[H:24])[S:18][H:29])[H:22])[H:21])/[H:26])[H:25])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1[H])/C(=C(\\[H])/c2c3c(c(c(c(c3n(n2)[H])[H])S[H])[H])[H])/[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccnc(c1)/C=C/c2c3ccc(cc3[nH]n2)S",
+      "canonical_smiles": "c1ccnc(c1)C=Cc2c3ccc(cc3[nH]n2)S",
+      "inchi_key": "HFEXPYIPWYWYJU-QPJJXVBHSA-N",
+      "molecular_formula": "C14H11N3S",
+      "standard_inchi": "InChI=1S/C14H11N3S/c18-11-5-6-12-13(16-17-14(12)9-11)7-4-10-3-1-2-8-15-10/h1-9,18H,(H,16,17)/b7-4+",
+      "unique_protomer_representation": "c1ccnc(c1)/C=C/c2c-3ccc(=S)cc3[nH][nH]2",
+      "unique_tautomer_representation": "Sc1ccc2c(C=Cc3ccccn3)[nH]nc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "2e2a504d-2acd-4c00-a0c2-8f8b147837e7",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:3]1[c:4]([c:11]([n:23][c:17]([c:9]1[H:37])/[C:19](=[C:20](\\[H:41])/[c:18]2[c:12]3[c:5]([c:8]([c:15]([c:10]([c:14]3[n:25]([n:24]2)[H:45])[H:38])[SH:28])[H:36])[H:33])/[H:40])[H:39])[H:32]",
+          "parent_molecule": "CNC(=O)c1ccccc1Sc2ccc3c(c2)[nH]nc3/C=C/c4ccccn4",
+          "parent_molecule_name": "Axitinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  }
+}
