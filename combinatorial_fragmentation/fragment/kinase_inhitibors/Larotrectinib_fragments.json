@@ -13,16 +13,16 @@
       "unique_tautomer_representation": "NC(=O)N1CC[C@H](O)C1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:51][C@@:21]1([C:16]([C:18]([N@:26]([C:19]1([H:48])[H:49])[C:13](=[O:28])[NH:27][H:52])([H:46])[H:47])([H:42])[H:43])[O:29][H:53]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -43,16 +43,16 @@
       "unique_tautomer_representation": "NC(=O)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:51][C@:21]1([C:19]([N@@:26]([C:18]([C:16]1([H:42])[H:43])([H:46])[H:47])[C:13](=[O:28])[NH:27][H:52])([H:48])[H:49])[H]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -73,16 +73,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCCC3)nc12)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:34][c:3]1[c:12]([n:23][c:11]2[n:24]([c:6]1[H:37])[n:22][c:5]([c:8]2[N:27]([C:13](=[O:28])[N@@:26]3[C:18]([C:16]([C@@:21]([C:19]3([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[N@:25]4[C:17]([C:14]([C:15]([C@:20]4([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -103,16 +103,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cc(F)ccc3F)nc12)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[c:9]([c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[H:35])[F:30]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -133,16 +133,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3F)nc12)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[c:2]([c:10]([c:7]([c:4]([cH:9]1)[H:35])[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[F:31])[H:33]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -163,16 +163,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cccc(F)c3)nc12)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:33][c:2]1[c:1]([c:9]([c:4]([c:7]([cH:10]1)[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[H:35])[F:30])[H:32]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -193,16 +193,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3)nc12)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[c:2]([cH:10][c:7]([c:4]([cH:9]1)[H:35])[C@@:20]2([N@:25]([C:17]([C:14]([C:15]2([H:40])[H:41])([H:38])[H:39])([H:44])[H:45])[c:12]3[n:23][c:11]4[n:24]([n:22][c:5]([c:8]4[N:27]([C:13](=[O:28])[N@@:26]5[C:18]([C:16]([C@@:21]([C:19]5([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[c:6]([c:3]3[H:34])[H:37])[H:50])[H:33]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -223,16 +223,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2cccnc12)N1CCCC1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:34][c:3]1[c:6]([n:24]2[n:22][c:5]([c:8]([c:11]2[n:23][cH:12]1)[N:27]([C:13](=[O:28])[N@@:26]3[C:18]([C:16]([C@@:21]([C:19]3([H:48])[H:49])([H])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[H:37]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -253,16 +253,16 @@
       "unique_tautomer_representation": "c1cc2nc(N3CCCC3)ccn2n1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:36][c:5]1[n:22][n:24]2[c:11]([cH:8]1)[n:23][c:12]([c:3]([c:6]2[H:37])[H:34])[N@:25]3[C:17]([C:14]([C:15]([C@:20]3([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -283,16 +283,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCCC3)nc12)N1CC[C@H](O)C1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:34][c:3]1[c:12]([n:23][c:11]2[n:24]([c:6]1[H:37])[n:22][c:5]([c:8]2[N:27]([C:13](=[O:28])[N@@:26]3[C:18]([C:16]([C@@:21]([C:19]3([H:48])[H:49])([O:29][H:53])[H:51])([H:42])[H:43])([H:46])[H:47])[H:52])[H:36])[N@:25]4[C:17]([C:14]([C:15]([C@:20]4([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -313,16 +313,16 @@
       "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCCC3)nc12"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:34][c:3]1[c:12]([n:23][c:11]2[n:24]([c:6]1[H:37])[n:22][c:5]([c:8]2[N:27]([CH:13]=[O:28])[H:52])[H:36])[N@:25]3[C:17]([C:14]([C:15]([C@:20]3([H:50])[H])([H:40])[H:41])([H:38])[H:39])([H:44])[H:45]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -343,15 +343,16 @@
       "unique_tautomer_representation": "Fc1ccc(F)c([C@H]2CCCN2)c1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[c:2]([c:10]([c:7]([c:4]([c:9]1[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([NH:25]2)([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[F:31])[H:33]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -372,16 +373,16 @@
       "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3cc(F)ccc3F)nc12"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[c:2]([c:10]([c:7]([c:4]([c:9]1[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[F:31])[H:33]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -402,16 +403,16 @@
       "unique_tautomer_representation": "Fc1ccc(F)c([C@H]2CCCN2c2ccn3nccc3n2)c1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:36][c:5]1[cH:8][c:11]2[n:23][c:12]([c:3]([c:6]([n:24]2[n:22]1)[H:37])[H:34])[N@@:25]3[C@@:20]([C:15]([C:14]([C:17]3([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])([H:50])[c:7]4[c:4]([c:9]([c:1]([c:2]([c:10]4[F:31])[H:33])[H:32])[F:30])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -432,15 +433,16 @@
       "unique_tautomer_representation": "Fc1cccc([C@H]2CCCN2)c1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([NH:25]2)([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -461,16 +463,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cccc(F)c3)nc12)N1CC[C@H](O)C1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -491,16 +493,16 @@
       "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3cccc(F)c3)nc12"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -521,16 +523,16 @@
       "unique_tautomer_representation": "Fc1cccc([C@H]2CCCN2c2ccn3nccc3n2)c1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:33][c:2]1[cH:10][c:7]([c:4]([c:9]([c:1]1[H:32])[F:30])[H:35])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[cH:8][c:5]([n:22]4)[H:36])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -551,15 +553,16 @@
       "unique_tautomer_representation": "Fc1ccccc1[C@H]1CCCN1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([NH:25]2)([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -580,16 +583,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3F)nc12)N1CC[C@H](O)C1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -610,16 +613,16 @@
       "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3ccccc3F)nc12"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -640,16 +643,16 @@
       "unique_tautomer_representation": "Fc1ccccc1[C@H]1CCCN1c1ccn2nccc2n1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([c:10]([c:2]1[H:33])[F:31])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[cH:8][c:5]([n:22]4)[H:36])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -670,15 +673,16 @@
       "unique_tautomer_representation": "c1ccc([C@H]2CCCN2)cc1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([NH:25]2)([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -699,16 +703,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3ccccc3)nc12)N1CC[C@H](O)C1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]5[C:19]([C@@:21]([C:16]([C:18]5([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -729,16 +733,16 @@
       "unique_tautomer_representation": "O=CNc1cnn2ccc(N3CCC[C@@H]3c3ccccc3)nc12"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[c:8]([c:5]([n:22]4)[H:36])[N:27]([H:52])[CH:13]=[O:28])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -759,16 +763,16 @@
       "unique_tautomer_representation": "c1ccc([C@H]2CCCN2c2ccn3nccc3n2)cc1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:32][c:1]1[cH:9][c:4]([c:7]([cH:10][c:2]1[H:33])[C@:20]2([C:15]([C:14]([C:17]([N@@:25]2[c:12]3[c:3]([c:6]([n:24]4[c:11]([n:23]3)[cH:8][c:5]([n:22]4)[H:36])[H:37])[H:34])([H:44])[H:45])([H:38])[H:39])([H:40])[H:41])[H:50])[H:35]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -789,16 +793,16 @@
       "unique_tautomer_representation": "O=C(Nc1cnn2cccnc12)N1CC[C@H](O)C1"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:34][c:3]1[cH:12][n:23][c:11]2[c:8]([c:5]([n:22][n:24]2[c:6]1[H:37])[H:36])[N:27]([H:52])[C:13](=[O:28])[N@:26]3[C:19]([C@@:21]([C:16]([C:18]3([H:46])[H:47])([H:42])[H:43])([H:51])[O:29][H:53])([H:48])[H:49]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
@@ -819,16 +823,16 @@
       "unique_tautomer_representation": "O=CNc1cnn2cccnc12"
     },
     "provenance": {
-      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "canonicalization": "cmiles_v0.1.3+14.ga54a955_openeye_2018.Oct.1",
       "creator": "fragmenter",
       "hostname": "localhost",
-      "job_id": "cc3689d4-8ae4-4a35-ad0a-07ce6751eef9",
+      "job_id": "d186b1ad-80ff-415e-9e35-e404d9b250d2",
       "routine": {
         "enumerate_fragments": {
           "map_to_parent": "[H:34][c:3]1[cH:12][n:23][c:11]2[c:8]([c:5]([n:22][n:24]2[c:6]1[H:37])[H:36])[N:27]([H:52])[CH:13]=[O:28]",
           "parent_molecule": "c1cc(c(cc1F)[C@H]2CCC[N@@]2c3ccn4c(n3)c(cn4)NC(=O)[N@@]5CC[C@@H](C5)O)F",
           "parent_molecule_name": "Larotrectinib",
-          "version": "v0.0.2+74.g8a452db.dirty"
+          "version": "v0.0.2+82.ga8c3989.dirty"
         }
       },
       "username": "chayastern",
