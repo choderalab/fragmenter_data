@@ -4,7 +4,7 @@
 # In[175]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 import fragmenter
 import json
 import cmiles
@@ -14,9 +14,9 @@ import glob
 # In[2]:
 
 
-frag_jsons = glob.glob('../fragment/*fragments.json')
-frag_jsons.remove('../fragment/Trametinib_fragments.json')
-
+#frag_jsons = glob.glob('../fragment/*fragments.json')
+#frag_jsons.remove('../fragment/Trametinib_fragments.json')
+frag_jsons = ['../fragment/Trametinib_fragments.json']
 
 # In[3]:
 
