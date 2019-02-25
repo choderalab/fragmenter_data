@@ -3,12 +3,12 @@
 #BSUB -n 1
 #BSUB -R rusage[mem=8]
 #BSUB -R span[hosts=1]
-#BSUB -W 12:00
+#BSUB -W 72:00
 #BSUB -o /home/chayas/job_output/JOB_NAME.stdout
 #BSUB -eo /home/chayas/job_output/JOB_NAME.stderr
 
 source /home/chayas/.bashrc
 conda activate qcf
 
-python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_bond_orders/compute_oe_wbo.py -i $LS_EXECCWD/../fragment_conformers/JOB_NAME_bo_input.json -n JOB_NAME
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_bond_orders/compute_oe_wbo.py -i $LS_EXECCWD/../fragment_conformers/mini_drug_bank/JOB_NAME_bo_input.json -n JOB_NAME
 

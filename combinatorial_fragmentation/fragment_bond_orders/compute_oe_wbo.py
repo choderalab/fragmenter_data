@@ -70,7 +70,7 @@ if __name__ == '__main__':
     infile = args.infile
     name = args.name
 
-    with open('../filter/filtered_kinase_inhibitors.json', 'r') as f:
+    with open('../filter/filtered_mini_drug_bank.json', 'r') as f:
         kinase_inhibitors = json.load(f)
     kinase_inhibitors[name] = kinase_inhibitors[name]
 
