@@ -10,5 +10,5 @@
 source /home/chayas/.bashrc
 conda activate qcf
 
-python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_bond_orders/compute_oe_wbo_parent.py -n JOB_NAME
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_bond_orders/mini_drug_bank/compute_oe_wbo_parent_mini_drug_bank.py -n JOB_NAME
 
