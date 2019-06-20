@@ -68,7 +68,7 @@ if __name__ == '__main__':
         qcarchive_input['initial_molecule'] = qcschema_molecules
         input_molecules[frag]= qcarchive_input
         input_molecules[frag]['provenance'] = frags[frag]['provenance']
-    fname = 'mini_drug_bank/{}_bo_input.json'.format(name)
+    fname = 'validation_set/{}_bo_input.json'.format(name)
     with open(fname, 'w') as f:
         json.dump(input_molecules, f, indent=2, sort_keys=True)
 

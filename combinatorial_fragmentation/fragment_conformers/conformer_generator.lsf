@@ -8,7 +8,7 @@
 #BSUB -eo /home/chayas/job_output/JOB_NAME.stderr
 
 source /home/chayas/.bashrc
-conda activate qcf
+conda activate qcf-manager-openff
 
-python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_conformers/fragment_conformer_generation.py -i $LS_EXECCWD/../fragment/mini_drug_bank/JOB_NAME_fragments.json -n JOB_NAME
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_conformers/fragment_conformer_generation.py -i $LS_EXECCWD/../../fragment/validation_set/fragments_JOB_NAME.json -n JOB_NAME
 
