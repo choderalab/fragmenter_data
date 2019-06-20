@@ -1,0 +1,14 @@
+#!/bin/bash
+#BSUB -J JOB_NAME
+#BSUB -n 1
+#BSUB -R rusage[mem=8]
+#BSUB -R span[hosts=1]
+#BSUB -W 72:00
+#BSUB -o /home/chayas/job_output/JOB_NAME.stdout
+#BSUB -eo /home/chayas/job_output/JOB_NAME.stderr
+
+source /home/chayas/.bashrc
+conda activate qcf-manager-openff
+
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment/validation_set/fragment.py -i $LS_EXECCWD/../../enumerate_states/states_JOB_NAME.json -n JOB_NAME
+
