@@ -62,13 +62,14 @@ if __name__ == '__main__':
             # omega_failures[name].append(frag)
             continue
         # Generate list of molecules for QC input
-        qcschema_molecules = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mol_id) for conf in confs.GetConfs()]
+        qcschema_molecules = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in confs.GetConfs()]
         print(len(qcschema_molecules))
         n += len(qcschema_molecules)
         qcarchive_input['initial_molecule'] = qcschema_molecules
+        qcarchive_input['cmiles_identifiers'] = mol_id
         input_molecules[frag]= qcarchive_input
         input_molecules[frag]['provenance'] = frags[frag]['provenance']
-    fname = 'validation_set/{}_bo_input.json'.format(name)
+    fname = '{}_bo_input.json'.format(name)
     with open(fname, 'w') as f:
         json.dump(input_molecules, f, indent=2, sort_keys=True)
 
