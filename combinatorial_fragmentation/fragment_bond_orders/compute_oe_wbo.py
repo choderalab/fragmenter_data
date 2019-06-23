@@ -10,6 +10,9 @@ def collect_wbos(molecule):
     wbos = {}
     for bond in molecule.GetBonds():
         bond_key = (bond.GetBgn().GetMapIdx(), bond.GetEnd().GetMapIdx())
+        if 'WibergBondOrder' not in bond.GetData():
+            warnings.warn("Molecule is missing WBO. It wasn't charged.")
+            return False
         wbos[bond_key] = bond.GetData('WibergBondOrder')
     return wbos
 
@@ -22,6 +25,9 @@ def compute_wbos(map_to_parent):
         return False
     # Collect all wbos
     elf_wbo_estimate = collect_wbos(charged)
+    if not elf_wbo_estimate:
+        warnings.warn('{} was not charged'.format(oechem.OEMolToSmiles(charged)))
+        return False
     wbos = {key: {'elf_estimate': elf_wbo_estimate[key], 'individual_confs': []} for key in elf_wbo_estimate}
     # Compute WBO for each conformer
     for i, conf in enumerate(charged.GetConfs()):
@@ -75,9 +81,10 @@ def organize_wbo(mapped_parent_smiles, oe_wbo, fragment_inputs):
             index = 0
         frag_name = frag_name[0]
         if not index == 'parent':
-            map_to_parent = fragment_inputs[frag_name]['provenance']['routine']['enumerate_fragments']['map_to_parent'][int(index)]
+            map_to_parent = oe_wbo[frag]['map_to_parent']
             oemol = cmiles.utils.load_molecule(map_to_parent)
         elif index == 'parent':
+            map_to_parent = mapped_parent_smiles
             oemol = cmiles.utils.load_molecule(mapped_parent_smiles)
         #r_bonds = [(b.GetBgn().GetMapIdx(), b.GetEnd().GetMapIdx()) for b in oemol.GetBonds() if b.IsRotor()]
         r_bonds = []
@@ -150,18 +157,25 @@ if __name__ == '__main__':
         fragments = json.load(f)
     all_wbos = {}
     all_conformers = {}
+    oe_failures = []
     for frag in fragments:
         mol_id = fragments[frag]['identifiers']
         provenance = fragments[frag]['provenance']
         map_to_parents = fragments[frag]['provenance']['routine']['enumerate_fragments']['map_to_parent']
         for i, map_to_parent in enumerate(map_to_parents):
+            # This is stupid. Should just add 2 maps to results
             if i > 0:
                 frag_name = '{}_{}'.format(frag, str(i))
             else:
                 frag_name = frag
 
-            charged, all_wbos[frag] = compute_wbos(map_to_parent)
-            all_wbos[frag]['map_to_parent'] = map_to_parent
+            computed = compute_wbos(map_to_parent)
+            if not computed:
+                warnings.warn('Failed to charge molecule {}'.format(frag))
+                oe_failures.append(frag)
+                continue
+            charged, all_wbos[frag_name] = compute_wbos(map_to_parent)
+            all_wbos[frag_name]['map_to_parent'] = map_to_parent
             mapped_smiles = mol_id['canonical_isomeric_explicit_hydrogen_mapped_smiles']
             qcschema_molecules = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in charged.GetConfs()]
             all_conformers[frag_name] = {'initial_molecules': qcschema_molecules,
@@ -172,13 +186,20 @@ if __name__ == '__main__':
     with open(fname, 'w') as f:
         json.dump(all_conformers, f, sort_keys=True, indent=2)
 
-    # Save all oe wbo
-    all_wbos['{}_parent'.format(cmiles_identifiers['canonical_isomeric_smiles'])] = parent_wbos
-    serialized_wbo = serialize(all_wbos)
     try:
         os.mkdir(name)
     except FileExistsError:
          print('{} directory already exists. Files will be overwritten'.format(name))
+    # Save failures
+    if len(oe_failures) > 0:
+        fname = '{}/{}_oe_failed_fragments.json'.format(name, name)
+        with open(fname, 'w') as f:
+            json.dump(oe_failures, f, indent=2, sort_keys=True)
+
+    # Save all oe wbo
+    all_wbos['{}_parent'.format(cmiles_identifiers['canonical_isomeric_smiles'])] = parent_wbos
+    serialized_wbo = serialize(all_wbos)
+
     with open('{}/{}_oe_wbo.json'.format(name, name), 'w') as f:
         json.dump(serialized_wbo, f, indent=2, sort_keys=True)
 
