@@ -19,9 +19,9 @@ def collect_wbos(molecule):
 def compute_wbos(map_to_parent):
     oemol = cmiles.utils.load_molecule(map_to_parent)
     try:
-        charged = fragmenter.chemi.get_charges(oemol, keep_confs=-1)
+        charged = fragmenter.chemi.get_charges(oemol, keep_confs=-1, strict_types=False)
     except:
-        print('Cannot charge {}'.format(oechem.OEMolToSmiles(charged)))
+        print('Cannot charge {}'.format(oechem.OEMolToSmiles(oemol)))
         return False
     # Collect all wbos
     elf_wbo_estimate = collect_wbos(charged)
