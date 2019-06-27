@@ -4,7 +4,21 @@ import glob
 # jobs_to_run = ['Larotrectinib', 'Lenvatinib', 'Nilotinib', 'Palbociclib', 'Pazopanib', 'Ponatinib', 'Ribociclib',
 #                'Sunitinib', 'Tofacitinib', 'Vemurafenib']
 
-jobs_to_run = glob.glob('../fragment/validation_set/fragments*')
+
+mols_to_rerun = ['Acalabrutinib', 'Ademetionine','Amorolfine', 'Amoxicillin', 'Ampicillin', 'Apalutamide',
+                'Azlocillin', 'Benzthiazide', 'Benzylpenicillin', 'Bicalutamide', 'Capecitabine', 'Carbenicillin',
+                 'Carindacillin', 'Cefaclor', 'Cefadroxil', 'Cefalotin', 'Cefamandole', 'Cefazolin', 'Cefdinir',
+                 'Cefditoren', 'Cefepime', 'Cefpirome', 'Cefpodoxime', 'Cefprozil', 'Ceftizoxime', 'Ceftobiprole'
+                 'Cephalexin', 'Cephaloglycin', 'Cloxacillin', 'Darifenacin', 'Dicloxacillin', 'Diltiazem',
+                 'Disopyramide', 'Doravirine',  'Eltrombopag',  'Elvitegravir', 'Enasidenib',  'Enzalutamide',
+                 'Ertapenem',  'Ezetimibe', 'Flucloxacillin',  'Indacaterol', 'Isopropamide', 'Larotrectinib',
+                 'Linagliptin',  'Loracarbef',  'Lumacaftor',  'Nafcillin',  'Nilotinib', 'Olodaterol',
+                 'Oxacillin', 'Permethrin', 'Pheneticillin', 'Phenoxymethylpenicillin', 'Ponatinib', 'Protirelin',
+                 'Quinidine',  'Raltegravir', 'Rolapitant', 'Sitagliptin', 'Sunitinib', 'Suvorexant', 'Temocillin',
+                 'Tiagabine', 'Ticarcillin', 'Tolvaptan', 'Trimethaphan', 'Vemurafenib',  'Xanthinol']
+jobs_to_run = []
+for mol in mols_to_rerun:
+    jobs_to_run.extend(glob.glob('../fragment/validation_set/fragments_{}*'.format(mol)))
 
 for file in jobs_to_run:
     name = file.split('/')[-1].split('.')[0].split('_')
