@@ -6,13 +6,13 @@ import glob
 
 
 mols_to_rerun = ['Acalabrutinib', 'Ademetionine','Amorolfine', 'Amoxicillin', 'Ampicillin', 'Apalutamide',
-                'Azlocillin', 'Benzthiazide', 'Benzylpenicillin', 'Bicalutamide', 'Capecitabine', 'Carbenicillin',
+                'Azlocillin', 'Aprepitant', 'Benzthiazide', 'Benzylpenicillin', 'Bicalutamide', 'Capecitabine', 'Carbenicillin',
                  'Carindacillin', 'Cefaclor', 'Cefadroxil', 'Cefalotin', 'Cefamandole', 'Cefazolin', 'Cefdinir',
                  'Cefditoren', 'Cefepime', 'Cefpirome', 'Cefpodoxime', 'Cefprozil', 'Ceftizoxime', 'Ceftobiprole'
-                 'Cephalexin', 'Cephaloglycin', 'Cloxacillin', 'Darifenacin', 'Dicloxacillin', 'Diltiazem',
+                 'Cephalexin', 'Cephaloglycin', 'Cloxacillin','Cocarboxylase', 'Darifenacin', 'Dicloxacillin', 'Diltiazem',
                  'Disopyramide', 'Doravirine',  'Eltrombopag',  'Elvitegravir', 'Enasidenib',  'Enzalutamide',
                  'Ertapenem',  'Ezetimibe', 'Flucloxacillin',  'Indacaterol', 'Isopropamide', 'Larotrectinib',
-                 'Linagliptin',  'Loracarbef',  'Lumacaftor',  'Nafcillin',  'Nilotinib', 'Olodaterol',
+                 'Linagliptin',  'Loracarbef',  'Lumacaftor','Meticillin',  'Nafcillin',  'Nilotinib', 'Olmesartan', 'Olodaterol',
                  'Oxacillin', 'Permethrin', 'Pheneticillin', 'Phenoxymethylpenicillin', 'Ponatinib', 'Protirelin',
                  'Quinidine',  'Raltegravir', 'Rolapitant', 'Sitagliptin', 'Sunitinib', 'Suvorexant', 'Temocillin',
                  'Tiagabine', 'Ticarcillin', 'Tolvaptan', 'Trimethaphan', 'Vemurafenib',  'Xanthinol']
