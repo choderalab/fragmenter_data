@@ -162,25 +162,26 @@ if __name__ == '__main__':
         mol_id = fragments[frag]['identifiers']
         provenance = fragments[frag]['provenance']
         map_to_parents = fragments[frag]['provenance']['routine']['enumerate_fragments']['map_to_parent']
-        for i, map_to_parent in enumerate(map_to_parents):
-            # This is stupid. Should just add 2 maps to results
-            if i > 0:
-                frag_name = '{}_{}'.format(frag, str(i))
-            else:
-                frag_name = frag
-
-            computed = compute_wbos(map_to_parent)
-            if not computed:
-                warnings.warn('Failed to charge molecule {}'.format(frag))
-                oe_failures.append(frag)
-                continue
-            charged, all_wbos[frag_name] = compute_wbos(map_to_parent)
-            all_wbos[frag_name]['map_to_parent'] = map_to_parent
-            mapped_smiles = mol_id['canonical_isomeric_explicit_hydrogen_mapped_smiles']
-            qcschema_molecules = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in charged.GetConfs()]
-            all_conformers[frag_name] = {'initial_molecules': qcschema_molecules,
-                                         'cmiles_identifiers': mol_id,
-                                         'provenance': provenance}
+        # for i, map_to_parent in enumerate(map_to_parents):
+        #     # This is stupid. Should just add 2 maps to results
+        #     if i > 0:
+        #         frag_name = '{}_{}'.format(frag, str(i))
+        #     else:
+        #         frag_name = frag
+        map_to_parent = map_to_parents[0]
+        computed = compute_wbos(map_to_parent)
+        if not computed:
+            warnings.warn('Failed to charge molecule {}'.format(frag))
+            oe_failures.append(frag)
+            continue
+        charged = computed[0]
+        all_wbos[frag] = computed[1]
+        all_wbos[frag]['map_to_parent'] = map_to_parent
+        mapped_smiles = mol_id['canonical_isomeric_explicit_hydrogen_mapped_smiles']
+        qcschema_molecules = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in charged.GetConfs()]
+        all_conformers[frag] = {'initial_molecules': qcschema_molecules,
+                                     'cmiles_identifiers': mol_id,
+                                     'provenance': provenance}
     # Save conformers
     fname = '../../fragment_conformers/validation_set/{}_conformers.json'.format(name)
     with open(fname, 'w') as f:
