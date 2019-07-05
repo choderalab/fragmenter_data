@@ -152,16 +152,24 @@ if __name__ == '__main__':
     with open(fname, 'w') as f:
         json.dump(qcarchive_input, f, indent=2, sort_keys=True)
 
+    # Save wbos
+
+    wbos = {'{}_parent'.format(cmiles_identifiers['canonical_isomeric_smiles']): parent_wbos}
+    try:
+        os.mkdir(name)
+    except FileExistsError:
+         print('{} directory already exists. Files will be overwritten'.format(name))
+    wbos = serialize(wbos)
+    with open('{}/{}_parent_oe_wbo.json'.format(name, name), 'w') as f:
+        json.dump(wbos, f, indent=2, sort_keys=True)
+
     # Get wbo and conformers for fragments
     with open(infile, 'r') as f:
         fragments = json.load(f)
     #all_wbos = {}
     all_conformers = {}
     oe_failures = []
-    try:
-        os.mkdir(name)
-    except FileExistsError:
-         print('{} directory already exists. Files will be overwritten'.format(name))
+
     for i, frag in enumerate(fragments):
         wbos = {}
         mol_id = fragments[frag]['identifiers']
