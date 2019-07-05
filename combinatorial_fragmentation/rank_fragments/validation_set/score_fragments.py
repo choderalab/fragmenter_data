@@ -227,7 +227,7 @@ if __name__ == '__main__':
         with open(infile, 'r') as f:
             bonds_dist = json.load(f)
     except:
-        filename = '{}_one_parent_map.json.'.format(infile.split('.json')[0])
+        filename = '{}_one_parent_map.json'.format(infile.split('.json')[0])
         with open(filename, 'r') as f:
             bonds_dist = json.load(f)
 
