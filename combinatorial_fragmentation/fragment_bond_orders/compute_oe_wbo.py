@@ -201,11 +201,11 @@ if __name__ == '__main__':
     all_wbos['{}_parent'.format(cmiles_identifiers['canonical_isomeric_smiles'])] = parent_wbos
     serialized_wbo = serialize(all_wbos)
 
-    with open('{}/{}_oe_wbo.json'.format(name, name), 'w') as f:
+    with open('{}/{}_oe_wbo_one_parent_map.json'.format(name, name), 'w') as f:
         json.dump(serialized_wbo, f, indent=2, sort_keys=True)
 
     # Organize wbos for easier analysis
     organized_wbo = organize_wbo(mapped_parent_smiles, all_wbos, fragments)
-    fname = '{}/{}_oe_wbo_by_bond.json'.format(name, name)
+    fname = '{}/{}_oe_wbo_by_bond_one_parent_map.json'.format(name, name)
     with open(fname, 'w') as f:
         json.dump(organized_wbo, f, indent=2, sort_keys=True)
