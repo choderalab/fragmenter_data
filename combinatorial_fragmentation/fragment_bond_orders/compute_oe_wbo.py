@@ -155,10 +155,15 @@ if __name__ == '__main__':
     # Get wbo and conformers for fragments
     with open(infile, 'r') as f:
         fragments = json.load(f)
-    all_wbos = {}
+    #all_wbos = {}
     all_conformers = {}
     oe_failures = []
-    for frag in fragments:
+    try:
+        os.mkdir(name)
+    except FileExistsError:
+         print('{} directory already exists. Files will be overwritten'.format(name))
+    for i, frag in enumerate(fragments):
+        wbos = {}
         mol_id = fragments[frag]['identifiers']
         provenance = fragments[frag]['provenance']
         map_to_parents = fragments[frag]['provenance']['routine']['enumerate_fragments']['map_to_parent']
@@ -175,22 +180,23 @@ if __name__ == '__main__':
             oe_failures.append(frag)
             continue
         charged = computed[0]
-        all_wbos[frag] = computed[1]
-        all_wbos[frag]['map_to_parent'] = map_to_parent
+        wbos[frag] = computed[1]
+        wbos[frag]['map_to_parent'] = map_to_parent
         mapped_smiles = mol_id['canonical_isomeric_explicit_hydrogen_mapped_smiles']
         qcschema_molecules = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in charged.GetConfs()]
         all_conformers[frag] = {'initial_molecules': qcschema_molecules,
                                      'cmiles_identifiers': mol_id,
                                      'provenance': provenance}
+        fname = '{}/{}_frag_{}_oe_wbo.json'.format(name, name, str(i))
+        wbos = serialize(wbos)
+        with open(fname, 'w') as f:
+            json.dump(wbos, f, sort_keys=True, indent=2)
     # Save conformers
     fname = '../../fragment_conformers/validation_set/{}_conformers.json'.format(name)
     with open(fname, 'w') as f:
         json.dump(all_conformers, f, sort_keys=True, indent=2)
 
-    try:
-        os.mkdir(name)
-    except FileExistsError:
-         print('{} directory already exists. Files will be overwritten'.format(name))
+
     # Save failures
     if len(oe_failures) > 0:
         fname = '{}/{}_oe_failed_fragments.json'.format(name, name)
@@ -198,14 +204,14 @@ if __name__ == '__main__':
             json.dump(oe_failures, f, indent=2, sort_keys=True)
 
     # Save all oe wbo
-    all_wbos['{}_parent'.format(cmiles_identifiers['canonical_isomeric_smiles'])] = parent_wbos
-    serialized_wbo = serialize(all_wbos)
-
-    with open('{}/{}_oe_wbo.json'.format(name, name), 'w') as f:
-        json.dump(serialized_wbo, f, indent=2, sort_keys=True)
-
-    # Organize wbos for easier analysis
-    organized_wbo = organize_wbo(mapped_parent_smiles, all_wbos, fragments)
-    fname = '{}/{}_oe_wbo_by_bond.json'.format(name, name)
-    with open(fname, 'w') as f:
-        json.dump(organized_wbo, f, indent=2, sort_keys=True)
+    # all_wbos['{}_parent'.format(cmiles_identifiers['canonical_isomeric_smiles'])] = parent_wbos
+    # serialized_wbo = serialize(all_wbos)
+    #
+    # with open('{}/{}_oe_wbo.json'.format(name, name), 'w') as f:
+    #     json.dump(serialized_wbo, f, indent=2, sort_keys=True)
+    #
+    # # Organize wbos for easier analysis
+    # organized_wbo = organize_wbo(mapped_parent_smiles, all_wbos, fragments)
+    # fname = '{}/{}_oe_wbo_by_bond.json'.format(name, name)
+    # with open(fname, 'w') as f:
+    #     json.dump(organized_wbo, f, indent=2, sort_keys=True)
