@@ -227,7 +227,7 @@ if __name__ == '__main__':
         with open(infile, 'r') as f:
             bonds_dist = json.load(f)
     except:
-        filename = '{}_one_parent_map.json.'.format(infile.split('.')[0])
+        filename = '{}_one_parent_map.json.'.format(infile.split('.json')[0])
         with open(filename, 'r') as f:
             bonds_dist = json.load(f)
 
@@ -248,6 +248,16 @@ if __name__ == '__main__':
     for bond in bonds_dist:
         deserialzied_bond = deserialize(bond)
         b = get_bond(parent_mol, deserialzied_bond)
+        if bond.IsInRing():
+            continue
+         # keep bonds that do not include H
+        a1 = bond.GetBgn()
+        a2 = bond.GetEnd()
+        if a1.IsHydrogen() or a2.IsHydrogen():
+            continue
+        if a1.GetDegree() == 1 or a2.GetDegree() == 1:
+            # Terminal
+            continue
         #if not b.IsRotor():
         #    continue
 
