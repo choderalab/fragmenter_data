@@ -52,18 +52,31 @@ def get_bond(mol, bond_idx):
     return bond
 
 def get_bond_nbr(mol, bond):
-    nbrs = set()
+    # Find all 1-5 atoms around central bond
+    nbrs_1 = set()
     a1 = bond.GetBgn()
     a2 = bond.GetEnd()
     for a in a1.GetAtoms():
         if a.IsHydrogen():
             continue
-        nbrs.add(a.GetMapIdx())
+        nbrs_1.add(a)
     for a in a2.GetAtoms():
         if a.IsHydrogen():
             continue
-        nbrs.add(a.GetMapIdx())
-    return list(nbrs)
+        nbrs_1.add(a)
+    nbrs = set()
+    for nbr in nbrs_1:
+        # keep all nbrs of nbrs
+        for a in nbr.GetAtoms():
+            if a.IsHydrogen():
+                continue
+            nbrs.add(a)
+    # convert to map idxs
+    nbrs_map_idx = set()
+    for a in nbrs:
+        nbrs_map_idx.add(a.GetMapIdx())
+
+    return list(nbrs_map_idx)
 
 def frags_with_nbrs(parent, frags, nbrs):
     return_frags = {}
@@ -118,7 +131,7 @@ def generate_molecule_images(fragments_dict, name):
             to_plot.append(mol)
             wbos.append(fragments_dict[b][f]['elf_estimate'])
 
-        fname = '{}/{}_bond_{}_{}.pdf'.format(name, name, str(b[0]), str(b[1]))
+        fname = '{}/{}_bond_{}_{}_2.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos)
 
 def fragment_wbo_ridge_plot(data, filename):
@@ -210,8 +223,13 @@ if __name__ == '__main__':
     infile = args.infile
     name = args.name
 
-    with open(infile, 'r') as f:
-        bonds_dist = json.load(f)
+    try:
+        with open(infile, 'r') as f:
+            bonds_dist = json.load(f)
+    except:
+        filename = '{}_one_parent_map.json.'.format(infile.split('.')[0])
+        with open(filename, 'r') as f:
+            bonds_dist = json.load(f)
 
     try:
         os.mkdir(name)
@@ -225,13 +243,13 @@ if __name__ == '__main__':
     chemi.mol_to_image_atoms_label(parent_mol, fname='{}/{}.png'.format(name, name))
 
 
-    # Only keep fragments if all 1-4 atoms are around central bonds
+    # Only keep fragments if all 1-5 atoms are around central bonds
     full_frags = {}
     for bond in bonds_dist:
         deserialzied_bond = deserialize(bond)
         b = get_bond(parent_mol, deserialzied_bond)
-        if not b.IsRotor():
-            continue
+        #if not b.IsRotor():
+        #    continue
 
         nbrs = get_bond_nbr(parent_mol, b)
         full_frags[tuple(deserialzied_bond)] = frags_with_nbrs(parent_mol, bonds_dist[bond], nbrs)
@@ -250,7 +268,7 @@ if __name__ == '__main__':
         b_key = workflow_api.serialize_key(b)
         serialized_full_frags[b_key] = full_frags[b]
 
-    with open('{}/{}_oe_wbo_with_score.json'.format(name, name), 'w') as f:
+    with open('{}/{}_oe_wbo_with_score_2.json'.format(name, name), 'w') as f:
             json.dump(serialized_full_frags, f, indent=2, sort_keys=True)
 
     # Save scores separately - this will make it easier to rank and finalize validation set
@@ -263,11 +281,11 @@ if __name__ == '__main__':
             scores[b_key].append(full_frags[b][f]['mmd_exp'])
     scores['greatest_discrepancy'] = find_highest_score(full_frags)
 
-    with open('{}/{}_mmd_exp_scores.json'.format(name, name), 'w') as f:
+    with open('{}/{}_mmd_exp_scores_2.json'.format(name, name), 'w') as f:
         json.dump(scores, f, indent=2, sort_keys=True)
 
     # Plot joyplot of fragment distribution sorted by elf wbo and colored by mmd score
-    fragment_wbo_ridge_plot(full_frags, filename='{}/{}_ridge.pdf'.format(name, name))
+    fragment_wbo_ridge_plot(full_frags, filename='{}/{}_ridge_2.pdf'.format(name, name))
 
     # Generate images of molecules
     generate_molecule_images(full_frags, name)
