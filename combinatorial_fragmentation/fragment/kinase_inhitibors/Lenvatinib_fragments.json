@@ -1,0 +1,1742 @@
+{
+  "C(=O)(N)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]N([H])C(=O)N([H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:5][N:2]([H:6])[C:1](=[O:4])[N:3]([H:7])[H:8]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]N([H])C(=O)N([H])[H]",
+      "canonical_isomeric_smiles": "C(=O)(N)N",
+      "canonical_smiles": "C(=O)(N)N",
+      "inchi_key": "XSQUKJJJFZCRTK-UHFFFAOYSA-N",
+      "molecular_formula": "CH4N2O",
+      "standard_inchi": "InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)",
+      "unique_protomer_representation": "C(=O)(N)N",
+      "unique_tautomer_representation": "NC(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:48][NH:24][C:17](=[O:27])[NH:25][H:49]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "C1CC1NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]C1(C(C1([H])N([H])C(=O)N([H])[H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][C:2]1([C:3]([C:4]1([H:12])[N:6]([H:15])[C:1](=[O:7])[N:5]([H:13])[H:14])([H:10])[H:11])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]C1(C(C1([H])N([H])C(=O)N([H])[H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "C1CC1NC(=O)N",
+      "canonical_smiles": "C1CC1NC(=O)N",
+      "inchi_key": "CLMGCKCDSPUQEE-UHFFFAOYSA-N",
+      "molecular_formula": "C4H8N2O",
+      "standard_inchi": "InChI=1S/C4H8N2O/c5-4(7)6-3-1-2-3/h3H,1-2H2,(H3,5,6,7)",
+      "unique_protomer_representation": "C1CC1NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:40][C:19]1([C:18]([C:20]1([H:42])[N:25]([H:49])[C:17](=[O:27])[NH:24][H:48])([H:38])[H:39])[H:41]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cc1C(=O)N)c(ccn2)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(c(c(c2c1O[H])[H])C(=O)N([H])[H])OC([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:4]([n:12][c:7]2[c:3]([c:9]([c:6]([c:2]([c:5]2[c:8]1[O:15][H:26])[H:18])[C:10](=[O:14])[N:13]([H:24])[H:25])[O:16][C:11]([H:21])([H:22])[H:23])[H:19])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(c(c(c2c1O[H])[H])C(=O)N([H])[H])OC([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)O",
+      "canonical_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)O",
+      "inchi_key": "ZXSGIBJYMYHCMM-UHFFFAOYSA-N",
+      "molecular_formula": "C11H10N2O3",
+      "standard_inchi": "InChI=1S/C11H10N2O3/c1-16-10-5-8-6(4-7(10)11(12)15)9(14)2-3-13-8/h2-5H,1H3,(H2,12,15)(H,13,14)",
+      "unique_protomer_representation": "COc1cc2c(cc1C(=O)N)c(=O)cc[nH]2",
+      "unique_tautomer_representation": "COc1cc2[nH]ccc(=O)c2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[c:7]([n:22][c:10]2[c:5]([c:14]([c:9]([c:4]([c:8]2[c:13]1[OH:28])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47])[O:29][C:21]([H:43])([H:44])[H:45])[H:35])[H:37]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:22]([H:42])[C:17](=[O:24])[N:21]([H:40])[H:41])[Cl:27])[H:33])[O:25][c:13]2[c:3]([c:7]([n:19][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:32])[O:26][C:18]([H:35])([H:36])[H:37])[C:16](=[O:23])[N:20]([H:38])[H:39])[H:31])[H:34])[H:30])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "canonical_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "inchi_key": "LBVQYBKTDGVCTR-UHFFFAOYSA-N",
+      "molecular_formula": "C18H15ClN4O4",
+      "standard_inchi": "InChI=1S/C18H15ClN4O4/c1-26-16-8-14-10(7-11(16)17(20)24)15(4-5-22-14)27-9-2-3-13(12(19)6-9)23-18(21)25/h2-8H,1H3,(H2,20,24)(H3,21,23,25)",
+      "unique_protomer_representation": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "unique_tautomer_representation": "COc1cc2nccc(Oc3ccc(NC(N)=O)c(Cl)c3)c2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[Cl:30])[H:36])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:3]([c:13]([c:4]([c:2]([c:12]1[N:22]([H:42])[C:17](=[O:24])[N:21]([H:40])[H:41])[H:28])[H:30])[O:25][c:14]2[c:5]([c:8]([n:19][c:11]3[c:9]2[c:6]([c:10]([c:15]([c:7]3[H:33])[O:26][C:18]([H:35])([H:36])[H:37])[C:16](=[O:23])[N:20]([H:38])[H:39])[H:32])[H:34])[H:31])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)N",
+      "canonical_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)N",
+      "inchi_key": "GJUFFBPNLBSNBM-UHFFFAOYSA-N",
+      "molecular_formula": "C18H16N4O4",
+      "standard_inchi": "InChI=1S/C18H16N4O4/c1-25-16-9-14-12(8-13(16)17(19)23)15(6-7-21-14)26-11-4-2-10(3-5-11)22-18(20)24/h2-9H,1H3,(H2,19,23)(H3,20,22,24)",
+      "unique_protomer_representation": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)N",
+      "unique_tautomer_representation": "COc1cc2nccc(Oc3ccc(NC(N)=O)cc3)c2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H])Oc3c(c(nc4c3c(c(c(c4[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:3]([c:13]([c:4]([c:2]([c:12]1[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]2([C:18]([C:19]2([H:40])[H:41])([H:38])[H:39])[H:42])[H:31])[H:33])[O:28][c:14]3[c:5]([c:8]([n:22][c:11]4[c:9]3[c:6]([c:10]([c:15]([c:7]4[H:36])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:35])[H:37])[H:34])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H])Oc3c(c(nc4c3c(c(c(c4[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "canonical_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "inchi_key": "VBISVMLKCDTQGF-UHFFFAOYSA-N",
+      "molecular_formula": "C21H20N4O4",
+      "standard_inchi": "InChI=1S/C21H20N4O4/c1-28-19-11-17-15(10-16(19)20(22)26)18(8-9-23-17)29-14-6-4-13(5-7-14)25-21(27)24-12-2-3-12/h4-12H,2-3H2,1H3,(H2,22,26)(H2,24,25,27)",
+      "unique_protomer_representation": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "COc1cc2nccc(Oc3ccc(NC(=O)NC4CC4)cc3)c2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3cccc(c3)Cl": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:12]([c:7]([c:15]([c:3]1[H:26])[Cl:23])[H:30])[O:21][c:13]2[c:4]([c:8]([n:18][c:11]3[c:9]2[c:5]([c:10]([c:14]([c:6]3[H:29])[O:22][C:17]([H:32])([H:33])[H:34])[C:16](=[O:20])[N:19]([H:35])[H:36])[H:28])[H:31])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3cccc(c3)Cl",
+      "canonical_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3cccc(c3)Cl",
+      "inchi_key": "QYUORROXFLOSGD-UHFFFAOYSA-N",
+      "molecular_formula": "C17H13ClN2O3",
+      "standard_inchi": "InChI=1S/C17H13ClN2O3/c1-22-16-9-14-12(8-13(16)17(19)21)15(5-6-20-14)23-11-4-2-3-10(18)7-11/h2-9H,1H3,(H2,19,21)",
+      "unique_protomer_representation": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3cccc(c3)Cl",
+      "unique_tautomer_representation": "COc1cc2nccc(Oc3cccc(Cl)c3)c2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][c:15]([c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:36])[Cl:30]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:4]([c:13]([c:5]([c:3]1[H:25])[H:27])[O:21][c:14]2[c:6]([c:9]([n:18][c:12]3[c:10]2[c:7]([c:11]([c:15]([c:8]3[H:30])[O:22][C:17]([H:32])([H:33])[H:34])[C:16](=[O:20])[N:19]([H:35])[H:36])[H:29])[H:31])[H:28])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccccc3",
+      "canonical_smiles": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccccc3",
+      "inchi_key": "RIXHBUWKSYXOJN-UHFFFAOYSA-N",
+      "molecular_formula": "C17H14N2O3",
+      "standard_inchi": "InChI=1S/C17H14N2O3/c1-21-16-10-14-12(9-13(16)17(18)20)15(7-8-19-14)22-11-5-3-2-4-6-11/h2-10H,1H3,(H2,18,20)",
+      "unique_protomer_representation": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccccc3",
+      "unique_tautomer_representation": "COc1cc2nccc(Oc3ccccc3)c2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1cc2c(cccn2)cc1C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:2]([c:6]2[c:3]([c:7]([c:9]([c:4]([c:8]2[n:12][c:5]1[H:20])[H:19])[O:15][C:11]([H:21])([H:22])[H:23])[C:10](=[O:14])[N:13]([H:24])[H:25])[H:18])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])OC([H])([H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1cc2c(cccn2)cc1C(=O)N",
+      "canonical_smiles": "COc1cc2c(cccn2)cc1C(=O)N",
+      "inchi_key": "OJNJJYALRQLZJX-UHFFFAOYSA-N",
+      "molecular_formula": "C11H10N2O2",
+      "standard_inchi": "InChI=1S/C11H10N2O2/c1-15-10-6-9-7(3-2-4-13-9)5-8(10)11(12)14/h2-6H,1H3,(H2,12,14)",
+      "unique_protomer_representation": "COc1cc2c(cccn2)cc1C(=O)N",
+      "unique_tautomer_representation": "COc1cc2ncccc2cc1C(N)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[cH:13][c:8]2[c:4]([c:9]([c:14]([c:5]([c:10]2[n:22][c:7]1[H:37])[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])O[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:8]([c:4]([c:7]2[c:6]1[c:9]([c:3]([c:5]([n:11]2)[H:18])[H:16])[O:12][H:22])[H:17])[O:13][C:10]([H:19])([H:20])[H:21])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])O[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)O",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)O",
+      "inchi_key": "NQUPXNZWBGZRQX-UHFFFAOYSA-N",
+      "molecular_formula": "C10H9NO2",
+      "standard_inchi": "InChI=1S/C10H9NO2/c1-13-7-2-3-8-9(6-7)11-5-4-10(8)12/h2-6H,1H3,(H,11,12)",
+      "unique_protomer_representation": "COc1ccc2c(=O)cc[nH]c2c1",
+      "unique_tautomer_representation": "COc1ccc2c(=O)cc[nH]c2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[OH:28])[H:35])[O:29][C:21]([H:43])([H:44])[H:45]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:3]([c:12]([c:6]([c:10]2[c:9]1[c:14]([c:5]([c:8]([n:18]2)[H:32])[H:29])[O:22][c:13]3[c:4]([c:2]([c:11]([c:15]([c:7]3[H:31])[Cl:24])[N:20]([H:38])[C:16](=[O:21])[N:19]([H:36])[H:37])[H:26])[H:28])[H:30])[O:23][C:17]([H:33])([H:34])[H:35])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "inchi_key": "JIJYCXYFVMKICD-UHFFFAOYSA-N",
+      "molecular_formula": "C17H14ClN3O3",
+      "standard_inchi": "InChI=1S/C17H14ClN3O3/c1-23-10-2-4-12-15(9-10)20-7-6-16(12)24-11-3-5-14(13(18)8-11)21-17(19)22/h2-9H,1H3,(H3,19,21,22)",
+      "unique_protomer_representation": "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "unique_tautomer_representation": "COc1ccc2c(Oc3ccc(NC(N)=O)c(Cl)c3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:31])[H:32])[H:35])[O:29][C:21]([H:43])([H:44])[H:45]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:3]([c:12]([c:6]([c:10]2[c:9]1[c:14]([c:5]([c:8]([n:21]2)[H:35])[H:32])[O:25][c:13]3[c:4]([c:2]([c:11]([c:15]([c:7]3[H:34])[Cl:27])[N:22]([H:44])[C:16](=[O:24])[N:23]([H:45])[C:19]4([C:17]([C:18]4([H:38])[H:39])([H:36])[H:37])[H:40])[H:29])[H:31])[H:33])[O:26][C:20]([H:41])([H:42])[H:43])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "inchi_key": "JRKHYTMJTJWKFC-UHFFFAOYSA-N",
+      "molecular_formula": "C20H18ClN3O3",
+      "standard_inchi": "InChI=1S/C20H18ClN3O3/c1-26-13-4-6-15-18(11-13)22-9-8-19(15)27-14-5-7-17(16(21)10-14)24-20(25)23-12-2-3-12/h4-12H,2-3H2,1H3,(H2,23,24,25)",
+      "unique_protomer_representation": "COc1ccc2c(ccnc2c1)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "COc1ccc2c(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42])[H:31])[H:32])[H:35])[O:29][C:21]([H:43])([H:44])[H:45]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:4]([c:14]([c:8]([c:11]2[c:10]1[c:15]([c:7]([c:9]([n:18]2)[H:32])[H:30])[O:22][c:13]3[c:5]([c:2]([c:12]([c:3]([c:6]3[H:29])[H:26])[N:20]([H:38])[C:16](=[O:21])[N:19]([H:36])[H:37])[H:25])[H:28])[H:31])[O:23][C:17]([H:33])([H:34])[H:35])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)N",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)N",
+      "inchi_key": "RFOWLQZLWBQHTK-UHFFFAOYSA-N",
+      "molecular_formula": "C17H15N3O3",
+      "standard_inchi": "InChI=1S/C17H15N3O3/c1-22-13-6-7-14-15(10-13)19-9-8-16(14)23-12-4-2-11(3-5-12)20-17(18)21/h2-10H,1H3,(H3,18,20,21)",
+      "unique_protomer_representation": "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)N",
+      "unique_tautomer_representation": "COc1ccc2c(Oc3ccc(NC(N)=O)cc3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:4]([c:14]([c:8]([c:11]2[c:10]1[c:15]([c:7]([c:9]([n:21]2)[H:35])[H:33])[O:25][c:13]3[c:5]([c:2]([c:12]([c:3]([c:6]3[H:32])[H:29])[N:22]([H:44])[C:16](=[O:24])[N:23]([H:45])[C:19]4([C:17]([C:18]4([H:38])[H:39])([H:36])[H:37])[H:40])[H:28])[H:31])[H:34])[O:26][C:20]([H:41])([H:42])[H:43])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])OC([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "inchi_key": "RMTQKWCQNXUBCP-UHFFFAOYSA-N",
+      "molecular_formula": "C20H19N3O3",
+      "standard_inchi": "InChI=1S/C20H19N3O3/c1-25-16-8-9-17-18(12-16)21-11-10-19(17)26-15-6-4-14(5-7-15)23-20(24)22-13-2-3-13/h4-13H,2-3H2,1H3,(H2,22,23,24)",
+      "unique_protomer_representation": "COc1ccc2c(ccnc2c1)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "COc1ccc2c(Oc3ccc(NC(=O)NC4CC4)cc3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)Oc3cccc(c3)Cl": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:3]([c:13]([c:8]([c:15]([c:5]1[H:25])[Cl:20])[H:28])[O:18][c:14]2[c:6]([c:9]([n:17][c:11]3[c:10]2[c:2]([c:4]([c:12]([c:7]3[H:27])[O:19][C:16]([H:30])([H:31])[H:32])[H:24])[H:22])[H:29])[H:26])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)Oc3cccc(c3)Cl",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)Oc3cccc(c3)Cl",
+      "inchi_key": "XXMZPXMBJCNJKP-UHFFFAOYSA-N",
+      "molecular_formula": "C16H12ClNO2",
+      "standard_inchi": "InChI=1S/C16H12ClNO2/c1-19-12-5-6-14-15(10-12)18-8-7-16(14)20-13-4-2-3-11(17)9-13/h2-10H,1H3",
+      "unique_protomer_representation": "COc1ccc2c(ccnc2c1)Oc3cccc(c3)Cl",
+      "unique_tautomer_representation": "COc1ccc2c(Oc3cccc(Cl)c3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([cH:11][c:15]([c:6]3[H:36])[Cl:30])[H:31])[H:32])[H:35])[O:29][C:21]([H:43])([H:44])[H:45]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2c(ccnc2c1)Oc3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:5]([c:13]([c:6]([c:3]1[H:22])[H:25])[O:18][c:15]2[c:8]([c:10]([n:17][c:12]3[c:11]2[c:4]([c:7]([c:14]([c:9]3[H:28])[O:19][C:16]([H:30])([H:31])[H:32])[H:26])[H:23])[H:29])[H:27])[H:24])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])OC([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2c(ccnc2c1)Oc3ccccc3",
+      "canonical_smiles": "COc1ccc2c(ccnc2c1)Oc3ccccc3",
+      "inchi_key": "BOSHBDVTACPLKP-UHFFFAOYSA-N",
+      "molecular_formula": "C16H13NO2",
+      "standard_inchi": "InChI=1S/C16H13NO2/c1-18-13-7-8-14-15(11-13)17-10-9-16(14)19-12-5-3-2-4-6-12/h2-11H,1H3",
+      "unique_protomer_representation": "COc1ccc2c(ccnc2c1)Oc3ccccc3",
+      "unique_tautomer_representation": "COc1ccc2c(Oc3ccccc3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][c:14]([c:5]3[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[H:34])[H:37])[H:33])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "COc1ccc2cccnc2c1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])OC([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:7]2[c:3]([c:4]([c:9]([c:5]([c:8]2[n:11][c:6]1[H:18])[H:17])[O:12][C:10]([H:19])([H:20])[H:21])[H:16])[H:15])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])OC([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "COc1ccc2cccnc2c1",
+      "canonical_smiles": "COc1ccc2cccnc2c1",
+      "inchi_key": "IVHJSNNMKJWPFW-UHFFFAOYSA-N",
+      "molecular_formula": "C10H9NO",
+      "standard_inchi": "InChI=1S/C10H9NO/c1-12-9-5-4-8-3-2-6-11-10(8)7-9/h2-7H,1H3",
+      "unique_protomer_representation": "COc1ccc2cccnc2c1",
+      "unique_tautomer_representation": "COc1ccc2cccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[cH:13][c:8]2[c:4]([cH:9][c:14]([c:5]([c:10]2[n:22][c:7]1[H:37])[H:35])[O:29][C:21]([H:43])([H:44])[H:45])[H:34]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1O)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:5]([c:3]([c:6]([c:4]1[N:9]([H:18])[C:7](=[O:10])[N:8]([H:16])[H:17])[Cl:12])[H:15])[O:11][H:19])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1O)Cl)NC(=O)N",
+      "canonical_smiles": "c1cc(c(cc1O)Cl)NC(=O)N",
+      "inchi_key": "DCVUUOAPQPSFPG-UHFFFAOYSA-N",
+      "molecular_formula": "C7H7ClN2O2",
+      "standard_inchi": "InChI=1S/C7H7ClN2O2/c8-5-3-4(11)1-2-6(5)10-7(9)12/h1-3,11H,(H3,9,10,12)",
+      "unique_protomer_representation": "c1cc(c(cc1O)Cl)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(O)cc1Cl"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[Cl:30])[H:36])[OH:28])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1O)Cl)NC(=O)NC2CC2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:2]([c:5]([c:3]([c:6]([c:4]1[N:11]([H:24])[C:7](=[O:13])[N:12]([H:25])[C:10]2([C:8]([C:9]2([H:21])[H:22])([H:19])[H:20])[H:23])[Cl:15])[H:18])[O:14][H:26])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1O)Cl)NC(=O)NC2CC2",
+      "canonical_smiles": "c1cc(c(cc1O)Cl)NC(=O)NC2CC2",
+      "inchi_key": "QVPZNUIZEVRITP-UHFFFAOYSA-N",
+      "molecular_formula": "C10H11ClN2O2",
+      "standard_inchi": "InChI=1S/C10H11ClN2O2/c11-8-5-7(14)3-4-9(8)13-10(15)12-6-1-2-6/h3-6,14H,1-2H2,(H2,12,13,15)",
+      "unique_protomer_representation": "c1cc(c(cc1O)Cl)NC(=O)NC2CC2",
+      "unique_tautomer_representation": "O=C(Nc1ccc(O)cc1Cl)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]2([C:19]([C:18]2([H:38])[H:39])([H:40])[H:41])[H:42])[Cl:30])[H:36])[OH:28])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1Oc2ccnc3c2cc(c(c3)O)C(=O)N)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:21]([H:38])[C:17](=[O:23])[N:20]([H:36])[H:37])[Cl:26])[H:32])[O:25][c:13]2[c:3]([c:7]([n:18][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:31])[O:24][H:39])[C:16](=[O:22])[N:19]([H:34])[H:35])[H:30])[H:33])[H:29])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1Oc2ccnc3c2cc(c(c3)O)C(=O)N)Cl)NC(=O)N",
+      "canonical_smiles": "c1cc(c(cc1Oc2ccnc3c2cc(c(c3)O)C(=O)N)Cl)NC(=O)N",
+      "inchi_key": "DSTBULQBELOLLQ-UHFFFAOYSA-N",
+      "molecular_formula": "C17H13ClN4O4",
+      "standard_inchi": "InChI=1S/C17H13ClN4O4/c18-11-5-8(1-2-12(11)22-17(20)25)26-15-3-4-21-13-7-14(23)10(16(19)24)6-9(13)15/h1-7,23H,(H2,19,24)(H3,20,22,25)",
+      "unique_protomer_representation": "c1cc(c(cc1Oc2cc[nH]c-3cc(=O)c(cc23)C(=O)N)Cl)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3cc(O)c(C(N)=O)cc23)cc1Cl"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[Cl:30])[H:36])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(cc1Oc2ccnc3c2cc(c(c3)O)C(=O)N)Cl)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])Cl)[H])Oc3c(c(nc4c3c(c(c(c4[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:23]([H:44])[C:17](=[O:26])[N:24]([H:45])[C:20]2([C:18]([C:19]2([H:39])[H:40])([H:37])[H:38])[H:41])[Cl:29])[H:35])[O:28][c:13]3[c:3]([c:7]([n:21][c:10]4[c:8]3[c:4]([c:9]([c:14]([c:5]4[H:34])[O:27][H:46])[C:16](=[O:25])[N:22]([H:42])[H:43])[H:33])[H:36])[H:32])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])Cl)[H])Oc3c(c(nc4c3c(c(c(c4[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1Oc2ccnc3c2cc(c(c3)O)C(=O)N)Cl)NC(=O)NC4CC4",
+      "canonical_smiles": "c1cc(c(cc1Oc2ccnc3c2cc(c(c3)O)C(=O)N)Cl)NC(=O)NC4CC4",
+      "inchi_key": "XEZZOIWZFIDBIQ-UHFFFAOYSA-N",
+      "molecular_formula": "C20H17ClN4O4",
+      "standard_inchi": "InChI=1S/C20H17ClN4O4/c21-14-7-11(3-4-15(14)25-20(28)24-10-1-2-10)29-18-5-6-23-16-9-17(26)13(19(22)27)8-12(16)18/h3-10,26H,1-2H2,(H2,22,27)(H2,24,25,28)",
+      "unique_protomer_representation": "c1cc(c(cc1Oc2cc[nH]c-3cc(=O)c(cc23)C(=O)N)Cl)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "NC(=O)c1cc2c(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)ccnc2cc1O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[c:2]([c:12]([c:6]([c:15]([c:11]1[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]2([C:19]([C:18]2([H:38])[H:39])([H:40])[H:41])[H:42])[Cl:30])[H:36])[O:28][c:13]3[c:3]([c:7]([n:22][c:10]4[c:8]3[c:4]([c:9]([c:14]([c:5]4[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)Cl)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:9][c:1]1[c:2]([c:5]([c:4]([c:6]([c:3]1[H:11])[Cl:8])[H:12])[O:7][H:13])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)Cl)O",
+      "canonical_smiles": "c1cc(cc(c1)Cl)O",
+      "inchi_key": "HORNXRXVQWOLPJ-UHFFFAOYSA-N",
+      "molecular_formula": "C6H5ClO",
+      "standard_inchi": "InChI=1S/C6H5ClO/c7-5-2-1-3-6(8)4-5/h1-4,8H",
+      "unique_protomer_representation": "c1cc(cc(c1)Cl)O",
+      "unique_tautomer_representation": "Oc1cccc(Cl)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][c:15]([c:6]([c:12]([c:2]1[H:32])[OH:28])[H:36])[Cl:30]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(c(c3)O)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:12]([c:7]([c:15]([c:3]1[H:25])[Cl:22])[H:29])[O:21][c:13]2[c:4]([c:8]([n:17][c:11]3[c:9]2[c:5]([c:10]([c:14]([c:6]3[H:28])[O:20][H:33])[C:16](=[O:19])[N:18]([H:31])[H:32])[H:27])[H:30])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(c(c3)O)C(=O)N",
+      "canonical_smiles": "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(c(c3)O)C(=O)N",
+      "inchi_key": "ZEAYWBJIWJUPPX-UHFFFAOYSA-N",
+      "molecular_formula": "C16H11ClN2O3",
+      "standard_inchi": "InChI=1S/C16H11ClN2O3/c17-9-2-1-3-10(6-9)22-15-4-5-19-13-8-14(20)12(16(18)21)7-11(13)15/h1-8,20H,(H2,18,21)",
+      "unique_protomer_representation": "c1cc(cc(c1)Cl)Oc2cc[nH]c-3cc(=O)c(cc23)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1cc2c(Oc3cccc(Cl)c3)ccnc2cc1O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][c:15]([c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:36])[Cl:30]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(cc3)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:4]([c:13]([c:8]([c:15]([c:5]1[H:26])[Cl:21])[H:29])[O:20][c:14]2[c:6]([c:9]([n:17][c:12]3[c:10]2[c:7]([c:11]([c:2]([c:3]3[H:24])[H:23])[C:16](=[O:19])[N:18]([H:31])[H:32])[H:28])[H:30])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "canonical_smiles": "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "inchi_key": "RRGXRBXQPYGTOJ-UHFFFAOYSA-N",
+      "molecular_formula": "C16H11ClN2O2",
+      "standard_inchi": "InChI=1S/C16H11ClN2O2/c17-11-2-1-3-12(9-11)21-15-6-7-19-14-5-4-10(16(18)20)8-13(14)15/h1-9H,(H2,18,20)",
+      "unique_protomer_representation": "c1cc(cc(c1)Cl)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1ccc2nccc(Oc3cccc(Cl)c3)c2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:5]1[cH:14][c:9]([c:4]([c:8]2[c:10]1[n:22][c:7]([c:3]([c:13]2[O:28][c:12]3[c:2]([c:1]([cH:11][c:15]([c:6]3[H:36])[Cl:30])[H:31])[H:32])[H:33])[H:37])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)Cl)Oc2ccnc3c2ccc(c3)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:3]([c:13]([c:8]([c:15]([c:5]1[H:24])[Cl:19])[H:27])[O:18][c:14]2[c:6]([c:9]([n:16][c:11]3[c:10]2[c:2]([c:4]([c:12]([c:7]3[H:26])[O:17][H:29])[H:23])[H:21])[H:28])[H:25])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])Cl)[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)Cl)Oc2ccnc3c2ccc(c3)O",
+      "canonical_smiles": "c1cc(cc(c1)Cl)Oc2ccnc3c2ccc(c3)O",
+      "inchi_key": "WSAJJRUZONBMSA-UHFFFAOYSA-N",
+      "molecular_formula": "C15H10ClNO2",
+      "standard_inchi": "InChI=1S/C15H10ClNO2/c16-10-2-1-3-12(8-10)19-15-6-7-17-14-9-11(18)4-5-13(14)15/h1-9,18H",
+      "unique_protomer_representation": "c1cc(cc(c1)Cl)Oc2cc[nH]c-3cc(=O)ccc23",
+      "unique_tautomer_representation": "Oc1ccc2c(Oc3cccc(Cl)c3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([cH:11][c:15]([c:6]3[H:36])[Cl:30])[H:31])[H:32])[H:35])[OH:29]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)N)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:3]([c:6]([c:4]([c:2]([c:5]1[N:9]([H:18])[C:7](=[O:10])[N:8]([H:16])[H:17])[H:13])[H:15])[O:11][H:19])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)N)O",
+      "canonical_smiles": "c1cc(ccc1NC(=O)N)O",
+      "inchi_key": "MHVJUTLRTHDAOG-UHFFFAOYSA-N",
+      "molecular_formula": "C7H8N2O2",
+      "standard_inchi": "InChI=1S/C7H8N2O2/c8-7(11)9-5-1-3-6(10)4-2-5/h1-4,10H,(H3,8,9,11)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)N)O",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(O)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[OH:28])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(c(c3)O)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:3]([c:13]([c:4]([c:2]([c:12]1[N:21]([H:38])[C:17](=[O:23])[N:20]([H:36])[H:37])[H:27])[H:29])[O:25][c:14]2[c:5]([c:8]([n:18][c:11]3[c:9]2[c:6]([c:10]([c:15]([c:7]3[H:32])[O:24][H:39])[C:16](=[O:22])[N:19]([H:34])[H:35])[H:31])[H:33])[H:30])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])[H])[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(c(c3)O)C(=O)N",
+      "canonical_smiles": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(c(c3)O)C(=O)N",
+      "inchi_key": "IUENGHLMRKSVES-UHFFFAOYSA-N",
+      "molecular_formula": "C17H14N4O4",
+      "standard_inchi": "InChI=1S/C17H14N4O4/c18-16(23)12-7-11-13(8-14(12)22)20-6-5-15(11)25-10-3-1-9(2-4-10)21-17(19)24/h1-8,22H,(H2,18,23)(H3,19,21,24)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)N)Oc2cc[nH]c-3cc(=O)c(cc23)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3cc(O)c(C(N)=O)cc23)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(cc3)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:2]([c:12]2[c:10]([c:8]([c:11]1[C:16](=[O:22])[N:19]([H:34])[H:35])[H:32])[c:15]([c:7]([c:9]([n:18]2)[H:33])[H:31])[O:24][c:14]3[c:5]([c:3]([c:13]([c:4]([c:6]3[H:30])[H:28])[N:21]([H:38])[C:17](=[O:23])[N:20]([H:36])[H:37])[H:27])[H:29])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "canonical_smiles": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "inchi_key": "HJEDUVAWRYWPQL-UHFFFAOYSA-N",
+      "molecular_formula": "C17H14N4O3",
+      "standard_inchi": "InChI=1S/C17H14N4O3/c18-16(22)10-1-6-14-13(9-10)15(7-8-20-14)24-12-4-2-11(3-5-12)21-17(19)23/h1-9H,(H2,18,22)(H3,19,21,23)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3ccc(C(N)=O)cc23)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:5]1[cH:14][c:9]([c:4]([c:8]2[c:10]1[n:22][c:7]([c:3]([c:13]2[O:28][c:12]3[c:6]([cH:15][c:11]([c:1]([c:2]3[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:36])[H:33])[H:37])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)N)Oc2ccnc3c2ccc(c3)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:4]([c:14]([c:8]([c:11]2[c:10]1[c:15]([c:7]([c:9]([n:17]2)[H:31])[H:29])[O:22][c:13]3[c:5]([c:2]([c:12]([c:3]([c:6]3[H:28])[H:25])[N:19]([H:34])[C:16](=[O:20])[N:18]([H:32])[H:33])[H:24])[H:27])[H:30])[O:21][H:35])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2ccc(c3)O",
+      "canonical_smiles": "c1cc(ccc1NC(=O)N)Oc2ccnc3c2ccc(c3)O",
+      "inchi_key": "AASLABGIIFYLKH-UHFFFAOYSA-N",
+      "molecular_formula": "C16H13N3O3",
+      "standard_inchi": "InChI=1S/C16H13N3O3/c17-16(21)19-10-1-4-12(5-2-10)22-15-7-8-18-14-9-11(20)3-6-13(14)15/h1-9,20H,(H3,17,19,21)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)N)Oc2cc[nH]c-3cc(=O)ccc23",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3cc(O)ccc23)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][c:14]([c:5]3[H:35])[OH:29])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)NC2CC2)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:3]([c:6]([c:4]([c:2]([c:5]1[N:11]([H:24])[C:7](=[O:13])[N:12]([H:25])[C:10]2([C:8]([C:9]2([H:21])[H:22])([H:19])[H:20])[H:23])[H:16])[H:18])[O:14][H:26])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)NC2CC2)O",
+      "canonical_smiles": "c1cc(ccc1NC(=O)NC2CC2)O",
+      "inchi_key": "HVHRKNKQKGLJJV-UHFFFAOYSA-N",
+      "molecular_formula": "C10H12N2O2",
+      "standard_inchi": "InChI=1S/C10H12N2O2/c13-9-5-3-8(4-6-9)12-10(14)11-7-1-2-7/h3-7,13H,1-2H2,(H2,11,12,14)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)NC2CC2)O",
+      "unique_tautomer_representation": "O=C(Nc1ccc(O)cc1)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[OH:28])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]2([C:19]([C:18]2([H:38])[H:39])([H:40])[H:41])[H:42]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(c(c4)O)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H])Oc3c(c(nc4c3c(c(c(c4[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:3]([c:13]([c:4]([c:2]([c:12]1[N:23]([H:44])[C:17](=[O:26])[N:24]([H:45])[C:20]2([C:18]([C:19]2([H:39])[H:40])([H:37])[H:38])[H:41])[H:30])[H:32])[O:28][c:14]3[c:5]([c:8]([n:21][c:11]4[c:9]3[c:6]([c:10]([c:15]([c:7]4[H:35])[O:27][H:46])[C:16](=[O:25])[N:22]([H:42])[H:43])[H:34])[H:36])[H:33])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H])Oc3c(c(nc4c3c(c(c(c4[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(c(c4)O)C(=O)N",
+      "canonical_smiles": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(c(c4)O)C(=O)N",
+      "inchi_key": "IOWXBHKNNBVMHJ-UHFFFAOYSA-N",
+      "molecular_formula": "C20H18N4O4",
+      "standard_inchi": "InChI=1S/C20H18N4O4/c21-19(26)15-9-14-16(10-17(15)25)22-8-7-18(14)28-13-5-3-12(4-6-13)24-20(27)23-11-1-2-11/h3-11,25H,1-2H2,(H2,21,26)(H2,23,24,27)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)NC2CC2)Oc3cc[nH]c-4cc(=O)c(cc34)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1cc2c(Oc3ccc(NC(=O)NC4CC4)cc3)ccnc2cc1O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(cc4)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:2]([c:12]2[c:10]([c:8]([c:11]1[C:16](=[O:25])[N:22]([H:42])[H:43])[H:35])[c:15]([c:7]([c:9]([n:21]2)[H:36])[H:34])[O:27][c:14]3[c:5]([c:3]([c:13]([c:4]([c:6]3[H:33])[H:31])[N:23]([H:44])[C:17](=[O:26])[N:24]([H:45])[C:20]4([C:18]([C:19]4([H:39])[H:40])([H:37])[H:38])[H:41])[H:30])[H:32])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(cc4)C(=O)N",
+      "canonical_smiles": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(cc4)C(=O)N",
+      "inchi_key": "ORALVEOSTGHUHC-UHFFFAOYSA-N",
+      "molecular_formula": "C20H18N4O3",
+      "standard_inchi": "InChI=1S/C20H18N4O3/c21-19(25)12-1-8-17-16(11-12)18(9-10-22-17)27-15-6-4-14(5-7-15)24-20(26)23-13-2-3-13/h1,4-11,13H,2-3H2,(H2,21,25)(H2,23,24,26)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3cc(cc4)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1ccc2nccc(Oc3ccc(NC(=O)NC4CC4)cc3)c2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:5]1[cH:14][c:9]([c:4]([c:8]2[c:10]1[n:22][c:7]([c:3]([c:13]2[O:28][c:12]3[c:6]([cH:15][c:11]([c:1]([c:2]3[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42])[H:36])[H:33])[H:37])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3ccc(c4)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:4]([c:14]([c:8]([c:11]2[c:10]1[c:15]([c:7]([c:9]([n:20]2)[H:34])[H:32])[O:25][c:13]3[c:5]([c:2]([c:12]([c:3]([c:6]3[H:31])[H:28])[N:21]([H:40])[C:16](=[O:23])[N:22]([H:41])[C:19]4([C:17]([C:18]4([H:37])[H:38])([H:35])[H:36])[H:39])[H:27])[H:30])[H:33])[O:24][H:42])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3ccc(c4)O",
+      "canonical_smiles": "c1cc(ccc1NC(=O)NC2CC2)Oc3ccnc4c3ccc(c4)O",
+      "inchi_key": "KEGPNKKJEFUZSN-UHFFFAOYSA-N",
+      "molecular_formula": "C19H17N3O3",
+      "standard_inchi": "InChI=1S/C19H17N3O3/c23-14-5-8-16-17(11-14)20-10-9-18(16)25-15-6-3-13(4-7-15)22-19(24)21-12-1-2-12/h3-12,23H,1-2H2,(H2,21,22,24)",
+      "unique_protomer_representation": "c1cc(ccc1NC(=O)NC2CC2)Oc3cc[nH]c-4cc(=O)ccc34",
+      "unique_tautomer_representation": "O=C(Nc1ccc(Oc2ccnc3cc(O)ccc23)cc1)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:15][c:11]([c:1]([c:2]([c:12]1[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][c:14]([c:5]3[H:35])[OH:29])[H:34])[H:37])[H:33])[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2c(cc1C(=O)N)c(ccn2)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:8]2[c:6]([c:4]([c:7]1[C:10](=[O:13])[N:12]([H:20])[H:21])[H:18])[c:9]([c:3]([c:5]([n:11]2)[H:19])[H:17])[O:14][H:22])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2c(cc1C(=O)N)c(ccn2)O",
+      "canonical_smiles": "c1cc2c(cc1C(=O)N)c(ccn2)O",
+      "inchi_key": "HLXOPJFZLQWJQG-UHFFFAOYSA-N",
+      "molecular_formula": "C10H8N2O2",
+      "standard_inchi": "InChI=1S/C10H8N2O2/c11-10(14)6-1-2-8-7(5-6)9(13)3-4-12-8/h1-5H,(H2,11,14)(H,12,13)",
+      "unique_protomer_representation": "c1cc2c(cc1C(=O)N)c(=O)cc[nH]2",
+      "unique_tautomer_representation": "NC(=O)c1ccc2[nH]ccc(=O)c2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:5]1[cH:14][c:9]([c:4]([c:8]2[c:10]1[n:22][c:7]([c:3]([c:13]2[OH:28])[H:33])[H:37])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:2]([c:11]2[c:9]([c:6]([c:10]1[C:16](=[O:22])[N:19]([H:34])[H:35])[H:31])[c:14]([c:5]([c:8]([n:18]2)[H:33])[H:30])[O:24][c:13]3[c:4]([c:3]([c:12]([c:15]([c:7]3[H:32])[Cl:25])[N:21]([H:38])[C:17](=[O:23])[N:20]([H:36])[H:37])[H:28])[H:29])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "canonical_smiles": "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "inchi_key": "CFMZYBIKZRAVLM-UHFFFAOYSA-N",
+      "molecular_formula": "C17H13ClN4O3",
+      "standard_inchi": "InChI=1S/C17H13ClN4O3/c18-12-8-10(2-4-14(12)22-17(20)24)25-15-5-6-21-13-3-1-9(16(19)23)7-11(13)15/h1-8H,(H2,19,23)(H3,20,22,24)",
+      "unique_protomer_representation": "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3ccc(C(N)=O)cc23)cc1Cl"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:5]1[cH:14][c:9]([c:4]([c:8]2[c:10]1[n:22][c:7]([c:3]([c:13]2[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:31])[H:32])[H:33])[H:37])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:2]([c:11]2[c:9]([c:6]([c:10]1[C:16](=[O:25])[N:22]([H:42])[H:43])[H:34])[c:14]([c:5]([c:8]([n:21]2)[H:36])[H:33])[O:27][c:13]3[c:4]([c:3]([c:12]([c:15]([c:7]3[H:35])[Cl:28])[N:23]([H:44])[C:17](=[O:26])[N:24]([H:45])[C:20]4([C:18]([C:19]4([H:39])[H:40])([H:37])[H:38])[H:41])[H:31])[H:32])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c1C(=O)N([H])[H])[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "canonical_smiles": "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "inchi_key": "UZDJSQFPPPXINW-UHFFFAOYSA-N",
+      "molecular_formula": "C20H17ClN4O3",
+      "standard_inchi": "InChI=1S/C20H17ClN4O3/c21-15-10-13(4-6-17(15)25-20(27)24-12-2-3-12)28-18-7-8-23-16-5-1-11(19(22)26)9-14(16)18/h1,4-10,12H,2-3H2,(H2,22,26)(H2,24,25,27)",
+      "unique_protomer_representation": "c1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "NC(=O)c1ccc2nccc(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)c2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:35][c:5]1[cH:14][c:9]([c:4]([c:8]2[c:10]1[n:22][c:7]([c:3]([c:13]2[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42])[H:31])[H:32])[H:33])[H:37])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2c(ccnc2cc1O)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])O[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:8]([c:4]([c:7]2[c:6]1[c:9]([c:3]([c:5]([n:10]2)[H:17])[H:15])[O:12][H:19])[H:16])[O:11][H:18])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])O[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2c(ccnc2cc1O)O",
+      "canonical_smiles": "c1cc2c(ccnc2cc1O)O",
+      "inchi_key": "VJOPQSBUEFGOSD-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7NO2",
+      "standard_inchi": "InChI=1S/C9H7NO2/c11-6-1-2-7-8(5-6)10-4-3-9(7)12/h1-5,11H,(H,10,12)",
+      "unique_protomer_representation": "c1cc-2c(cc[nH]c2cc1=O)O",
+      "unique_tautomer_representation": "O=c1cc[nH]c2cc(O)ccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[OH:28])[H:35])[OH:29]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2c(ccnc2cc1O)Oc3ccc(c(c3)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:3]([c:12]([c:6]([c:10]2[c:9]1[c:14]([c:5]([c:8]([n:17]2)[H:31])[H:28])[O:22][c:13]3[c:4]([c:2]([c:11]([c:15]([c:7]3[H:30])[Cl:23])[N:19]([H:34])[C:16](=[O:20])[N:18]([H:32])[H:33])[H:25])[H:27])[H:29])[O:21][H:35])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2c(ccnc2cc1O)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "canonical_smiles": "c1cc2c(ccnc2cc1O)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "inchi_key": "FYQQPWYDBXFCLN-UHFFFAOYSA-N",
+      "molecular_formula": "C16H12ClN3O3",
+      "standard_inchi": "InChI=1S/C16H12ClN3O3/c17-12-8-10(2-4-13(12)20-16(18)22)23-15-5-6-19-14-7-9(21)1-3-11(14)15/h1-8,21H,(H3,18,20,22)",
+      "unique_protomer_representation": "c1cc-2c(cc[nH]c2cc1=O)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3cc(O)ccc23)cc1Cl"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:31])[H:32])[H:35])[OH:29]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2c(ccnc2cc1O)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:3]([c:12]([c:6]([c:10]2[c:9]1[c:14]([c:5]([c:8]([n:20]2)[H:34])[H:31])[O:25][c:13]3[c:4]([c:2]([c:11]([c:15]([c:7]3[H:33])[Cl:26])[N:21]([H:40])[C:16](=[O:23])[N:22]([H:41])[C:19]4([C:17]([C:18]4([H:37])[H:38])([H:35])[H:36])[H:39])[H:28])[H:30])[H:32])[O:24][H:42])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c2c1c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2c(ccnc2cc1O)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "canonical_smiles": "c1cc2c(ccnc2cc1O)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "inchi_key": "XXLBZGGMNPVEEG-UHFFFAOYSA-N",
+      "molecular_formula": "C19H16ClN3O3",
+      "standard_inchi": "InChI=1S/C19H16ClN3O3/c20-15-10-13(4-6-16(15)23-19(25)22-11-1-2-11)26-18-7-8-21-17-9-12(24)3-5-14(17)18/h3-11,24H,1-2H2,(H2,22,23,25)",
+      "unique_protomer_representation": "c1cc-2c(cc[nH]c2cc1=O)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "O=C(Nc1ccc(Oc2ccnc3cc(O)ccc23)cc1Cl)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][c:14]([c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42])[H:31])[H:32])[H:35])[OH:29]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2cc(c(cc2nc1)O)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])O[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:6]2[c:3]([c:7]([c:9]([c:4]([c:8]2[n:11][c:5]1[H:19])[H:18])[O:14][H:22])[C:10](=[O:13])[N:12]([H:20])[H:21])[H:17])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])O[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2cc(c(cc2nc1)O)C(=O)N",
+      "canonical_smiles": "c1cc2cc(c(cc2nc1)O)C(=O)N",
+      "inchi_key": "HQXKIAKARIEKSL-UHFFFAOYSA-N",
+      "molecular_formula": "C10H8N2O2",
+      "standard_inchi": "InChI=1S/C10H8N2O2/c11-10(14)7-4-6-2-1-3-12-8(6)5-9(7)13/h1-5,13H,(H2,11,14)",
+      "unique_protomer_representation": "c1cc-2cc(c(=O)cc2[nH]c1)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1cc2cccnc2cc1O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[cH:13][c:8]2[c:4]([c:9]([c:14]([c:5]([c:10]2[n:22][c:7]1[H:37])[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2cc(ccc2nc1)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:7]2[c:5]([c:8]([c:3]([c:4]([c:9]2[n:11][c:6]1[H:19])[H:17])[H:16])[C:10](=[O:13])[N:12]([H:20])[H:21])[H:18])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])[H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2cc(ccc2nc1)C(=O)N",
+      "canonical_smiles": "c1cc2cc(ccc2nc1)C(=O)N",
+      "inchi_key": "YMNAJWHTELQUJU-UHFFFAOYSA-N",
+      "molecular_formula": "C10H8N2O",
+      "standard_inchi": "InChI=1S/C10H8N2O/c11-10(13)8-3-4-9-7(6-8)2-1-5-12-9/h1-6H,(H2,11,13)",
+      "unique_protomer_representation": "c1cc2cc(ccc2nc1)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1ccc2ncccc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[cH:13][c:8]2[c:4]([c:9]([cH:14][c:5]([c:10]2[n:22][c:7]1[H:37])[H:35])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc2ccc(cc2nc1)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])O[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:7]2[c:3]([c:4]([c:9]([c:5]([c:8]2[n:10][c:6]1[H:17])[H:16])[O:11][H:18])[H:15])[H:14])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c2c(c(c(c(c2nc1[H])[H])O[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc2ccc(cc2nc1)O",
+      "canonical_smiles": "c1cc2ccc(cc2nc1)O",
+      "inchi_key": "XCRPPAPDRUBKRJ-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7NO",
+      "standard_inchi": "InChI=1S/C9H7NO/c11-8-4-3-7-2-1-5-10-9(7)6-8/h1-6,11H",
+      "unique_protomer_representation": "c1cc-2ccc(=O)cc2[nH]c1",
+      "unique_tautomer_representation": "Oc1ccc2cccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[cH:13][c:8]2[c:4]([cH:9][c:14]([c:5]([c:10]2[n:22][c:7]1[H:37])[H:35])[OH:29])[H:34]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)NC(=O)N)Cl": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])C(=O)N([H])[H])Cl)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[N:9]([H:18])[C:7](=[O:10])[N:8]([H:16])[H:17])[Cl:11])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])C(=O)N([H])[H])Cl)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)NC(=O)N)Cl",
+      "canonical_smiles": "c1ccc(c(c1)NC(=O)N)Cl",
+      "inchi_key": "ASPIQYFYSMQBHA-UHFFFAOYSA-N",
+      "molecular_formula": "C7H7ClN2O",
+      "standard_inchi": "InChI=1S/C7H7ClN2O/c8-5-3-1-2-4-6(5)10-7(9)11/h1-4H,(H3,9,10,11)",
+      "unique_protomer_representation": "c1ccc(c(c1)NC(=O)N)Cl",
+      "unique_tautomer_representation": "NC(=O)Nc1ccccc1Cl"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:2]1[cH:12][c:6]([c:15]([c:11]([c:1]1[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[Cl:30])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)NC(=O)NC2CC2)Cl": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])Cl)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:17])[N:11]([H:24])[C:7](=[O:13])[N:12]([H:25])[C:10]2([C:8]([C:9]2([H:21])[H:22])([H:19])[H:20])[H:23])[Cl:14])[H:18])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])Cl)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)NC(=O)NC2CC2)Cl",
+      "canonical_smiles": "c1ccc(c(c1)NC(=O)NC2CC2)Cl",
+      "inchi_key": "KOMUOBBMWOSPEZ-UHFFFAOYSA-N",
+      "molecular_formula": "C10H11ClN2O",
+      "standard_inchi": "InChI=1S/C10H11ClN2O/c11-8-3-1-2-4-9(8)13-10(14)12-7-5-6-7/h1-4,7H,5-6H2,(H2,12,13,14)",
+      "unique_protomer_representation": "c1ccc(c(c1)NC(=O)NC2CC2)Cl",
+      "unique_tautomer_representation": "O=C(Nc1ccccc1Cl)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:32][c:2]1[cH:12][c:6]([c:15]([c:11]([c:1]1[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]2([C:19]([C:18]2([H:38])[H:39])([H:40])[H:41])[H:42])[Cl:30])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[H:15])[N:9]([H:18])[C:7](=[O:10])[N:8]([H:16])[H:17])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])C(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)NC(=O)N",
+      "canonical_smiles": "c1ccc(cc1)NC(=O)N",
+      "inchi_key": "LUBJCRLGQSPQNN-UHFFFAOYSA-N",
+      "molecular_formula": "C7H8N2O",
+      "standard_inchi": "InChI=1S/C7H8N2O/c8-7(10)9-6-4-2-1-3-5-6/h1-5H,(H3,8,9,10)",
+      "unique_protomer_representation": "c1ccc(cc1)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:12][c:2]([c:1]([c:11]([cH:15]1)[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:31])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)NC(=O)NC2CC2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:16])[H:18])[N:11]([H:24])[C:7](=[O:13])[N:12]([H:25])[C:10]2([C:8]([C:9]2([H:21])[H:22])([H:19])[H:20])[H:23])[H:17])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])C(=O)N([H])C2(C(C2([H])[H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)NC(=O)NC2CC2",
+      "canonical_smiles": "c1ccc(cc1)NC(=O)NC2CC2",
+      "inchi_key": "GAVZUXBKQVMADB-UHFFFAOYSA-N",
+      "molecular_formula": "C10H12N2O",
+      "standard_inchi": "InChI=1S/C10H12N2O/c13-10(12-9-6-7-9)11-8-4-2-1-3-5-8/h1-5,9H,6-7H2,(H2,11,12,13)",
+      "unique_protomer_representation": "c1ccc(cc1)NC(=O)NC2CC2",
+      "unique_tautomer_representation": "O=C(Nc1ccccc1)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:6]1[cH:12][c:2]([c:1]([c:11]([cH:15]1)[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]2([C:19]([C:18]2([H:38])[H:39])([H:40])[H:41])[H:42])[H:31])[H:32]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])O[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:10])[H:12])[O:7][H:13])[H:11])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])O[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)O",
+      "canonical_smiles": "c1ccc(cc1)O",
+      "inchi_key": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+      "molecular_formula": "C6H6O",
+      "standard_inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
+      "unique_protomer_representation": "c1ccc(cc1)O",
+      "unique_tautomer_representation": "Oc1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[OH:28])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)Oc2ccnc3c2cc(c(c3)O)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:4]([c:13]([c:5]([c:3]1[H:24])[H:26])[O:21][c:14]2[c:6]([c:9]([n:17][c:12]3[c:10]2[c:7]([c:11]([c:15]([c:8]3[H:29])[O:20][H:33])[C:16](=[O:19])[N:18]([H:31])[H:32])[H:28])[H:30])[H:27])[H:25])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])C(=O)N([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)Oc2ccnc3c2cc(c(c3)O)C(=O)N",
+      "canonical_smiles": "c1ccc(cc1)Oc2ccnc3c2cc(c(c3)O)C(=O)N",
+      "inchi_key": "UHUUANXHIJLZEZ-UHFFFAOYSA-N",
+      "molecular_formula": "C16H12N2O3",
+      "standard_inchi": "InChI=1S/C16H12N2O3/c17-16(20)12-8-11-13(9-14(12)19)18-7-6-15(11)21-10-4-2-1-3-5-10/h1-9,19H,(H2,17,20)",
+      "unique_protomer_representation": "c1ccc(cc1)Oc2cc[nH]c-3cc(=O)c(cc23)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1cc2c(Oc3ccccc3)ccnc2cc1O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([c:14]([c:5]3[H:35])[OH:29])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)Oc2ccnc3c2cc(cc3)C(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])[H])C(=O)N([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:2]([c:6]([c:14]([c:7]([c:3]1[H:23])[H:27])[O:20][c:15]2[c:8]([c:10]([n:17][c:13]3[c:11]2[c:9]([c:12]([c:4]([c:5]3[H:25])[H:24])[C:16](=[O:19])[N:18]([H:31])[H:32])[H:29])[H:30])[H:28])[H:26])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])[H])C(=O)N([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "canonical_smiles": "c1ccc(cc1)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "inchi_key": "NFTPPBURPBDQRD-UHFFFAOYSA-N",
+      "molecular_formula": "C16H12N2O2",
+      "standard_inchi": "InChI=1S/C16H12N2O2/c17-16(19)11-6-7-14-13(10-11)15(8-9-18-14)20-12-4-2-1-3-5-12/h1-10H,(H2,17,19)",
+      "unique_protomer_representation": "c1ccc(cc1)Oc2ccnc3c2cc(cc3)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1ccc2nccc(Oc3ccccc3)c2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([c:9]([cH:14][c:5]3[H:35])[C:16](=[O:26])[N:23]([H:46])[H:47])[H:34])[H:37])[H:33])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)Oc2ccnc3c2ccc(c3)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:5]([c:13]([c:6]([c:3]1[H:21])[H:24])[O:18][c:15]2[c:8]([c:10]([n:16][c:12]3[c:11]2[c:4]([c:7]([c:14]([c:9]3[H:27])[O:17][H:29])[H:25])[H:22])[H:28])[H:26])[H:23])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])O[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)Oc2ccnc3c2ccc(c3)O",
+      "canonical_smiles": "c1ccc(cc1)Oc2ccnc3c2ccc(c3)O",
+      "inchi_key": "RVIXJEGRKPOZBD-UHFFFAOYSA-N",
+      "molecular_formula": "C15H11NO2",
+      "standard_inchi": "InChI=1S/C15H11NO2/c17-11-6-7-13-14(10-11)16-9-8-15(13)18-12-4-2-1-3-5-12/h1-10,17H",
+      "unique_protomer_representation": "c1ccc(cc1)Oc2cc[nH]c-3cc(=O)ccc23",
+      "unique_tautomer_representation": "Oc1ccc2c(Oc3ccccc3)ccnc2c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][c:14]([c:5]3[H:35])[OH:29])[H:34])[H:37])[H:33])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)Oc2ccnc3c2cccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:4]([c:8]([c:14]([c:9]([c:5]1[H:22])[H:26])[O:17][c:15]2[c:10]([c:11]([n:16][c:13]3[c:12]2[c:6]([c:2]([c:3]([c:7]3[H:24])[H:20])[H:19])[H:23])[H:28])[H:27])[H:25])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])Oc2c(c(nc3c2c(c(c(c3[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)Oc2ccnc3c2cccc3",
+      "canonical_smiles": "c1ccc(cc1)Oc2ccnc3c2cccc3",
+      "inchi_key": "AIMFUVGFEASGBB-UHFFFAOYSA-N",
+      "molecular_formula": "C15H11NO",
+      "standard_inchi": "InChI=1S/C15H11NO/c1-2-6-12(7-3-1)17-15-10-11-16-14-9-5-4-8-13(14)15/h1-11H",
+      "unique_protomer_representation": "c1ccc(cc1)Oc2ccnc3c2cccc3",
+      "unique_tautomer_representation": "c1ccc(Oc2ccnc3ccccc23)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:31][c:1]1[cH:11][cH:15][c:6]([c:12]([c:2]1[H:32])[O:28][c:13]2[c:3]([c:7]([n:22][c:10]3[c:8]2[c:4]([cH:9][cH:14][c:5]3[H:35])[H:34])[H:37])[H:33])[H:36]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(ccn2)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])O[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:8]2[c:7]([c:3]1[H:14])[c:9]([c:5]([c:6]([n:10]2)[H:17])[H:16])[O:11][H:18])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])O[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(ccn2)O",
+      "canonical_smiles": "c1ccc2c(c1)c(ccn2)O",
+      "inchi_key": "PMZDQRJGMBOQBF-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7NO",
+      "standard_inchi": "InChI=1S/C9H7NO/c11-9-5-6-10-8-4-2-1-3-7(8)9/h1-6H,(H,10,11)",
+      "unique_protomer_representation": "c1ccc2c(c1)c(=O)cc[nH]2",
+      "unique_tautomer_representation": "O=c1cc[nH]c2ccccc12"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][cH:14][c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[OH:28])[H:35]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:4]([c:11]2[c:10]([c:3]1[H:25])[c:14]([c:7]([c:9]([n:17]2)[H:31])[H:29])[O:21][c:13]3[c:6]([c:5]([c:12]([c:15]([c:8]3[H:30])[Cl:22])[N:19]([H:34])[C:16](=[O:20])[N:18]([H:32])[H:33])[H:27])[H:28])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "canonical_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "inchi_key": "WNTBLDJAACNUNN-UHFFFAOYSA-N",
+      "molecular_formula": "C16H12ClN3O2",
+      "standard_inchi": "InChI=1S/C16H12ClN3O2/c17-12-9-10(5-6-14(12)20-16(18)21)22-15-7-8-19-13-4-2-1-3-11(13)15/h1-9H,(H3,18,20,21)",
+      "unique_protomer_representation": "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3ccccc23)cc1Cl"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][cH:14][c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:31])[H:32])[H:35]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:2]([c:4]([c:11]2[c:10]([c:3]1[H:28])[c:14]([c:7]([c:9]([n:20]2)[H:34])[H:32])[O:24][c:13]3[c:6]([c:5]([c:12]([c:15]([c:8]3[H:33])[Cl:25])[N:21]([H:40])[C:16](=[O:23])[N:22]([H:41])[C:19]4([C:17]([C:18]4([H:37])[H:38])([H:35])[H:36])[H:39])[H:30])[H:31])[H:29])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "canonical_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "inchi_key": "AEBURQZKNBTKSA-UHFFFAOYSA-N",
+      "molecular_formula": "C19H16ClN3O2",
+      "standard_inchi": "InChI=1S/C19H16ClN3O2/c20-15-11-13(7-8-17(15)23-19(24)22-12-5-6-12)25-18-9-10-21-16-4-2-1-3-14(16)18/h1-4,7-12H,5-6H2,(H2,22,23,24)",
+      "unique_protomer_representation": "c1ccc2c(c1)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "O=C(Nc1ccc(Oc2ccnc3ccccc23)cc1Cl)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][cH:14][c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([c:11]([c:15]([c:6]3[H:36])[Cl:30])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42])[H:31])[H:32])[H:35]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:4]([c:12]2[c:11]([c:3]1[H:24])[c:15]([c:9]([c:10]([n:17]2)[H:31])[H:30])[O:21][c:14]3[c:7]([c:5]([c:13]([c:6]([c:8]3[H:29])[H:27])[N:19]([H:34])[C:16](=[O:20])[N:18]([H:32])[H:33])[H:26])[H:28])[H:25])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)N",
+      "canonical_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)N",
+      "inchi_key": "BFCLVGBIAVVVOA-UHFFFAOYSA-N",
+      "molecular_formula": "C16H13N3O2",
+      "standard_inchi": "InChI=1S/C16H13N3O2/c17-16(20)19-11-5-7-12(8-6-11)21-15-9-10-18-14-4-2-1-3-13(14)15/h1-10H,(H3,17,19,20)",
+      "unique_protomer_representation": "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)N",
+      "unique_tautomer_representation": "NC(=O)Nc1ccc(Oc2ccnc3ccccc23)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][cH:14][c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:6]([cH:15][c:11]([c:1]([c:2]3[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[NH:25][H:49])[H:36])[H:35]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:2]([c:4]([c:12]2[c:11]([c:3]1[H:27])[c:15]([c:9]([c:10]([n:20]2)[H:34])[H:33])[O:24][c:14]3[c:7]([c:5]([c:13]([c:6]([c:8]3[H:32])[H:30])[N:21]([H:40])[C:16](=[O:23])[N:22]([H:41])[C:19]4([C:17]([C:18]4([H:37])[H:38])([H:35])[H:36])[H:39])[H:29])[H:31])[H:28])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])[H])N([H])C(=O)N([H])C4(C(C4([H])[H])([H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "canonical_smiles": "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "inchi_key": "ROCATOIYJKAVKI-UHFFFAOYSA-N",
+      "molecular_formula": "C19H17N3O2",
+      "standard_inchi": "InChI=1S/C19H17N3O2/c23-19(21-13-5-6-13)22-14-7-9-15(10-8-14)24-18-11-12-20-17-4-2-1-3-16(17)18/h1-4,7-13H,5-6H2,(H2,21,22,23)",
+      "unique_protomer_representation": "c1ccc2c(c1)c(ccn2)Oc3ccc(cc3)NC(=O)NC4CC4",
+      "unique_tautomer_representation": "O=C(Nc1ccc(Oc2ccnc3ccccc23)cc1)NC1CC1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][cH:14][c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:6]([cH:15][c:11]([c:1]([c:2]3[H:32])[H:31])[N:24]([H:48])[C:17](=[O:27])[N:25]([H:49])[C:20]4([C:19]([C:18]4([H:38])[H:39])([H:40])[H:41])[H:42])[H:36])[H:35]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc2c(c1)c(ccn2)Oc3cccc(c3)Cl": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:5]([c:12]2[c:11]([c:4]1[H:22])[c:14]([c:8]([c:10]([n:16]2)[H:28])[H:26])[O:17][c:13]3[c:6]([c:3]([c:7]([c:15]([c:9]3[H:27])[Cl:18])[H:25])[H:21])[H:24])[H:23])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c2c(c1[H])c(c(c(n2)[H])[H])Oc3c(c(c(c(c3[H])Cl)[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc2c(c1)c(ccn2)Oc3cccc(c3)Cl",
+      "canonical_smiles": "c1ccc2c(c1)c(ccn2)Oc3cccc(c3)Cl",
+      "inchi_key": "LQYWYYNGMNCGPQ-UHFFFAOYSA-N",
+      "molecular_formula": "C15H10ClNO",
+      "standard_inchi": "InChI=1S/C15H10ClNO/c16-11-4-3-5-12(10-11)18-15-8-9-17-14-7-2-1-6-13(14)15/h1-10H",
+      "unique_protomer_representation": "c1ccc2c(c1)c(ccn2)Oc3cccc(c3)Cl",
+      "unique_tautomer_representation": "Clc1cccc(Oc2ccnc3ccccc23)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:34][c:4]1[cH:9][cH:14][c:5]([c:10]2[c:8]1[c:13]([c:3]([c:7]([n:22]2)[H:37])[H:33])[O:28][c:12]3[c:2]([c:1]([cH:11][c:15]([c:6]3[H:36])[Cl:30])[H:31])[H:32])[H:35]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnc2cc(c(cc2c1O)C(=O)N)O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(c(c(c2c1O[H])[H])C(=O)N([H])[H])O[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:4]([n:11][c:7]2[c:3]([c:9]([c:6]([c:2]([c:5]2[c:8]1[O:14][H:22])[H:17])[C:10](=[O:13])[N:12]([H:20])[H:21])[O:15][H:23])[H:18])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc2c(c(c(c(c2c1O[H])[H])C(=O)N([H])[H])O[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cnc2cc(c(cc2c1O)C(=O)N)O",
+      "canonical_smiles": "c1cnc2cc(c(cc2c1O)C(=O)N)O",
+      "inchi_key": "JPKIIFAWCRXCHF-UHFFFAOYSA-N",
+      "molecular_formula": "C10H8N2O3",
+      "standard_inchi": "InChI=1S/C10H8N2O3/c11-10(15)6-3-5-7(4-9(6)14)12-2-1-8(5)13/h1-4,14H,(H2,11,15)(H,12,13)",
+      "unique_protomer_representation": "c1c[nH]c-2cc(=O)c(cc2c1O)C(=O)N",
+      "unique_tautomer_representation": "NC(=O)c1cc2c(=O)cc[nH]c2cc1O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "c26172dc-11d4-4c87-b613-fb6d579f5134",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:33][c:3]1[c:7]([n:22][c:10]2[c:5]([c:14]([c:9]([c:4]([c:8]2[c:13]1[OH:28])[H:34])[C:16](=[O:26])[N:23]([H:46])[H:47])[OH:29])[H:35])[H:37]",
+          "parent_molecule": "COc1cc2c(cc1C(=O)N)c(ccn2)Oc3ccc(c(c3)Cl)NC(=O)NC4CC4",
+          "parent_molecule_name": "Lenvatinib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  }
+}

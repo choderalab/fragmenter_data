@@ -1,0 +1,56 @@
+{
+  "validation_set": {
+    "fragmenter": {
+      "enumerate_fragments": {
+        "functional_groups": false,
+        "options": {},
+        "scheme": "combinatorial",
+        "version": "v0.0.2+128.ge226ccf.dirty"
+      },
+      "enumerate_states": {
+        "options": {
+          "carbon_hybridization": true,
+          "level": 0,
+          "mapped": true,
+          "max_states": 10,
+          "protonation": true,
+          "reasonable": true,
+          "stereoisomers": false,
+          "suppress_hydrogen": true,
+          "tautomers": false
+        },
+        "version": "v0.0.2+128.ge226ccf.dirty"
+      },
+      "optimization_static_options": {
+        "keywords": {
+          "coordsys": "tric"
+        },
+        "program": "geometric",
+        "qc_spec": {
+          "basis": "",
+          "driver": "gradient",
+          "keywords": null,
+          "method": "UFF",
+          "program": "rdkit"
+        }
+      },
+      "torsiondrive_input": {},
+      "torsiondrive_static_options": {
+        "keywords": {},
+        "optimization_spec": {
+          "keywords": {
+            "coordsys": "tric"
+          },
+          "program": "geometric"
+        },
+        "qc_spec": {
+          "basis": "",
+          "driver": "gradient",
+          "keywords": null,
+          "method": "UFF",
+          "program": "rdkit"
+        }
+      }
+    }
+  }
+}

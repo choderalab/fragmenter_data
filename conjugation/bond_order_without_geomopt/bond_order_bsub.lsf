@@ -1,0 +1,24 @@
+#!/bin/bash
+#BSUB -J JOB_NAME
+#BSUB -n 1
+#BSUB -R rusage[mem=8]
+#BSUB -W 02:30
+#BSUB -o /home/chayas/job_output/JOB_NAME.stdout
+#BSUB -eo /home/chayas/job_output/JOB_NAME.stderr
+#BSUB -cwd "/scratch/%U/JOB_NAME"
+
+export LSF_TMPDIR=$LS_EXECCWD
+export PSI_SCRATCH=$LS_EXECCWD
+source /home/chayas/.bashrc
+
+# copy files to cwd
+cp $LS_SUBCWD/INPUTFILE .
+
+#source activate p4dev
+python /data/chodera/chayas/torsionfit_examples/kinase_inhibitors/bond_order/run_psi4.py -i $LS_EXECCWD/INPUTFILE
+
+# copy output file to submit directory
+cp OUTPUTFILE.* $LS_SUBCWD/
+
+# delete scratch 
+rm -rf $LS_EXECCWD/
