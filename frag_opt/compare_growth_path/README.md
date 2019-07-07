@@ -3,11 +3,11 @@
 More than one path exists to grow out fragment if WBO changes more than the threshold. 
 Here I looked at the stability of two heuristics:
 
-1. Shortest path length 
+1. Shortest path length   
 Grow out the bond that is closest to the central bond the fragment is being built for. 
-If more than one point to grow exists, choose the bond that has the higher Wiberg Bond Order
+If more than one point to grow exists, choose the bond that has the higher Wiberg Bond Order.
 The rationale here is that closer atoms will effect the central bond more.
-2. Highest Wiberg Bond Order
+2. Highest Wiberg Bond Order  
 Grow out the fragment with the bond that has the highest Wiberg Bond Order. The rationale is 
 that a bond with greater WBO is probably more conjugated so will contribute or withdraw more 
 electronic density from the central bond
