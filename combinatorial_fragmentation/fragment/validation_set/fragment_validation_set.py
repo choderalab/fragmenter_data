@@ -29,6 +29,11 @@ def enumerate_fragments(molecule, title='', mol_provenance=None, json_filename=N
     with open(json_filename, 'w') as f:
         json.dump(frag_json, f, indent=2, sort_keys=True)
 
+    if len(fragment_engine.new_stereo) > 0:
+        # Save fragments that are missing stereo because of new stereo center
+        chemi.smiles_to_smi(fragment_engine.new_stereo, filename='{}_new_stereo_missing.smi'.format(title))
+
+
     if generate_vis:
         fname = '{}.pdf'.format(parent_molecule.GetTitle())
         fragment_engine.depict_fragments(fname=fname)
