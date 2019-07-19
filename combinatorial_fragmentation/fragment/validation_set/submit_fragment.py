@@ -2,7 +2,7 @@ import os
 import subprocess
 import pandas as pd
 
-validation_set = pd.read_csv('../../filter/validation_set.csv')
+validation_set = pd.read_csv('../../filter/validation_set/drugbank_filtered_fixed_names.csv')
 
 jobs_to_run = validation_set.name
 
