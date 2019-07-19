@@ -21,6 +21,8 @@ for name in validation_set_input['name']:
         new_name = 'four' + name[1:]
         name = new_name
         validation_set_input.replace(to_replace=name, value=new_name, inplace=True)
+# save csv with fixed names
+validation_set_input.to_csv('../filter/validation_set/drugbank_filtered_fixed_names.csv')
 
 provenance = {}
 provenance['creator'] = "fragmenter"
