@@ -1,28 +1,18 @@
 import os
 import subprocess
 import glob
-# jobs_to_run = ['Larotrectinib', 'Lenvatinib', 'Nilotinib', 'Palbociclib', 'Pazopanib', 'Ponatinib', 'Ribociclib',
-#                'Sunitinib', 'Tofacitinib', 'Vemurafenib']
 
 
-mols_to_rerun = ['Acalabrutinib', 'Ademetionine','Amorolfine', 'Amoxicillin', 'Ampicillin', 'Apalutamide',
-                'Azlocillin', 'Aprepitant', 'Benzthiazide', 'Benzylpenicillin', 'Bicalutamide', 'Capecitabine', 'Carbenicillin',
-                 'Carindacillin', 'Cefaclor', 'Cefadroxil', 'Cefalotin', 'Cefamandole', 'Cefazolin', 'Cefdinir',
-                 'Cefditoren', 'Cefepime', 'Cefpirome', 'Cefpodoxime', 'Cefprozil', 'Ceftizoxime', 'Ceftobiprole'
-                 'Cephalexin', 'Cephaloglycin', 'Cloxacillin','Cocarboxylase', 'Darifenacin', 'Dicloxacillin', 'Diltiazem',
-                 'Disopyramide', 'Doravirine',  'Eltrombopag',  'Elvitegravir', 'Enasidenib',  'Enzalutamide',
-                 'Ertapenem',  'Ezetimibe', 'Flucloxacillin',  'Indacaterol', 'Isopropamide', 'Larotrectinib',
-                 'Linagliptin',  'Loracarbef',  'Lumacaftor','Meticillin',  'Nafcillin',  'Nilotinib', 'Olmesartan', 'Olodaterol',
-                 'Oxacillin', 'Permethrin', 'Pheneticillin', 'Phenoxymethylpenicillin', 'Ponatinib', 'Protirelin',
-                 'Quinidine',  'Raltegravir', 'Rolapitant', 'Sitagliptin', 'Sunitinib', 'Suvorexant', 'Temocillin',
-                 'Tiagabine', 'Ticarcillin', 'Tolvaptan', 'Trimethaphan', 'Vemurafenib',  'Xanthinol']
-jobs_to_run = []
-for mol in mols_to_rerun:
-    jobs_to_run.extend(glob.glob('../fragment/validation_set/fragments_{}*'.format(mol)))
+jobs_to_run = glob.glob('../fragment/validation_set/*_fragments.json')
 
 for file in jobs_to_run:
-    name = file.split('/')[-1].split('.')[0].split('_')
-    name = name[1] + '_' +  name[2]
+    filename = file.split('/')[-1].split('.')[0].split('_')
+    name = ''
+    for n in filename[:-2]:
+        name += n
+        name += '_'
+    name += filename[-2]
+
     print(name)
     with open('oe_wbo.lsf', 'r') as f:
         filedata = f.read()
