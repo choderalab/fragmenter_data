@@ -16,5 +16,5 @@ For this set, the following functional groups were not fragmented:
 6. Phosphate
 7. P(=O)(C)(C) 
 * `validation_set/` combinatorial fragmentation from the filtered drugbank set  
-For this set, all functional groups were fragmented besides rings
+For this set, all functional groups were fragmented besides rings. 
 * `combinatorial_fragmentation.ipynb` - notebook that was used to fragment kinase inhibitor set
