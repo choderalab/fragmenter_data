@@ -126,11 +126,6 @@ if __name__ == '__main__':
         provenance = fragments[frag]['provenance']
         map_to_parents = fragments[frag]['provenance']['routine']['fragment_molecule']['map_to_parent']
         for j,  map_to_parent in enumerate(map_to_parents):
-            if i > 0:
-                frag_name = '{}_{}'.format(frag, str(j))
-            else:
-                frag_name = frag
-            map_to_parent = map_to_parents[0]
             computed = compute_wbos(map_to_parent)
             if not computed:
                 warnings.warn('Failed to charge molecule {}'.format(frag))
