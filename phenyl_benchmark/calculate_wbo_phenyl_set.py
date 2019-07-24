@@ -8,6 +8,7 @@ from openeye import oechem
 from fragmenter import chemi
 import numpy as np
 import seaborn as sbn
+import json
 
 
 def group_by_fgroup_and_wbo(fgroup, molecules):
@@ -140,19 +141,21 @@ color=cm.rainbow_r(np.linspace(0,1,len(fgroups_smarts)))
 def get_rgb_int(rgb, alpha):
     return (int(rgb[0]*255), int(rgb[1]*255), int(rgb[2]*255), int(rgb[3]*alpha))
 
-#ToDo for each R1, save all SMILES with accompanying R1 WBO.
 fgroups_wbos = {}
 for i, fgroup in enumerate(fgroups_smarts):
     print(fgroup)
     wbo_dict = group_by_fgroup_and_wbo(fgroup, all_mols)
     fgroups_wbos[fgroup] = wbo_dict
     mols, bond_maps, wbos = prep_mols_for_vis(wbo_dict, fgroup=fgroup)
-    c = get_rgb_int(color[i], alpha=150)
-    print(c)
+    c = get_rgb_int(color[i], alpha=180)
     c_oe = oechem.OEColor(*c)
-    print(c_oe)
     chemi.to_pdf(molecules=mols, bond_map_idx=bond_maps, bo=wbos, align=mols[0], color=c_oe,
     fname='{}_2.pdf'.format(fgroup))
+
+    # Save WBOs
+    to_save = [[wbo, oechem.OEMolToSmiles(mol)] for wbo, mol in zip(wbos, mols)]
+    with open('{}_R1_wbos.json'.format(fgroup), 'w') as f:
+        json.dump(to_save, f, indent=2, sort_keys=True)
 
 # Generate joy plot
 fig, axes = plt.subplots(len(fgroups_wbos))
@@ -166,7 +169,7 @@ for i, fgroup in enumerate(fgroups_wbos):
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=True, alpha=0.8, color=color[i])
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=False, color='black', lw=1.0)
     #sbn.distplot(bo, hist=False, kde=False, rug=True, color='steelblue')
-    plt.xlim(0.75, 1.8)
+    plt.xlim(0.70, 1.8)
     plt.yticks([])
     ax.yaxis.set_label_coords(-0.05, 0)
     plt.ylabel(fgroup, rotation=0, size=8)

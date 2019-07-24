@@ -11,3 +11,5 @@ substitutents to an aromatic ring and varying the meta and para positions.
 This was not used in the final analysis becuase the N it less than 2 bonds away from central bond at R1. 
 * `pyridine_meta.smi` - combinatorial set of pyridine with N at meta position of R1. R2s are at the para positions
 * `pyridine_para.smi` - combinatorial set of pyridine with N are para position to R1. R2s are at meta positions. 
+* `calculate_wbo_phenyl_set.py` - script to cacluate WBO for phenyl set
+
