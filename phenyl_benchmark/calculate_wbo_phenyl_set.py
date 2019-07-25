@@ -90,7 +90,7 @@ def prep_mols_for_vis(wbo_dict, fgroup):
             if (m1 in map_idx or m2 in map_idx) and not bond.IsInRing():
                 bond.GetBgn().SetMapIdx(4)
                 bond.GetEnd().SetMapIdx(5)
-                wbos.append(bond.GetData('WibergBondOrder'))
+                wbo = bond.GetData('WibergBondOrder')
             else:
                 # Remove wbo so that only R1 WBO is generated in visualization
                 to_delete = bond.GetData('WibergBondOrder')
@@ -98,6 +98,7 @@ def prep_mols_for_vis(wbo_dict, fgroup):
                 bond.DeleteData(tag)
         if not drop:
             molecules.append(mol)
+            wbos.append(wbo)
     return molecules, bond_map_idx, wbos
 
 
@@ -176,7 +177,7 @@ for i, fgroup in enumerate(fgroups_wbos):
     ax.patch.set_facecolor('none')
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=True, alpha=0.8, color=colors[color_keys[i]])
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=False, color='black', lw=1.0)
-    plt.xlim(0.70, 1.8)
+    plt.xlim(0.70, 1.5)
     plt.yticks([])
     ax.yaxis.set_label_coords(-0.05, 0)
     plt.ylabel(fgroup, rotation=0, size=8)
