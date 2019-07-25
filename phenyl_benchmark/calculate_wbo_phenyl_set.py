@@ -9,12 +9,13 @@ from fragmenter import chemi
 import numpy as np
 import seaborn as sbn
 import json
+import matplotlib.colors as mcolors
 
 
 def group_by_fgroup_and_wbo(fgroup, molecules):
     """
     Group molecules by functional group at the R1 position and calculate the WBO
-    for R1 in different chemical environements
+    for R1 in different chemical environments
     Parameters
     ----------
     fgroup : str
@@ -106,9 +107,12 @@ all_mols.extend(chemi.file_to_oemols('pyridine_ortho.smi'))
 all_mols.extend(chemi.file_to_oemols('pyridine_meta.smi'))
 all_mols.extend(chemi.file_to_oemols('pyridine_para.smi'))
 
-# For alignment
+"""
+Only look at R1 functional groups that have torsions (skip phenoxice, fluoro, chloro, cyano, bromo and iodo).
+This leaves 20 functional groups.
+"""
 fgroups_smarts = {
-    'phenoxide': 'C[O-]',
+    #'phenoxide': 'C[O-]',
     'dimethylamino': 'CN(C)(C)',
     'methylamino': 'CNC',
     'amino': 'CN',
@@ -122,13 +126,13 @@ fgroups_smarts = {
     'phenylurea': 'CNC(=O)N',
     'ethylamide': 'CNC(=O)CC',
     'amide': 'CNC(=O)C',
-    'fluoro': 'CF',
-    'chloro': 'CCl',
+    #'fluoro': 'CF',
+    #'chloro': 'CCl',
     'methyl': 'CC',
-    'cyano': 'CC#N',
-    'bromo': 'CBr',
+    #'cyano': 'CC#N',
+    #'bromo': 'CBr',
     'carbamate': 'COC(=O)N',
-    'iodo': 'CI',
+    #'iodo': 'CI',
     'benzoicacid': 'C(=O)O',
     'ethoxycarbonyl': 'CC(=O)OCC',
     'trifluoromethyl': 'CC(F)(F)(F)',
@@ -136,8 +140,13 @@ fgroups_smarts = {
     'nitro': 'C[N+](=O)[O-]'
 }
 
-color=cm.rainbow_r(np.linspace(0,1,len(fgroups_smarts)))
+color_keys = ['rosybrown', 'indianred', 'red', 'orange', 'gold', 'yellow','greenyellow', 'green', 'limegreen',
+          'lightseagreen', 'teal', 'cyan', 'deepskyblue', 'royalblue', 'mediumslateblue', 'blueviolet', 'mediumorchid', 'violet',
+          'palevioletred', 'lightpink']
+colors = mcolors.CSS4_COLORS
 
+#color=cm.rainbow_r(np.linspace(0,1,len(fgroups_smarts)))
+#color = chemi._KELLYS_COLORS
 def get_rgb_int(rgb, alpha):
     return (int(rgb[0]*255), int(rgb[1]*255), int(rgb[2]*255), int(rgb[3]*alpha))
 
@@ -147,14 +156,14 @@ for i, fgroup in enumerate(fgroups_smarts):
     wbo_dict = group_by_fgroup_and_wbo(fgroup, all_mols)
     fgroups_wbos[fgroup] = wbo_dict
     mols, bond_maps, wbos = prep_mols_for_vis(wbo_dict, fgroup=fgroup)
-    c = get_rgb_int(color[i], alpha=180)
-    c_oe = oechem.OEColor(*c)
+    #c = get_rgb_int(color[i], alpha=180)
+    c_oe = oechem.OEColor(colors[color_keys[i]])
     chemi.to_pdf(molecules=mols, bond_map_idx=bond_maps, bo=wbos, align=mols[0], color=c_oe,
-    fname='{}_2.pdf'.format(fgroup))
+    fname='figures/oe_wbos/{}.pdf'.format(fgroup))
 
     # Save WBOs
-    to_save = [[wbo, oechem.OEMolToSmiles(mol)] for wbo, mol in zip(wbos, mols)]
-    with open('{}_R1_wbos.json'.format(fgroup), 'w') as f:
+    to_save = [[wbo, mol.GetTitle(), oechem.OEMolToSmiles(mol)] for wbo, mol in zip(wbos, mols)]
+    with open('data/{}_R1_wbos.json'.format(fgroup), 'w') as f:
         json.dump(to_save, f, indent=2, sort_keys=True)
 
 # Generate joy plot
@@ -164,11 +173,9 @@ for i, fgroup in enumerate(fgroups_wbos):
     ax.spines['left'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
-    #ax.spines['bottom'].set_visible(False)
     ax.patch.set_facecolor('none')
-    sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=True, alpha=0.8, color=color[i])
+    sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=True, alpha=0.8, color=colors[color_keys[i]])
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=False, color='black', lw=1.0)
-    #sbn.distplot(bo, hist=False, kde=False, rug=True, color='steelblue')
     plt.xlim(0.70, 1.8)
     plt.yticks([])
     ax.yaxis.set_label_coords(-0.05, 0)
@@ -181,6 +188,4 @@ for i, fgroup in enumerate(fgroups_wbos):
 overlap=1.0
 h_pad = 5 + (- 5*(1 + overlap))
 fig.tight_layout(h_pad=h_pad)
-plt.savefig('phenyl_set_wbo_dist.pdf')
-
-
+plt.savefig('figures/oe_wbos/phenyl_set_wbo_dist.pdf')
