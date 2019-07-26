@@ -609,7 +609,7 @@ c1c[c:3]([O-])cc[c:1]1I para_phenoxide_iodo
 c1cncc[c:1]1C(=O)OCC ethoxycarbonyl
 c1cn[c:2](C(=O)OCC)c[c:1]1C(=O)OCC meta_ethoxycarbonyl
 c1c[c:3](C(=O)OCC)cc[c:1]1C(=O)OCC para_ethoxycarbonyl
-c1cn[c:2](C(F)(F)(F))c[c:2]1C(=O)OCC meta_trifluoromethyl_ethoxycarbonyl
+c1cn[c:2](C(F)(F)(F))c[c:1]1C(=O)OCC meta_trifluoromethyl_ethoxycarbonyl
 c1c[c:3](C(F)(F)(F))cc[c:1]1C(=O)OCC para_trifluoromethyl_ethoxycarbonyl
 c1cn[c:2](C#N)c[c:1]1C(=O)OCC meta_cyano_ethoxycarbonyl
 c1c[c:3](C#N)cc[c:1]1C(=O)OCC para_cyano_ethoxycarbonyl
