@@ -1,666 +1,666 @@
 [
   [
-    0.9167068004608154,
+    0.9235786199569702,
     "meta_phenoxide_carbamate",
     "c1c[c:2](c[c:4](c1)[O:5]C(=O)N)[O-]"
   ],
   [
-    0.9235786199569702,
+    0.9257619380950928,
     "meta_phenoxide_carbamate",
     "c1cn[c:2](c[c:4]1[O:5]C(=O)N)[O-]"
   ],
   [
-    0.9257619380950928,
+    0.9327377080917358,
     "meta_phenoxide_carbamate",
     "c1[c:2](cnc[c:4]1[O:5]C(=O)N)[O-]"
   ],
   [
-    0.9327377080917358,
+    0.9591083526611328,
     "para_phenoxide_carbamate",
     "c1c[c:4](cc[c:3]1[O-])[O:5]C(=O)N"
   ],
   [
-    0.9472575783729553,
+    0.9689589738845825,
     "para_phenoxide_carbamate",
     "c1c[c:3](nc[c:4]1[O:5]C(=O)N)[O-]"
   ],
   [
-    0.9591083526611328,
+    0.9701510667800903,
     "meta_carbamate_dimethylamino",
     "CN(C)[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9689589738845825,
+    0.9726067185401917,
     "meta_carbamate_amino",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)N"
   ],
   [
-    0.9701510667800903,
+    0.9728081226348877,
     "para_carbamate_dimethylamino",
     "CN(C)[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9722633361816406,
+    0.973360538482666,
     "carbamate",
     "c1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9722690582275391,
+    0.9736647009849548,
     "meta_carbamate_methyl",
     "C[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9726067185401917,
+    0.973761260509491,
     "meta_carbamate_amide",
     "CC(=O)N[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9727694988250732,
+    0.9743340015411377,
     "para_carbamate_ethylamino",
     "CCN[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9728081226348877,
+    0.974616289138794,
     "para_carbamate_amino",
     "c1c[c:4](cc[c:1]1N)[O:5]C(=O)N"
   ],
   [
-    0.9728397130966187,
+    0.9746675491333008,
     "meta_carbamate_methoxy",
     "CO[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9732786417007446,
+    0.9747738838195801,
     "para_carbamate_methoxy",
     "CO[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.973360538482666,
+    0.9747837781906128,
     "para_carbamate_methyl",
     "C[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9735125303268433,
+    0.9747921228408813,
     "para_carbamate_methylamino",
     "CN[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9736647009849548,
+    0.9748103022575378,
     "para_carbamate_propylamino",
     "CCCN[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.973761260509491,
+    0.9752508401870728,
     "meta_carbamate_dimethylamino",
     "CN(C)[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9743340015411377,
+    0.9753480553627014,
     "para_carbamate_dimethylurea",
     "CN(C)C(=O)N[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.974616289138794,
+    0.9754756689071655,
     "para_carbamate_phenylurea",
     "c1c[c:4](cc[c:1]1NC(=O)N)[O:5]C(=O)N"
   ],
   [
-    0.9746675491333008,
+    0.9755119681358337,
     "meta_carbamate_hydroxy",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)O"
   ],
   [
-    0.9747738838195801,
+    0.9755910634994507,
     "para_carbamate_ethoxy",
     "CCO[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9747837781906128,
+    0.9756238460540771,
     "para_carbamate_ethylamide",
     "CCC(=O)N[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9747921228408813,
+    0.9757981300354004,
     "meta_carbamate_ethoxy",
     "CCO[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9748103022575378,
+    0.9759148955345154,
     "meta_carbamate_ethylamino",
     "CCN[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9749720096588135,
+    0.9760057330131531,
     "para_carbamate_amide",
     "CC(=O)N[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9750683903694153,
+    0.9760133624076843,
     "para_carbamate_urea",
     "CNC(=O)N[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9750897288322449,
+    0.9766059517860413,
     "meta_carbamate_propylamino",
     "CCCN[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9752508401870728,
+    0.9767128825187683,
     "para_carbamate_hydroxy",
     "c1c[c:4](cc[c:1]1O)[O:5]C(=O)N"
   ],
   [
-    0.9753480553627014,
+    0.9767993688583374,
     "meta_carbamate_methylamino",
     "CN[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9754756689071655,
+    0.9768933057785034,
     "para_carbamate_carbamate",
     "c1c[c:4](cc[c:3]1OC(=O)N)[O:5]C(=O)N"
   ],
   [
-    0.9755009412765503,
+    0.9772215485572815,
     "meta_carbamate_phenylurea",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)NC(=O)N"
   ],
   [
-    0.9755119681358337,
+    0.9773610234260559,
     "meta_carbamate_amino",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)N"
   ],
   [
-    0.9755910634994507,
+    0.9775654673576355,
     "meta_carbamate_dimethylurea",
     "CN(C)C(=O)N[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9756238460540771,
+    0.9777584671974182,
     "para_carbamate_iodo",
     "c1c[c:1](cc[c:4]1[O:5]C(=O)N)I"
   ],
   [
-    0.9756319522857666,
+    0.9778462648391724,
     "para_carbamate_chloro",
     "c1c[c:1](cc[c:4]1[O:5]C(=O)N)Cl"
   ],
   [
-    0.9757981300354004,
+    0.9778809547424316,
     "meta_carbamate_iodo",
     "c1c[c:4](c[c:1](c1)I)[O:5]C(=O)N"
   ],
   [
-    0.9759148955345154,
+    0.9782701134681702,
     "meta_carbamate_chloro",
     "c1c[c:4](c[c:1](c1)Cl)[O:5]C(=O)N"
   ],
   [
-    0.9760057330131531,
+    0.9784472584724426,
     "meta_carbamate_bromo",
     "c1c[c:4](c[c:1](c1)Br)[O:5]C(=O)N"
   ],
   [
-    0.9760133624076843,
+    0.9786214232444763,
     "meta_carbamate_amide",
     "CC(=O)N[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9766059517860413,
+    0.9787625670433044,
     "meta_carbamate_fluoro",
     "c1c[c:4](c[c:1](c1)F)[O:5]C(=O)N"
   ],
   [
-    0.9767128825187683,
+    0.9788389205932617,
     "meta_carbamate_methyl",
     "C[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9767993688583374,
+    0.9790463447570801,
     "para_carbamate_fluoro",
     "c1c[c:1](cc[c:4]1[O:5]C(=O)N)F"
   ],
   [
-    0.9768022298812866,
+    0.9790869951248169,
     "para_carbamate_bromo",
     "c1c[c:1](cc[c:4]1[O:5]C(=O)N)Br"
   ],
   [
-    0.9768540859222412,
+    0.979507327079773,
     "para_carbamate_ethoxycarbonyl",
     "CCOC(=O)[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9768933057785034,
+    0.9801579117774963,
     "carbamate",
     "c1cncc[c:4]1[O:5]C(=O)N"
   ],
   [
-    0.9772215485572815,
+    0.9802064895629883,
     "para_carbamate_cyano",
     "c1c[c:4](cc[c:1]1C#N)[O:5]C(=O)N"
   ],
   [
-    0.9773610234260559,
+    0.980224072933197,
     "para_carbamate_benzoicacid",
     "c1c[c:4](cc[c:1]1C(=O)O)[O:5]C(=O)N"
   ],
   [
-    0.9775654673576355,
+    0.9803087711334229,
     "meta_carbamate_cyano",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)C#N"
   ],
   [
-    0.9777584671974182,
+    0.9805557131767273,
     "meta_carbamate_ethoxy",
     "CCO[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9778462648391724,
+    0.9809257388114929,
     "meta_carbamate_methoxy",
     "CO[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9778809547424316,
+    0.9815698266029358,
     "meta_carbamate_carbamate",
     "c1c[c:4](c[c:2](c1)OC(=O)N)[O:5]C(=O)N"
   ],
   [
-    0.9779374003410339,
+    0.9817426204681396,
     "meta_carbamate_dimethylamino",
     "CN(C)[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.978027880191803,
+    0.9819198250770569,
     "meta_carbamate_hydroxy",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)O"
   ],
   [
-    0.9781575202941895,
+    0.9819367527961731,
     "meta_carbamate_methylamino",
     "CN[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9781749248504639,
+    0.9819375276565552,
     "meta_carbamate_trifluoromethyl",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)C(F)(F)F"
   ],
   [
-    0.9782701134681702,
+    0.9819811582565308,
     "para_carbamate_trifluoromethyl",
     "c1c[c:4](cc[c:1]1C(F)(F)F)[O:5]C(=O)N"
   ],
   [
-    0.9783358573913574,
+    0.9830778241157532,
     "meta_carbamate_ethylamide",
     "CCC(=O)N[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9784472584724426,
+    0.983377993106842,
     "meta_carbamate_benzoicacid",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)C(=O)O"
   ],
   [
-    0.9786214232444763,
+    0.9834100008010864,
     "meta_carbamate_amide",
     "CC(=O)N[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9786247611045837,
+    0.983514130115509,
     "meta_carbamate_amino",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)N"
   ],
   [
-    0.9787625670433044,
+    0.9835177063941956,
     "meta_carbamate_iodo",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)I"
   ],
   [
-    0.9788389205932617,
+    0.9835556745529175,
     "meta_carbamate_bromo",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)Br"
   ],
   [
-    0.9788482189178467,
+    0.9836090803146362,
     "meta_carbamate_methyl",
     "C[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9790463447570801,
+    0.9838981628417969,
     "meta_carbamate_chloro",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)Cl"
   ],
   [
-    0.9790547490119934,
+    0.9842506647109985,
     "para_carbamate_methylamino",
     "CN[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9790869951248169,
+    0.9843036532402039,
     "para_carbamate_ethylamino",
     "CCN[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9791072010993958,
+    0.9844401478767395,
     "para_carbamate_dimethylamino",
     "CN(C)[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9793357849121094,
+    0.9846231937408447,
     "para_carbamate_propylamino",
     "CCCN[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9793751239776611,
+    0.9847664833068848,
     "para_carbamate_amino",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)N"
   ],
   [
-    0.979507327079773,
+    0.9849388599395752,
     "meta_carbamate_propylamino",
     "CCCN[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9796890616416931,
+    0.9849469661712646,
     "meta_carbamate_ethoxy",
     "CCO[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.979707658290863,
+    0.98497474193573,
     "carbamate",
     "c1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9797273874282837,
+    0.984989583492279,
     "para_carbamate_methyl",
     "C[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9798705577850342,
+    0.9850574135780334,
     "meta_carbamate_ethylamino",
     "CCN[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9801579117774963,
+    0.985060453414917,
     "meta_carbamate_fluoro",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)F"
   ],
   [
-    0.9801779389381409,
+    0.9851198792457581,
     "meta_carbamate_methylamino",
     "CN[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9802064895629883,
+    0.9851314425468445,
     "meta_carbamate_propylamino",
     "CCCN[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.980224072933197,
+    0.9852376580238342,
     "meta_carbamate_ethylamino",
     "CCN[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9803087711334229,
+    0.9853159189224243,
     "meta_carbamate_benzoicacid",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)C(=O)O"
   ],
   [
-    0.9803606867790222,
+    0.9853270649909973,
     "para_carbamate_ethylamide",
     "CCC(=O)N[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9805557131767273,
+    0.9855846166610718,
     "meta_carbamate_ethylamide",
     "CCC(=O)N[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9806879758834839,
+    0.9856610298156738,
     "para_carbamate_dimethylurea",
     "CN(C)C(=O)N[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9808125495910645,
+    0.9858109951019287,
     "meta_carbamate_urea",
     "CNC(=O)N[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9808831810951233,
+    0.985837996006012,
     "para_carbamate_ethoxy",
     "CCO[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9809257388114929,
+    0.9858518242835999,
     "meta_carbamate_nitro",
     "c1c[c:1](c[c:4](c1)[O:5]C(=O)N)[N+](=O)[O-]"
   ],
   [
-    0.9811826348304749,
+    0.9859300255775452,
     "meta_carbamate_phenylurea",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)NC(=O)N"
   ],
   [
-    0.9814490675926208,
+    0.985933244228363,
     "para_carbamate_nitro",
     "c1c[c:4](cc[c:1]1[N+](=O)[O-])[O:5]C(=O)N"
   ],
   [
-    0.9815698266029358,
+    0.9861106872558594,
     "para_carbamate_hydroxy",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)O"
   ],
   [
-    0.9817426204681396,
+    0.9861727952957153,
     "para_carbamate_methoxy",
     "CO[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9819198250770569,
+    0.9865971803665161,
     "meta_carbamate_dimethylurea",
     "CN(C)C(=O)N[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9819367527961731,
+    0.9866733551025391,
     "meta_carbamate_hydroxy",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)O"
   ],
   [
-    0.9819375276565552,
+    0.9867222309112549,
     "meta_carbamate_cyano",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)C#N"
   ],
   [
-    0.9819811582565308,
+    0.98728346824646,
     "meta_carbamate_phenylurea",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)NC(=O)N"
   ],
   [
-    0.9819855690002441,
+    0.9873505234718323,
     "para_carbamate_carbamate",
     "c1c[c:3](nc[c:4]1[O:5]C(=O)N)OC(=O)N"
   ],
   [
-    0.9820172786712646,
+    0.9874403476715088,
     "meta_carbamate_methoxy",
     "CO[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9821082353591919,
+    0.9876250624656677,
     "meta_carbamate_ethoxycarbonyl",
     "CCOC(=O)[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9830778241157532,
+    0.9877259135246277,
     "para_carbamate_phenylurea",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)NC(=O)N"
   ],
   [
-    0.983377993106842,
+    0.9879127740859985,
     "para_carbamate_urea",
     "CNC(=O)N[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9834100008010864,
+    0.9880924820899963,
     "meta_carbamate_iodo",
     "c1[c:4](cnc[c:1]1I)[O:5]C(=O)N"
   ],
   [
-    0.983514130115509,
+    0.9882552027702332,
     "meta_carbamate_chloro",
     "c1[c:4](cnc[c:1]1Cl)[O:5]C(=O)N"
   ],
   [
-    0.9835177063941956,
+    0.9883183240890503,
     "para_carbamate_iodo",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)I"
   ],
   [
-    0.9835556745529175,
+    0.9883385896682739,
     "para_carbamate_amide",
     "CC(=O)N[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9836090803146362,
+    0.988726019859314,
     "para_carbamate_bromo",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)Br"
   ],
   [
-    0.9838981628417969,
+    0.9887596964836121,
     "meta_carbamate_bromo",
     "c1[c:4](cnc[c:1]1Br)[O:5]C(=O)N"
   ],
   [
-    0.9842506647109985,
+    0.9889992475509644,
     "para_carbamate_chloro",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)Cl"
   ],
   [
-    0.9843036532402039,
+    0.9893204569816589,
     "meta_carbamate_fluoro",
     "c1[c:4](cnc[c:1]1F)[O:5]C(=O)N"
   ],
   [
-    0.9844401478767395,
+    0.9896042346954346,
     "para_carbamate_fluoro",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)F"
   ],
   [
-    0.9846204519271851,
+    0.9897909164428711,
     "meta_carbamate_carbamate",
     "c1[c:4](cnc[c:2]1OC(=O)N)[O:5]C(=O)N"
   ],
   [
-    0.9846231937408447,
+    0.9898625612258911,
     "para_carbamate_ethoxycarbonyl",
     "CCOC(=O)[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9846946001052856,
+    0.9903997778892517,
     "meta_carbamate_cyano",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)C#N"
   ],
   [
-    0.9847664833068848,
+    0.9907960295677185,
     "para_carbamate_cyano",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)C#N"
   ],
   [
-    0.9849388599395752,
+    0.9910104274749756,
     "para_carbamate_benzoicacid",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)C(=O)O"
   ],
   [
-    0.9849469661712646,
+    0.9912863969802856,
     "meta_carbamate_trifluoromethyl",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)C(F)(F)F"
   ],
   [
-    0.98497474193573,
+    0.9920737147331238,
     "meta_carbamate_nitro",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)[N+](=O)[O-]"
   ],
   [
-    0.984989583492279,
+    0.9922972917556763,
     "meta_carbamate_benzoicacid",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)C(=O)O"
   ],
   [
-    0.9850574135780334,
+    0.9924189448356628,
     "meta_carbamate_ethoxycarbonyl",
     "CCOC(=O)[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.985060453414917,
+    0.9924548268318176,
     "para_carbamate_trifluoromethyl",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)C(F)(F)F"
   ],
   [
-    0.9851198792457581,
+    0.9925026893615723,
     "meta_carbamate_carbamate",
     "c1cn[c:2](c[c:4]1[O:5]C(=O)N)OC(=O)N"
   ],
   [
-    0.9851314425468445,
+    0.99276202917099,
     "meta_carbamate_urea",
     "CNC(=O)N[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ],
   [
-    0.9852376580238342,
+    0.9930599927902222,
     "meta_carbamate_ethoxycarbonyl",
     "CCOC(=O)[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9853159189224243,
+    0.9947619438171387,
     "meta_carbamate_nitro",
     "c1[c:1](cnc[c:4]1[O:5]C(=O)N)[N+](=O)[O-]"
   ],
   [
-    0.9853270649909973,
+    0.9970029592514038,
     "para_carbamate_nitro",
     "c1c[c:1](nc[c:4]1[O:5]C(=O)N)[N+](=O)[O-]"
   ],
   [
-    0.9855846166610718,
+    1.0017600059509277,
     "meta_carbamate_dimethylurea",
     "CN(C)C(=O)N[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9856610298156738,
+    1.0020517110824585,
     "meta_carbamate_urea",
     "CNC(=O)N[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9858109951019287,
+    1.0024523735046387,
     "meta_carbamate_ethylamide",
     "CCC(=O)N[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.985837996006012,
+    1.006698489189148,
     "para_carbamate_trimethylamonium",
     "C[N+](C)(C)[c:1]1cc[c:4](cc1)[O:5]C(=O)N"
   ],
   [
-    0.9858518242835999,
+    1.011137843132019,
     "meta_carbamate_trimethylamonium",
     "C[N+](C)(C)[c:1]1c[c:4](ccn1)[O:5]C(=O)N"
   ],
   [
-    0.9859300255775452,
+    1.0122419595718384,
     "meta_carbamate_trifluoromethyl",
     "c1cn[c:1](c[c:4]1[O:5]C(=O)N)C(F)(F)F"
   ],
   [
-    0.985933244228363,
+    1.019014596939087,
     "para_carbamate_trimethylamonium",
     "C[N+](C)(C)[c:1]1cc[c:4](cn1)[O:5]C(=O)N"
   ],
   [
-    0.9861106872558594,
+    1.023306965827942,
     "meta_carbamate_trimethylamonium",
     "C[N+](C)(C)[c:1]1ccc[c:4](c1)[O:5]C(=O)N"
   ],
   [
-    0.9861727952957153,
+    1.0327019691467285,
     "meta_carbamate_trimethylamonium",
     "C[N+](C)(C)[c:1]1c[c:4](cnc1)[O:5]C(=O)N"
   ]

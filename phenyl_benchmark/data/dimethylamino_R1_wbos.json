@@ -1,666 +1,666 @@
 [
   [
-    0.9617844820022583,
+    0.9675379395484924,
     "para_phenoxide_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)[O-]"
   ],
   [
-    0.9675379395484924,
+    0.967991292476654,
     "meta_propylamino_dimethylamino",
     "CCCN[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    0.967991292476654,
+    0.9704902172088623,
     "para_phenoxide_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)[O-]"
   ],
   [
-    0.9704902172088623,
+    0.971486508846283,
     "meta_propylamino_dimethylamino",
     "CCCN[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    0.971486508846283,
+    0.990385890007019,
     "meta_phenoxide_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)[O-]"
   ],
   [
-    0.9835976958274841,
+    0.9945701956748962,
     "meta_ethylamino_dimethylamino",
     "CCN[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    0.9882338047027588,
+    0.9961687326431274,
     "para_propylamino_dimethylamino",
     "CCCN[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    0.9895304441452026,
+    0.9967330694198608,
     "meta_phenoxide_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)[O-]"
   ],
   [
-    0.9900120496749878,
+    0.9974504113197327,
     "para_ethylamino_dimethylamino",
     "CCN[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    0.990385890007019,
+    0.997936487197876,
     "meta_phenoxide_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)[O-]"
   ],
   [
-    0.9945701956748962,
+    1.0039595365524292,
     "meta_ethylamino_dimethylamino",
     "CCN[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    0.9952082633972168,
+    1.0057909488677979,
     "meta_ethylamino_dimethylamino",
     "CCN[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    0.9961687326431274,
+    1.041867733001709,
     "para_dimethylamino_dimethylamino",
     "CN(C)[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    0.9967330694198608,
+    1.045876145362854,
     "para_methoxy_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)OC"
   ],
   [
-    0.9974504113197327,
+    1.0466853380203247,
     "para_dimethylamino_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)N(C)C"
   ],
   [
-    0.997936487197876,
+    1.0474046468734741,
     "meta_ethoxy_dimethylamino",
     "CCO[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.0039595365524292,
+    1.0480462312698364,
     "para_dimethylurea_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)NC(=O)N(C)C"
   ],
   [
-    1.0057909488677979,
+    1.0503727197647095,
     "para_ethylamino_dimethylamino",
     "CCN[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.041867733001709,
+    1.0509713888168335,
     "para_amino_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)N"
   ],
   [
-    1.045876145362854,
+    1.0509999990463257,
     "meta_propylamino_dimethylamino",
     "CCCN[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0466853380203247,
+    1.0512691736221313,
     "para_methylamino_dimethylamino",
     "CN[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0474046468734741,
+    1.0519053936004639,
     "para_propylamino_dimethylamino",
     "CCCN[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0480462312698364,
+    1.0526374578475952,
     "para_methylamino_dimethylamino",
     "CN[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.0503727197647095,
+    1.0551283359527588,
     "meta_dimethylurea_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)NC(=O)N(C)C"
   ],
   [
-    1.0504674911499023,
+    1.0565483570098877,
     "para_amino_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)N"
   ],
   [
-    1.0509713888168335,
+    1.0578293800354004,
     "para_hydroxy_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:2](cc1)O"
   ],
   [
-    1.0509999990463257,
+    1.0580493211746216,
     "para_ethoxy_dimethylamino",
     "CCO[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0512691736221313,
+    1.0583986043930054,
     "para_dimethylamino_phenylurea",
     "C[N:5](C)[c:4]1cc[c:1](cc1)NC(=O)N"
   ],
   [
-    1.0519053936004639,
+    1.0594879388809204,
     "para_urea_dimethylamino",
     "CNC(=O)N[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0526374578475952,
+    1.0599286556243896,
     "para_ethylamide_dimethylamino",
     "CCC(=O)N[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0551283359527588,
+    1.0606904029846191,
     "para_methoxy_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)OC"
   ],
   [
-    1.0561944246292114,
+    1.0611382722854614,
     "para_amide_dimethylamino",
     "CC(=O)N[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0565483570098877,
+    1.061313509941101,
     "para_ethoxy_dimethylamino",
     "CCO[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.0578293800354004,
+    1.0637269020080566,
     "para_dimethylurea_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)NC(=O)N(C)C"
   ],
   [
-    1.0580493211746216,
+    1.063970685005188,
     "para_hydroxy_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:2](nc1)O"
   ],
   [
-    1.0583986043930054,
+    1.065322995185852,
     "meta_methyl_dimethylamino",
     "C[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.0594879388809204,
+    1.0659945011138916,
     "para_dimethylamino_phenylurea",
     "C[N:5](C)[c:4]1cc[c:1](nc1)NC(=O)N"
   ],
   [
-    1.0599286556243896,
+    1.0660393238067627,
     "para_urea_dimethylamino",
     "CNC(=O)N[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.0606904029846191,
+    1.0663833618164062,
     "meta_dimethylamino_phenylurea",
     "C[N:5](C)[c:4]1ccc[c:1](c1)NC(=O)N"
   ],
   [
-    1.0611382722854614,
+    1.0665920972824097,
     "para_methyl_dimethylamino",
     "C[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.061313509941101,
+    1.0667105913162231,
     "meta_urea_dimethylamino",
     "CNC(=O)N[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.062193512916565,
+    1.066744327545166,
     "para_amide_dimethylamino",
     "CC(=O)N[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.0637269020080566,
+    1.0670044422149658,
     "dimethylamino",
     "C[N:5](C)[c:4]1ccccc1"
   ],
   [
-    1.063970685005188,
+    1.0670573711395264,
     "para_ethylamide_dimethylamino",
     "CCC(=O)N[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.065322995185852,
+    1.0672357082366943,
     "meta_ethylamide_dimethylamino",
     "CCC(=O)N[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.0659945011138916,
+    1.067443609237671,
     "meta_amide_dimethylamino",
     "CC(=O)N[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.066023826599121,
+    1.067580223083496,
     "meta_dimethylamino_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)N(C)C"
   ],
   [
-    1.0660393238067627,
+    1.0695985555648804,
     "meta_methylamino_dimethylamino",
     "CN[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.0663833618164062,
+    1.0707331895828247,
     "para_carbamate_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)OC(=O)N"
   ],
   [
-    1.0665920972824097,
+    1.0715715885162354,
     "meta_amino_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)N"
   ],
   [
-    1.0667105913162231,
+    1.0726138353347778,
     "para_fluoro_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:2](cc1)F"
   ],
   [
-    1.066744327545166,
+    1.0745035409927368,
     "meta_dimethylurea_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)NC(=O)N(C)C"
   ],
   [
-    1.0670044422149658,
+    1.074550986289978,
     "meta_dimethylamino_benzoicacid",
     "C[N:5](C)[c:4]1ccc[c:1](c1)C(=O)O"
   ],
   [
-    1.0670573711395264,
+    1.0747942924499512,
     "meta_ethoxycarbonyl_dimethylamino",
     "CCOC(=O)[c:2]1ccc[c:4](c1)[N:5](C)C"
   ],
   [
-    1.0672357082366943,
+    1.0753785371780396,
     "meta_carbamate_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)OC(=O)N"
   ],
   [
-    1.067443609237671,
+    1.0758758783340454,
     "meta_iodo_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)I"
   ],
   [
-    1.067580223083496,
+    1.0768392086029053,
     "meta_bromo_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)Br"
   ],
   [
-    1.0691605806350708,
+    1.0769842863082886,
     "meta_methyl_dimethylamino",
     "C[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0695985555648804,
+    1.0770915746688843,
     "para_methyl_dimethylamino",
     "C[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.0707331895828247,
+    1.0777616500854492,
     "meta_methoxy_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)OC"
   ],
   [
-    1.0715715885162354,
+    1.078291654586792,
     "meta_dimethylamino_phenylurea",
     "C[N:5](C)[c:4]1c[c:1](cnc1)NC(=O)N"
   ],
   [
-    1.0726138353347778,
+    1.0783560276031494,
     "meta_chloro_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)Cl"
   ],
   [
-    1.0745035409927368,
+    1.078399419784546,
     "dimethylamino",
     "C[N:5](C)[c:4]1cccnc1"
   ],
   [
-    1.074550986289978,
+    1.0784410238265991,
     "meta_ethylamide_dimethylamino",
     "CCC(=O)N[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0747942924499512,
+    1.0786092281341553,
     "meta_amide_dimethylamino",
     "CC(=O)N[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0753785371780396,
+    1.0786603689193726,
     "meta_cyano_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)C#N"
   ],
   [
-    1.0758758783340454,
+    1.0787923336029053,
     "meta_urea_dimethylamino",
     "CNC(=O)N[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0768392086029053,
+    1.0789874792099,
     "para_carbamate_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)OC(=O)N"
   ],
   [
-    1.0769842863082886,
+    1.0795520544052124,
     "para_chloro_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)Cl"
   ],
   [
-    1.0770915746688843,
+    1.0796524286270142,
     "meta_dimethylamino_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)N(C)C"
   ],
   [
-    1.077661156654358,
+    1.0801315307617188,
     "meta_methylamino_dimethylamino",
     "CN[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0777616500854492,
+    1.0820896625518799,
     "para_fluoro_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:2](nc1)F"
   ],
   [
-    1.078291654586792,
+    1.0820952653884888,
     "meta_trifluoromethyl_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)C(F)(F)F"
   ],
   [
-    1.0783560276031494,
+    1.0828098058700562,
     "meta_hydroxy_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)O"
   ],
   [
-    1.078399419784546,
+    1.0830602645874023,
     "meta_fluoro_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)F"
   ],
   [
-    1.0784410238265991,
+    1.0833714008331299,
     "meta_amino_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)N"
   ],
   [
-    1.0786092281341553,
+    1.084296464920044,
     "meta_carbamate_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)OC(=O)N"
   ],
   [
-    1.0786603689193726,
+    1.084513783454895,
     "meta_dimethylamino_benzoicacid",
     "C[N:5](C)[c:4]1c[c:1](cnc1)C(=O)O"
   ],
   [
-    1.0787923336029053,
+    1.0845146179199219,
     "meta_ethoxycarbonyl_dimethylamino",
     "CCOC(=O)[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.0789874792099,
+    1.0865495204925537,
     "meta_bromo_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)Br"
   ],
   [
-    1.0795520544052124,
+    1.0865576267242432,
     "meta_iodo_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)I"
   ],
   [
-    1.0796524286270142,
+    1.0866111516952515,
     "meta_carbamate_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)OC(=O)N"
   ],
   [
-    1.0801315307617188,
+    1.0866718292236328,
     "para_bromo_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)Br"
   ],
   [
-    1.0804944038391113,
+    1.0886547565460205,
     "meta_cyano_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)C#N"
   ],
   [
-    1.081620216369629,
+    1.0886588096618652,
     "meta_chloro_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)Cl"
   ],
   [
-    1.0820896625518799,
+    1.0894489288330078,
     "para_iodo_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)I"
   ],
   [
-    1.0820952653884888,
+    1.089461326599121,
     "meta_nitro_dimethylamino",
     "C[N:5](C)[c:4]1ccc[c:2](c1)[N+](=O)[O-]"
   ],
   [
-    1.0823670625686646,
+    1.0897433757781982,
     "meta_ethoxy_dimethylamino",
     "CCO[c:2]1c[c:4](cnc1)[N:5](C)C"
   ],
   [
-    1.082680106163025,
+    1.0897618532180786,
     "para_chloro_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)Cl"
   ],
   [
-    1.0828098058700562,
+    1.0908524990081787,
     "meta_methoxy_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)OC"
   ],
   [
-    1.0829946994781494,
+    1.091488242149353,
     "meta_hydroxy_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)O"
   ],
   [
-    1.0830203294754028,
+    1.0921393632888794,
     "meta_dimethylamino_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)N(C)C"
   ],
   [
-    1.0830602645874023,
+    1.0933434963226318,
     "meta_trifluoromethyl_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)C(F)(F)F"
   ],
   [
-    1.0833714008331299,
+    1.09406578540802,
     "meta_methyl_dimethylamino",
     "C[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.084296464920044,
+    1.0946036577224731,
     "meta_fluoro_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)F"
   ],
   [
-    1.084453821182251,
+    1.0950926542282104,
     "meta_methylamino_dimethylamino",
     "CN[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.084513783454895,
+    1.0952597856521606,
     "meta_dimethylurea_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)NC(=O)N(C)C"
   ],
   [
-    1.0845146179199219,
+    1.0953614711761475,
     "para_ethoxycarbonyl_dimethylamino",
     "CCOC(=O)[c:3]1cc[c:4](cc1)[N:5](C)C"
   ],
   [
-    1.0865495204925537,
+    1.0956205129623413,
     "meta_amide_dimethylamino",
     "CC(=O)N[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.0865576267242432,
+    1.0957231521606445,
     "meta_urea_dimethylamino",
     "CNC(=O)N[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.0866111516952515,
+    1.0959869623184204,
     "meta_dimethylamino_phenylurea",
     "C[N:5](C)[c:4]1ccn[c:1](c1)NC(=O)N"
   ],
   [
-    1.0866718292236328,
+    1.0961264371871948,
     "meta_amino_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)N"
   ],
   [
-    1.0875674486160278,
+    1.096678376197815,
     "dimethylamino",
     "C[N:5](C)[c:4]1ccncc1"
   ],
   [
-    1.0886547565460205,
+    1.0967011451721191,
     "para_bromo_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)Br"
   ],
   [
-    1.0886588096618652,
+    1.098906397819519,
     "meta_nitro_dimethylamino",
     "C[N:5](C)[c:4]1c[c:2](cnc1)[N+](=O)[O-]"
   ],
   [
-    1.0887302160263062,
+    1.0993530750274658,
     "para_iodo_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)I"
   ],
   [
-    1.0894489288330078,
+    1.0993629693984985,
     "para_cyano_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)C#N"
   ],
   [
-    1.089461326599121,
+    1.1012120246887207,
     "meta_ethoxycarbonyl_dimethylamino",
     "CCOC(=O)[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.0897433757781982,
+    1.1016416549682617,
     "meta_methoxy_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)OC"
   ],
   [
-    1.0897618532180786,
+    1.1019304990768433,
     "meta_ethoxy_dimethylamino",
     "CCO[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.0908524990081787,
+    1.102683663368225,
     "para_ethoxycarbonyl_dimethylamino",
     "CCOC(=O)[c:3]1cc[c:4](cn1)[N:5](C)C"
   ],
   [
-    1.091488242149353,
+    1.1030040979385376,
     "meta_ethylamide_dimethylamino",
     "CCC(=O)N[c:2]1c[c:4](ccn1)[N:5](C)C"
   ],
   [
-    1.0921393632888794,
+    1.1042253971099854,
     "meta_dimethylamino_benzoicacid",
     "C[N:5](C)[c:4]1ccn[c:1](c1)C(=O)O"
   ],
   [
-    1.09235417842865,
+    1.1051056385040283,
     "para_trifluoromethyl_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)C(F)(F)F"
   ],
   [
-    1.0926281213760376,
+    1.105422854423523,
     "meta_iodo_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)I"
   ],
   [
-    1.0927048921585083,
+    1.1071569919586182,
     "meta_bromo_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)Br"
   ],
   [
-    1.0929452180862427,
+    1.1071733236312866,
     "meta_hydroxy_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)O"
   ],
   [
-    1.0933434963226318,
+    1.1075940132141113,
     "meta_chloro_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)Cl"
   ],
   [
-    1.0935466289520264,
+    1.1082557439804077,
     "para_dimethylamino_benzoicacid",
     "C[N:5](C)[c:4]1cc[c:1](cc1)C(=O)O"
   ],
   [
-    1.0936506986618042,
+    1.1083894968032837,
     "meta_cyano_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)C#N"
   ],
   [
-    1.09406578540802,
+    1.1119370460510254,
     "meta_fluoro_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)F"
   ],
   [
-    1.0946036577224731,
+    1.11211097240448,
     "para_cyano_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)C#N"
   ],
   [
-    1.0950926542282104,
+    1.1130456924438477,
     "meta_trifluoromethyl_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)C(F)(F)F"
   ],
   [
-    1.0952597856521606,
+    1.115422248840332,
     "para_trifluoromethyl_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)C(F)(F)F"
   ],
   [
-    1.0953614711761475,
+    1.1170382499694824,
     "para_dimethylamino_benzoicacid",
     "C[N:5](C)[c:4]1cc[c:1](nc1)C(=O)O"
   ],
   [
-    1.0956205129623413,
+    1.1208354234695435,
     "meta_nitro_dimethylamino",
     "C[N:5](C)[c:4]1ccn[c:2](c1)[N+](=O)[O-]"
   ],
   [
-    1.0957231521606445,
+    1.1282141208648682,
     "para_nitro_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](cc1)[N+](=O)[O-]"
   ],
   [
-    1.0959869623184204,
+    1.138868808746338,
     "para_nitro_dimethylamino",
     "C[N:5](C)[c:4]1cc[c:3](nc1)[N+](=O)[O-]"
   ],
   [
-    1.0961264371871948,
+    1.150628685951233,
     "meta_dimethylamino_trimethylamonium",
     "C[N:5](C)[c:4]1ccc[c:1](c1)[N+](C)(C)C"
   ],
   [
-    1.096678376197815,
+    1.1659893989562988,
     "meta_dimethylamino_trimethylamonium",
     "C[N:5](C)[c:4]1c[c:1](cnc1)[N+](C)(C)C"
   ],
   [
-    1.0967011451721191,
+    1.1881486177444458,
     "meta_dimethylamino_trimethylamonium",
     "C[N:5](C)[c:4]1ccn[c:1](c1)[N+](C)(C)C"
   ],
   [
-    1.0976983308792114,
+    1.200109601020813,
     "para_dimethylamino_trimethylamonium",
     "C[N:5](C)[c:4]1cc[c:1](cc1)[N+](C)(C)C"
   ],
   [
-    1.0977119207382202,
+    1.2168010473251343,
     "para_dimethylamino_trimethylamonium",
     "C[N:5](C)[c:4]1cc[c:1](nc1)[N+](C)(C)C"
   ]
