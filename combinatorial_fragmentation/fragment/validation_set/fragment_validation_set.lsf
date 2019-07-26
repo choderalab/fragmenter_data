@@ -10,5 +10,5 @@
 source /home/chayas/.bashrc
 conda activate qcf-manager-openff
 
-python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment/validation_set/fragment_validation_set.py -i $LS_EXECCWD/../../enumerate_states/states_JOB_NAME.json -n JOB_NAME
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment/validation_set/fragment_validation_set.py -i $LS_EXECCWD/../../enumerate_states/validation_set/JOB_NAME_states.json -n JOB_NAME
 

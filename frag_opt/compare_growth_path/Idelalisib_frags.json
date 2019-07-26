@@ -15,7 +15,10 @@
     "provenance": {
       "canonicalization": "cmiles_v0.1.5_openeye_2019.Apr.2",
       "central_rot_bond": [
-        "[17, 29]"
+        [
+          17,
+          29
+        ]
       ],
       "map_to_parent": [
         "[H:49][N:29]([CH2:22][CH3:21])[c:17]1[c:13]2[c:16]([nH:27][cH:10][n:25]2)[n:23][cH:9][n:24]1"
@@ -42,7 +45,10 @@
     "provenance": {
       "canonicalization": "cmiles_v0.1.5_openeye_2019.Apr.2",
       "central_rot_bond": [
-        "[17, 29]"
+        [
+          17,
+          29
+        ]
       ],
       "map_to_parent": [
         "[H:49][N:29]([c:17]1[c:13]2[c:16]([nH:27][cH:10][n:25]2)[n:23][cH:9][n:24]1)[C@@H:22]([CH2:21][CH3:20])[c:19]3[n:26][c:12]4[cH:5][cH:4][cH:8][c:15]([c:11]4[c:18](=[O:30])[n:28]3[c:14]5[cH:7][cH:3][cH:1][cH:2][cH:6]5)[F:31]"
@@ -69,7 +75,10 @@
     "provenance": {
       "canonicalization": "cmiles_v0.1.5_openeye_2019.Apr.2",
       "central_rot_bond": [
-        "[17, 29]"
+        [
+          17,
+          29
+        ]
       ],
       "map_to_parent": [
         "[H:49][N:29]([CH3:22])[c:17]1[c:13]2[c:16]([nH:27][cH:10][n:25]2)[n:23][cH:9][n:24]1"
@@ -96,7 +105,10 @@
     "provenance": {
       "canonicalization": "cmiles_v0.1.5_openeye_2019.Apr.2",
       "central_rot_bond": [
-        "[17, 29]"
+        [
+          17,
+          29
+        ]
       ],
       "map_to_parent": [
         "[H:49][N:29]([c:17]1[c:13]2[c:16]([nH:27][cH:10][n:25]2)[n:23][cH:9][n:24]1)[C@@H:22]([CH3:21])[C:19]3=[N:26][c:12]4[cH:5][cH:4][cH:8][cH:15][c:11]4[CH2:18][NH:28]3"

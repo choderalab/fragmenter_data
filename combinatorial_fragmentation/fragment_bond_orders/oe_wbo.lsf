@@ -1,7 +1,7 @@
 #!/bin/bash
 #BSUB -J JOB_NAME_wbo
 #BSUB -n 1
-#BSUB -R rusage[mem=64]
+#BSUB -R rusage[mem=16]
 #BSUB -R span[hosts=1]
 #BSUB -W 96:00
 #BSUB -o /home/chayas/job_output/JOB_NAME_oe_wbo.stdout
@@ -10,5 +10,5 @@
 source /home/chayas/.bashrc
 conda activate qcf-manager-openff
 
-python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_bond_orders/compute_oe_wbo.py -i $LS_EXECCWD/../../fragment/validation_set/fragments_JOB_NAME.json -n JOB_NAME
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/fragment_bond_orders/compute_oe_wbo.py -i $LS_EXECCWD/../../fragment/validation_set/JOB_NAME_fragments.json -n JOB_NAME
 
