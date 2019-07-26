@@ -3,10 +3,8 @@ Calculate WBO for R1 on phenyl ring as R2 changes and generate joy plot
 """
 
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import cm
 from openeye import oechem
 from fragmenter import chemi
-import numpy as np
 import seaborn as sbn
 import json
 import matplotlib.colors as mcolors
@@ -177,7 +175,7 @@ for i, fgroup in enumerate(fgroups_wbos):
     ax.patch.set_facecolor('none')
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=True, alpha=0.8, color=colors[color_keys[i]])
     sbn.kdeplot(list(fgroups_wbos[fgroup].keys()), shade=False, color='black', lw=1.0)
-    plt.xlim(0.70, 1.5)
+    plt.xlim(0.70, 1.4)
     plt.yticks([])
     ax.yaxis.set_label_coords(-0.05, 0)
     plt.ylabel(fgroup, rotation=0, size=8)
