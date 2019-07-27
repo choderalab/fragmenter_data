@@ -53,17 +53,6 @@ def find_central_bond(mol):
                 central_bond.append(atom.GetMapIdx())
     return tuple(central_bond)
 
-
-def generate_torsiondrive_input():
-    """
-    Generate input starting geometry, torsion to drive and some provenance
-    Returns
-    -------
-
-    """
-    pass
-
-
 fgroups =  [
     'dimethylamino',
     'methylamino',
@@ -91,8 +80,27 @@ color_keys = ['rosybrown', 'indianred', 'red', 'orange', 'gold', 'yellow','green
           'palevioletred', 'lightpink']
 colors = mcolors.CSS4_COLORS
 
+# The indices here are slightly different than the indices already on QCArchive. This is to make sure we do not rerun them.
+to_replace = {'amino': ('[H:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C', '[H:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C'),
+            'amide': ('C[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C', 'C[C:4](=O)[NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C'),
+            'carbamate':
+            ('C[N+](C)(C)c1c[c:2]([cH:1]nc1)[O:3][C:4](=O)N', 'C[N+](C)(C)c1[cH:1][c:2](cnc1)[O:3][C:4](=O)N'),
+            'dimethylamino':
+            ('C[N:3]([CH3:4])[c:2]1ccc(n[cH:1]1)[N+](C)(C)C', '[CH3:4][N:3](C)[c:2]1[cH:1]cc(nc1)[N+](C)(C)C'),
+            'ethoxy':
+            ('C[CH2:4][O:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C' ,'C[CH2:4][O:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C'),
+            'ethylamino':
+            ('C[CH2:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C', 'C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C'),
+            'methylamino':
+            ('[CH3:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C', '[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C'),
+            'phenylurea':
+            ('C[N+](C)(C)c1c[cH:1][c:2](cn1)[NH:3][C:4](=O)N', 'C[N+](C)(C)c1c[cH:1][c:2](cn1)[NH:3][C:4](=O)N'),
+            'urea':
+            ('CN[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C', 'CN[C:4](=O)[NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C')}
+
 td_inputs = {}
 for i, fgroup in enumerate(fgroups):
+    print(fgroup)
     with open('data/{}_R1_wbos.json'.format(fgroup), 'r') as f:
         wbos = json.load(f)
 
@@ -146,6 +154,11 @@ for i, fgroup in enumerate(fgroups):
         # get job index. Save job indices and WBOs for each fgroup - this will make analysis easier
         mapped_smiles = openeye.oechem.OEMolToSmiles(mapped_mol)
         job_index = cmiles.utils.to_canonical_label(openeye.oechem.OEMolToSmiles(mapped_mol), torsion)
+        if fgroup in to_replace:
+
+            if job_index == to_replace[fgroup][0]:
+                print('replacing index for {}'.format(name))
+                job_index = to_replace[fgroup][1]
         job_indices.append([job_index, torsion, name, wbo])
 
         # Generate conformers
