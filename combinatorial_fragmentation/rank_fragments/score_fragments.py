@@ -122,7 +122,7 @@ def rbg_to_int(rbg, alpha):
     colors.append(int(rbg[-1]))
     return colors
 
-def generate_molecule_images(fragments_dict, name, colors):
+def generate_molecule_images(fragments_dict, name, colors, parent_mole):
     for i, b in enumerate(fragments_dict):
         to_plot = []
         wbos = []
@@ -138,7 +138,7 @@ def generate_molecule_images(fragments_dict, name, colors):
         colors_oe = [oechem.OEColor(*j) for j in int_colors]
         fname = 'validation_set/{}/{}_bond_{}_{}.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
-                     align=to_plot[0])
+                     align=parent_mol)
 
 def fragment_wbo_ridge_plot(data, filename):
     """
@@ -306,4 +306,4 @@ if __name__ == '__main__':
     colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name))
 
     # Generate images of molecules
-    generate_molecule_images(full_frags, name, colors)
+    generate_molecule_images(full_frags, name, colors, parent_mol)
