@@ -122,7 +122,7 @@ def rbg_to_int(rbg, alpha):
     colors.append(int(rbg[-1]))
     return colors
 
-def generate_molecule_images(fragments_dict, name, colors, parent_mole):
+def generate_molecule_images(fragments_dict, name, colors, parent_mol):
     for i, b in enumerate(fragments_dict):
         to_plot = []
         wbos = []
@@ -138,9 +138,12 @@ def generate_molecule_images(fragments_dict, name, colors, parent_mole):
         colors_oe = [oechem.OEColor(*j) for j in int_colors]
         fname = 'validation_set/{}/{}_bond_{}_{}.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
+                     align=to_plot[0])
+        fname = 'validation_set/{}/{}_bond_{}_{}_aligned_to_parent.pdf'.format(name, name, str(b[0]), str(b[1]))
+        chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
                      align=parent_mol)
 
-def fragment_wbo_ridge_plot(data, filename):
+def fragment_wbo_ridge_plot(data, filename, rug=True):
     """
     data: dict of dict
         bond: frags: [wbos]
@@ -189,12 +192,14 @@ def fragment_wbo_ridge_plot(data, filename):
                 else:
                     sbn.kdeplot(wbo, shade=True, color=colors[i], alpha=0.3)
                     sbn.kdeplot(wbo, lw=0.4, color=colors[i])
-                sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
+                if rug:
+                    sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
 
                 # img = plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
                 if len(wbo) < 2:
                     plt.axvline(x=wbo_s, ymin=0, ymax=1, color=colors[i], linewidth=2.0, alpha=0.8)
-                plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
+                if rug:
+                    plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
                 plt.xlim(x_min-0.1, x_max+0.1)
                 plt.yticks([])
                 ax.yaxis.set_label_coords(-0.05, 0)
@@ -303,7 +308,8 @@ if __name__ == '__main__':
         json.dump(scores, f, indent=2, sort_keys=True)
 
     # Plot joyplot of fragment distribution sorted by elf wbo and colored by mmd score
-    colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name))
+    colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge_with_rug.pdf'.format(name, name))
+    colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name), rug=False)
 
     # Generate images of molecules
     generate_molecule_images(full_frags, name, colors, parent_mol)
