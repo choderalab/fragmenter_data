@@ -11,70 +11,70 @@
     1.044639229774475
   ],
   [
-    "C[CH2:4][NH:3][c:2]1ccc(n[cH:1]1)NC(=O)N",
+    "C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)N",
     [
-      2,
+      0,
+      3,
+      9,
+      6
+    ],
+    "para_ethylamino_amino",
+    1.055542230606079
+  ],
+  [
+    "C[CH2:4][NH:3][c:2]1[cH:1]c(cnc1)OCC",
+    [
+      0,
       3,
       10,
       7
     ],
-    "para_ethylamino_phenylurea",
-    1.064545750617981
+    "meta_ethoxy_ethylamino",
+    1.0750834941864014
   ],
   [
-    "[H:4][N:3](CC)[c:2]1[cH:1]cnc(c1)NC(=O)N(C)C",
-    [
-      0,
-      3,
-      11,
-      29
-    ],
-    "meta_dimethylurea_ethylamino",
-    1.084855556488037
-  ],
-  [
-    "C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)Br",
-    [
-      0,
-      3,
-      8,
-      6
-    ],
-    "para_bromo_ethylamino",
-    1.1044442653656006
-  ],
-  [
-    "C[CH2:4][NH:3][c:2]1[cH:1]cnc(c1)C(=O)O",
-    [
-      0,
-      3,
-      9,
-      7
-    ],
-    "meta_ethylamino_benzoicacid",
-    1.1233925819396973
-  ],
-  [
-    "C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)C(=O)O",
-    [
-      0,
-      3,
-      9,
-      7
-    ],
-    "para_ethylamino_benzoicacid",
-    1.1449459791183472
-  ],
-  [
-    "C[CH2:4][NH:3][c:2]1cc(cn[cH:1]1)[N+](C)(C)C",
+    "CCC(=O)Nc1[cH:1][c:2](ccn1)[NH:3][CH2:4]C",
     [
       1,
       3,
       11,
       9
     ],
-    "meta_ethylamino_trimethylamonium",
-    1.1597719192504883
+    "meta_ethylamide_ethylamino",
+    1.0950582027435303
+  ],
+  [
+    "C[CH2:4][NH:3][c:2]1[cH:1]cnc(c1)Br",
+    [
+      0,
+      3,
+      8,
+      6
+    ],
+    "meta_bromo_ethylamino",
+    1.1153347492218018
+  ],
+  [
+    "C[CH2:4][NH:3][c:2]1[cH:1]cnc(c1)Cl",
+    [
+      0,
+      3,
+      8,
+      6
+    ],
+    "meta_chloro_ethylamino",
+    1.1350799798965454
+  ],
+  [
+    "C[CH2:4][NH:3][c:2]1ccc(c[cH:1]1)[N+](=O)[O-]",
+    [
+      1,
+      4,
+      8,
+      7
+    ],
+    "para_nitro_ethylamino",
+    1.1564247608184814
   ],
   [
     "C[CH2:4][NH:3][c:2]1ccnc([cH:1]1)[N+](C)(C)C",
@@ -86,17 +86,6 @@
     ],
     "meta_ethylamino_trimethylamonium",
     1.2131497859954834
-  ],
-  [
-    "C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C",
-    [
-      2,
-      3,
-      11,
-      9
-    ],
-    "para_ethylamino_trimethylamonium",
-    1.2418060302734375
   ],
   [
     "C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C",
