@@ -116,8 +116,14 @@ def find_highest_score(full_frags):
                 s = full_frags[b][f]['mmd_exp']
     return s
 
-def generate_molecule_images(fragments_dict, name):
-    for b in fragments_dict:
+def rbg_to_int(rbg, alpha):
+    rbg[-1] = int(rbg[-1]*alpha)
+    colors = [int(round(i*255)) for i in rbg[:-1]]
+    colors.append(int(rbg[-1]))
+    return colors
+
+def generate_molecule_images(fragments_dict, name, colors):
+    for i, b in enumerate(fragments_dict):
         to_plot = []
         wbos = []
         sorted_frags = sort_fragments(fragments_dict[b])
@@ -128,9 +134,11 @@ def generate_molecule_images(fragments_dict, name):
             mol.SetTitle(str(fragments_dict[b][f]['mmd_exp']))
             to_plot.append(mol)
             wbos.append(fragments_dict[b][f]['elf_estimate'])
-
+        int_colors = [rbg_to_int(rbg, alpha=150) for rbg in colors[i]]
+        colors_oe = [oechem.OEColor(*j) for j in int_colors]
         fname = 'validation_set/{}/{}_bond_{}_{}.pdf'.format(name, name, str(b[0]), str(b[1]))
-        chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos)
+        chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
+                     align=to_plot[0])
 
 def fragment_wbo_ridge_plot(data, filename):
     """
@@ -143,6 +151,7 @@ def fragment_wbo_ridge_plot(data, filename):
     filname: str
         filename
     """
+    higlight_for_bonds = []
     with PdfPages(filename) as pdf:
         for bond in data:
             # sort fragments by estimated wbo
@@ -163,6 +172,7 @@ def fragment_wbo_ridge_plot(data, filename):
             scores = [data[bond][f]['mmd_exp'] for f in sorted_frags]
             norm = plt.Normalize(0, max(scores))
             colors = plt.cm.plasma(norm(scores))
+            higlight_for_bonds.append(colors)
             for i, frag in enumerate(sorted_frags):
                 wbo = data[bond][frag]['individual_confs']
 
@@ -210,6 +220,7 @@ def fragment_wbo_ridge_plot(data, filename):
             fig.tight_layout(h_pad=h_pad)
             pdf.savefig(bbox_inches='tight')
             plt.close()
+        return higlight_for_bonds
 
 
 if __name__ == '__main__':
@@ -292,7 +303,7 @@ if __name__ == '__main__':
         json.dump(scores, f, indent=2, sort_keys=True)
 
     # Plot joyplot of fragment distribution sorted by elf wbo and colored by mmd score
-    fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name))
+    colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name))
 
     # Generate images of molecules
-    generate_molecule_images(full_frags, name)
+    generate_molecule_images(full_frags, name, colors)
