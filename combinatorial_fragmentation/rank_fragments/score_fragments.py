@@ -179,12 +179,12 @@ def fragment_wbo_ridge_plot(data, filename):
                 else:
                     sbn.kdeplot(wbo, shade=True, color=colors[i], alpha=0.3)
                     sbn.kdeplot(wbo, lw=0.4, color=colors[i])
-                #sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
+                sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
 
                 # img = plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
                 if len(wbo) < 2:
                     plt.axvline(x=wbo_s, ymin=0, ymax=1, color=colors[i], linewidth=2.0, alpha=0.8)
-                #plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
+                plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
                 plt.xlim(x_min-0.1, x_max+0.1)
                 plt.yticks([])
                 ax.yaxis.set_label_coords(-0.05, 0)
@@ -255,8 +255,8 @@ if __name__ == '__main__':
         if a1.GetDegree() == 1 or a2.GetDegree() == 1:
             # Terminal
             continue
-        #if not b.IsRotor():
-        #    continue
+        if not b.IsRotor():
+           continue
 
         nbrs = get_bond_nbr(parent_mol, b)
         full_frags[tuple(deserialzied_bond)] = frags_with_nbrs(parent_mol, bonds_dist[bond], nbrs)
