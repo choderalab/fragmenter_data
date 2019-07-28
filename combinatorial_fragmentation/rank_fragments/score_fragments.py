@@ -136,12 +136,14 @@ def generate_molecule_images(fragments_dict, name, colors, parent_mol):
             wbos.append(fragments_dict[b][f]['elf_estimate'])
         int_colors = [rbg_to_int(rbg, alpha=150) for rbg in colors[i]]
         colors_oe = [oechem.OEColor(*j) for j in int_colors]
-        fname = 'validation_set/{}/{}_bond_{}_{}.pdf'.format(name, name, str(b[0]), str(b[1]))
+        fname = 'validation_set/{}/{}_bond_{}_{}_aligned.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
                      align=to_plot[0])
         fname = 'validation_set/{}/{}_bond_{}_{}_aligned_to_parent.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
                      align=parent_mol)
+        fname = 'validation_set/{}/{}_bond_{}_{}_no_alignemnet.pdf'.format(name, name, str(b[0]), str(b[1]))
+        chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe)
 
 def fragment_wbo_ridge_plot(data, filename, rug=True):
     """
