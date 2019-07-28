@@ -2,7 +2,7 @@ import os
 import subprocess
 import glob
 
-jobs_to_run = glob.glob('../../fragment_bond_orders/validation_set/*/')
+jobs_to_run = glob.glob('../fragment_bond_orders/validation_set/*/')
 
 for dir in jobs_to_run:
     name = dir.split('/')[-2]

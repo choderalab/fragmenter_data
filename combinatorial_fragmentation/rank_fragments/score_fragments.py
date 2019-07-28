@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 from openeye import oechem
-from fragmenter import chemi, workflow_api
+from fragmenter import chemi, utils
 
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
@@ -103,8 +103,6 @@ def find_parent_smiles(wbo_dict, mapped=True):
                 #mapped_smiles = wbo_dict[bond][frag]['map_to_parent']
                 #return mapped_smiles
 
-def deserialize(key):
-    return [int(x) for x in key.split('[')[-1].split(']')[0].split(',')]
 
 def sort_fragments(frags):
     sorted_frags = sorted([(frags[f]['elf_estimate'], f) for f in frags])
@@ -131,7 +129,7 @@ def generate_molecule_images(fragments_dict, name):
             to_plot.append(mol)
             wbos.append(fragments_dict[b][f]['elf_estimate'])
 
-        fname = '{}/{}_bond_{}_{}_2.pdf'.format(name, name, str(b[0]), str(b[1]))
+        fname = 'validation_set/{}/{}_bond_{}_{}.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos)
 
 def fragment_wbo_ridge_plot(data, filename):
@@ -176,17 +174,17 @@ def fragment_wbo_ridge_plot(data, filename):
                 ax.spines['bottom'].set_visible(False)
                 ax.patch.set_facecolor('none')
                 if 'parent' in frag:
-                    sbn.kdeplot(wbo, shade= True, color='midnightblue', alpha=1.0)
-                    sbn.kdeplot(wbo, lw=2, color='black')
+                    sbn.kdeplot(wbo, shade= True, color='darkblue', alpha=1.0)
+                    sbn.kdeplot(wbo, lw=3, color='black')
                 else:
-                    sbn.kdeplot(wbo, shade=True, color=colors[i], alpha=0.6)
-                    sbn.kdeplot(wbo, lw=0.4, color='black')
-                sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
+                    sbn.kdeplot(wbo, shade=True, color=colors[i], alpha=0.3)
+                    sbn.kdeplot(wbo, lw=0.4, color=colors[i])
+                #sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
 
-                img = plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
+                # img = plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
                 if len(wbo) < 2:
                     plt.axvline(x=wbo_s, ymin=0, ymax=1, color=colors[i], linewidth=2.0, alpha=0.8)
-                plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
+                #plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
                 plt.xlim(x_min-0.1, x_max+0.1)
                 plt.yticks([])
                 ax.yaxis.set_label_coords(-0.05, 0)
@@ -217,12 +215,11 @@ def fragment_wbo_ridge_plot(data, filename):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description="calculate OE WBO")
-    parser.add_argument('-i', '--infile', type=str, help='Input JSON fragments with wbo file. Should be name {}_oe_wbo_by_bond.json')
     parser.add_argument('-n', '--name', type=str, help='Molecule name with number of its state')
     args = parser.parse_args()
-    infile = args.infile
     name = args.name
 
+    infile = '../fragment_bond_orders/validation_set/{}/{}_oe_wbo_by_bond.json'.format(name, name)
     try:
         with open(infile, 'r') as f:
             bonds_dist = json.load(f)
@@ -232,7 +229,7 @@ if __name__ == '__main__':
             bonds_dist = json.load(f)
 
     try:
-        os.mkdir(name)
+        os.mkdir('validation_set/{}'.format(name))
     except FileExistsError:
          print('{} directory already exists. Files will be overwritten'.format(name))
 
@@ -240,13 +237,13 @@ if __name__ == '__main__':
     # Generate image with map labels
     parent_mol = oechem.OEMol()
     oechem.OESmilesToMol(parent_mol, parent_mapped_smiles)
-    chemi.mol_to_image_atoms_label(parent_mol, fname='{}/{}.png'.format(name, name))
+    chemi.mol_to_image_atoms_label(parent_mol, fname='validation_set/{}/{}.png'.format(name, name))
 
 
     # Only keep fragments if all 1-5 atoms are around central bonds
     full_frags = {}
     for bond in bonds_dist:
-        deserialzied_bond = deserialize(bond)
+        deserialzied_bond = utils.deserialize_bond(bond)
         b = get_bond(parent_mol, deserialzied_bond)
         if b.IsInRing():
             continue
@@ -275,27 +272,27 @@ if __name__ == '__main__':
     # serialize and save
     serialized_full_frags = {}
     for b in full_frags:
-        b_key = workflow_api.serialize_key(b)
+        b_key = utils.serialize_bond(b)
         serialized_full_frags[b_key] = full_frags[b]
 
-    with open('{}/{}_oe_wbo_with_score_2.json'.format(name, name), 'w') as f:
+    with open('validation_set/{}/{}_oe_wbo_with_score.json'.format(name, name), 'w') as f:
             json.dump(serialized_full_frags, f, indent=2, sort_keys=True)
 
     # Save scores separately - this will make it easier to rank and finalize validation set
     # Save all scores
     scores = {}
     for b in full_frags:
-        b_key = workflow_api.serialize_key(b)
+        b_key = utils.serialize_bond(b)
         scores[b_key] = []
         for f in full_frags[b]:
             scores[b_key].append(full_frags[b][f]['mmd_exp'])
     scores['greatest_discrepancy'] = find_highest_score(full_frags)
 
-    with open('{}/{}_mmd_exp_scores_2.json'.format(name, name), 'w') as f:
+    with open('validation_set/{}/{}_mmd_exp_scores.json'.format(name, name), 'w') as f:
         json.dump(scores, f, indent=2, sort_keys=True)
 
     # Plot joyplot of fragment distribution sorted by elf wbo and colored by mmd score
-    fragment_wbo_ridge_plot(full_frags, filename='{}/{}_ridge_2.pdf'.format(name, name))
+    fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name))
 
     # Generate images of molecules
     generate_molecule_images(full_frags, name)
