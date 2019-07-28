@@ -11,70 +11,70 @@
     1.0326143503189087
   ],
   [
-    "CCC(=O)Nc1c[cH:1][c:2](cc1)[NH:3][CH3:4]",
-    [
-      2,
-      5,
-      11,
-      8
-    ],
-    "para_ethylamide_methylamino",
-    1.054154872894287
-  ],
-  [
-    "[CH3:4][NH:3][c:2]1[cH:1]cc(cc1)F",
+    "[CH3:4][NH:3][c:2]1[cH:1]cc(cc1)NC",
     [
       0,
       4,
-      7,
+      8,
       6
     ],
-    "para_fluoro_methylamino",
-    1.0647234916687012
+    "para_methylamino_methylamino",
+    1.0463075637817383
   ],
   [
-    "[CH3:4][NH:3][c:2]1[cH:1]cc(cc1)I",
-    [
-      0,
-      4,
-      7,
-      6
-    ],
-    "para_iodo_methylamino",
-    1.0843509435653687
-  ],
-  [
-    "CCOC(=O)c1c[c:2]([cH:1]cn1)[NH:3][CH3:4]",
-    [
-      0,
-      3,
-      10,
-      7
-    ],
-    "meta_ethoxycarbonyl_methylamino",
-    1.0949419736862183
-  ],
-  [
-    "[CH3:4][NH:3][c:2]1[cH:1]cnc(c1)[N+](=O)[O-]",
+    "[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)O",
     [
       0,
       3,
       7,
       5
     ],
-    "meta_nitro_methylamino",
-    1.1092694997787476
+    "para_hydroxy_methylamino",
+    1.0551478862762451
   ],
   [
-    "[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](=O)[O-]",
+    "[CH3:4][NH:3][c:2]1[cH:1]c(cnc1)C(=O)O",
+    [
+      0,
+      4,
+      8,
+      6
+    ],
+    "meta_methylamino_benzoicacid",
+    1.0751067399978638
+  ],
+  [
+    "[CH3:4][NH:3][c:2]1[cH:1]cnc(c1)N",
     [
       0,
       3,
-      7,
+      8,
       5
+    ],
+    "meta_amino_methylamino",
+    1.085951805114746
+  ],
+  [
+    "[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)C(=O)O",
+    [
+      0,
+      3,
+      8,
+      6
+    ],
+    "para_methylamino_benzoicacid",
+    1.1078541278839111
+  ],
+  [
+    "[CH3:4][NH:3][c:2]1[cH:1]cc(cc1)[N+](=O)[O-]",
+    [
+      0,
+      4,
+      7,
+      6
     ],
     "para_nitro_methylamino",
-    1.1246404647827148
+    1.1187678575515747
   ],
   [
     "[CH3:4][NH:3][c:2]1cc(cn[cH:1]1)[N+](C)(C)C",
@@ -99,7 +99,7 @@
     1.1817901134490967
   ],
   [
-    "[CH3:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C",
+    "[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C",
     [
       2,
       3,
@@ -110,7 +110,7 @@
     1.2128665447235107
   ],
   [
-    "[CH3:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C",
+    "[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C",
     [
       2,
       3,

@@ -1,47 +1,47 @@
 [
   [
-    "[H:4][NH:3][c:2]1[cH:1]cc(nc1)N(C)C",
+    "[H:4][NH:3][c:2]1[cH:1]cc(cc1)N(C)C",
+    [
+      0,
+      4,
+      8,
+      20
+    ],
+    "para_amino_dimethylamino",
+    1.0616449117660522
+  ],
+  [
+    "[H:4][NH:3][c:2]1[cH:1]cc(nc1)OC",
+    [
+      0,
+      3,
+      7,
+      15
+    ],
+    "para_methoxy_amino",
+    1.0750055313110352
+  ],
+  [
+    "[H:4][NH:3][c:2]1[cH:1]c(cnc1)NC(=O)NC",
     [
       0,
       3,
       8,
-      19
+      18
     ],
-    "para_amino_dimethylamino",
-    1.0628440380096436
+    "meta_urea_amino",
+    1.0950137376785278
   ],
   [
-    "[H:4][NH:3][c:2]1[cH:1]ccc(c1)NC(=O)N",
+    "[H:4][NH:3][c:2]1[cH:1]cc(cc1)C(=O)OCC",
     [
-      1,
-      4,
-      7,
-      15
+      2,
+      5,
+      9,
+      21
     ],
-    "meta_amino_phenylurea",
-    1.0848009586334229
-  ],
-  [
-    "[H:4][NH:3][c:2]1[cH:1]cc(cc1)Br",
-    [
-      0,
-      4,
-      6,
-      12
-    ],
-    "para_bromo_amino",
-    1.1031337976455688
-  ],
-  [
-    "[H:4][NH:3][c:2]1[cH:1]cc(nc1)C(F)(F)F",
-    [
-      0,
-      3,
-      7,
-      14
-    ],
-    "para_trifluoromethyl_amino",
-    1.1246633529663086
+    "para_ethoxycarbonyl_amino",
+    1.115159511566162
   ],
   [
     "[H:4][NH:3][c:2]1[cH:1]cnc(c1)[N+](=O)[O-]",
@@ -88,7 +88,7 @@
     1.228899359703064
   ],
   [
-    "[H:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C",
+    "[H:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C",
     [
       0,
       3,

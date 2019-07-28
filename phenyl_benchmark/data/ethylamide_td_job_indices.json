@@ -1,28 +1,50 @@
 [
   [
-    "CC[C:4](=O)[NH:3][c:2]1[cH:1]ccc(c1)NC",
+    "CC[C:4](=O)[NH:3][c:2]1ccc(c[cH:1]1)N(C)C",
     [
       1,
       4,
-      10,
+      11,
       6
     ],
-    "meta_ethylamide_methylamino",
-    1.0049159526824951
+    "para_ethylamide_dimethylamino",
+    0.9957973957061768
   ],
   [
-    "CC[C:4](=O)[NH:3][c:2]1[cH:1]ccc(c1)C(F)(F)F",
+    "CC[C:4](=O)[NH:3][c:2]1[cH:1]cc(cc1)F",
+    [
+      1,
+      4,
+      9,
+      21
+    ],
+    "para_ethylamide_fluoro",
+    1.0154742002487183
+  ],
+  [
+    "CC[C:4](=O)[NH:3][c:2]1[cH:1]c(cnc1)N",
+    [
+      0,
+      4,
+      10,
+      5
+    ],
+    "meta_ethylamide_amino",
+    1.0253492593765259
+  ],
+  [
+    "CC[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)C(=O)OCC",
     [
       2,
-      5,
-      10,
+      3,
+      12,
       6
     ],
-    "meta_ethylamide_trifluoromethyl",
-    1.023829460144043
+    "para_ethylamide_ethoxycarbonyl",
+    1.035216212272644
   ],
   [
-    "CC[C:4](=O)[NH:3][c:2]1cc(cn[cH:1]1)[N+](=O)[O-]",
+    "CC[C:4](=O)[NH:3][c:2]1ccnc([cH:1]1)[N+](=O)[O-]",
     [
       1,
       3,
@@ -30,29 +52,7 @@
       5
     ],
     "meta_ethylamide_nitro",
-    1.0343483686447144
-  ],
-  [
-    "CC[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)C(=O)O",
-    [
-      2,
-      3,
-      10,
-      6
-    ],
-    "para_ethylamide_benzoicacid",
-    1.0446219444274902
-  ],
-  [
-    "CC[C:4](=O)[NH:3][c:2]1ccc(c[cH:1]1)[N+](=O)[O-]",
-    [
-      1,
-      4,
-      9,
-      6
-    ],
-    "para_ethylamide_nitro",
-    1.0501688718795776
+    1.047263503074646
   ],
   [
     "CC[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)[N+](=O)[O-]",
@@ -66,17 +66,6 @@
     1.0575617551803589
   ],
   [
-    "CC[C:4](=O)[NH:3][c:2]1cccc([cH:1]1)[N+](C)(C)C",
-    [
-      3,
-      4,
-      12,
-      6
-    ],
-    "meta_ethylamide_trimethylamonium",
-    1.0727038383483887
-  ],
-  [
     "CC[C:4](=O)[NH:3][c:2]1cc(cn[cH:1]1)[N+](C)(C)C",
     [
       1,
@@ -88,15 +77,15 @@
     1.0852545499801636
   ],
   [
-    "CC[C:4](=O)[NH:3][c:2]1ccc(c[cH:1]1)[N+](C)(C)C",
+    "CC[C:4](=O)[NH:3][c:2]1ccnc([cH:1]1)[N+](C)(C)C",
     [
       1,
-      4,
+      3,
       12,
-      6
+      5
     ],
-    "para_ethylamide_trimethylamonium",
-    1.1015410423278809
+    "meta_ethylamide_trimethylamonium",
+    1.09921133518219
   ],
   [
     "CC[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C",
