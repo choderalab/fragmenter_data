@@ -149,7 +149,7 @@ def fragment_wbo_ridge_plot(data, filename, rug=True):
                 ax.patch.set_facecolor('none')
                 if 'parent' in frag:
                     sbn.kdeplot(wbo, shade= True, color='cyan', alpha=1.0)
-                    sbn.kdeplot(wbo, lw=0.5, color='black')
+                    sbn.kdeplot(wbo, lw=1.5, color='black')
                 else:
                     sbn.kdeplot(wbo, shade=True, color=colors[i], alpha=0.3)
                     sbn.kdeplot(wbo, lw=0.4, color=colors[i])
@@ -223,12 +223,13 @@ if __name__ == '__main__':
     # Only keep fragments if all 1-5 atoms are around central bonds
     full_frags = {}
     for bond in bonds:
-        deserialzied_bond = utils.deserialize_bond(bond)
-        b = get_bond(parent_mol, deserialzied_bond)
+        b = get_bond(parent_mol, bond)
         if not b:
-            warnings.warn('bond {} does not exist in {}'.format(deserialzied_bond, name))
+            warnings.warn('bond {} does not exist in {}'.format(bond, name))
 
-        full_frags[tuple(deserialzied_bond)] = bonds_dist[bond]
+        bond_key = tuple(bond)
+        serialized_key = utils.serialize_bond(bond_key)
+        full_frags[bond_key] = bonds_dist[serialized_key]
 
     # Calculate mmd score for each fragment
     parent_key = find_parent_smiles(full_frags, mapped=False)
