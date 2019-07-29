@@ -69,6 +69,6 @@ for i, mol in enumerate(sorted_mols):
     selected_bonds['bonds'] = sorted_bonds[i]
     selected_bonds['parent_smiles'] = sorted_smiles
     name = mol.GetTitle()
-    with open('selected/{}/{}_selected_bonds.json', 'w') as f:
+    with open('selected/{}/{}_selected_bonds.json'.format(name, name), 'w') as f:
         json.dump(selected_bonds, f, sort_keys=True, indent=2)
 
