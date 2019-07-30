@@ -33,7 +33,7 @@ for dir in jobs_to_run:
                         f.write(filedata)
                     i +=1
 
-    #submit job
-    # stdin_file = open(bsub_file, 'r')
-    # subprocess.Popen(['bsub'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=stdin_file)
-    # stdin_file.close()
+                    #submit job
+                    stdin_file = open(bsub_file, 'r')
+                    subprocess.Popen(['bsub'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=stdin_file)
+                    stdin_file.close()
