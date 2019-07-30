@@ -91,6 +91,7 @@ if __name__ == '__main__':
             if not frag_key in frags:
                 print('{} not found in bond {}'.format(frag, bond))
                 failures[ser_bond] = frag
+                continue
 
         idx = frags.index(frag)
 
@@ -120,10 +121,12 @@ if __name__ == '__main__':
     with open(filename,'w') as f:
         json.dump(score_size, f, indent=2, sort_keys=True)
 
-    filename = 'selected/{}/{}_{}_{}_{}_{}_failure.json'.format(name, name, threshold,
-                                                             path, functional_groups,
-                                                             keep_non_rotor)
+    if len(failures) > 0:
 
-    with open(filename,'w') as f:
-        json.dump(failures, f, indent=2, sort_keys=True)
+        filename = 'selected/{}/{}_{}_{}_{}_{}_failure.json'.format(name, name, threshold,
+                                                                 path, functional_groups,
+                                                                 keep_non_rotor)
+
+        with open(filename,'w') as f:
+            json.dump(failures, f, indent=2, sort_keys=True)
 
