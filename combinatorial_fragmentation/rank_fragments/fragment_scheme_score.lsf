@@ -4,10 +4,10 @@
 #BSUB -R rusage[mem=8]
 #BSUB -R span[hosts=1]
 #BSUB -W 4:00
-#BSUB -o /home/chayas/job_output/JOB_NAME_score_selected.stdout
-#BSUB -eo /home/chayas/job_output/JOB_NAME_score_selected.stderr
+#BSUB -o /home/chayas/job_output/JOB_NAME_score_I.stdout
+#BSUB -eo /home/chayas/job_output/JOB_NAME_score_I.stderr
 
 source /home/chayas/.bashrc
 conda activate qcf-manager-openff
 
-fragment_scheme_score.py  -n JOB_NAME -t THRESHOLD -p PATH -f FUNCTIONAL_GROUPS -nr NONROTORS
+python fragment_scheme_score.py  -n JOB_NAME -t THRESHOLD -p PATH -f FUNCTIONAL_GROUPS -nr NONROTORS

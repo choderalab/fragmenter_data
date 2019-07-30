@@ -27,6 +27,7 @@ for dir in jobs_to_run:
                     filedata = filedata.replace('PATH', p)
                     filedata = filedata.replace('FUNCTIONAL_GROUPS', fg)
                     filedata = filedata.replace('NONROTORS', nr)
+                    filedata = filedata.reaplace('I', str(i))
 
                     bsub_file = os.path.join(os.getcwd(), '{}_fragment_scheme_score_{}.lsf'.format(name, str(i)))
                     with open(bsub_file, 'w') as f:
