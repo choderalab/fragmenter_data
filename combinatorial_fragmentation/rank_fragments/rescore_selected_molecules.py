@@ -258,7 +258,7 @@ if __name__ == '__main__':
         frags_with_scores[b_key] = {'frags': [], 'mmd_scores': []}
         for f in full_frags[b]:
             scores[b_key].append(full_frags[b][f]['mmd_exp'])
-            frags_with_scores[b_key]['frags'].append(f)
+            frags_with_scores[b_key]['frags'].append(f.split('_')[0])
             frags_with_scores[b_key]['mmd_scores'].append(full_frags[b][f]['mmd_exp'])
 
     scores['greatest_discrepancy'] = find_highest_score(full_frags)
