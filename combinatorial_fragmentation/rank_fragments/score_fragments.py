@@ -299,15 +299,23 @@ if __name__ == '__main__':
     # Save scores separately - this will make it easier to rank and finalize validation set
     # Save all scores
     scores = {}
+    frags_with_scores = {}
     for b in full_frags:
         b_key = utils.serialize_bond(b)
         scores[b_key] = []
+        frags_with_scores[b_key] = {'frags': [], 'mmd_scores': []}
         for f in full_frags[b]:
             scores[b_key].append(full_frags[b][f]['mmd_exp'])
+            frags_with_scores[b_key]['frags'].append(f)
+            frags_with_scores[b_key]['mmd_scores'].append(full_frags[b][f]['mmd_exp'])
+
     scores['greatest_discrepancy'] = find_highest_score(full_frags)
 
-    with open('validation_set/{}/{}_mmd_exp_scores.json'.format(name, name), 'w') as f:
+    with open('selected/{}/{}_mmd_exp_scores.json'.format(name, name), 'w') as f:
         json.dump(scores, f, indent=2, sort_keys=True)
+    with open('selected/{}/{}_frag_with_scores.json'.format(name, name), 'w') as f:
+        json.dump(frags_with_scores, f, indent=2, sort_keys=True)
+
 
     # Plot joyplot of fragment distribution sorted by elf wbo and colored by mmd score
     colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge_with_rug.pdf'.format(name, name))
