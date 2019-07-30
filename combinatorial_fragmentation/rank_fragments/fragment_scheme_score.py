@@ -86,12 +86,12 @@ if __name__ == '__main__':
         frag = frag_dict[frag_key]['cmiles_identifiers']['canonical_isomeric_smiles']
         frags = frag_scores[ser_bond]['frags']
         mmd_scores = frag_scores[ser_bond]['mmd_scores']
+        if not frag in frags and not frag_key in frag:
+            print('{} not found in bond {}'.format(frag, bond))
+            failures[ser_bond] = frag
+            continue
         if not frag in frags:
             frag = frag_key
-            if not frag_key in frags:
-                print('{} not found in bond {}'.format(frag, bond))
-                failures[ser_bond] = frag
-                continue
 
         idx = frags.index(frag)
 
