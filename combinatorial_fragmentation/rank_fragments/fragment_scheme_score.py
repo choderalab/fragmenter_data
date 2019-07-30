@@ -73,6 +73,7 @@ if __name__ == '__main__':
     with open('selected/{}/rescore/{}_frag_with_scores.json'.format(name, name), 'r') as f:
         frag_scores_2 = json.load(f)
 
+    failures = {}
     mapped_mol = oechem.OEMol()
     oechem.OESmilesToMol(mapped_mol, mapped_smiles)
     charged_mol = fragmenter.chemi.get_charges(mapped_mol)
@@ -85,6 +86,12 @@ if __name__ == '__main__':
         frag = frag_dict[frag_key]['cmiles_identifiers']['canonical_isomeric_smiles']
         frags = frag_scores[ser_bond]['frags']
         mmd_scores = frag_scores[ser_bond]['mmd_scores']
+        if not frag in frags:
+            frag = frag_key
+            if not frag_key in frags:
+                print('{} not found in bond {}'.format(frag, bond))
+                failures[ser_bond] = frag
+
         idx = frags.index(frag)
 
         norm = plt.Normalize(min(mmd_scores), max(mmd_scores))
@@ -112,4 +119,11 @@ if __name__ == '__main__':
 
     with open(filename,'w') as f:
         json.dump(score_size, f, indent=2, sort_keys=True)
+
+    filename = 'selected/{}/{}_{}_{}_{}_{}_failure.json'.format(name, name, threshold,
+                                                             path, functional_groups,
+                                                             keep_non_rotor)
+
+    with open(filename,'w') as f:
+        json.dump(failures, f, indent=2, sort_keys=True)
 
