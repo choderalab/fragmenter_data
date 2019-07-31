@@ -34,7 +34,7 @@ def fragment_bond(mapped_mol, bond, threshold, path, functional_groups, keep_non
     # Build fragment
     if bond not in f.rotors_wbo:
         bond = tuple(reversed(bond))
-    f.build_fragment(bond, heuristic=path)
+    f.build_fragment(bond, heuristic=path, strict_types=False)
 
     return f
 
@@ -76,18 +76,20 @@ if __name__ == '__main__':
     failures = {}
     mapped_mol = oechem.OEMol()
     oechem.OESmilesToMol(mapped_mol, mapped_smiles)
-    charged_mol = fragmenter.chemi.get_charges(mapped_mol)
+    charged_mol = fragmenter.chemi.get_charges(mapped_mol, strict_types=False)
     score_size = {}
     for bond in bonds:
         ser_bond = fragmenter.utils.serialize_bond(bond)
         f = fragment_bond(charged_mol, tuple(bond), threshold, path, functional_groups, keep_non_rotor)
         frag_dict = f.to_json()
         frag_key = list(frag_dict.keys())[0]
-        frag = frag_dict[frag_key]['cmiles_identifiers']['canonical_isomeric_smiles']
+        try:
+            frag = frag_dict[frag_key]['cmiles_identifiers']['canonical_isomeric_smiles']
+        except KeyError:
+            frag = frag_key
         frags = frag_scores[ser_bond]['frags']
         mmd_scores = frag_scores[ser_bond]['mmd_scores']
-        if not frag in frags:
-            frag = frag_key
+
         if not frag in frags:
             print('{} not in {}'.format(frag, bond))
             continue
