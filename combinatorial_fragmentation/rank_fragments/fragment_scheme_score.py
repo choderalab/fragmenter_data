@@ -86,6 +86,8 @@ if __name__ == '__main__':
         f = fragment_bond(charged_mol, tuple(bond), threshold, path, functional_groups, keep_non_rotor)
         frag_dict = f.to_json()
         frag_key = list(frag_dict.keys())[0]
+        score_size['provenance'] = frag_dict[frag_key]['provenance']
+
         try:
             frag = frag_dict[frag_key]['cmiles_identifiers']['canonical_isomeric_smiles']
         except KeyError:
@@ -99,10 +101,10 @@ if __name__ == '__main__':
             continue
 
         idx = frags.index(frag)
-
-        norm = plt.Normalize(min(mmd_scores), max(mmd_scores))
-        normed_scores = norm(mmd_scores)
-        score = mmd_scores[idx]
+        sqrt_mmd = np.sqrt(np.asarray(mmd_scores))
+        norm = plt.Normalize(min(sqrt_mmd), max(sqrt_mmd))
+        normed_scores = norm(sqrt_mmd)
+        score = sqrt_mmd[idx]
         normed_score = normed_scores[idx]
         print(f.fragments)
         if tuple(bond) not in f.fragments:
@@ -115,18 +117,18 @@ if __name__ == '__main__':
             continue
         frags_2 = frag_scores_2[ser_bond]['frags']
         mmd_scores_2 = frag_scores_2[ser_bond]['mmd_scores']
+        sqrt_mmd_2 = np.sqrt(np.asarray(mmd_scores_2))
         idx_2 = frags_2.index(frag)
 
-        score_2 = mmd_scores_2[idx_2]
-        norm_2 = plt.Normalize(min(mmd_scores_2), max(mmd_scores_2))
-        normed_scores_2 = norm_2(mmd_scores_2)
+        score_2 = sqrt_mmd_2[idx_2]
+        norm_2 = plt.Normalize(min(sqrt_mmd_2), max(sqrt_mmd_2))
+        normed_scores_2 = norm_2(sqrt_mmd_2)
 
         normed_score_2 = normed_scores_2[idx_2]
         if tuple(bond) not in f.fragments:
             bond = tuple(reversed(bond))
 
         score_size[ser_bond].extend([score_2,  normed_score_2])
-        score_size['provenance'] = frag_dict[frag_key]['provenance']
     filename = 'selected/{}/{}_{}_{}_{}_{}_score_2.json'.format(name, name, threshold,
                                                              path, functional_groups,
                                                              keep_non_rotor)
