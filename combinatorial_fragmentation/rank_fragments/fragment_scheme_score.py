@@ -2,6 +2,7 @@ import fragmenter
 import json
 from openeye import oechem
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def fragment_bond(mapped_mol, bond, threshold, path, functional_groups, keep_non_rotor):
@@ -107,10 +108,9 @@ if __name__ == '__main__':
 
         score_2 = mmd_scores_2[idx_2]
         norm_2 = plt.Normalize(min(mmd_scores_2), max(mmd_scores_2))
-        normed_scores_2 = norm(mmd_scores_2)
-        normed_score_2 = normed_scores_2[idx_2]
-        print(mmd_scores_2)
+        normed_scores_2 = norm_2(mmd_scores_2)
 
+        normed_score_2 = normed_scores_2[idx_2]
         if tuple(bond) not in f.fragments:
             bond = tuple(reversed(bond))
         mol = f.fragments[tuple(bond)]
