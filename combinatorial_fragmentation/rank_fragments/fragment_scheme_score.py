@@ -93,6 +93,7 @@ if __name__ == '__main__':
 
         if not frag in frags:
             print('{} not in {}'.format(frag, bond))
+            failures[ser_bond] = frag
             continue
 
         idx = frags.index(frag)
