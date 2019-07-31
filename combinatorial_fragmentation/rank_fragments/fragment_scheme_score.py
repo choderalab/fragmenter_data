@@ -127,7 +127,7 @@ if __name__ == '__main__':
 
         score_size[ser_bond].extend([score_2,  normed_score_2])
         score_size['provenance'] = frag_dict[frag_key]['provenance']
-    filename = 'selected/{}/{}_{}_{}_{}_{}_score.json'.format(name, name, threshold,
+    filename = 'selected/{}/{}_{}_{}_{}_{}_score_2.json'.format(name, name, threshold,
                                                              path, functional_groups,
                                                              keep_non_rotor)
     if len(score_size) > 0:
@@ -137,7 +137,7 @@ if __name__ == '__main__':
 
     if len(failures) > 0:
 
-        filename = 'selected/{}/{}_{}_{}_{}_{}_failure.json'.format(name, name, threshold,
+        filename = 'selected/{}/{}_{}_{}_{}_{}_failure_2.json'.format(name, name, threshold,
                                                                  path, functional_groups,
                                                                  keep_non_rotor)
 
