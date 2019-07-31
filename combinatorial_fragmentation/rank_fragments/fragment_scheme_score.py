@@ -72,6 +72,7 @@ if __name__ == '__main__':
     with open('selected/{}/{}_frag_with_scores.json'.format(name, name), 'r') as f:
         frag_scores = json.load(f)
     with open('selected/{}/rescore/{}_frag_with_scores.json'.format(name, name), 'r') as f:
+        # Bigger set
         frag_scores_2 = json.load(f)
 
     failures = {}
@@ -79,8 +80,9 @@ if __name__ == '__main__':
     oechem.OESmilesToMol(mapped_mol, mapped_smiles)
     charged_mol = fragmenter.chemi.get_charges(mapped_mol, strict_types=False)
     score_size = {}
-    for bond in bonds:
-        ser_bond = fragmenter.utils.serialize_bond(bond)
+    for ser_bond in frag_scores:
+        print(ser_bond)
+        bond = fragmenter.utils.deserialize_bond(ser_bond)
         f = fragment_bond(charged_mol, tuple(bond), threshold, path, functional_groups, keep_non_rotor)
         frag_dict = f.to_json()
         frag_key = list(frag_dict.keys())[0]
@@ -102,7 +104,15 @@ if __name__ == '__main__':
         normed_scores = norm(mmd_scores)
         score = mmd_scores[idx]
         normed_score = normed_scores[idx]
+        print(f.fragments)
+        if tuple(bond) not in f.fragments:
+            bond = tuple(reversed(bond))
+        mol = f.fragments[tuple(bond)]
+        size = oechem.OECount(mol, oechem.OEIsHeavy())
+        score_size[ser_bond] = [frag, score, normed_score, size]
 
+        if ser_bond not in frag_scores_2:
+            continue
         frags_2 = frag_scores_2[ser_bond]['frags']
         mmd_scores_2 = frag_scores_2[ser_bond]['mmd_scores']
         idx_2 = frags_2.index(frag)
@@ -114,14 +124,14 @@ if __name__ == '__main__':
         normed_score_2 = normed_scores_2[idx_2]
         if tuple(bond) not in f.fragments:
             bond = tuple(reversed(bond))
-        mol = f.fragments[tuple(bond)]
-        size = oechem.OECount(mol, oechem.OEIsHeavy())
-        score_size[ser_bond] = [frag, score, normed_score, score_2,  normed_score_2, size]
+
+        score_size[ser_bond].extend([score_2,  normed_score_2])
         score_size['provenance'] = frag_dict[frag_key]['provenance']
     filename = 'selected/{}/{}_{}_{}_{}_{}_score.json'.format(name, name, threshold,
                                                              path, functional_groups,
                                                              keep_non_rotor)
     if len(score_size) > 0:
+        print(score_size)
         with open(filename,'w') as f:
             json.dump(score_size, f, indent=2, sort_keys=True)
 
