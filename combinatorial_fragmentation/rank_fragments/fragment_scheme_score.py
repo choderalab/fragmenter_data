@@ -105,15 +105,17 @@ if __name__ == '__main__':
         mmd_scores_2 = frag_scores_2[ser_bond]['mmd_scores']
         idx_2 = frags_2.index(frag)
 
+        score_2 = mmd_scores_2[idx_2]
         norm_2 = plt.Normalize(min(mmd_scores_2), max(mmd_scores_2))
         normed_scores_2 = norm(mmd_scores_2)
-        normed_score_2 = normed_scores_2[idx]
+        normed_score_2 = normed_scores_2[idx_2]
+        print(mmd_scores_2)
 
         if tuple(bond) not in f.fragments:
             bond = tuple(reversed(bond))
         mol = f.fragments[tuple(bond)]
         size = oechem.OECount(mol, oechem.OEIsHeavy())
-        score_size[ser_bond] = [frag, score, normed_score, normed_score_2, size]
+        score_size[ser_bond] = [frag, score, normed_score, score_2,  normed_score_2, size]
         score_size['provenance'] = frag_dict[frag_key]['provenance']
     filename = 'selected/{}/{}_{}_{}_{}_{}_score.json'.format(name, name, threshold,
                                                              path, functional_groups,
