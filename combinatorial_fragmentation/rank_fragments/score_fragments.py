@@ -40,7 +40,7 @@ def mmd_x_xsqred(x, y):
     E_x_squared = np.mean(x_squared)
     E_y_squared = np.mean(y_squared)
 
-    mmd2 = (E_x - E_y)**2 + (E_x_squared - E_y_squared)**2
+    mmd2 = np.sqrt((E_x - E_y)**2 + (E_x_squared - E_y_squared)**2)
     return mmd2
 
 def get_bond(mol, bond_idx):
