@@ -13,7 +13,8 @@ def main(argv=[__name__]):
     nfrags = int(argv[2])
     small_mols = pd.read_csv('drugbank_small_mols.csv')
 
-    filtered_drugbank = small_mols.loc[(small_mols['fda_approved'] == True) &
+    filtered_drugbank = small_mols.loc[(small_mols['heavy_atoms'] <= 50) &
+                                       (small_mols['fda_approved'] == True) &
                                        (small_mols['connected_components'] == 1)]
 
 
