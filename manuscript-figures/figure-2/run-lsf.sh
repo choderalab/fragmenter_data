@@ -12,6 +12,8 @@
 #
 # job name (default = name of script file)
 #BSUB -J "drug-bank-wbo[1-10]"
+#BSUB -o /home/chayas/job_output/drugbank-wbo[1-10].stdout
+#BSUB -eo /home/chayas/job_output/drugbank-wbo[1-10].stderr
 
 # Make sure to run bashrc
 source $HOME/.bashrc
