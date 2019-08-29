@@ -38,7 +38,11 @@ def main(argv=[__name__]):
             charged_mol = fragmenter.chemi.get_charges(mol, strict_stereo=False, strict_types=False)
         except RuntimeError:
             print('charging failed for {}'.format(sm))
-        oechem.OEWriteMolecule(ofs, charged_mol)
+        try:
+            oechem.OEWriteMolecule(ofs, charged_mol)
+        except Exception as e:
+            print('Failed to charge {}'.format(sm))
+            print(e)
         nmolecules += 1
         total_time = time.time() - initial_time
         average_time = total_time / nmolecules
