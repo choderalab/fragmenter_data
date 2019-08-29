@@ -13,14 +13,12 @@ def main(argv=[__name__]):
     nfrags = int(argv[2])
     small_mols = pd.read_csv('drugbank_small_mols.csv')
 
-    filtered_drugbank = small_mols.loc[(small_mols['largest_ring_size'] <= 14) &
-                                       (small_mols['heavy_atoms'] <= 40) &
-                                       (small_mols['fda_approved'] == True) &
+    filtered_drugbank = small_mols.loc[(small_mols['fda_approved'] == True) &
                                        (small_mols['connected_components'] == 1)]
 
 
     # open file for writing
-    nmolecules = filtered_drugbank.size
+    nmolecules = len(filtered_drugbank.smiles)
     nstart = int( (nmolecules / nfrags) * (frag-1) )
     nprocess = min( nmolecules, int( (nmolecules / nfrags) * frag ) - int( (nmolecules / nfrags) * (frag-1) ) )
     print(f'Fragment {frag} of {nfrags} : Starting at molecule {nstart} and processing {nprocess} molecules to write to {argv[3]}')
