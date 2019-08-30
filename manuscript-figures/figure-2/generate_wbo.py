@@ -13,11 +13,22 @@ def main(argv=[__name__]):
     nfrags = int(argv[2])
     small_mols = pd.read_csv('drugbank_small_mols.csv')
 
-    filtered_drugbank = small_mols.loc[(small_mols['heavy_atoms'] <= 40) &
+    filtered_drugbank = small_mols.loc[(small_mols['heavy_atoms'] <= 25) &
+                                       (small_mols['heavy_atoms'] >= 2) &
                                        (small_mols['largest_ring_size'] <= 14) &
                                        (small_mols['fda_approved'] == True) &
                                        (small_mols['connected_components'] == 1)]
 
+    # Only look at molecules without charge on atoms
+    def atomic_charge(smiles):
+        mol = oechem.OEMol()
+        oechem.OESmilesToMol(mol, smiles)
+        for a in mol.GetAtoms():
+            if a.GetFormalCharge() != 0:
+                return False
+        return True
+    filtered_drugbank['atomic_charge'] = filtered_drugbank['smiles'].apply(atomic_charge)
+    filtered_drugbank = filtered_drugbank.loc[filtered_drugbank['atomic_charge'] == True]
 
     # open file for writing
     nmolecules = len(filtered_drugbank.smiles)

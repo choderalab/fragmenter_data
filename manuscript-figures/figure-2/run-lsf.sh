@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Set walltime limit
-#BSUB -W 4:00
+#BSUB -W 8:00
 #
 # Specify node group
 #BSUB -q cpuqueue
