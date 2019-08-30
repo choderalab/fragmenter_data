@@ -14,6 +14,7 @@ def main(argv=[__name__]):
     small_mols = pd.read_csv('drugbank_small_mols.csv')
 
     filtered_drugbank = small_mols.loc[(small_mols['heavy_atoms'] <= 40) &
+                                       (small_mols['largest_ring_size'] <= 14) &
                                        (small_mols['fda_approved'] == True) &
                                        (small_mols['connected_components'] == 1)]
 
