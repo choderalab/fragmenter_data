@@ -48,7 +48,7 @@ def determine_connected_components(smiles):
 
 
 #takes 5 minutes
-filename="full_db_9_7_19.xml" # DrugBank Version 5.1.3 (release date: 2019-04-02) Downloaded on 6-7-2019
+filename="full_db_6_7_19.xml" # DrugBank Version 5.1.3 (release date: 2019-04-02) Downloaded on 07-06-2019
 obj=untangle.parse(filename)
 
 drugbank=pd.DataFrame(columns=["drugbank_id","name","cas","smiles", "heavy_atoms", "normalized_wbo", "aromatic_rings",
