@@ -11,3 +11,15 @@ conjugated systems are not as strong as HF3C
 * `calculate_am1_wbo.py` - script to calculate wbos
 * `Gefitinib_for_am1_comparison.oeb` - gefitinib oemols with WBOs (output from running `python calculate_am1_wbo.py -n Gefitinib`)
 * `Imatinib_for_am1_comparison.oeb` - Imatinib oemols with WBOs (output from running `python calculate_am1_wbo.py -n Imatinib`)
+* `generate_figures.ipynb` - Ipython notebook to generate figures
+* `gefitinib_highlighted_bonds.pdf` - gefitnib with bonds highlighted with the same color as wbo distribution
+* `imatinib_highlighted_bonds.pdf` - imatinib with bonds highlighted with the same color as wbo distribution
+* `gefitinib_single_bond_wbo.pdf` - distribution of wbos of single, rotatable bonds for gefitinib
+* `imatinib_single_bond_wbo.pdf` - distribution of wbos of single, rotatable bonds for imatinib
+* `gefitinib_wbo_correlation.pdf` - correlation matrix of wbos for gefitinib
+* `imatinib_wbo_correlation.pdf` - correlation matrix of wbos for imatinib
+
+
+
+
+
