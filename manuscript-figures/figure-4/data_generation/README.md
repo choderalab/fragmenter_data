@@ -1,8 +1,9 @@
 ## Generate distributions of WBO for a set of kinase inhibitors
 
 ## Manifest
+* `archive/` - initial hf3c calculations. The calculations were rerun on QCArchive
 * `kinase_inhibitors.smi` - kinase inhibitors used for this study. This file does not include inhibitors with large ring sytems
-such as Everolimus, Lorlatinib, Midostaurin, Sirolimus, Temsirolimus, Alectinib)
+such as Everolimus, Lorlatinib, Midostaurin, Sirolimus, Temsirolimus, Alectinib
 * `visualize_kinase_inhibitors.py` - script to visualize kinase inhibitors
 * `kinase_inhibitors.pdf` - visualization of kinase inhibitors used to generate data
 * `01_generate.py` - script to generate qcarchive geometry optimizaiton input. to run `python 01_generate.py -i kinase_inhibotors.smi`
