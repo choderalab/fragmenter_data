@@ -9,3 +9,4 @@ such as Everolimus, Lorlatinib, Midostaurin, Sirolimus, Temsirolimus, Alectinib
 * `01_generate.py` - script to generate qcarchive geometry optimizaiton input. to run `python 01_generate.py -i kinase_inhibotors.smi`
 __note__: The scripts to generate and submit the conformers for calculations on QCArchive are [here](https://github.com/openforcefield/qca-dataset-submission/pull/69)
 * `calculate_am1_wbo.py` - script to calculate AM1 WBOs
+* `submit.py` - script to submit AM1 calculation on cluster
