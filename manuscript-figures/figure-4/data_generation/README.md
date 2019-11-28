@@ -2,7 +2,7 @@
 
 ## Manifest
 * `archive/` - initial hf3c calculations. The calculations were rerun on QCArchive
-* `data/` - mol2 and oeb files
+* `data/` - mol2 and oeb files of conformation used to generate AM1 inputs and QCArchive inputs. oeb files have AM1 WBOs
 * `kinase_inhibitors.smi` - kinase inhibitors used for this study. This file does not include inhibitors with large ring sytems
 such as Everolimus, Lorlatinib, Midostaurin, Sirolimus, Temsirolimus, Alectinib
 * `visualize_kinase_inhibitors.py` - script to visualize kinase inhibitors
