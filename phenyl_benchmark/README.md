@@ -21,7 +21,8 @@ This was not used in the final analysis because the N it less than 2 bonds away 
 * `calculate_wbo_phenyl_set.py` - script to cacluate WBO for phenyl set
 * `generate_torsiondrive_inputs.py` - script to choose which torsions to drive and generate input json for QCArchive
 * `download_torsiondrives.py` - script to download QCArchive torsiondrive results (energy and Lowdin-WBO)
-* `generate_figures.ipynb` - ipython notebook to generate final figures for paper
+* `generate_figures.py` - script to generate WBO vs torsion barrier height and stats, all torsion scans, WBO scans and individual
+regression plot
 
 ### outputs
 
