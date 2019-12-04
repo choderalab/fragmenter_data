@@ -35,6 +35,15 @@ def get_energies_wbo(dataset, index):
         wbos.append(wiberg[dih[1], dih[2]])
     return final_energies, wbos
 
+def get_conformers(dataset, index):
+    """
+    Download qcschema mols of optimized geometry
+    """
+    angles = np.arange(-165, 195, 15)
+    td = dataset.get_record(index, specification='default')
+    final_molecules =[td.get_final_molecules(int(i)).dict(encoding='json') for i in angles]
+    return final_molecules
+
 client = ptl.FractalClient()
 phenyl_dataset = client.get_collection('TorsionDriveDataset', 'OpenFF Substituted Phenyl Set 1')
 
@@ -58,9 +67,11 @@ fgroups =  [
     'nitro']
 
 fgroups_td_scans = {}
+fgroups_td_conformers = {}
 for fgroup in fgroups:
     print(fgroup)
     fgroups_td_scans[fgroup] = {'indices': [], 'elf10_am1_wbo': [], 'energy': [], 'lowdin_wbos': []}
+    fgroups_td_conformers[fgroup] = {}
     with open('data/{}_td_job_indices.json'.format(fgroup), 'r') as f:
         indices = json.load(f)
         for i in indices:
@@ -69,6 +80,11 @@ for fgroup in fgroups:
                     continue
                 fgroups_td_scans[fgroup]['indices'].append(i[0])
                 fgroups_td_scans[fgroup]['elf10_am1_wbo'].append(i[3])
+                if i[0] in fgroups_td_conformers[fgroup]:
+                    continue
+                fgroups_td_conformers[fgroup][i[0]] = get_conformers(phenyl_dataset, i[0])
+        with open('data/{}_qcarchive_td_conformers.json'.format(fgroup), 'w') as f:
+            json.dump(fgroups_td_conformers, f, indent=2, sort_keys=True)
 
 for fgroup in fgroups:
     print(fgroup)
