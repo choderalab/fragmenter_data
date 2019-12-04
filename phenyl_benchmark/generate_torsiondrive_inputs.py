@@ -79,6 +79,8 @@ color_keys = ['rosybrown', 'indianred', 'red', 'orange', 'gold', 'yellow','green
 colors = mcolors.CSS4_COLORS
 
 # The indices here are slightly different than the indices already on QCArchive. This is to make sure we do not rerun them.
+# Added later: In the end we did not need to replace because this set was run with the default OFF specs so all jobs
+# were rerun. But the job indices are still as in this dictionary so it is here for the record.
 to_replace = {'amino': ('[H:4][NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C', '[H:4][NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C'),
             'amide': ('C[C:4](=O)[NH:3][c:2]1ccc(n[cH:1]1)[N+](C)(C)C', 'C[C:4](=O)[NH:3][c:2]1[cH:1]cc(nc1)[N+](C)(C)C'),
             'carbamate':
