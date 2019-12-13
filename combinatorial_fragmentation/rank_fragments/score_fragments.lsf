@@ -10,4 +10,4 @@
 source /home/chayas/.bashrc
 conda activate qcf-manager-openff
 
-python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/rank_fragments/validation_set/score_fragments.py -i $LS_EXECCWD/../../fragment_bond_orders/validation_set/JOB_NAME/JOB_NAME_oe_wbo_by_bond.json -n JOB_NAME 
+python /data/chodera/chayas/fragmenter_examples/combinatorial_fragmentation/rank_fragments/score_fragments.py  -n JOB_NAME

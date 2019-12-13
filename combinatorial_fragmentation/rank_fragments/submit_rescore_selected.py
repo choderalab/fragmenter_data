@@ -2,16 +2,16 @@ import os
 import subprocess
 import glob
 
-jobs_to_run = glob.glob('../fragment_bond_orders/validation_set/*/')
+jobs_to_run = glob.glob('selected/*/')
 
 for dir in jobs_to_run:
     name = dir.split('/')[-2]
     print(name)
 
-    with open('score_fragments.lsf', 'r') as f:
+    with open('rescore_selected.lsf', 'r') as f:
         filedata = f.read()
     filedata = filedata.replace('JOB_NAME', name)
-    bsub_file = os.path.join(os.getcwd(), '{}_score_fragments.lsf'.format(name))
+    bsub_file = os.path.join(os.getcwd(), '{}_rescore_selected.lsf'.format(name))
     with open(bsub_file, 'w') as f:
         f.write(filedata)
 

@@ -33,3 +33,22 @@ generating a torion scan fully with AM1 and then look at the AM1 wbo torsion sca
 * `data/` - data files of calculated WBOs and torsion scans for phenyl set
 
 * `Rgroups_figure.pdf` - visualization of all Rgroups in phenyl benchmark set
+
+
+
+## Problematic torsion scans
+### Asymmetry
+#### dimethylamino
+* `CCCNc1cc[c:2]([cH:1]n1)[N:3](C)[CH3:4]`
+#### methylamino
+* `[CH3:4][NH:3][c:2]1[cH:1]cc(cc1)NC`
+* `[CH3:4][NH:3][c:2]1[cH:1]cc(nc1)O`
+#### amino
+* `[H:4][NH:3][c:2]1[cH:1]cc(nc1)OC` - not centered around zero like others in the series
+* `[H:4][NH:3][c:2]1[cH:1]c(cnc1)NC(=O)NC` - asymmetrical
+#### ethylamino
+* `C[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)N`
+#### propylamino
+* `CC[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)NC(=O)NC`
+#### urea
+* `CN[C:4](=O)[NH:3][c:2]1[cH:1]ccc(c1)N`
