@@ -1,7 +1,7 @@
 ## Generating data to analyze conformational dependency of WBOs
 
 __Note__:
-The data was generated before QCArchive was available.
+The data in `archive/` was generated before QCArchive was available.
 
 The initial reason for running these calculations was to test how close OpenEye ELF10 conformation independent Wiberg
 Bond orders are to bond orders calculated with higher level of theory. Conformations were generated with Omega, optimized
@@ -20,4 +20,5 @@ were generated before `cmiles` used canonical atom order so they are ordered dif
 * `psi4_bo_input.py` - reads geometry output files for optimized geometry, generates psi4 input file with optimized geometry and
 options to calculate Wiberg-Löwding and Mayer bond orders
 * `bo_bsub.lsf` - dummy lsf bsub script to run bond order calculations
+* `data/` - JSON files with optimized geometry and bond orders
 
