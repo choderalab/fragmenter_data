@@ -4,8 +4,8 @@
 #BSUB -R rusage[mem=8]
 #BSUB -R span[hosts=1]
 #BSUB -W 4:00
-#BSUB -o /home/chayas/job_output/JOB_NAME_score_frags.stdout
-#BSUB -eo /home/chayas/job_output/JOB_NAME_score_frags.stderr
+#BSUB -o /home/chayas/job_output/JOB_NAME_scheme_score.stdout
+#BSUB -eo /home/chayas/job_output/JOB_NAME_scheme_score.stderr
 
 source /home/chayas/.bashrc
 conda activate qcf-manager-openff
