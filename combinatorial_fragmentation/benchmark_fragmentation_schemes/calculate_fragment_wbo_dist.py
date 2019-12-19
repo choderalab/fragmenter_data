@@ -168,7 +168,10 @@ if __name__ == '__main__':
     for bond in frags:
         b_ser = fragmenter.utils.serialize_bond(bond)
         frags_ser[b_ser] = frags[bond]
-    os.mkdir('{}'.format(name))
+    try:
+        os.mkdir('{}'.format(name))
+    except FileExistsError:
+        print('{} already exists. Files will be overwritten'.format(name))
     with open('{}/{}_wbos_dists.json'.format(name, name), 'w') as f:
         json.dump(frags_ser, f, indent=2, sort_keys=True)
 
