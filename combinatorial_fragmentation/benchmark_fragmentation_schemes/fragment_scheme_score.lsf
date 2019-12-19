@@ -1,0 +1,13 @@
+#!/bin/bash
+#BSUB -J JOB_NAME_score
+#BSUB -n 1
+#BSUB -R rusage[mem=8]
+#BSUB -R span[hosts=1]
+#BSUB -W 4:00
+#BSUB -o /home/chayas/job_output/JOB_NAME_score_frags.stdout
+#BSUB -eo /home/chayas/job_output/JOB_NAME_score_frags.stderr
+
+source /home/chayas/.bashrc
+conda activate qcf-manager-openff
+
+python calculate_fragment_wbo_dist.py  -n JOB_NAME
