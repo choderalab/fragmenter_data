@@ -12,7 +12,7 @@ import itertools
 import os
 
 
-def fragment_bond(mapped_mol, bond, threshold, path, functional_groups, keep_non_rotor, keep_confs=-1):
+def fragment_bond(mapped_mol, bond, threshold, path, keep_non_rotor, functional_groups, keep_confs=-1):
     """
     Fragment molecule around specified bond using provided parameters. Because it is fragmenting for one
     bond, this function mostly uses hidden function because it is not the canonical way to use fragmenter
@@ -109,7 +109,8 @@ if __name__ == '__main__':
         for key in wbo_dists_des[t_bond]:
             if 'parent' in key:
                 frags[t_bond]['parent'] = {'wbo_dist': wbo_dists_des[t_bond][key]['individual_confs'],
-                                           'frag': wbo_dists_des[t_bond][key]['map_to_parent']}
+                                           'frag': wbo_dists_des[t_bond][key]['map_to_parent'],
+                                           'elf10_wbo': wbo_dists_des[t_bond][key]['elf_estimate']}
 
     parent_smiles = selected['parent_smiles']
     parent_mol = oechem.OEMol()
@@ -117,32 +118,49 @@ if __name__ == '__main__':
     # Calculate WBOs for parent so it does not get calculated every time for fragmneter
     parent_mol = fragmenter.chemi.get_charges(parent_mol, strict_types=False, keep_confs=-1)
 
-    parameters = {'threshold': [0.1, 0.01, 0.001],
+    parameters = {'threshold': [0.1, 0.05,  0.01, 0.005, 0.001],
                   'path': ['path_length', 'wbo'],
                   'functional_groups': [None, False],
                   'keep_non_rotor': [True, False]}
 
+    # First check if molecule has tagged functional group
+    parent_mol_copy = oechem.OEMol(parent_mol)
+    f_full = fragmenter.fragment.WBOFragmenter(parent_mol_copy)
+    compare_functional_groups = False
+    if f_full.functional_groups:
+        compare_functional_groups = True
+        print('functional groups {}'.format(f_full.functional_groups))
     already_seen = {}
     for bond in selected['bonds']:
         already_seen[tuple(bond)] = {}
     for bond in selected['bonds']:
         print(bond)
         t_bond = tuple(bond)
-        for t, p, f, r in itertools.product(parameters['threshold'], parameters['path'],
-                                            parameters['functional_groups'], parameters['keep_non_rotor']):
+        for t, p, f, r in itertools.product(parameters['threshold'], parameters['path'], parameters['functional_groups'],
+                                            parameters['keep_non_rotor']):
 
-            key = '{}_{}_{}_{}'.format(str(t), p, str(f), str(r))
-            parent_mol_copy = oechem.OEMol(parent_mol)
-            frag = fragment_bond(parent_mol_copy, t_bond, threshold=t, path=p, functional_groups=f, keep_non_rotor=r,
-                                 keep_confs=-1)
-            if not t_bond in frag.fragments:
-                f = frag.fragments[tuple(reversed(t_bond))]
+            if compare_functional_groups:
+                key = '{}_{}_{}_{}'.format(str(t), p, str(r), str(f))
             else:
-                f = frag.fragments[t_bond]
-            frags[t_bond][key] = {'frag': oechem.OEMolToSmiles(f), 'wbo_dist': []}
-            mol_copy = oechem.OEMol(f)
+                key = '{}_{}_{}'.format(str(t), p, str(r))
+                if f is False:
+                    continue
+            print(key)
+            parent_mol_copy = oechem.OEMol(parent_mol)
+            frgmt = fragment_bond(parent_mol_copy, t_bond, threshold=t, path=p, functional_groups=f, keep_non_rotor=r,
+                                 keep_confs=-1)
+            if not t_bond in frgmt.fragments:
+                frag = frgmt.fragments[tuple(reversed(t_bond))]
+            else:
+                frag = frgmt.fragments[t_bond]
+            bo = get_bond(frag, t_bond)
+            elf10_wbo = bo.GetData('WibergBondOrder')
+            frags[t_bond][key] = {'frag': oechem.OEMolToSmiles(frag), 'wbo_dist': [], 'elf10_wbo': elf10_wbo}
+            mol_copy = oechem.OEMol(frag)
             cmiles.utils.remove_atom_map(mol_copy)
             smiles = oechem.OEMolToSmiles(mol_copy)
+            print(smiles)
+            print(elf10_wbo)
             if smiles in wbo_dists_des[t_bond]:
                 frags[t_bond][key]['wbo_dist'] = wbo_dists_des[t_bond][smiles]['individual_confs']
             elif smiles in already_seen[t_bond]:
@@ -153,7 +171,7 @@ if __name__ == '__main__':
                 for b in already_seen:
                     if smiles not in already_seen[b]:
                         already_seen[b][smiles] = []
-                for conf in f.GetConfs():
+                for conf in frag.GetConfs():
                     mol_copy = oechem.OEMol(conf)
                     if oequacpac.OEAssignPartialCharges(mol_copy, oequacpac.OECharges_AM1BCCSym):
                         for b in already_seen:
@@ -172,6 +190,6 @@ if __name__ == '__main__':
         os.mkdir('{}'.format(name))
     except FileExistsError:
         print('{} already exists. Files will be overwritten'.format(name))
-    with open('{}/{}_wbos_dists.json'.format(name, name), 'w') as f:
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'w') as f:
         json.dump(frags_ser, f, indent=2, sort_keys=True)
 
