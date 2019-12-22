@@ -5,6 +5,7 @@ use that. Otherwise, generate conformers and calculate WBO distributions
 """
 
 import fragmenter
+import openeye
 from openeye import oechem, oequacpac
 import cmiles
 import json
@@ -181,11 +182,15 @@ if __name__ == '__main__':
                             else:
                                 already_seen[b][smiles].append(bo.GetData('WibergBondOrder'))
                 frags[t_bond][key]['wbo_dist'] = already_seen[t_bond][smiles]
+
     #serialize
     frags_ser = {}
     for bond in frags:
         b_ser = fragmenter.utils.serialize_bond(bond)
         frags_ser[b_ser] = frags[bond]
+
+    frags_ser['provenance'] = {'fragmenter_version': fragmenter.__version__,
+                           'openeye_version': openeye.__version__}
     try:
         os.mkdir('{}'.format(name))
     except FileExistsError:
