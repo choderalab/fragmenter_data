@@ -1,6 +1,7 @@
 import json
 import numpy as np
 import os
+import warnings
 
 from openeye import oechem
 from fragmenter import chemi, utils
@@ -11,7 +12,6 @@ import matplotlib.colors as cl
 import matplotlib as mpl
 from matplotlib import gridspec
 import seaborn as sbn
-
 
 def mmd_x_xsqred(x, y):
     """
@@ -40,7 +40,7 @@ def mmd_x_xsqred(x, y):
     E_x_squared = np.mean(x_squared)
     E_y_squared = np.mean(y_squared)
 
-    mmd2 = np.sqrt((E_x - E_y)**2 + (E_x_squared - E_y_squared)**2)
+    mmd2 = (E_x - E_y)**2 + (E_x_squared - E_y_squared)**2
     return mmd2
 
 def get_bond(mol, bond_idx):
@@ -50,47 +50,6 @@ def get_bond(mol, bond_idx):
     if not bond:
         raise ValueError("({}) atoms are not connected".format(bond_idx))
     return bond
-
-def get_bond_nbr(mol, bond):
-    # Find all 1-5 atoms around central bond
-    nbrs_1 = set()
-    a1 = bond.GetBgn()
-    a2 = bond.GetEnd()
-    for a in a1.GetAtoms():
-        if a.IsHydrogen():
-            continue
-        nbrs_1.add(a)
-    for a in a2.GetAtoms():
-        if a.IsHydrogen():
-            continue
-        nbrs_1.add(a)
-    nbrs = set()
-    for nbr in nbrs_1:
-        # keep all nbrs of nbrs
-        for a in nbr.GetAtoms():
-            if a.IsHydrogen():
-                continue
-            nbrs.add(a)
-    # convert to map idxs
-    nbrs_map_idx = set()
-    for a in nbrs:
-        nbrs_map_idx.add(a.GetMapIdx())
-
-    return list(nbrs_map_idx)
-
-def frags_with_nbrs(parent, frags, nbrs):
-    return_frags = {}
-    for f in frags:
-        keep = True
-        mol = oechem.OEMol()
-        oechem.OESmilesToMol(mol, frags[f]['map_to_parent'])
-        for n in nbrs:
-            a = mol.GetAtom(oechem.OEHasMapIdx(n))
-            if not a:
-                keep = False
-        if keep:
-            return_frags[f] = frags[f]
-    return return_frags
 
 def find_parent_smiles(wbo_dict, mapped=True):
     for bond in wbo_dict:
@@ -136,13 +95,13 @@ def generate_molecule_images(fragments_dict, name, colors, parent_mol):
             wbos.append(fragments_dict[b][f]['elf_estimate'])
         int_colors = [rbg_to_int(rbg, alpha=150) for rbg in colors[i]]
         colors_oe = [oechem.OEColor(*j) for j in int_colors]
-        fname = 'validation_set/{}/{}_bond_{}_{}_aligned.pdf'.format(name, name, str(b[0]), str(b[1]))
+        fname = 'selected/{}/rescore/{}_bond_{}_{}_aligned.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
                      align=to_plot[0])
-        fname = 'validation_set/{}/{}_bond_{}_{}_aligned_to_parent.pdf'.format(name, name, str(b[0]), str(b[1]))
+        fname = 'selected/{}/rescore/{}_bond_{}_{}_aligned_to_parent.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe,
                      align=parent_mol)
-        fname = 'validation_set/{}/{}_bond_{}_{}_no_alignemnet.pdf'.format(name, name, str(b[0]), str(b[1]))
+        fname = 'selected/{}/rescore/{}_bond_{}_{}_no_alignemnet.pdf'.format(name, name, str(b[0]), str(b[1]))
         chemi.to_pdf(to_plot, fname, rows=3, cols=3, bond_map_idx=b, bo=wbos, color=colors_oe)
 
 def fragment_wbo_ridge_plot(data, filename, rug=True):
@@ -189,8 +148,8 @@ def fragment_wbo_ridge_plot(data, filename, rug=True):
                 ax.spines['bottom'].set_visible(False)
                 ax.patch.set_facecolor('none')
                 if 'parent' in frag:
-                    sbn.kdeplot(wbo, shade= True, color='darkblue', alpha=1.0)
-                    sbn.kdeplot(wbo, lw=3, color='black')
+                    sbn.kdeplot(wbo, shade= True, color='cyan', alpha=1.0)
+                    sbn.kdeplot(wbo, lw=1.5, color='black')
                 else:
                     sbn.kdeplot(wbo, shade=True, color=colors[i], alpha=0.3)
                     sbn.kdeplot(wbo, lw=0.4, color=colors[i])
@@ -245,9 +204,12 @@ if __name__ == '__main__':
         filename = '{}_one_parent_map.json'.format(infile.split('.json')[0])
         with open(filename, 'r') as f:
             bonds_dist = json.load(f)
+    bonds_file = 'selected/{}/{}_selected_bonds.json'.format(name, name)
+    with open(bonds_file, 'r') as f:
+        bonds = json.load(f)['bonds']
 
     try:
-        os.mkdir('validation_set/{}'.format(name))
+        os.mkdir('selected/{}/rescore/'.format(name))
     except FileExistsError:
          print('{} directory already exists. Files will be overwritten'.format(name))
 
@@ -255,29 +217,19 @@ if __name__ == '__main__':
     # Generate image with map labels
     parent_mol = oechem.OEMol()
     oechem.OESmilesToMol(parent_mol, parent_mapped_smiles)
-    chemi.mol_to_image_atoms_label(parent_mol, fname='validation_set/{}/{}.png'.format(name, name))
+    chemi.mol_to_image_atoms_label(parent_mol, fname='selected/{}/{}.png'.format(name, name))
 
 
     # Only keep fragments if all 1-5 atoms are around central bonds
     full_frags = {}
-    for bond in bonds_dist:
-        deserialzied_bond = utils.deserialize_bond(bond)
-        b = get_bond(parent_mol, deserialzied_bond)
-        if b.IsInRing():
-            continue
-         # keep bonds that do not include H
-        a1 = b.GetBgn()
-        a2 = b.GetEnd()
-        if a1.IsHydrogen() or a2.IsHydrogen():
-            continue
-        if a1.GetDegree() == 1 or a2.GetDegree() == 1:
-            # Terminal
-            continue
-        if not b.IsRotor():
-           continue
+    for bond in bonds:
+        b = get_bond(parent_mol, bond)
+        if not b:
+            warnings.warn('bond {} does not exist in {}'.format(bond, name))
 
-        nbrs = get_bond_nbr(parent_mol, b)
-        full_frags[tuple(deserialzied_bond)] = frags_with_nbrs(parent_mol, bonds_dist[bond], nbrs)
+        bond_key = tuple(bond)
+        serialized_key = utils.serialize_bond(bond_key)
+        full_frags[bond_key] = bonds_dist[serialized_key]
 
     # Calculate mmd score for each fragment
     parent_key = find_parent_smiles(full_frags, mapped=False)
@@ -293,7 +245,7 @@ if __name__ == '__main__':
         b_key = utils.serialize_bond(b)
         serialized_full_frags[b_key] = full_frags[b]
 
-    with open('validation_set/{}/{}_oe_wbo_with_score.json'.format(name, name), 'w') as f:
+    with open('selected/{}/rescore/{}_oe_wbo_with_score.json'.format(name, name), 'w') as f:
             json.dump(serialized_full_frags, f, indent=2, sort_keys=True)
 
     # Save scores separately - this will make it easier to rank and finalize validation set
@@ -311,15 +263,14 @@ if __name__ == '__main__':
 
     scores['greatest_discrepancy'] = find_highest_score(full_frags)
 
-    with open('selected/{}/{}_mmd_exp_scores.json'.format(name, name), 'w') as f:
+    with open('selected/{}/rescore/{}_mmd_exp_scores.json'.format(name, name), 'w') as f:
         json.dump(scores, f, indent=2, sort_keys=True)
-    with open('selected/{}/{}_frag_with_scores.json'.format(name, name), 'w') as f:
+    with open('selected/{}/rescore/{}_frag_with_scores.json'.format(name, name), 'w') as f:
         json.dump(frags_with_scores, f, indent=2, sort_keys=True)
 
-
     # Plot joyplot of fragment distribution sorted by elf wbo and colored by mmd score
-    colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge_with_rug.pdf'.format(name, name))
-    colors = fragment_wbo_ridge_plot(full_frags, filename='validation_set/{}/{}_ridge.pdf'.format(name, name), rug=False)
+    colors = fragment_wbo_ridge_plot(full_frags, filename='selected/{}/rescore/{}_ridge_with_rug.pdf'.format(name, name))
+    colors = fragment_wbo_ridge_plot(full_frags, filename='selected/{}/rescore/{}_ridge.pdf'.format(name, name), rug=False)
 
     # Generate images of molecules
     generate_molecule_images(full_frags, name, colors, parent_mol)
