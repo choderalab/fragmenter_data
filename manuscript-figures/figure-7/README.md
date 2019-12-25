@@ -11,6 +11,6 @@ because of steric clashes that are independent of the electron population overla
 * `nitro_example_qc_drives.pdf` - QC scans of nitro
 * `nitro_example_lowdin_wiberg.pdf` - corresponding wiberg scan
 * `nitro_exampl_td_drive_mols.pdf` - highlighted molecules to use for legend
-* `urea_example_qc_drives.pdf` - QC scans of urea
-* `urea_example_lowdin_wiberg.pdf` - corresponding wiberg scan
-* `urea_exampl_td_drive_mols.pdf` - highlighted molecules to use for legend
+* `phenylurea_example_qc_drives.pdf` - QC scans of urea
+* `phenylurea_example_lowdin_wiberg.pdf` - corresponding wiberg scan
+* `phenylurea_exampl_td_drive_mols.pdf` - highlighted molecules to use for legend

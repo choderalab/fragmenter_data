@@ -1,0 +1,2792 @@
+{
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:7]([c:5]([c:8]([c:3]1[H:26])[N:21]([H:39])[H:40])[H:28])[c:10]2[c:11]([s:23][c:12]([n:19]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:9]3[c:4]([c:6]([n:18][c:13]([n:20]3)[N:22]([H:41])[H:42])[H:29])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)N",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)N",
+      "inchi_key": "IKDFZWXUVUTOMM-UHFFFAOYSA-N",
+      "molecular_formula": "C17H19N5S",
+      "standard_inchi": "InChI=1S/C17H19N5S/c1-17(2,3)15-22-13(10-5-4-6-11(18)9-10)14(23-15)12-7-8-20-16(19)21-12/h4-9H,18H2,1-3H3,(H2,19,20,21)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)N",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N)c2)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[NH:28][H:55])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:35][c:1]1[c:3]([c:10]([c:8]([c:11]([c:4]1[H:38])[N:28]([H:55])[S:34](=[O:29])(=[O:30])[c:14]2[c:12]([c:5]([c:2]([c:6]([c:13]2[F:32])[H:40])[H:36])[H:39])[F:31])[H:42])[c:16]3[c:17]([s:33][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:9]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:41])[H:37]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F",
+      "inchi_key": "CDJHSKXCTBCXAJ-UHFFFAOYSA-N",
+      "molecular_formula": "C23H21F2N5O2S2",
+      "standard_inchi": "InChI=1S/C23H21F2N5O2S2/c1-23(2,3)21-29-18(19(33-21)17-10-11-27-22(26)28-17)13-6-4-7-14(12-13)30-34(31,32)20-15(24)8-5-9-16(20)25/h4-12,30H,1-3H3,(H2,26,27,28)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:33][c:1]1[c:2]([c:7]([c:14]([c:8]([c:3]1[H:35])[H:40])[S:32](=[O:29])(=[O:30])[N:28]([H:55])[c:13]2[c:6]([c:4]([c:5]([c:12]([c:10]2[H:42])[c:16]3[c:17]([s:31][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:9]([c:11]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:41])[H:37])[H:36])[H:38])[H:39])[H:34]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4",
+      "inchi_key": "OBIKHRKFVBPGDY-UHFFFAOYSA-N",
+      "molecular_formula": "C23H23N5O2S2",
+      "standard_inchi": "InChI=1S/C23H23N5O2S2/c1-23(2,3)21-27-19(20(31-21)18-12-13-25-22(24)26-18)15-8-7-9-16(14-15)28-32(29,30)17-10-5-4-6-11-17/h4-14,28H,1-3H3,(H2,24,25,26)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3)c2)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:34][c:1]1[c:2]([c:7]([c:14]([c:13]([c:6]1[H:39])[F:31])[S:33](=[O:29])(=[O:30])[N:28]([H:55])[c:12]2[c:5]([c:3]([c:4]([c:11]([c:9]2[H:42])[c:16]3[c:17]([s:32][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:8]([c:10]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:41])[H:37])[H:36])[H:38])[H:40])[H:35]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4F",
+      "inchi_key": "FIEKHUZVMHYINP-UHFFFAOYSA-N",
+      "molecular_formula": "C23H22FN5O2S2",
+      "standard_inchi": "InChI=1S/C23H22FN5O2S2/c1-23(2,3)21-28-19(20(32-21)17-11-12-26-22(25)27-17)14-7-6-8-15(13-14)29-33(30,31)18-10-5-4-9-16(18)24/h4-13,29H,1-3H3,(H2,25,26,27)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)(=O)c4ccccc4F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3F)c2)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:2]([c:7]([c:5]([c:8]([c:3]1[H:29])[N:22]([H:44])[S:26](=[O:23])(=[O:24])[H:45])[H:31])[c:10]2[c:11]([s:25][c:12]([n:19]2)[C:17]([C:14]([H:33])([H:34])[H:35])([C:15]([H:36])([H:37])[H:38])[C:16]([H:39])([H:40])[H:41])[c:9]3[c:4]([c:6]([n:18][c:13]([n:20]3)[N:21]([H:42])[H:43])[H:32])[H:30])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)=O",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)=O",
+      "inchi_key": "QMQBGDVRBLWWKP-UHFFFAOYSA-N",
+      "molecular_formula": "C17H19N5O2S2",
+      "standard_inchi": "InChI=1S/C17H19N5O2S2/c1-17(2,3)15-21-13(10-5-4-6-11(9-10)22-26(23)24)14(25-15)12-7-8-19-16(18)20-12/h4-9,26H,1-3H3,(H2,18,19,20)(H,22,23,24)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3)NS(=O)=O",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N[SH](=O)=O)c2)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:2]([c:6]([c:8]([c:7]([c:3]1[H:27])[N:21]([H:39])[H:40])[F:23])[c:10]2[c:11]([s:24][c:12]([n:19]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:9]3[c:4]([c:5]([n:18][c:13]([n:20]3)[N:22]([H:41])[H:42])[H:29])[H:28])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)N",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)N",
+      "inchi_key": "OXKPDDILTMNBMA-UHFFFAOYSA-N",
+      "molecular_formula": "C17H18FN5S",
+      "standard_inchi": "InChI=1S/C17H18FN5S/c1-17(2,3)15-23-13(9-5-4-6-10(19)12(9)18)14(24-15)11-7-8-21-16(20)22-11/h4-8H,19H2,1-3H3,(H2,20,21,22)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)N",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N)c2F)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[NH:28][H:55])[F:33])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:34][c:1]1[c:2]([c:7]([c:14]([c:8]([c:3]1[H:36])[H:41])[S:33](=[O:29])(=[O:30])[N:28]([H:55])[c:12]2[c:6]([c:4]([c:5]([c:11]([c:13]2[F:31])[c:16]3[c:17]([s:32][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:9]([c:10]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38])[H:37])[H:39])[H:40])[H:35]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4",
+      "inchi_key": "PNOGCFVVDIWBNI-UHFFFAOYSA-N",
+      "molecular_formula": "C23H22FN5O2S2",
+      "standard_inchi": "InChI=1S/C23H22FN5O2S2/c1-23(2,3)21-28-19(20(32-21)17-12-13-26-22(25)27-17)15-10-7-11-16(18(15)24)29-33(30,31)14-8-5-4-6-9-14/h4-13,29H,1-3H3,(H2,25,26,27)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3)c2F)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:35][c:1]1[c:2]([c:7]([c:14]([c:12]([c:6]1[H:40])[F:31])[S:34](=[O:29])(=[O:30])[N:28]([H:55])[c:11]2[c:5]([c:3]([c:4]([c:10]([c:13]2[F:32])[c:16]3[c:17]([s:33][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:8]([c:9]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38])[H:37])[H:39])[H:41])[H:36]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4F",
+      "inchi_key": "SOTYIALCOPAQGL-UHFFFAOYSA-N",
+      "molecular_formula": "C23H21F2N5O2S2",
+      "standard_inchi": "InChI=1S/C23H21F2N5O2S2/c1-23(2,3)21-29-19(20(33-21)16-11-12-27-22(26)28-16)13-7-6-9-15(18(13)25)30-34(31,32)17-10-5-4-8-14(17)24/h4-12,30H,1-3H3,(H2,26,27,28)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4ccccc4F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3F)c2F)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:2]([c:6]([c:8]([c:7]([c:3]1[H:30])[N:22]([H:44])[S:27](=[O:23])(=[O:24])[H:45])[F:25])[c:10]2[c:11]([s:26][c:12]([n:19]2)[C:17]([C:14]([H:33])([H:34])[H:35])([C:15]([H:36])([H:37])[H:38])[C:16]([H:39])([H:40])[H:41])[c:9]3[c:4]([c:5]([n:18][c:13]([n:20]3)[N:21]([H:42])[H:43])[H:32])[H:31])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)=O",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)=O",
+      "inchi_key": "ZBDWYMXVINIUDZ-UHFFFAOYSA-N",
+      "molecular_formula": "C17H18FN5O2S2",
+      "standard_inchi": "InChI=1S/C17H18FN5O2S2/c1-17(2,3)15-22-13(14(26-15)11-7-8-20-16(19)21-11)9-5-4-6-10(12(9)18)23-27(24)25/h4-8,27H,1-3H3,(H2,19,20,21)(H,23,24,25)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)=O",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N[SH](=O)=O)c2F)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:4]([c:8]([c:5]([c:3]1[H:25])[H:27])[c:10]2[c:11]([s:22][c:12]([n:19]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:9]3[c:6]([c:7]([n:18][c:13]([n:20]3)[N:21]([H:39])[H:40])[H:29])[H:28])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3",
+      "inchi_key": "OITWAFGGLKPVRI-UHFFFAOYSA-N",
+      "molecular_formula": "C17H18N4S",
+      "standard_inchi": "InChI=1S/C17H18N4S/c1-17(2,3)15-21-13(11-7-5-4-6-8-11)14(22-15)12-9-10-19-16(18)20-12/h4-10H,1-3H3,(H2,18,19,20)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2ccccc2)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][cH:13][c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:4]([c:8]([c:7]([c:3]1[H:26])[c:10]2[c:11]([s:23][c:12]([n:19]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:9]3[c:5]([c:6]([n:18][c:13]([n:20]3)[N:21]([H:39])[H:40])[H:29])[H:28])[F:22])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)N([H])[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3F",
+      "inchi_key": "NNMLVSULZJIYEO-UHFFFAOYSA-N",
+      "molecular_formula": "C17H17FN4S",
+      "standard_inchi": "InChI=1S/C17H17FN4S/c1-17(2,3)15-22-13(10-6-4-5-7-11(10)18)14(23-15)12-8-9-20-16(19)21-12/h4-9H,1-3H3,(H2,19,20,21)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3ccccc3F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2ccccc2F)c(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][c:13]([c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:8]([c:5]([c:9]([c:3]1[H:25])[N:21]([H:39])[H:40])[H:27])[c:11]2[c:12]([s:22][c:13]([n:20]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:10]3[c:4]([c:6]([n:18][c:7]([n:19]3)[H:29])[H:28])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)N",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)N",
+      "inchi_key": "UXNXAEAKSKSBGK-UHFFFAOYSA-N",
+      "molecular_formula": "C17H18N4S",
+      "standard_inchi": "InChI=1S/C17H18N4S/c1-17(2,3)16-21-14(11-5-4-6-12(18)9-11)15(22-16)13-7-8-19-10-20-13/h4-10H,18H2,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)N",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N)c2)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[NH:28][H:55])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:34][c:1]1[c:3]([c:11]([c:8]([c:12]([c:4]1[H:37])[N:27]([H:53])[S:33](=[O:28])(=[O:29])[c:15]2[c:13]([c:5]([c:2]([c:6]([c:14]2[F:31])[H:39])[H:35])[H:38])[F:30])[H:41])[c:17]3[c:18]([s:32][c:19]([n:26]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:16]4[c:7]([c:9]([n:24][c:10]([n:25]4)[H:43])[H:42])[H:40])[H:36]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F",
+      "inchi_key": "ZRKLZNPUOKSEHC-UHFFFAOYSA-N",
+      "molecular_formula": "C23H20F2N4O2S2",
+      "standard_inchi": "InChI=1S/C23H20F2N4O2S2/c1-23(2,3)22-28-19(20(32-22)18-10-11-26-13-27-18)14-6-4-7-15(12-14)29-33(30,31)21-16(24)8-5-9-17(21)25/h4-13,29H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4c(cccc4F)F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:32][c:1]1[c:2]([c:7]([c:15]([c:8]([c:3]1[H:34])[H:39])[S:31](=[O:28])(=[O:29])[N:27]([H:53])[c:14]2[c:6]([c:4]([c:5]([c:13]([c:10]2[H:41])[c:17]3[c:18]([s:30][c:19]([n:26]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:16]4[c:9]([c:11]([n:24][c:12]([n:25]4)[H:43])[H:42])[H:40])[H:36])[H:35])[H:37])[H:38])[H:33]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4",
+      "inchi_key": "NMQNEKIGFTWQRK-UHFFFAOYSA-N",
+      "molecular_formula": "C23H22N4O2S2",
+      "standard_inchi": "InChI=1S/C23H22N4O2S2/c1-23(2,3)22-26-20(21(30-22)19-12-13-24-15-25-19)16-8-7-9-17(14-16)27-31(28,29)18-10-5-4-6-11-18/h4-15,27H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3)c2)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:33][c:1]1[c:2]([c:7]([c:15]([c:14]([c:6]1[H:38])[F:30])[S:32](=[O:28])(=[O:29])[N:27]([H:53])[c:13]2[c:5]([c:3]([c:4]([c:12]([c:9]2[H:41])[c:17]3[c:18]([s:31][c:19]([n:26]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:16]4[c:8]([c:10]([n:24][c:11]([n:25]4)[H:43])[H:42])[H:40])[H:36])[H:35])[H:37])[H:39])[H:34]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4F",
+      "inchi_key": "UGKBAEGPOZGXRT-UHFFFAOYSA-N",
+      "molecular_formula": "C23H21FN4O2S2",
+      "standard_inchi": "InChI=1S/C23H21FN4O2S2/c1-23(2,3)22-27-20(21(31-22)18-11-12-25-14-26-18)15-7-6-8-16(13-15)28-32(29,30)19-10-5-4-9-17(19)24/h4-14,28H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)(=O)c4ccccc4F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3F)c2)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:2]([c:8]([c:5]([c:9]([c:3]1[H:28])[N:21]([H:42])[S:25](=[O:22])(=[O:23])[H:43])[H:30])[c:11]2[c:12]([s:24][c:13]([n:20]2)[C:17]([C:14]([H:33])([H:34])[H:35])([C:15]([H:36])([H:37])[H:38])[C:16]([H:39])([H:40])[H:41])[c:10]3[c:4]([c:6]([n:18][c:7]([n:19]3)[H:32])[H:31])[H:29])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)=O",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)=O",
+      "inchi_key": "HYTPWGVIFLRHLZ-UHFFFAOYSA-N",
+      "molecular_formula": "C17H18N4O2S2",
+      "standard_inchi": "InChI=1S/C17H18N4O2S2/c1-17(2,3)16-20-14(15(24-16)13-7-8-18-10-19-13)11-5-4-6-12(9-11)21-25(22)23/h4-10,25H,1-3H3,(H,21,22,23)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3)NS(=O)=O",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N[SH](=O)=O)c2)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:7]([c:9]([c:8]([c:3]1[H:26])[N:21]([H:39])[H:40])[F:22])[c:11]2[c:12]([s:23][c:13]([n:20]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:10]3[c:4]([c:5]([n:18][c:6]([n:19]3)[H:29])[H:28])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)N",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)N",
+      "inchi_key": "GEUJTRQAGKIKOJ-UHFFFAOYSA-N",
+      "molecular_formula": "C17H17FN4S",
+      "standard_inchi": "InChI=1S/C17H17FN4S/c1-17(2,3)16-22-14(10-5-4-6-11(19)13(10)18)15(23-16)12-7-8-20-9-21-12/h4-9H,19H2,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)N",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N)c2F)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[NH:28][H:55])[F:33])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:35][c:1]1[c:3]([c:10]([c:14]([c:11]([c:4]1[H:38])[N:27]([H:53])[S:34](=[O:28])(=[O:29])[c:15]2[c:12]([c:5]([c:2]([c:6]([c:13]2[F:31])[H:40])[H:36])[H:39])[F:30])[F:32])[c:17]3[c:18]([s:33][c:19]([n:26]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:16]4[c:7]([c:8]([n:24][c:9]([n:25]4)[H:43])[H:42])[H:41])[H:37]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+      "inchi_key": "YBEPXFLQLZAQFC-UHFFFAOYSA-N",
+      "molecular_formula": "C23H19F3N4O2S2",
+      "standard_inchi": "InChI=1S/C23H19F3N4O2S2/c1-23(2,3)22-29-19(20(33-22)17-10-11-27-12-28-17)13-6-4-9-16(18(13)26)30-34(31,32)21-14(24)7-5-8-15(21)25/h4-12,30H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2F)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[F:33])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:33][c:1]1[c:2]([c:7]([c:15]([c:8]([c:3]1[H:35])[H:40])[S:32](=[O:28])(=[O:29])[N:27]([H:53])[c:13]2[c:6]([c:4]([c:5]([c:12]([c:14]2[F:30])[c:17]3[c:18]([s:31][c:19]([n:26]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:16]4[c:9]([c:10]([n:24][c:11]([n:25]4)[H:43])[H:42])[H:41])[H:37])[H:36])[H:38])[H:39])[H:34]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4",
+      "inchi_key": "OHZQXJTUSRJTQS-UHFFFAOYSA-N",
+      "molecular_formula": "C23H21FN4O2S2",
+      "standard_inchi": "InChI=1S/C23H21FN4O2S2/c1-23(2,3)22-27-20(21(31-22)18-12-13-25-14-26-18)16-10-7-11-17(19(16)24)28-32(29,30)15-8-5-4-6-9-15/h4-14,28H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3)c2F)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:34][c:1]1[c:2]([c:7]([c:15]([c:13]([c:6]1[H:39])[F:30])[S:33](=[O:28])(=[O:29])[N:27]([H:53])[c:12]2[c:5]([c:3]([c:4]([c:11]([c:14]2[F:31])[c:17]3[c:18]([s:32][c:19]([n:26]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:16]4[c:8]([c:9]([n:24][c:10]([n:25]4)[H:43])[H:42])[H:41])[H:37])[H:36])[H:38])[H:40])[H:35]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4F",
+      "inchi_key": "FPSKVCOQWFDSER-UHFFFAOYSA-N",
+      "molecular_formula": "C23H20F2N4O2S2",
+      "standard_inchi": "InChI=1S/C23H20F2N4O2S2/c1-23(2,3)22-28-20(21(32-22)17-11-12-26-13-27-17)14-7-6-9-16(19(14)25)29-33(30,31)18-10-5-4-8-15(18)24/h4-13,29H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)(=O)c4ccccc4F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3F)c2F)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:2]([c:7]([c:9]([c:8]([c:3]1[H:29])[N:21]([H:42])[S:26](=[O:22])(=[O:23])[H:43])[F:24])[c:11]2[c:12]([s:25][c:13]([n:20]2)[C:17]([C:14]([H:33])([H:34])[H:35])([C:15]([H:36])([H:37])[H:38])[C:16]([H:39])([H:40])[H:41])[c:10]3[c:4]([c:5]([n:18][c:6]([n:19]3)[H:32])[H:31])[H:30])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)=O",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)=O",
+      "inchi_key": "MCYPAUONYPLVMD-UHFFFAOYSA-N",
+      "molecular_formula": "C17H17FN4O2S2",
+      "standard_inchi": "InChI=1S/C17H17FN4O2S2/c1-17(2,3)16-21-14(15(25-16)12-7-8-19-9-20-12)10-5-4-6-11(13(10)18)22-26(23)24/h4-9,26H,1-3H3,(H,22,23,24)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3cccc(c3F)NS(=O)=O",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N[SH](=O)=O)c2F)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:4]([c:9]([c:5]([c:3]1[H:24])[H:26])[c:11]2[c:12]([s:21][c:13]([n:20]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:10]3[c:6]([c:7]([n:18][c:8]([n:19]3)[H:29])[H:28])[H:27])[H:25])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3",
+      "inchi_key": "LMTCWYFRGYHKIT-UHFFFAOYSA-N",
+      "molecular_formula": "C17H17N3S",
+      "standard_inchi": "InChI=1S/C17H17N3S/c1-17(2,3)16-20-14(12-7-5-4-6-8-12)15(21-16)13-9-10-18-11-19-13/h4-11H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2ccccc2)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][cH:13][c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:4]([c:9]([c:8]([c:3]1[H:25])[c:11]2[c:12]([s:22][c:13]([n:20]2)[C:17]([C:14]([H:30])([H:31])[H:32])([C:15]([H:33])([H:34])[H:35])[C:16]([H:36])([H:37])[H:38])[c:10]3[c:5]([c:6]([n:18][c:7]([n:19]3)[H:29])[H:28])[H:27])[F:21])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])c3c(c(nc(n3)[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3F",
+      "canonical_smiles": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3F",
+      "inchi_key": "IEAYKLKYPLJVGB-UHFFFAOYSA-N",
+      "molecular_formula": "C17H16FN3S",
+      "standard_inchi": "InChI=1S/C17H16FN3S/c1-17(2,3)16-21-14(11-6-4-5-7-12(11)18)15(22-16)13-8-9-19-10-20-13/h4-10H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(c(s1)c2ccncn2)c3ccccc3F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2ccccc2F)c(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][c:13]([c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:2]([c:6]([c:4]([c:7]([c:3]1[H:19])[N:15]([H:31])[H:32])[H:20])[c:8]2[c:5]([s:16][c:9]([n:14]2)[C:13]([C:10]([H:22])([H:23])[H:24])([C:11]([H:25])([H:26])[H:27])[C:12]([H:28])([H:29])[H:30])[H:21])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)N",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)N",
+      "inchi_key": "XRUUFSONQWDMSV-UHFFFAOYSA-N",
+      "molecular_formula": "C13H16N2S",
+      "standard_inchi": "InChI=1S/C13H16N2S/c1-13(2,3)12-15-11(8-16-12)9-5-4-6-10(14)7-9/h4-8H,14H2,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2)N",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N)c2)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[NH:28][H:55])[c:16]2[cH:17][s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3c(cccc3F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:3]([c:9]([c:7]([c:10]([c:4]1[H:31])[N:21]([H:45])[S:27](=[O:22])(=[O:23])[c:13]2[c:11]([c:5]([c:2]([c:6]([c:12]2[F:25])[H:33])[H:29])[H:32])[F:24])[H:34])[c:14]3[c:8]([s:26][c:15]([n:20]3)[C:19]([C:16]([H:36])([H:37])[H:38])([C:17]([H:39])([H:40])[H:41])[C:18]([H:42])([H:43])[H:44])[H:35])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3c(cccc3F)F",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3c(cccc3F)F",
+      "inchi_key": "SNZUNYZJCFCMHE-UHFFFAOYSA-N",
+      "molecular_formula": "C19H18F2N2O2S2",
+      "standard_inchi": "InChI=1S/C19H18F2N2O2S2/c1-19(2,3)18-22-16(11-26-18)12-6-4-7-13(10-12)23-27(24,25)17-14(20)8-5-9-15(17)21/h4-11,23H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3c(cccc3F)F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[c:16]3[cH:17][s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:26][c:1]1[c:2]([c:7]([c:13]([c:8]([c:3]1[H:28])[H:33])[S:25](=[O:22])(=[O:23])[N:21]([H:45])[c:12]2[c:6]([c:4]([c:5]([c:11]([c:9]2[H:34])[c:14]3[c:10]([s:24][c:15]([n:20]3)[C:19]([C:16]([H:36])([H:37])[H:38])([C:17]([H:39])([H:40])[H:41])[C:18]([H:42])([H:43])[H:44])[H:35])[H:30])[H:29])[H:31])[H:32])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3",
+      "inchi_key": "ZXYSEDFXXUJUAK-UHFFFAOYSA-N",
+      "molecular_formula": "C19H20N2O2S2",
+      "standard_inchi": "InChI=1S/C19H20N2O2S2/c1-19(2,3)18-20-17(13-24-18)14-8-7-9-15(12-14)21-25(22,23)16-10-5-4-6-11-16/h4-13,21H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3)c2)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[cH:17][s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:2]([c:7]([c:13]([c:12]([c:6]1[H:32])[F:24])[S:26](=[O:22])(=[O:23])[N:21]([H:45])[c:11]2[c:5]([c:3]([c:4]([c:10]([c:8]2[H:34])[c:14]3[c:9]([s:25][c:15]([n:20]3)[C:19]([C:16]([H:36])([H:37])[H:38])([C:17]([H:39])([H:40])[H:41])[C:18]([H:42])([H:43])[H:44])[H:35])[H:30])[H:29])[H:31])[H:33])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3F",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3F",
+      "inchi_key": "PGMHUTFZMYNMRU-UHFFFAOYSA-N",
+      "molecular_formula": "C19H19FN2O2S2",
+      "standard_inchi": "InChI=1S/C19H19FN2O2S2/c1-19(2,3)18-21-16(12-25-18)13-7-6-8-14(11-13)22-26(23,24)17-10-5-4-9-15(17)20/h4-12,22H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)(=O)c3ccccc3F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3F)c2)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[cH:17][s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:6]([c:4]([c:7]([c:3]1[H:22])[N:15]([H:34])[S:19](=[O:16])(=[O:17])[H:35])[H:23])[c:8]2[c:5]([s:18][c:9]([n:14]2)[C:13]([C:10]([H:25])([H:26])[H:27])([C:11]([H:28])([H:29])[H:30])[C:12]([H:31])([H:32])[H:33])[H:24])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)=O",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)=O",
+      "inchi_key": "SWDAXMKVJJTWBS-UHFFFAOYSA-N",
+      "molecular_formula": "C13H16N2O2S2",
+      "standard_inchi": "InChI=1S/C13H16N2O2S2/c1-13(2,3)12-14-11(8-18-12)9-5-4-6-10(7-9)15-19(16)17/h4-8,19H,1-3H3,(H,15,16,17)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2)NS(=O)=O",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N[SH](=O)=O)c2)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[c:16]2[cH:17][s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2F)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:2]([c:5]([c:7]([c:6]([c:3]1[H:20])[N:15]([H:31])[H:32])[F:16])[c:8]2[c:4]([s:17][c:9]([n:14]2)[C:13]([C:10]([H:22])([H:23])[H:24])([C:11]([H:25])([H:26])[H:27])[C:12]([H:28])([H:29])[H:30])[H:21])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)N",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)N",
+      "inchi_key": "WQFFIOWOVRRDFG-UHFFFAOYSA-N",
+      "molecular_formula": "C13H15FN2S",
+      "standard_inchi": "InChI=1S/C13H15FN2S/c1-13(2,3)12-16-10(7-17-12)8-5-4-6-9(15)11(8)14/h4-7H,15H2,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2F)N",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N)c2F)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[NH:28][H:55])[F:33])[c:16]2[cH:17][s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3c(cccc3F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:3]([c:8]([c:12]([c:9]([c:4]1[H:32])[N:21]([H:45])[S:28](=[O:22])(=[O:23])[c:13]2[c:10]([c:5]([c:2]([c:6]([c:11]2[F:25])[H:34])[H:30])[H:33])[F:24])[F:26])[c:14]3[c:7]([s:27][c:15]([n:20]3)[C:19]([C:16]([H:36])([H:37])[H:38])([C:17]([H:39])([H:40])[H:41])[C:18]([H:42])([H:43])[H:44])[H:35])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3c(cccc3F)F",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3c(cccc3F)F",
+      "inchi_key": "HRDRQGKQVMHLCW-UHFFFAOYSA-N",
+      "molecular_formula": "C19H17F3N2O2S2",
+      "standard_inchi": "InChI=1S/C19H17F3N2O2S2/c1-19(2,3)18-23-15(10-27-18)11-6-4-9-14(16(11)22)24-28(25,26)17-12(20)7-5-8-13(17)21/h4-10,24H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3c(cccc3F)F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2F)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[F:33])[c:16]3[cH:17][s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:27][c:1]1[c:2]([c:7]([c:13]([c:8]([c:3]1[H:29])[H:34])[S:26](=[O:22])(=[O:23])[N:21]([H:45])[c:11]2[c:6]([c:4]([c:5]([c:10]([c:12]2[F:24])[c:14]3[c:9]([s:25][c:15]([n:20]3)[C:19]([C:16]([H:36])([H:37])[H:38])([C:17]([H:39])([H:40])[H:41])[C:18]([H:42])([H:43])[H:44])[H:35])[H:31])[H:30])[H:32])[H:33])[H:28]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3",
+      "inchi_key": "UOCGHJXFWVGECR-UHFFFAOYSA-N",
+      "molecular_formula": "C19H19FN2O2S2",
+      "standard_inchi": "InChI=1S/C19H19FN2O2S2/c1-19(2,3)18-21-16(12-25-18)14-10-7-11-15(17(14)20)22-26(23,24)13-8-5-4-6-9-13/h4-12,22H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3)c2F)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[cH:17][s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:2]([c:7]([c:13]([c:11]([c:6]1[H:33])[F:24])[S:27](=[O:22])(=[O:23])[N:21]([H:45])[c:10]2[c:5]([c:3]([c:4]([c:9]([c:12]2[F:25])[c:14]3[c:8]([s:26][c:15]([n:20]3)[C:19]([C:16]([H:36])([H:37])[H:38])([C:17]([H:39])([H:40])[H:41])[C:18]([H:42])([H:43])[H:44])[H:35])[H:31])[H:30])[H:32])[H:34])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3F",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3F",
+      "inchi_key": "ZHTDHNKVSXIQBQ-UHFFFAOYSA-N",
+      "molecular_formula": "C19H18F2N2O2S2",
+      "standard_inchi": "InChI=1S/C19H18F2N2O2S2/c1-19(2,3)18-22-15(11-26-18)12-7-6-9-14(17(12)21)23-27(24,25)16-10-5-4-8-13(16)20/h4-11,23H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)(=O)c3ccccc3F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3ccccc3F)c2F)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[cH:17][s:34][c:18]([n:25]3)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:2]([c:5]([c:7]([c:6]([c:3]1[H:23])[N:15]([H:34])[S:20](=[O:16])(=[O:17])[H:35])[F:18])[c:8]2[c:4]([s:19][c:9]([n:14]2)[C:13]([C:10]([H:25])([H:26])[H:27])([C:11]([H:28])([H:29])[H:30])[C:12]([H:31])([H:32])[H:33])[H:24])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)=O",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)=O",
+      "inchi_key": "IQEGELWJUZLIGN-UHFFFAOYSA-N",
+      "molecular_formula": "C13H15FN2O2S2",
+      "standard_inchi": "InChI=1S/C13H15FN2O2S2/c1-13(2,3)12-15-10(7-19-12)8-5-4-6-9(11(8)14)16-20(17)18/h4-7,20H,1-3H3,(H,16,17,18)",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2cccc(c2F)NS(=O)=O",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2cccc(N[SH](=O)=O)c2F)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33])[c:16]2[cH:17][s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2ccccc2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:2]([c:4]([c:7]([c:5]([c:3]1[H:18])[H:20])[c:8]2[c:6]([s:15][c:9]([n:14]2)[C:13]([C:10]([H:22])([H:23])[H:24])([C:11]([H:25])([H:26])[H:27])[C:12]([H:28])([H:29])[H:30])[H:21])[H:19])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2ccccc2",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2ccccc2",
+      "inchi_key": "UCZAMKGOAGZBPP-UHFFFAOYSA-N",
+      "molecular_formula": "C13H15NS",
+      "standard_inchi": "InChI=1S/C13H15NS/c1-13(2,3)12-14-11(9-15-12)10-7-5-4-6-8-10/h4-9H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2ccccc2",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2ccccc2)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][cH:13][c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[cH:17][s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nc(cs1)c2ccccc2F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:2]([c:4]([c:7]([c:6]([c:3]1[H:19])[c:8]2[c:5]([s:16][c:9]([n:14]2)[C:13]([C:10]([H:22])([H:23])[H:24])([C:11]([H:25])([H:26])[H:27])[C:12]([H:28])([H:29])[H:30])[H:21])[F:15])[H:20])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nc(cs1)c2ccccc2F",
+      "canonical_smiles": "CC(C)(C)c1nc(cs1)c2ccccc2F",
+      "inchi_key": "LTLCNOXOEPIYLA-UHFFFAOYSA-N",
+      "molecular_formula": "C13H14FNS",
+      "standard_inchi": "InChI=1S/C13H14FNS/c1-13(2,3)12-15-11(8-16-12)9-6-4-5-7-10(9)14/h4-8H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nc(cs1)c2ccccc2F",
+      "unique_tautomer_representation": "CC(C)(C)c1nc(-c2ccccc2F)cs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][c:13]([c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[cH:17][s:34][c:18]([n:25]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1ncc(s1)c2ccnc(n2)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])N([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:2]([n:13][c:7]([n:14][c:4]1[c:5]2[c:3]([n:12][c:6]([s:16]2)[C:11]([C:8]([H:20])([H:21])[H:22])([C:9]([H:23])([H:24])[H:25])[C:10]([H:26])([H:27])[H:28])[H:19])[N:15]([H:29])[H:30])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])N([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1ncc(s1)c2ccnc(n2)N",
+      "canonical_smiles": "CC(C)(C)c1ncc(s1)c2ccnc(n2)N",
+      "inchi_key": "ZQFUPDXVBIUCCQ-UHFFFAOYSA-N",
+      "molecular_formula": "C11H14N4S",
+      "standard_inchi": "InChI=1S/C11H14N4S/c1-11(2,3)9-14-6-8(16-9)7-4-5-13-10(12)15-7/h4-6H,1-3H3,(H2,12,13,15)",
+      "unique_protomer_representation": "CC(C)(C)c1ncc(s1)c2ccnc(n2)N",
+      "unique_tautomer_representation": "CC(C)(C)c1ncc(-c2cc[nH]c(=N)n2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:42][c:7]1[c:8]([n:24][c:19]([n:26][c:15]1[c:17]2[cH:16][n:25][c:18]([s:34]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[N:27]([H:53])[H:54])[H:43]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1ncc(s1)c2ccncn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:2]([n:12][c:4]([n:14][c:5]1[c:6]2[c:3]([n:13][c:7]([s:15]2)[C:11]([C:8]([H:20])([H:21])[H:22])([C:9]([H:23])([H:24])[H:25])[C:10]([H:26])([H:27])[H:28])[H:18])[H:19])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1ncc(s1)c2ccncn2",
+      "canonical_smiles": "CC(C)(C)c1ncc(s1)c2ccncn2",
+      "inchi_key": "QCRQCEDICRIKHB-UHFFFAOYSA-N",
+      "molecular_formula": "C11H13N3S",
+      "standard_inchi": "InChI=1S/C11H13N3S/c1-11(2,3)10-13-6-9(15-10)8-4-5-12-7-14-8/h4-7H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1ncc(s1)c2ccncn2",
+      "unique_tautomer_representation": "CC(C)(C)c1ncc(-c2ccncn2)s1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:42][c:7]1[c:8]([n:24][cH:19][n:26][c:15]1[c:17]2[cH:16][n:25][c:18]([s:34]2)[C:23]([C:20]([H:44])([H:45])[H:46])([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52])[H:43]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "CC(C)(C)c1nccs1": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(sc(n1)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][c:1]1[c:2]([s:9][c:3]([n:8]1)[C:7]([C:4]([H:12])([H:13])[H:14])([C:5]([H:15])([H:16])[H:17])[C:6]([H:18])([H:19])[H:20])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(sc(n1)C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])[H]",
+      "canonical_isomeric_smiles": "CC(C)(C)c1nccs1",
+      "canonical_smiles": "CC(C)(C)c1nccs1",
+      "inchi_key": "DQAIZGWCKXJRSP-UHFFFAOYSA-N",
+      "molecular_formula": "C7H11NS",
+      "standard_inchi": "InChI=1S/C7H11NS/c1-7(2,3)6-8-4-5-9-6/h4-5H,1-3H3",
+      "unique_protomer_representation": "CC(C)(C)c1nccs1",
+      "unique_tautomer_representation": "CC(C)(C)c1nccs1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:44][C:20]([H:45])([H:46])[C:23]([c:18]1[n:25][cH:16][cH:17][s:34]1)([C:21]([H:47])([H:48])[H:49])[C:22]([H:50])([H:51])[H:52]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]N([H])S(=O)(=O)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:5][N:1]([H:6])[S:4](=[O:2])(=[O:3])[H:7]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]N([H])S(=O)(=O)[H]",
+      "canonical_isomeric_smiles": "NS(=O)=O",
+      "canonical_smiles": "NS(=O)=O",
+      "inchi_key": "AHZVGADFMXTGBU-UHFFFAOYSA-N",
+      "molecular_formula": "H3NO2S",
+      "standard_inchi": "InChI=1S/H3NO2S/c1-4(2)3/h4H,(H2,1,2,3)",
+      "unique_protomer_representation": "NS(=O)=O",
+      "unique_tautomer_representation": "N[SH](=O)=O"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:55][NH:28][SH:35](=[O:29])=[O:30]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)F)S(=O)(=O)N)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])[H])F)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:15])[F:11])[S:12](=[O:8])(=[O:9])[N:7]([H:16])[H:17])[F:10])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])[H])F)[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)F)S(=O)(=O)N)F",
+      "canonical_smiles": "c1cc(c(c(c1)F)S(=O)(=O)N)F",
+      "inchi_key": "RVVVGGCOFWWDEL-UHFFFAOYSA-N",
+      "molecular_formula": "C6H5F2NO2S",
+      "standard_inchi": "InChI=1S/C6H5F2NO2S/c7-4-2-1-3-5(8)6(4)12(9,10)11/h1-3H,(H2,9,10,11)",
+      "unique_protomer_representation": "c1cc(c(c(c1)F)S(=O)(=O)N)F",
+      "unique_tautomer_representation": "NS(=O)(=O)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:37][c:2]1[c:6]([c:12]([c:14]([c:11]([c:5]1[H:40])[F:31])[S:35](=[O:29])(=[O:30])[NH:28][H:55])[F:32])[H:41]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)F)S(=O)=O)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)[H])F)[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[F:10])[S:11](=[O:7])(=[O:8])[H:15])[F:9])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)[H])F)[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)F)S(=O)=O)F",
+      "canonical_smiles": "c1cc(c(c(c1)F)S(=O)=O)F",
+      "inchi_key": "DVUBVLMCLDAHLF-UHFFFAOYSA-N",
+      "molecular_formula": "C6H4F2O2S",
+      "standard_inchi": "InChI=1S/C6H4F2O2S/c7-4-2-1-3-5(8)6(4)11(9)10/h1-3,11H",
+      "unique_protomer_representation": "c1cc(c(c(c1)F)S(=O)=O)F",
+      "unique_tautomer_representation": "O=[SH](=O)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:37][c:2]1[c:6]([c:12]([c:14]([c:11]([c:5]1[H:40])[F:31])[SH:35](=[O:29])=[O:30])[F:32])[H:41]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)N)F)c2c(scn2)c3ccnc(n3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:21][c:1]1[c:2]([c:7]([c:9]([c:8]([c:3]1[H:23])[N:17]([H:27])[H:28])[F:19])[c:11]2[c:12]([s:20][c:6]([n:15]2)[H:26])[c:10]3[c:4]([c:5]([n:14][c:13]([n:16]3)[N:18]([H:29])[H:30])[H:25])[H:24])[H:22]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)N)F)c2c(scn2)c3ccnc(n3)N",
+      "canonical_smiles": "c1cc(c(c(c1)N)F)c2c(scn2)c3ccnc(n3)N",
+      "inchi_key": "GZROQXPGGVIHCK-UHFFFAOYSA-N",
+      "molecular_formula": "C13H10FN5S",
+      "standard_inchi": "InChI=1S/C13H10FN5S/c14-10-7(2-1-3-8(10)15)11-12(20-6-18-11)9-4-5-17-13(16)19-9/h1-6H,15H2,(H2,16,17,19)",
+      "unique_protomer_representation": "c1cc(c(c(c1)N)F)c2c(scn2)c3ccnc(n3)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(N)c2F)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[NH:28][H:55])[F:33])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)N)F)c2c(scn2)c3ccncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:8]([c:10]([c:9]([c:3]1[H:22])[N:17]([H:27])[H:28])[F:18])[c:12]2[c:13]([s:19][c:7]([n:16]2)[H:26])[c:11]3[c:4]([c:5]([n:14][c:6]([n:15]3)[H:25])[H:24])[H:23])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)N)F)c2c(scn2)c3ccncn3",
+      "canonical_smiles": "c1cc(c(c(c1)N)F)c2c(scn2)c3ccncn3",
+      "inchi_key": "BEVBUPDWFZMUSB-UHFFFAOYSA-N",
+      "molecular_formula": "C13H9FN4S",
+      "standard_inchi": "InChI=1S/C13H9FN4S/c14-11-8(2-1-3-9(11)15)12-13(19-7-18-12)10-4-5-16-6-17-10/h1-7H,15H2",
+      "unique_protomer_representation": "c1cc(c(c(c1)N)F)c2c(scn2)c3ccncn3",
+      "unique_tautomer_representation": "Nc1cccc(-c2ncsc2-c2ccncn2)c1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[NH:28][H:55])[F:33])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)N)F)c2cscn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:6]([c:8]([c:7]([c:3]1[H:16])[N:11]([H:19])[H:20])[F:12])[c:9]2[c:4]([s:13][c:5]([n:10]2)[H:18])[H:17])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)N)F)c2cscn2",
+      "canonical_smiles": "c1cc(c(c(c1)N)F)c2cscn2",
+      "inchi_key": "IZJRRSKKFWRKHG-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7FN2S",
+      "standard_inchi": "InChI=1S/C9H7FN2S/c10-9-6(2-1-3-7(9)11)8-4-13-5-12-8/h1-5H,11H2",
+      "unique_protomer_representation": "c1cc(c(c(c1)N)F)c2cscn2",
+      "unique_tautomer_representation": "Nc1cccc(-c2cscn2)c1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[NH:28][H:55])[F:33])[c:16]2[cH:17][s:34][cH:18][n:25]2)[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccnc(n4)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:32][c:1]1[c:3]([c:10]([c:14]([c:11]([c:4]1[H:35])[N:24]([H:43])[S:31](=[O:25])(=[O:26])[c:15]2[c:12]([c:5]([c:2]([c:6]([c:13]2[F:28])[H:37])[H:33])[H:36])[F:27])[F:29])[c:17]3[c:18]([s:30][c:9]([n:21]3)[H:40])[c:16]4[c:7]([c:8]([n:20][c:19]([n:22]4)[N:23]([H:41])[H:42])[H:39])[H:38])[H:34]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccnc(n4)N",
+      "canonical_smiles": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccnc(n4)N",
+      "inchi_key": "DQULHYJXMTWJRT-UHFFFAOYSA-N",
+      "molecular_formula": "C19H12F3N5O2S2",
+      "standard_inchi": "InChI=1S/C19H12F3N5O2S2/c20-11-4-2-5-12(21)18(11)31(28,29)27-13-6-1-3-10(15(13)22)16-17(30-9-25-16)14-7-8-24-19(23)26-14/h1-9,27H,(H2,23,24,26)",
+      "unique_protomer_representation": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccnc(n4)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2F)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[F:33])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccncn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:31][c:1]1[c:3]([c:11]([c:15]([c:12]([c:4]1[H:34])[N:23]([H:41])[S:30](=[O:24])(=[O:25])[c:16]2[c:13]([c:5]([c:2]([c:6]([c:14]2[F:27])[H:36])[H:32])[H:35])[F:26])[F:28])[c:18]3[c:19]([s:29][c:10]([n:22]3)[H:40])[c:17]4[c:7]([c:8]([n:20][c:9]([n:21]4)[H:39])[H:38])[H:37])[H:33]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccncn4",
+      "canonical_smiles": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccncn4",
+      "inchi_key": "GZRMUAZZQASJKR-UHFFFAOYSA-N",
+      "molecular_formula": "C19H11F3N4O2S2",
+      "standard_inchi": "InChI=1S/C19H11F3N4O2S2/c20-12-4-2-5-13(21)19(12)30(27,28)26-14-6-1-3-11(16(14)22)17-18(29-10-25-17)15-7-8-23-9-24-15/h1-10,26H",
+      "unique_protomer_representation": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3c(scn3)c4ccncn4",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1F)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[F:33])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3cscn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:25][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:28])[N:17]([H:33])[S:24](=[O:18])(=[O:19])[c:14]2[c:11]([c:5]([c:2]([c:6]([c:12]2[F:21])[H:30])[H:26])[H:29])[F:20])[F:22])[c:15]3[c:7]([s:23][c:8]([n:16]3)[H:32])[H:31])[H:27]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)c3c(sc(n3)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3cscn3",
+      "canonical_smiles": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3cscn3",
+      "inchi_key": "GGVHPEPLJQVSPB-UHFFFAOYSA-N",
+      "molecular_formula": "C15H9F3N2O2S2",
+      "standard_inchi": "InChI=1S/C15H9F3N2O2S2/c16-10-4-2-5-11(17)15(10)24(21,22)20-12-6-1-3-9(14(12)18)13-7-23-8-19-13/h1-8,20H",
+      "unique_protomer_representation": "c1cc(c(c(c1)NS(=O)(=O)c2c(cccc2F)F)F)c3cscn3",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2cscn2)c1F)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[F:33])[c:16]3[cH:17][s:34][cH:18][n:25]3)[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccnc(n3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:7]([c:9]([c:8]([c:3]1[H:26])[N:18]([H:32])[S:23](=[O:19])(=[O:20])[H:33])[F:21])[c:11]2[c:12]([s:22][c:6]([n:15]2)[H:29])[c:10]3[c:4]([c:5]([n:14][c:13]([n:16]3)[N:17]([H:30])[H:31])[H:28])[H:27])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccnc(n3)N",
+      "canonical_smiles": "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccnc(n3)N",
+      "inchi_key": "MZKNMQNLKXQWIR-UHFFFAOYSA-N",
+      "molecular_formula": "C13H10FN5O2S2",
+      "standard_inchi": "InChI=1S/C13H10FN5O2S2/c14-10-7(2-1-3-8(10)19-23(20)21)11-12(22-6-17-11)9-4-5-16-13(15)18-9/h1-6,23H,(H2,15,16,18)(H,19,20,21)",
+      "unique_protomer_representation": "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccnc(n3)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(N[SH](=O)=O)c2F)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:8]([c:10]([c:9]([c:3]1[H:25])[N:17]([H:30])[S:22](=[O:18])(=[O:19])[H:31])[F:20])[c:12]2[c:13]([s:21][c:7]([n:16]2)[H:29])[c:11]3[c:4]([c:5]([n:14][c:6]([n:15]3)[H:28])[H:27])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccncn3",
+      "canonical_smiles": "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccncn3",
+      "inchi_key": "RHSZPSGUQGFKPJ-UHFFFAOYSA-N",
+      "molecular_formula": "C13H9FN4O2S2",
+      "standard_inchi": "InChI=1S/C13H9FN4O2S2/c14-11-8(2-1-3-9(11)18-22(19)20)12-13(21-7-17-12)10-4-5-15-6-16-10/h1-7,22H,(H,18,19,20)",
+      "unique_protomer_representation": "c1cc(c(c(c1)NS(=O)=O)F)c2c(scn2)c3ccncn3",
+      "unique_tautomer_representation": "O=[SH](=O)Nc1cccc(-c2ncsc2-c2ccncn2)c1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(c(c(c1)NS(=O)=O)F)c2cscn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:2]([c:6]([c:8]([c:7]([c:3]1[H:19])[N:11]([H:22])[S:16](=[O:12])(=[O:13])[H:23])[F:14])[c:9]2[c:4]([s:15][c:5]([n:10]2)[H:21])[H:20])[H:18]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(c(c1)NS(=O)=O)F)c2cscn2",
+      "canonical_smiles": "c1cc(c(c(c1)NS(=O)=O)F)c2cscn2",
+      "inchi_key": "ASHIEPRGYVKESA-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7FN2O2S2",
+      "standard_inchi": "InChI=1S/C9H7FN2O2S2/c10-9-6(8-4-15-5-11-8)2-1-3-7(9)12-16(13)14/h1-5,16H,(H,12,13,14)",
+      "unique_protomer_representation": "c1cc(c(c(c1)NS(=O)=O)F)c2cscn2",
+      "unique_tautomer_representation": "O=[SH](=O)Nc1cccc(-c2cscn2)c1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([c:13]([c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33])[c:16]2[cH:17][s:34][cH:18][n:25]2)[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)N)c2c(scn2)c3ccnc(n3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:8]([c:5]([c:9]([c:3]1[H:22])[N:17]([H:27])[H:28])[H:24])[c:11]2[c:12]([s:19][c:7]([n:15]2)[H:26])[c:10]3[c:4]([c:6]([n:14][c:13]([n:16]3)[N:18]([H:29])[H:30])[H:25])[H:23])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)N)c2c(scn2)c3ccnc(n3)N",
+      "canonical_smiles": "c1cc(cc(c1)N)c2c(scn2)c3ccnc(n3)N",
+      "inchi_key": "FRQULTVEAPISIQ-UHFFFAOYSA-N",
+      "molecular_formula": "C13H11N5S",
+      "standard_inchi": "InChI=1S/C13H11N5S/c14-9-3-1-2-8(6-9)11-12(19-7-17-11)10-4-5-16-13(15)18-10/h1-7H,14H2,(H2,15,16,18)",
+      "unique_protomer_representation": "c1cc(cc(c1)N)c2c(scn2)c3ccnc(n3)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(N)c2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[NH:28][H:55])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)N)c2c(scn2)c3ccncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:9]([c:5]([c:10]([c:3]1[H:21])[N:17]([H:27])[H:28])[H:23])[c:12]2[c:13]([s:18][c:8]([n:16]2)[H:26])[c:11]3[c:4]([c:6]([n:14][c:7]([n:15]3)[H:25])[H:24])[H:22])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)N)c2c(scn2)c3ccncn3",
+      "canonical_smiles": "c1cc(cc(c1)N)c2c(scn2)c3ccncn3",
+      "inchi_key": "SIRIICAMNGULLZ-UHFFFAOYSA-N",
+      "molecular_formula": "C13H10N4S",
+      "standard_inchi": "InChI=1S/C13H10N4S/c14-10-3-1-2-9(6-10)12-13(18-8-17-12)11-4-5-15-7-16-11/h1-8H,14H2",
+      "unique_protomer_representation": "c1cc(cc(c1)N)c2c(scn2)c3ccncn3",
+      "unique_tautomer_representation": "Nc1cccc(-c2ncsc2-c2ccncn2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[NH:28][H:55])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)N)c2cscn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:7]([c:4]([c:8]([c:3]1[H:15])[N:11]([H:19])[H:20])[H:16])[c:9]2[c:5]([s:12][c:6]([n:10]2)[H:18])[H:17])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])[H])c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)N)c2cscn2",
+      "canonical_smiles": "c1cc(cc(c1)N)c2cscn2",
+      "inchi_key": "IEKBOUQLQRHVRN-UHFFFAOYSA-N",
+      "molecular_formula": "C9H8N2S",
+      "standard_inchi": "InChI=1S/C9H8N2S/c10-8-3-1-2-7(4-8)9-5-12-6-11-9/h1-6H,10H2",
+      "unique_protomer_representation": "c1cc(cc(c1)N)c2cscn2",
+      "unique_tautomer_representation": "Nc1cccc(-c2cscn2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[NH:28][H:55])[c:16]2[cH:17][s:34][cH:18][n:25]2)[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccnc(n4)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:31][c:1]1[c:3]([c:11]([c:8]([c:12]([c:4]1[H:34])[N:24]([H:43])[S:30](=[O:25])(=[O:26])[c:15]2[c:13]([c:5]([c:2]([c:6]([c:14]2[F:28])[H:36])[H:32])[H:35])[F:27])[H:38])[c:17]3[c:18]([s:29][c:10]([n:21]3)[H:40])[c:16]4[c:7]([c:9]([n:20][c:19]([n:22]4)[N:23]([H:41])[H:42])[H:39])[H:37])[H:33]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccnc(n4)N",
+      "canonical_smiles": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccnc(n4)N",
+      "inchi_key": "NAECHWTVPZVAKD-UHFFFAOYSA-N",
+      "molecular_formula": "C19H13F2N5O2S2",
+      "standard_inchi": "InChI=1S/C19H13F2N5O2S2/c20-13-5-2-6-14(21)18(13)30(27,28)26-12-4-1-3-11(9-12)16-17(29-10-24-16)15-7-8-23-19(22)25-15/h1-10,26H,(H2,22,23,25)",
+      "unique_protomer_representation": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccnc(n4)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccncn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:3]([c:12]([c:8]([c:13]([c:4]1[H:33])[N:23]([H:41])[S:29](=[O:24])(=[O:25])[c:16]2[c:14]([c:5]([c:2]([c:6]([c:15]2[F:27])[H:35])[H:31])[H:34])[F:26])[H:37])[c:18]3[c:19]([s:28][c:11]([n:22]3)[H:40])[c:17]4[c:7]([c:9]([n:20][c:10]([n:21]4)[H:39])[H:38])[H:36])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccncn4",
+      "canonical_smiles": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccncn4",
+      "inchi_key": "KBYJEYWXBBHZTE-UHFFFAOYSA-N",
+      "molecular_formula": "C19H12F2N4O2S2",
+      "standard_inchi": "InChI=1S/C19H12F2N4O2S2/c20-14-5-2-6-15(21)19(14)29(26,27)25-13-4-1-3-12(9-13)17-18(28-11-24-17)16-7-8-22-10-23-16/h1-11,25H",
+      "unique_protomer_representation": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3c(scn3)c4ccncn4",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3cscn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:3]([c:10]([c:7]([c:11]([c:4]1[H:27])[N:17]([H:33])[S:23](=[O:18])(=[O:19])[c:14]2[c:12]([c:5]([c:2]([c:6]([c:13]2[F:21])[H:29])[H:25])[H:28])[F:20])[H:30])[c:15]3[c:8]([s:22][c:9]([n:16]3)[H:32])[H:31])[H:26]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])c3c(sc(n3)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3cscn3",
+      "canonical_smiles": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3cscn3",
+      "inchi_key": "UZORVNXYXJQWLC-UHFFFAOYSA-N",
+      "molecular_formula": "C15H10F2N2O2S2",
+      "standard_inchi": "InChI=1S/C15H10F2N2O2S2/c16-12-5-2-6-13(17)15(12)23(20,21)19-11-4-1-3-10(7-11)14-8-22-9-18-14/h1-9,19H",
+      "unique_protomer_representation": "c1cc(cc(c1)NS(=O)(=O)c2c(cccc2F)F)c3cscn3",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2cscn2)c1)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[c:16]3[cH:17][s:34][cH:18][n:25]3)[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccnc(n3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:8]([c:5]([c:9]([c:3]1[H:25])[N:18]([H:32])[S:22](=[O:19])(=[O:20])[H:33])[H:27])[c:11]2[c:12]([s:21][c:7]([n:15]2)[H:29])[c:10]3[c:4]([c:6]([n:14][c:13]([n:16]3)[N:17]([H:30])[H:31])[H:28])[H:26])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccnc(n3)N",
+      "canonical_smiles": "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccnc(n3)N",
+      "inchi_key": "ZIMYDNLFGGXWAE-UHFFFAOYSA-N",
+      "molecular_formula": "C13H11N5O2S2",
+      "standard_inchi": "InChI=1S/C13H11N5O2S2/c14-13-15-5-4-10(17-13)12-11(16-7-21-12)8-2-1-3-9(6-8)18-22(19)20/h1-7,22H,(H2,14,15,17)(H,18,19,20)",
+      "unique_protomer_representation": "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccnc(n3)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(N[SH](=O)=O)c2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:9]([c:5]([c:10]([c:3]1[H:24])[N:17]([H:30])[S:21](=[O:18])(=[O:19])[H:31])[H:26])[c:12]2[c:13]([s:20][c:8]([n:16]2)[H:29])[c:11]3[c:4]([c:6]([n:14][c:7]([n:15]3)[H:28])[H:27])[H:25])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccncn3",
+      "canonical_smiles": "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccncn3",
+      "inchi_key": "ZCCZIRYGGLFNBW-UHFFFAOYSA-N",
+      "molecular_formula": "C13H10N4O2S2",
+      "standard_inchi": "InChI=1S/C13H10N4O2S2/c18-21(19)17-10-3-1-2-9(6-10)12-13(20-8-16-12)11-4-5-14-7-15-11/h1-8,21H,(H,17,18,19)",
+      "unique_protomer_representation": "c1cc(cc(c1)NS(=O)=O)c2c(scn2)c3ccncn3",
+      "unique_tautomer_representation": "O=[SH](=O)Nc1cccc(-c2ncsc2-c2ccncn2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cc(cc(c1)NS(=O)=O)c2cscn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:16][c:1]1[c:2]([c:7]([c:4]([c:8]([c:3]1[H:18])[N:11]([H:22])[S:15](=[O:12])(=[O:13])[H:23])[H:19])[c:9]2[c:5]([s:14][c:6]([n:10]2)[H:21])[H:20])[H:17]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])[H])c2c(sc(n2)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(cc(c1)NS(=O)=O)c2cscn2",
+      "canonical_smiles": "c1cc(cc(c1)NS(=O)=O)c2cscn2",
+      "inchi_key": "SBKFRXBJUWKQHN-UHFFFAOYSA-N",
+      "molecular_formula": "C9H8N2O2S2",
+      "standard_inchi": "InChI=1S/C9H8N2O2S2/c12-15(13)11-8-3-1-2-7(4-8)9-5-14-6-10-9/h1-6,15H,(H,11,12,13)",
+      "unique_protomer_representation": "c1cc(cc(c1)NS(=O)=O)c2cscn2",
+      "unique_tautomer_representation": "O=[SH](=O)Nc1cccc(-c2cscn2)c1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:36][c:1]1[c:3]([c:9]([cH:13][c:10]([c:4]1[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[c:16]2[cH:17][s:34][cH:18][n:25]2)[H:38]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[F:10])[S:11](=[O:8])(=[O:9])[N:7]([H:16])[H:17])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)N",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)N",
+      "inchi_key": "WFLBWYLZCQOPCA-UHFFFAOYSA-N",
+      "molecular_formula": "C6H6FNO2S",
+      "standard_inchi": "InChI=1S/C6H6FNO2S/c7-5-3-1-2-4-6(5)11(8,9)10/h1-4H,(H2,8,9,10)",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)N",
+      "unique_tautomer_representation": "NS(=O)(=O)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[NH:28][H:55]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:2]([c:7]([c:15]([c:14]([c:6]1[H:35])[F:27])[S:29](=[O:25])(=[O:26])[N:24]([H:43])[c:13]2[c:5]([c:3]([c:4]([c:12]([c:9]2[H:38])[c:17]3[c:18]([s:28][c:11]([n:21]3)[H:40])[c:16]4[c:8]([c:10]([n:20][c:19]([n:22]4)[N:23]([H:41])[H:42])[H:39])[H:37])[H:33])[H:32])[H:34])[H:36])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N",
+      "inchi_key": "ORGFAZHCDSZIRS-UHFFFAOYSA-N",
+      "molecular_formula": "C19H14FN5O2S2",
+      "standard_inchi": "InChI=1S/C19H14FN5O2S2/c20-14-6-1-2-7-16(14)29(26,27)25-13-5-3-4-12(10-13)17-18(28-11-23-17)15-8-9-22-19(21)24-15/h1-11,25H,(H2,21,22,24)",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(NS(=O)(=O)c3ccccc3F)c2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:15]([c:6]1[H:34])[F:26])[S:28](=[O:24])(=[O:25])[N:23]([H:41])[c:14]2[c:5]([c:3]([c:4]([c:13]([c:9]2[H:37])[c:18]3[c:19]([s:27][c:12]([n:22]3)[H:40])[c:17]4[c:8]([c:10]([n:20][c:11]([n:21]4)[H:39])[H:38])[H:36])[H:32])[H:31])[H:33])[H:35])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4",
+      "inchi_key": "SVKUPLGCDQRNJJ-UHFFFAOYSA-N",
+      "molecular_formula": "C19H13FN4O2S2",
+      "standard_inchi": "InChI=1S/C19H13FN4O2S2/c20-15-6-1-2-7-17(15)28(25,26)24-14-5-3-4-13(10-14)18-19(27-12-23-18)16-8-9-21-11-22-16/h1-12,24H",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3cscn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:7]([c:14]([c:13]([c:6]1[H:28])[F:20])[S:22](=[O:18])(=[O:19])[N:17]([H:33])[c:12]2[c:5]([c:3]([c:4]([c:11]([c:8]2[H:30])[c:15]3[c:9]([s:21][c:10]([n:16]3)[H:32])[H:31])[H:26])[H:25])[H:27])[H:29])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3cscn3",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3cscn3",
+      "inchi_key": "ZZKSGHXTGCWQKJ-UHFFFAOYSA-N",
+      "molecular_formula": "C15H11FN2O2S2",
+      "standard_inchi": "InChI=1S/C15H11FN2O2S2/c16-13-6-1-2-7-15(13)22(19,20)18-12-5-3-4-11(8-12)14-9-21-10-17-14/h1-10,18H",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2)c3cscn3",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2cscn2)c1)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[cH:17][s:34][cH:18][n:25]3",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:31][c:1]1[c:2]([c:7]([c:15]([c:13]([c:6]1[H:36])[F:27])[S:30](=[O:25])(=[O:26])[N:24]([H:43])[c:12]2[c:5]([c:3]([c:4]([c:11]([c:14]2[F:28])[c:17]3[c:18]([s:29][c:10]([n:21]3)[H:40])[c:16]4[c:8]([c:9]([n:20][c:19]([n:22]4)[N:23]([H:41])[H:42])[H:39])[H:38])[H:34])[H:33])[H:35])[H:37])[H:32]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N",
+      "inchi_key": "NMFWGSWQNDRWPN-UHFFFAOYSA-N",
+      "molecular_formula": "C19H13F2N5O2S2",
+      "standard_inchi": "InChI=1S/C19H13F2N5O2S2/c20-12-5-1-2-7-15(12)30(27,28)26-13-6-3-4-11(16(13)21)17-18(29-10-24-17)14-8-9-23-19(22)25-14/h1-10,26H,(H2,22,23,25)",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(NS(=O)(=O)c3ccccc3F)c2F)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:2]([c:7]([c:16]([c:14]([c:6]1[H:35])[F:26])[S:29](=[O:24])(=[O:25])[N:23]([H:41])[c:13]2[c:5]([c:3]([c:4]([c:12]([c:15]2[F:27])[c:18]3[c:19]([s:28][c:11]([n:22]3)[H:40])[c:17]4[c:8]([c:9]([n:20][c:10]([n:21]4)[H:39])[H:38])[H:37])[H:33])[H:32])[H:34])[H:36])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4",
+      "inchi_key": "LRFLYQGMYUKKKF-UHFFFAOYSA-N",
+      "molecular_formula": "C19H12F2N4O2S2",
+      "standard_inchi": "InChI=1S/C19H12F2N4O2S2/c20-13-5-1-2-7-16(13)29(26,27)25-14-6-3-4-12(17(14)21)18-19(28-11-24-18)15-8-9-22-10-23-15/h1-11,25H",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1F)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3cscn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:24][c:1]1[c:2]([c:7]([c:14]([c:12]([c:6]1[H:29])[F:20])[S:23](=[O:18])(=[O:19])[N:17]([H:33])[c:11]2[c:5]([c:3]([c:4]([c:10]([c:13]2[F:21])[c:15]3[c:8]([s:22][c:9]([n:16]3)[H:32])[H:31])[H:27])[H:26])[H:28])[H:30])[H:25]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3cscn3",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3cscn3",
+      "inchi_key": "IIGJGQFSNBMDDV-UHFFFAOYSA-N",
+      "molecular_formula": "C15H10F2N2O2S2",
+      "standard_inchi": "InChI=1S/C15H10F2N2O2S2/c16-11-5-1-2-7-14(11)23(20,21)19-12-6-3-4-10(15(12)17)13-8-22-9-18-13/h1-9,19H",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)(=O)Nc2cccc(c2F)c3cscn3",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2cscn2)c1F)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[cH:17][s:34][cH:18][n:25]3)[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)F)S(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[F:9])[S:10](=[O:7])(=[O:8])[H:15])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])F)S(=O)(=O)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)F)S(=O)=O",
+      "canonical_smiles": "c1ccc(c(c1)F)S(=O)=O",
+      "inchi_key": "GWBKRSLCGFRGNG-UHFFFAOYSA-N",
+      "molecular_formula": "C6H5FO2S",
+      "standard_inchi": "InChI=1S/C6H5FO2S/c7-5-3-1-2-4-6(5)10(8)9/h1-4,10H",
+      "unique_protomer_representation": "c1ccc(c(c1)F)S(=O)=O",
+      "unique_tautomer_representation": "O=[SH](=O)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([c:11]([c:5]([c:2]1[H:37])[H:40])[F:31])[SH:35](=[O:29])=[O:30]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)N)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:9][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:11])[N:7]([H:13])[H:14])[F:8])[H:12])[H:10]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)N)F",
+      "canonical_smiles": "c1ccc(c(c1)N)F",
+      "inchi_key": "FTZQXOJYPFINKJ-UHFFFAOYSA-N",
+      "molecular_formula": "C6H6FN",
+      "standard_inchi": "InChI=1S/C6H6FN/c7-5-3-1-2-4-6(5)8/h1-4H,8H2",
+      "unique_protomer_representation": "c1ccc(c(c1)N)F",
+      "unique_tautomer_representation": "Nc1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][c:13]([c:10]([c:4]([c:1]1[H:36])[H:39])[NH:28][H:55])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)NS(=O)(=O)c2c(cccc2F)F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:5]([c:9]([c:8]([c:4]1[H:23])[N:13]([H:27])[S:19](=[O:14])(=[O:15])[c:12]2[c:10]([c:6]([c:3]([c:7]([c:11]2[F:18])[H:26])[H:22])[H:25])[F:17])[F:16])[H:24])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)NS(=O)(=O)c2c(cccc2F)F)F",
+      "canonical_smiles": "c1ccc(c(c1)NS(=O)(=O)c2c(cccc2F)F)F",
+      "inchi_key": "STYRUDSRYAIYDE-UHFFFAOYSA-N",
+      "molecular_formula": "C12H8F3NO2S",
+      "standard_inchi": "InChI=1S/C12H8F3NO2S/c13-8-4-1-2-7-11(8)16-19(17,18)12-9(14)5-3-6-10(12)15/h1-7,16H",
+      "unique_protomer_representation": "c1ccc(c(c1)NS(=O)(=O)c2c(cccc2F)F)F",
+      "unique_tautomer_representation": "O=S(=O)(Nc1ccccc1F)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][c:13]([c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)NS(=O)(=O)c2ccccc2F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:6]([c:10]([c:9]([c:5]1[H:23])[N:13]([H:27])[S:18](=[O:14])(=[O:15])[c:12]2[c:8]([c:4]([c:3]([c:7]([c:11]2[F:17])[H:25])[H:21])[H:22])[H:26])[F:16])[H:24])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)NS(=O)(=O)c2ccccc2F)F",
+      "canonical_smiles": "c1ccc(c(c1)NS(=O)(=O)c2ccccc2F)F",
+      "inchi_key": "JMLSCNMMPKJAQU-UHFFFAOYSA-N",
+      "molecular_formula": "C12H9F2NO2S",
+      "standard_inchi": "InChI=1S/C12H9F2NO2S/c13-9-5-1-3-7-11(9)15-18(16,17)12-8-4-2-6-10(12)14/h1-8,15H",
+      "unique_protomer_representation": "c1ccc(c(c1)NS(=O)(=O)c2ccccc2F)F",
+      "unique_tautomer_representation": "O=S(=O)(Nc1ccccc1F)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][c:13]([c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[cH:12][c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)NS(=O)=O)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[N:7]([H:16])[S:11](=[O:8])(=[O:9])[H:17])[F:10])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])N([H])S(=O)(=O)[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)NS(=O)=O)F",
+      "canonical_smiles": "c1ccc(c(c1)NS(=O)=O)F",
+      "inchi_key": "OMZZYKVCWYJLPX-UHFFFAOYSA-N",
+      "molecular_formula": "C6H6FNO2S",
+      "standard_inchi": "InChI=1S/C6H6FNO2S/c7-5-3-1-2-4-6(5)8-11(9)10/h1-4,11H,(H,8,9,10)",
+      "unique_protomer_representation": "c1ccc(c(c1)NS(=O)=O)F",
+      "unique_tautomer_representation": "O=[SH](=O)Nc1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][c:13]([c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)c2c(scn2)c3ccnc(n3)N)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:20][c:1]1[c:2]([c:4]([c:9]([c:8]([c:3]1[H:22])[c:11]2[c:12]([s:19][c:7]([n:15]2)[H:26])[c:10]3[c:5]([c:6]([n:14][c:13]([n:16]3)[N:17]([H:27])[H:28])[H:25])[H:24])[F:18])[H:23])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)c2c(scn2)c3ccnc(n3)N)F",
+      "canonical_smiles": "c1ccc(c(c1)c2c(scn2)c3ccnc(n3)N)F",
+      "inchi_key": "MYEFAWJKYZFAEY-UHFFFAOYSA-N",
+      "molecular_formula": "C13H9FN4S",
+      "standard_inchi": "InChI=1S/C13H9FN4S/c14-9-4-2-1-3-8(9)11-12(19-7-17-11)10-5-6-16-13(15)18-10/h1-7H,(H2,15,16,18)",
+      "unique_protomer_representation": "c1ccc(c(c1)c2c(scn2)c3ccnc(n3)N)F",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2ccccc2F)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][c:13]([c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)c2c(scn2)c3ccncn3)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:4]([c:10]([c:9]([c:3]1[H:21])[c:12]2[c:13]([s:18][c:8]([n:16]2)[H:26])[c:11]3[c:5]([c:6]([n:14][c:7]([n:15]3)[H:25])[H:24])[H:23])[F:17])[H:22])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)c2c(scn2)c3ccncn3)F",
+      "canonical_smiles": "c1ccc(c(c1)c2c(scn2)c3ccncn3)F",
+      "inchi_key": "ACTKNALOQRYRGM-UHFFFAOYSA-N",
+      "molecular_formula": "C13H8FN3S",
+      "standard_inchi": "InChI=1S/C13H8FN3S/c14-10-4-2-1-3-9(10)12-13(18-8-17-12)11-5-6-15-7-16-11/h1-8H",
+      "unique_protomer_representation": "c1ccc(c(c1)c2c(scn2)c3ccncn3)F",
+      "unique_tautomer_representation": "Fc1ccccc1-c1ncsc1-c1ccncn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][c:13]([c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42])[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(c(c1)c2cscn2)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([c:4]([c:8]([c:7]([c:3]1[H:15])[c:9]2[c:5]([s:12][c:6]([n:10]2)[H:18])[H:17])[F:11])[H:16])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(sc(n2)[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)c2cscn2)F",
+      "canonical_smiles": "c1ccc(c(c1)c2cscn2)F",
+      "inchi_key": "ZHRICLVLJYQIAY-UHFFFAOYSA-N",
+      "molecular_formula": "C9H6FNS",
+      "standard_inchi": "InChI=1S/C9H6FNS/c10-8-4-2-1-3-7(8)9-5-12-6-11-9/h1-6H",
+      "unique_protomer_representation": "c1ccc(c(c1)c2cscn2)F",
+      "unique_tautomer_representation": "Fc1ccccc1-c1cscn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][c:13]([c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[cH:17][s:34][cH:18][n:25]2)[F:33]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:8][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:10])[H:12])[N:7]([H:13])[H:14])[H:11])[H:9]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)N",
+      "canonical_smiles": "c1ccc(cc1)N",
+      "inchi_key": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+      "molecular_formula": "C6H7N",
+      "standard_inchi": "InChI=1S/C6H7N/c7-6-4-2-1-3-5-6/h1-5H,7H2",
+      "unique_protomer_representation": "c1ccc(cc1)N",
+      "unique_tautomer_representation": "Nc1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][cH:13][c:10]([c:4]([c:1]1[H:36])[H:39])[NH:28][H:55]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)NS(=O)(=O)c2c(cccc2F)F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:5]([c:9]([c:6]([c:3]1[H:21])[H:24])[N:13]([H:27])[S:18](=[O:14])(=[O:15])[c:12]2[c:10]([c:7]([c:4]([c:8]([c:11]2[F:17])[H:26])[H:22])[H:25])[F:16])[H:23])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])F)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)NS(=O)(=O)c2c(cccc2F)F",
+      "canonical_smiles": "c1ccc(cc1)NS(=O)(=O)c2c(cccc2F)F",
+      "inchi_key": "YOJWGPUKUHKGDL-UHFFFAOYSA-N",
+      "molecular_formula": "C12H9F2NO2S",
+      "standard_inchi": "InChI=1S/C12H9F2NO2S/c13-10-7-4-8-11(14)12(10)18(16,17)15-9-5-2-1-3-6-9/h1-8,15H",
+      "unique_protomer_representation": "c1ccc(cc1)NS(=O)(=O)c2c(cccc2F)F",
+      "unique_tautomer_representation": "O=S(=O)(Nc1ccccc1)c1c(F)cccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][cH:13][c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[c:12]([c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41])[F:32]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)NS(=O)(=O)c2ccccc2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)c2c(c(c(c(c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:17][c:1]1[c:3]([c:7]([c:11]([c:8]([c:4]1[H:20])[H:24])[N:13]([H:27])[S:16](=[O:14])(=[O:15])[c:12]2[c:9]([c:5]([c:2]([c:6]([c:10]2[H:26])[H:22])[H:18])[H:21])[H:25])[H:23])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)c2c(c(c(c(c2[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)NS(=O)(=O)c2ccccc2",
+      "canonical_smiles": "c1ccc(cc1)NS(=O)(=O)c2ccccc2",
+      "inchi_key": "XAUGWFWQVYXATQ-UHFFFAOYSA-N",
+      "molecular_formula": "C12H11NO2S",
+      "standard_inchi": "InChI=1S/C12H11NO2S/c14-16(15,12-9-5-2-6-10-12)13-11-7-3-1-4-8-11/h1-10,13H",
+      "unique_protomer_representation": "c1ccc(cc1)NS(=O)(=O)c2ccccc2",
+      "unique_tautomer_representation": "O=S(=O)(Nc1ccccc1)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][cH:13][c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[cH:12][c:6]([c:2]([c:5]([cH:11]2)[H:40])[H:37])[H:41]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)NS(=O)(=O)c2ccccc2F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:2]([c:6]([c:10]([c:7]([c:3]1[H:20])[H:24])[N:13]([H:27])[S:17](=[O:14])(=[O:15])[c:12]2[c:9]([c:5]([c:4]([c:8]([c:11]2[F:16])[H:25])[H:21])[H:22])[H:26])[H:23])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)c2c(c(c(c(c2F)[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)NS(=O)(=O)c2ccccc2F",
+      "canonical_smiles": "c1ccc(cc1)NS(=O)(=O)c2ccccc2F",
+      "inchi_key": "OGUKCHSGOJXRND-UHFFFAOYSA-N",
+      "molecular_formula": "C12H10FNO2S",
+      "standard_inchi": "InChI=1S/C12H10FNO2S/c13-11-8-4-5-9-12(11)17(15,16)14-10-6-2-1-3-7-10/h1-9,14H",
+      "unique_protomer_representation": "c1ccc(cc1)NS(=O)(=O)c2ccccc2F",
+      "unique_tautomer_representation": "O=S(=O)(Nc1ccccc1)c1ccccc1F"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][cH:13][c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[S:35](=[O:29])(=[O:30])[c:14]2[cH:12][c:6]([c:2]([c:5]([c:11]2[F:31])[H:40])[H:37])[H:41]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)NS(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[H:15])[N:7]([H:16])[S:10](=[O:8])(=[O:9])[H:17])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])N([H])S(=O)(=O)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)NS(=O)=O",
+      "canonical_smiles": "c1ccc(cc1)NS(=O)=O",
+      "inchi_key": "JVRHADZWRWBICE-UHFFFAOYSA-N",
+      "molecular_formula": "C6H7NO2S",
+      "standard_inchi": "InChI=1S/C6H7NO2S/c8-10(9)7-6-4-2-1-3-5-6/h1-5,10H,(H,7,8,9)",
+      "unique_protomer_representation": "c1ccc(cc1)NS(=O)=O",
+      "unique_tautomer_representation": "O=[SH](=O)Nc1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:38][c:3]1[cH:9][cH:13][c:10]([c:4]([c:1]1[H:36])[H:39])[N:28]([H:55])[SH:35](=[O:29])=[O:30]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[H:15])[S:10](=[O:8])(=[O:9])[N:7]([H:16])[H:17])[H:14])[H:12]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)N",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)N",
+      "inchi_key": "KHBQMWCZKVMBLN-UHFFFAOYSA-N",
+      "molecular_formula": "C6H7NO2S",
+      "standard_inchi": "InChI=1S/C6H7NO2S/c7-10(8,9)6-4-2-1-3-5-6/h1-5H,(H2,7,8,9)",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)N",
+      "unique_tautomer_representation": "NS(=O)(=O)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[NH:28][H:55]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:2]([c:7]([c:15]([c:8]([c:3]1[H:31])[H:36])[S:28](=[O:25])(=[O:26])[N:24]([H:43])[c:14]2[c:6]([c:4]([c:5]([c:13]([c:10]2[H:38])[c:17]3[c:18]([s:27][c:12]([n:21]3)[H:40])[c:16]4[c:9]([c:11]([n:20][c:19]([n:22]4)[N:23]([H:41])[H:42])[H:39])[H:37])[H:33])[H:32])[H:34])[H:35])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N",
+      "inchi_key": "UPPCQNGHBCVSTL-UHFFFAOYSA-N",
+      "molecular_formula": "C19H15N5O2S2",
+      "standard_inchi": "InChI=1S/C19H15N5O2S2/c20-19-21-10-9-16(23-19)18-17(22-12-27-18)13-5-4-6-14(11-13)24-28(25,26)15-7-2-1-3-8-15/h1-12,24H,(H2,20,21,23)",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccnc(n4)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(NS(=O)(=O)c3ccccc3)c2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:28][c:1]1[c:2]([c:7]([c:16]([c:8]([c:3]1[H:30])[H:35])[S:27](=[O:24])(=[O:25])[N:23]([H:41])[c:15]2[c:6]([c:4]([c:5]([c:14]([c:10]2[H:37])[c:18]3[c:19]([s:26][c:13]([n:22]3)[H:40])[c:17]4[c:9]([c:11]([n:20][c:12]([n:21]4)[H:39])[H:38])[H:36])[H:32])[H:31])[H:33])[H:34])[H:29]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4",
+      "inchi_key": "MVRQOIZXHVKKMK-UHFFFAOYSA-N",
+      "molecular_formula": "C19H14N4O2S2",
+      "standard_inchi": "InChI=1S/C19H14N4O2S2/c24-27(25,16-7-2-1-3-8-16)23-15-6-4-5-14(11-15)18-19(26-13-22-18)17-9-10-20-12-21-17/h1-13,23H",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3c(scn3)c4ccncn4",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3cscn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:22][c:1]1[c:2]([c:7]([c:14]([c:8]([c:3]1[H:24])[H:29])[S:21](=[O:18])(=[O:19])[N:17]([H:33])[c:13]2[c:6]([c:4]([c:5]([c:12]([c:9]2[H:30])[c:15]3[c:10]([s:20][c:11]([n:16]3)[H:32])[H:31])[H:26])[H:25])[H:27])[H:28])[H:23]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2[H])c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3cscn3",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3cscn3",
+      "inchi_key": "INXKFBJBRVTKHT-UHFFFAOYSA-N",
+      "molecular_formula": "C15H12N2O2S2",
+      "standard_inchi": "InChI=1S/C15H12N2O2S2/c18-21(19,14-7-2-1-3-8-14)17-13-6-4-5-12(9-13)15-10-20-11-16-15/h1-11,17H",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2)c3cscn3",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2cscn2)c1)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[cH:13][c:9]([c:3]([c:1]([c:4]2[H:39])[H:36])[H:38])[c:16]3[cH:17][s:34][cH:18][n:25]3",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:30][c:1]1[c:2]([c:7]([c:15]([c:8]([c:3]1[H:32])[H:37])[S:29](=[O:25])(=[O:26])[N:24]([H:43])[c:13]2[c:6]([c:4]([c:5]([c:12]([c:14]2[F:27])[c:17]3[c:18]([s:28][c:11]([n:21]3)[H:40])[c:16]4[c:9]([c:10]([n:20][c:19]([n:22]4)[N:23]([H:41])[H:42])[H:39])[H:38])[H:34])[H:33])[H:35])[H:36])[H:31]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)N([H])[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N",
+      "inchi_key": "FACYGXXZVZPRAN-UHFFFAOYSA-N",
+      "molecular_formula": "C19H14FN5O2S2",
+      "standard_inchi": "InChI=1S/C19H14FN5O2S2/c20-16-13(17-18(28-11-23-17)15-9-10-22-19(21)24-15)7-4-8-14(16)25-29(26,27)12-5-2-1-3-6-12/h1-11,25H,(H2,21,22,24)",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccnc(n4)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2cccc(NS(=O)(=O)c3ccccc3)c2F)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][c:19]([n:26]4)[N:27]([H:53])[H:54])[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:29][c:1]1[c:2]([c:7]([c:16]([c:8]([c:3]1[H:31])[H:36])[S:28](=[O:24])(=[O:25])[N:23]([H:41])[c:14]2[c:6]([c:4]([c:5]([c:13]([c:15]2[F:26])[c:18]3[c:19]([s:27][c:12]([n:22]3)[H:40])[c:17]4[c:9]([c:10]([n:20][c:11]([n:21]4)[H:39])[H:38])[H:37])[H:33])[H:32])[H:34])[H:35])[H:30]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])c4c(c(nc(n4)[H])[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4",
+      "inchi_key": "BNVZSKMXJIIMCW-UHFFFAOYSA-N",
+      "molecular_formula": "C19H13FN4O2S2",
+      "standard_inchi": "InChI=1S/C19H13FN4O2S2/c20-17-14(18-19(27-12-23-18)16-9-10-21-11-22-16)7-4-8-15(17)24-28(25,26)13-5-2-1-3-6-13/h1-12,24H",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3c(scn3)c4ccncn4",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1F)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[c:17]([s:34][cH:18][n:25]3)[c:15]4[c:7]([c:8]([n:24][cH:19][n:26]4)[H:43])[H:42])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3cscn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:23][c:1]1[c:2]([c:7]([c:14]([c:8]([c:3]1[H:25])[H:30])[S:22](=[O:18])(=[O:19])[N:17]([H:33])[c:12]2[c:6]([c:4]([c:5]([c:11]([c:13]2[F:20])[c:15]3[c:9]([s:21][c:10]([n:16]3)[H:32])[H:31])[H:27])[H:26])[H:28])[H:29])[H:24]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)c3c(sc(n3)[H])[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3cscn3",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3cscn3",
+      "inchi_key": "CVTZUXHXXPOISV-UHFFFAOYSA-N",
+      "molecular_formula": "C15H11FN2O2S2",
+      "standard_inchi": "InChI=1S/C15H11FN2O2S2/c16-15-12(14-9-21-10-17-14)7-4-8-13(15)18-22(19,20)11-5-2-1-3-6-11/h1-10,18H",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2cccc(c2F)c3cscn3",
+      "unique_tautomer_representation": "O=S(=O)(Nc1cccc(-c2cscn2)c1F)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([c:9]([c:13]2[F:33])[c:16]3[cH:17][s:34][cH:18][n:25]3)[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)(=O)Nc2ccccc2F": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:4]([c:8]([c:12]([c:9]([c:5]1[H:22])[H:26])[S:17](=[O:14])(=[O:15])[N:13]([H:27])[c:10]2[c:6]([c:2]([c:3]([c:7]([c:11]2[F:16])[H:24])[H:20])[H:19])[H:23])[H:25])[H:21]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)N([H])c2c(c(c(c(c2F)[H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)(=O)Nc2ccccc2F",
+      "canonical_smiles": "c1ccc(cc1)S(=O)(=O)Nc2ccccc2F",
+      "inchi_key": "MKRQPKPFOBVGFY-UHFFFAOYSA-N",
+      "molecular_formula": "C12H10FNO2S",
+      "standard_inchi": "InChI=1S/C12H10FNO2S/c13-11-8-4-5-9-12(11)14-17(15,16)10-6-2-1-3-7-10/h1-9,14H",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)(=O)Nc2ccccc2F",
+      "unique_tautomer_representation": "O=S(=O)(Nc1ccccc1F)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[S:35](=[O:29])(=[O:30])[N:28]([H:55])[c:10]2[c:4]([c:1]([c:3]([cH:9][c:13]2[F:33])[H:38])[H:36])[H:39]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)S(=O)=O": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:10][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:12])[H:14])[S:9](=[O:7])(=[O:8])[H:15])[H:13])[H:11]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])S(=O)(=O)[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)S(=O)=O",
+      "canonical_smiles": "c1ccc(cc1)S(=O)=O",
+      "inchi_key": "XYUAXZDQSDTCHO-UHFFFAOYSA-N",
+      "molecular_formula": "C6H6O2S",
+      "standard_inchi": "InChI=1S/C6H6O2S/c7-9(8)6-4-2-1-3-5-6/h1-5,9H",
+      "unique_protomer_representation": "c1ccc(cc1)S(=O)=O",
+      "unique_tautomer_representation": "O=[SH](=O)c1ccccc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:41][c:6]1[cH:12][c:14]([cH:11][c:5]([c:2]1[H:37])[H:40])[SH:35](=[O:29])=[O:30]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)c2c(scn2)c3ccnc(n3)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:19][c:1]1[c:2]([c:4]([c:9]([c:5]([c:3]1[H:21])[H:23])[c:11]2[c:12]([s:18][c:8]([n:15]2)[H:26])[c:10]3[c:6]([c:7]([n:14][c:13]([n:16]3)[N:17]([H:27])[H:28])[H:25])[H:24])[H:22])[H:20]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)N([H])[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)c2c(scn2)c3ccnc(n3)N",
+      "canonical_smiles": "c1ccc(cc1)c2c(scn2)c3ccnc(n3)N",
+      "inchi_key": "BUEGZGZFIXQXRI-UHFFFAOYSA-N",
+      "molecular_formula": "C13H10N4S",
+      "standard_inchi": "InChI=1S/C13H10N4S/c14-13-15-7-6-10(17-13)12-11(16-8-18-12)9-4-2-1-3-5-9/h1-8H,(H2,14,15,17)",
+      "unique_protomer_representation": "c1ccc(cc1)c2c(scn2)c3ccnc(n3)N",
+      "unique_tautomer_representation": "N=c1nc(-c2scnc2-c2ccccc2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][cH:13][c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][c:19]([n:26]3)[N:27]([H:53])[H:54])[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)c2c(scn2)c3ccncn3": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:18][c:1]1[c:2]([c:4]([c:10]([c:5]([c:3]1[H:20])[H:22])[c:12]2[c:13]([s:17][c:9]([n:16]2)[H:26])[c:11]3[c:6]([c:7]([n:14][c:8]([n:15]3)[H:25])[H:24])[H:23])[H:21])[H:19]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)[H])c3c(c(nc(n3)[H])[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)c2c(scn2)c3ccncn3",
+      "canonical_smiles": "c1ccc(cc1)c2c(scn2)c3ccncn3",
+      "inchi_key": "JLLKCIJJNUXUMX-UHFFFAOYSA-N",
+      "molecular_formula": "C13H9N3S",
+      "standard_inchi": "InChI=1S/C13H9N3S/c1-2-4-10(5-3-1)12-13(17-9-16-12)11-6-7-14-8-15-11/h1-9H",
+      "unique_protomer_representation": "c1ccc(cc1)c2c(scn2)c3ccncn3",
+      "unique_tautomer_representation": "c1ccc(-c2ncsc2-c2ccncn2)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][cH:13][c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[c:17]([s:34][cH:18][n:25]2)[c:15]3[c:7]([c:8]([n:24][cH:19][n:26]3)[H:43])[H:42]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1ccc(cc1)c2cscn2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([c:4]([c:8]([c:5]([c:3]1[H:14])[H:16])[c:9]2[c:6]([s:11][c:7]([n:10]2)[H:18])[H:17])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])[H])c2c(sc(n2)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(cc1)c2cscn2",
+      "canonical_smiles": "c1ccc(cc1)c2cscn2",
+      "inchi_key": "KXCQDIWJQBSUJF-UHFFFAOYSA-N",
+      "molecular_formula": "C9H7NS",
+      "standard_inchi": "InChI=1S/C9H7NS/c1-2-4-8(5-3-1)9-6-11-7-10-9/h1-7H",
+      "unique_protomer_representation": "c1ccc(cc1)c2cscn2",
+      "unique_tautomer_representation": "c1ccc(-c2cscn2)cc1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:39][c:4]1[cH:10][cH:13][c:9]([c:3]([c:1]1[H:36])[H:38])[c:16]2[cH:17][s:34][cH:18][n:25]2",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cnc(nc1c2cncs2)N": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)[H])[H])N([H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:13][c:1]1[c:2]([n:9][c:7]([n:10][c:5]1[c:6]2[c:3]([n:8][c:4]([s:12]2)[H:16])[H:15])[N:11]([H:17])[H:18])[H:14]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)[H])[H])N([H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cnc(nc1c2cncs2)N",
+      "canonical_smiles": "c1cnc(nc1c2cncs2)N",
+      "inchi_key": "VBDQOPKOLMCXIM-UHFFFAOYSA-N",
+      "molecular_formula": "C7H6N4S",
+      "standard_inchi": "InChI=1S/C7H6N4S/c8-7-10-2-1-5(11-7)6-3-9-4-12-6/h1-4H,(H2,8,10,11)",
+      "unique_protomer_representation": "c1cnc(nc1c2cncs2)N",
+      "unique_tautomer_representation": "N=c1nc(-c2cncs2)cc[nH]1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:42][c:7]1[c:8]([n:24][c:19]([n:26][c:15]1[c:17]2[cH:16][n:25][cH:18][s:34]2)[N:27]([H:53])[H:54])[H:43]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  },
+  "c1cncnc1c2cncs2": {
+    "identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)[H])[H])[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:12][c:1]1[c:2]([n:8][c:4]([n:10][c:6]1[c:7]2[c:3]([n:9][c:5]([s:11]2)[H:16])[H:14])[H:15])[H:13]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc(nc1c2c(nc(s2)[H])[H])[H])[H]",
+      "canonical_isomeric_smiles": "c1cncnc1c2cncs2",
+      "canonical_smiles": "c1cncnc1c2cncs2",
+      "inchi_key": "VXCUJDSHMBYPAO-UHFFFAOYSA-N",
+      "molecular_formula": "C7H5N3S",
+      "standard_inchi": "InChI=1S/C7H5N3S/c1-2-8-4-10-6(1)7-3-9-5-11-7/h1-5H",
+      "unique_protomer_representation": "c1cncnc1c2cncs2",
+      "unique_tautomer_representation": "c1cc(-c2cncs2)ncn1"
+    },
+    "provenance": {
+      "canonicalization": "cmiles_v0.1.2+5.ga86a2bb_openeye_2018.Oct.1",
+      "creator": "fragmenter",
+      "hostname": "localhost",
+      "job_id": "ebb1eff0-9c8c-4e28-a68e-f09368538b49",
+      "routine": {
+        "enumerate_fragments": {
+          "map_to_parent": "[H:42][c:7]1[c:8]([n:24][cH:19][n:26][c:15]1[c:17]2[cH:16][n:25][cH:18][s:34]2)[H:43]",
+          "parent_molecule": "CC(C)(C)c1nc(c(s1)c2ccnc(n2)N)c3cccc(c3F)NS(=O)(=O)c4c(cccc4F)F",
+          "parent_molecule_name": "Dabrafenib",
+          "version": "v0.0.2+74.g8a452db.dirty"
+        }
+      },
+      "username": "chayastern",
+      "workflow_id": "example"
+    }
+  }
+}
