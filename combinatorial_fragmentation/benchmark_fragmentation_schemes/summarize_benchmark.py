@@ -85,19 +85,20 @@ def joint_plot(x, y, fname):
     ax_xDist = plt.subplot(gs[0, :2])
     ax_yDist = plt.subplot(gs[1:3, 2])
 
-    ax_main.scatter(x, y, alpha=0.7, edgecolor='black')
+    ax_main.grid(True)
+    ax_main.scatter(x, y, alpha=0.7, edgecolor='black', zorder=2)
     ax_main.set(xlabel="Distance Score", ylabel="Computational cost")
 
 
     # Remove Nans
     xs = [i for i in x if not np.isnan(i)]
     kde = stats.gaussian_kde(xs)
-    xx = np.linspace(-100, max(xs)+1, 10000)
+    xx = np.linspace(-100, max(xs)+1, 100000)
     ax_xDist.plot(sorted(xx),kde(sorted(xx)), color='black')
     ax_xDist.set_yticks([])
     ax_xDist.tick_params(labelbottom=False)
     ax_xDist.set_xlim(-0.05, 0.4)
-    ax_xDist.set_ylim(0, 60)
+    ax_xDist.set_ylim(0, 80)
     ax_xDist.fill_betweenx(kde(sorted(xx)), 0, sorted(xx), alpha=0.3)
     ax_xDist.spines['left'].set_visible(False)
     ax_xDist.spines['right'].set_visible(False)
