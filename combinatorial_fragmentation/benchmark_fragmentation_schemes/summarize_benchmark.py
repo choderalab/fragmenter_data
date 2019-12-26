@@ -127,6 +127,7 @@ if __name__ == '__main__':
     scores = {}
     too_big = []
     too_bad = []
+    lower_left = {}
     names = glob.glob('*/')
     for n in names:
         n = n[:-1]
@@ -157,12 +158,18 @@ if __name__ == '__main__':
 
                 if threshold not in scores:
                     scores[threshold] = {}
+                    lower_left[threshold] = {}
                 if hueristic not in scores[threshold]:
                     scores[threshold][hueristic] = {'scores': [], 'size': []}
+                    lower_left[threshold][hueristic] = {'lower_left': 0, 'outside': 0}
                 parent = wbos[bond]['parent']['wbo_dist']
                 y = wbos[bond][param]['wbo_dist']
                 score = mmd_x_xsqred(x=parent, y=y)
                 heavy_atoms = n_heavy_atoms(wbos[bond][param]['frag'])
+                if score < 0.05 and heavy_atoms**3 < 10000:
+                    lower_left[threshold][hueristic]['lower_left'] += 1
+                else:
+                    lower_left[threshold][hueristic]['outside'] += 1
                 if threshold == 0.05 and heavy_atoms > 25 and hueristic == 'path':
                     too_big.append((n, bond, wbos[bond][param]['frag']))
                 if threshold == 0.01 and score > 0.2 and hueristic == 'path':
@@ -175,8 +182,10 @@ if __name__ == '__main__':
     print(too_bad)
 
     # Plot distributions
-    for i in (0.001, 0.005, 0.01, 0.05, 0.1):
+    for i in (0.001, 0.005, 0.01, 0.03,  0.05, 0.07,  0.1):
         joint_plot(scores[i]['path']['scores'], np.asarray(scores[i]['path']['size']) ** 3,
                    fname='jointplot_{}.pdf'.format(i))
+    with open('summary.json', 'w') as f:
+        json.dump(lower_left, f, indent=2, sort_keys=True)
 
 

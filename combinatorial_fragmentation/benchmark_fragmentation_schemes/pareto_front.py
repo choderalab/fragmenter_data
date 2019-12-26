@@ -49,6 +49,47 @@ def get_bond(mol, bond_tuple):
         return False
     return bond
 
+def get_bond_nbr(mol, bond):
+    # Find all 1-4 atoms around central bond
+    nbrs = set()
+    a1 = bond.GetBgn()
+    a2 = bond.GetEnd()
+    for a in a1.GetAtoms():
+        if a.IsHydrogen():
+            continue
+        nbrs.add(a)
+    for a in a2.GetAtoms():
+        if a.IsHydrogen():
+            continue
+        nbrs.add(a)
+    #nbrs = set()
+  #  for nbr in nbrs_1:
+  #      # keep all nbrs of nbrs
+  #      for a in nbr.GetAtoms():
+  #          if a.IsHydrogen():
+  #              continue
+  #          nbrs.add(a)
+    # convert to map idxs
+    nbrs_map_idx = set()
+    for a in nbrs:
+        nbrs_map_idx.add(a.GetMapIdx())
+
+    return list(nbrs_map_idx)
+
+def frags_with_nbrs(frags, nbrs):
+    return_frags = {}
+    for f in frags:
+        keep = True
+        mol = oechem.OEMol()
+        oechem.OESmilesToMol(mol, frags[f]['map_to_parent'])
+        for n in nbrs:
+            a = mol.GetAtom(oechem.OEHasMapIdx(n))
+            if not a:
+                keep = False
+        if keep:
+            return_frags[f] = frags[f]
+    return return_frags
+
 def mmd_x_xsqred(x, y):
     """
     Maximum mean discrepancy with squared kernel
@@ -215,7 +256,7 @@ def plot_pareto_frontier(Xs, Ys, parent_idx, maxX=True, maxY=True, filename=None
     pf_Y = [pair[1] for pair in pareto_front]
     plt.plot(pf_X, pf_Y, color='black', linewidth=0.8, zorder=1)
 
-    ts = [0.001, 0.005, 0.01, 0.05, 0.1]
+    ts = [0.001, 0.005, 0.01, 0.03, 0.05, 0.07, 0.1]
     if indices is not None:
         for i, j in enumerate(indices):
             j = int(j)
@@ -252,7 +293,7 @@ if __name__ == '__main__':
     name = args.name
 
     # Load relevant data files
-    with open('../rank_fragments/selected/{}/{}_oe_wbo_with_score.json'.format(name, name), 'r') as f:
+    with open('{}/{}_oe_wbo_by_bond.json'.format(name, name), 'r') as f:
         combinatorial_results = json.load(f)
     with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         benchmark_results = json.load(f)
@@ -267,12 +308,19 @@ if __name__ == '__main__':
             if 'parent' in smiles:
                 parent_smiles = combinatorial_results[bond][smiles]['map_to_parent']
                 parent_wbos = combinatorial_results[bond][smiles]['individual_confs']
+
+        parent_mol = oechem.OEMol()
+        oechem.OESmilesToMol(parent_mol, parent_smiles)
+
+        b = get_bond(parent_mol, bond_des)
+        nbrs_1_4 = get_bond_nbr(parent_mol, b)
+        frags_1_4 = frags_with_nbrs(combinatorial_results[bond], nbrs_1_4)
         scores = []
         costs = []
         frags = []
         map_to_parents = []
         elf10_wbos = []
-        for i, smiles in enumerate(combinatorial_results[bond]):
+        for i, smiles in enumerate(frags_1_4):
             if 'parent' in smiles:
                 parent_idx = i
             score = mmd_x_xsqred(x=parent_wbos, y=combinatorial_results[bond][smiles]['individual_confs'])
@@ -312,7 +360,7 @@ if __name__ == '__main__':
 
         scores.extend(benchmark_scores)
         costs.extend(benchmark_costs)
-        indices = np.linspace(len(scores)-5, len(scores)-1, 5)
+        indices = np.linspace(len(scores)-7, len(scores)-1, 7)
         front = plot_pareto_frontier(Xs=scores, Ys=costs, parent_idx=parent_idx, maxY=False, indices=indices,
                                      filename='{}/{}_bond_{}_{}_front.pdf'.format(name, name, bond_des[0], bond_des[1]))
 

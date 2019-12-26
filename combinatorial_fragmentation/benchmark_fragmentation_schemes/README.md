@@ -33,4 +33,7 @@ Proguanil_4 (7, 13)
 ## Manifest
 * `calculate_fragment_wbo_dist.py` - script to generate wbo distributions
 * `summarize_benchmark.py` - script to generate 2D plots of benchmarking results with fragment computational cost vs distance score
+* `pareto_front.py` - script to generate Pareto front of all fragments from combinatorial fragmentation that have all 1-4 atoms with fragmenter
+results plotted in red for visualization.
+* `visualize_results.py` - script to visualize results from benchmarking
 * `jointplot_{}.pdf.format(threshold)` - figures generated with `summarize_benchmark.py`
