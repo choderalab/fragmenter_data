@@ -90,6 +90,9 @@ if __name__ == '__main__':
         selected = json.load(f)
     with open('../rank_fragments/selected/{}/{}_oe_wbo_with_score.json'.format(name, name), 'r') as f:
         wbo_dists = json.load(f)
+    # ETA - this was added later when more parameters were added to avoid recalculating what was already calculated
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
+        already_calculated = json.load(f)
 
     # deserialize
     wbo_dists_des = {}
@@ -119,7 +122,7 @@ if __name__ == '__main__':
     # Calculate WBOs for parent so it does not get calculated every time for fragmneter
     parent_mol = fragmenter.chemi.get_charges(parent_mol, strict_types=False, keep_confs=-1)
 
-    parameters = {'threshold': [0.1, 0.05,  0.01, 0.005, 0.001],
+    parameters = {'threshold': [0.1, 0.07,  0.05, 0.03, 0.01, 0.005, 0.001],
                   'path': ['path_length', 'wbo'],
                   'functional_groups': [None, False],
                   'keep_non_rotor': [True, False]}
@@ -137,6 +140,7 @@ if __name__ == '__main__':
     for bond in selected['bonds']:
         print(bond)
         t_bond = tuple(bond)
+        ser_bond = fragmenter.utils.serialize_bond(t_bond)
         for t, p, f, r in itertools.product(parameters['threshold'], parameters['path'], parameters['functional_groups'],
                                             parameters['keep_non_rotor']):
 
@@ -146,7 +150,12 @@ if __name__ == '__main__':
                 key = '{}_{}_{}'.format(str(t), p, str(r))
                 if f is False:
                     continue
+            #if key in already_calculated[ser_bond]:
+            #    frags[t_bond][key] = already_calculated[ser_bond][key]
+            #    print('already calculated {}, {}'.format(ser_bond, key))
+            #    continue
             print(key)
+            # Check
             parent_mol_copy = oechem.OEMol(parent_mol)
             frgmt = fragment_bond(parent_mol_copy, t_bond, threshold=t, path=p, functional_groups=f, keep_non_rotor=r,
                                  keep_confs=-1)
@@ -197,4 +206,3 @@ if __name__ == '__main__':
         print('{} already exists. Files will be overwritten'.format(name))
     with open('{}/{}_wbo_dists.json'.format(name, name), 'w') as f:
         json.dump(frags_ser, f, indent=2, sort_keys=True)
-
