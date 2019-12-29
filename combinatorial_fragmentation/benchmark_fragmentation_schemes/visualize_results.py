@@ -178,9 +178,12 @@ if __name__ == '__main__':
 
     with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         results = json.load(f)
+    with open('{}/{}_pfizer_wbo_dists.json'.format(name, name), 'r') as f:
+        pfizer_results = json.load(f)
 
     mols = {}
     for bond in results:
+        results[bond]['pfizer'] = pfizer_results[bond]
         if bond == 'provenance':
             continue
         print(bond)

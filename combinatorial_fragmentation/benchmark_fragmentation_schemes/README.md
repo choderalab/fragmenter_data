@@ -29,6 +29,13 @@ Hydroxychloroquin_0 (8, 20) - not finding optimal.
 Netarsudil_0 (30, 23)
 Proguanil_4 (7, 13)
 
+Where Pfizer fails
+1. Menadiol_diphosphate - need phosphate group on other side.
+2. Gemifloxacin (8, 22) no one gets. Pfizer does worse in the score but fragmenter does worse in the size.
+3. Phenformin_3 (13, 7) - Pfizer drops a positively charged nitrogen
+4. Proguanil_0 (14, 7) Pfizer drops a positively charged nitrogen (ridge plot is better for figure)
+5. Tiludronic_acid_0 (16, 7) - loss of chlorine seems to matter here.
+
 
 ## Manifest
 * `calculate_fragment_wbo_dist.py` - script to generate wbo distributions

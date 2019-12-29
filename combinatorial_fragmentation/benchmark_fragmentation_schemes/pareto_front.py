@@ -256,7 +256,7 @@ def plot_pareto_frontier(Xs, Ys, parent_idx, maxX=True, maxY=True, filename=None
     pf_Y = [pair[1] for pair in pareto_front]
     plt.plot(pf_X, pf_Y, color='black', linewidth=0.8, zorder=1)
 
-    ts = [0.001, 0.005, 0.01, 0.03, 0.05, 0.07, 0.1]
+    ts = [0.001, 0.005, 0.01, 0.03, 0.05, 0.07, 0.1, 'pfizer']
     if indices is not None:
         for i, j in enumerate(indices):
             j = int(j)
@@ -267,13 +267,18 @@ def plot_pareto_frontier(Xs, Ys, parent_idx, maxX=True, maxY=True, filename=None
                             fontsize=7)
             else:
                 ax.scatter(Xs[j], Ys[j], marker='o', edgecolors='black',c='red', s=60, zorder=4)
-                ax.annotate(ts[i], (Xs[j], Ys[j]), textcoords='offset points', xytext=(5, 4), color='black', fontsize=7)
+                if ts[i] == 'pfizer':
+                    ax.annotate(ts[i], (Xs[j], Ys[j]), textcoords='offset points', xytext=(5, -4), color='deeppink',
+                                fontsize=7)
+                    ax.scatter(Xs[j], Ys[j], marker='o', c='yellow', s=10, zorder=5)
+                else:
+                    ax.annotate(ts[i], (Xs[j], Ys[j]), textcoords='offset points', xytext=(5, 4), color='black', fontsize=7)
     img = ax.scatter(Xs, Ys, c=Xs, edgecolors='black', cmap=plt.cm.get_cmap('viridis_r'), alpha=1,
                      zorder=3)
 
     fig.colorbar(img, ax=ax)
 
-    plt.plot(pf_X, pf_Y, '.', color='black', markersize=2, zorder=4)
+    plt.plot(pf_X, pf_Y, '.', color='black', markersize=2, zorder=7)
 
     plt.xlabel("MMD score")
     plt.ylabel("Computational cost (molecular size)^3")
@@ -297,11 +302,14 @@ if __name__ == '__main__':
         combinatorial_results = json.load(f)
     with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         benchmark_results = json.load(f)
+    with open('{}/{}_pfizer_wbo_dists.json'.format(name, name), 'r') as f:
+        pfizer_results = json.load(f)
 
     for bond in benchmark_results:
         if bond == 'provenance':
             continue
         bond_des = fragmenter.utils.deserialize_bond(bond)
+        benchmark_results[bond]['pfizer'] = pfizer_results[bond]
 
         # Find parent
         for smiles in combinatorial_results[bond]:
@@ -338,20 +346,25 @@ if __name__ == '__main__':
         benchmark_costs = []
         for param in benchmark_results[bond]:
             params = param.split('_')
-            if 'path' not in params:
-                continue
-            else:
-                params.remove('length')
-            threshold = params[0]
-            hueristic = params[1]
-            rotors = params[2]
-            if rotors == 'True':
-                continue
-            if len(params) > 3:
-                f = params[3]
-                if f == 'False':
+            if not params[0] == 'pfizer':
+
+                if 'path' not in params:
                     continue
+                else:
+                    params.remove('length')
+                threshold = params[0]
+                hueristic = params[1]
+                rotors = params[2]
+                if rotors == 'True':
+                    continue
+                if len(params) > 3:
+                    f = params[3]
+                    if f == 'False':
+                        continue
+            if params[0] == 'pfizer':
+                threshold = 'pfizer'
             if threshold not in benchmark_frags:
+                print(threshold)
                 benchmark_frags[threshold] = benchmark_results[bond][param]['frag']
                 benchmark_scores.append(mmd_x_xsqred(parent_wbos, benchmark_results[bond][param]['wbo_dist']))
                 benchmark_costs.append(n_heavy_atoms(benchmark_results[bond][param]['frag']) ** 3)
@@ -360,7 +373,7 @@ if __name__ == '__main__':
 
         scores.extend(benchmark_scores)
         costs.extend(benchmark_costs)
-        indices = np.linspace(len(scores)-7, len(scores)-1, 7)
+        indices = np.linspace(len(scores)-8, len(scores)-1, 8)
         front = plot_pareto_frontier(Xs=scores, Ys=costs, parent_idx=parent_idx, maxY=False, indices=indices,
                                      filename='{}/{}_bond_{}_{}_front.pdf'.format(name, name, bond_des[0], bond_des[1]))
 

@@ -97,13 +97,13 @@ def joint_plot(x, y, fname):
     ax_xDist.plot(sorted(xx),kde(sorted(xx)), color='black')
     ax_xDist.set_yticks([])
     ax_xDist.tick_params(labelbottom=False)
-    ax_xDist.set_xlim(-0.05, 0.4)
+    ax_xDist.set_xlim(-0.05, 0.8)
     ax_xDist.set_ylim(0, 80)
     ax_xDist.fill_betweenx(kde(sorted(xx)), 0, sorted(xx), alpha=0.3)
     ax_xDist.spines['left'].set_visible(False)
     ax_xDist.spines['right'].set_visible(False)
     ax_xDist.spines['top'].set_visible(False)
-    ax_main.set_xlim(-0.05, 0.4)
+    ax_main.set_xlim(-0.05, 0.8)
 
     ys = [i for i in y if not np.isnan(i)]
     kde_y = stats.gaussian_kde(ys)
@@ -127,64 +127,82 @@ if __name__ == '__main__':
     scores = {}
     too_big = []
     too_bad = []
+    pfizer_failure = []
     lower_left = {}
     names = glob.glob('*/')
     for n in names:
         n = n[:-1]
         with open('{}/{}_wbo_dists.json'.format(n, n), 'r') as f:
             wbos = json.load(f)
+        with open('{}/{}_pfizer_wbo_dists.json'.format(n, n), 'r') as f:
+            pfizer_results = json.load(f)
         for bond in wbos:
+            wbos[bond]['pfizer'] = pfizer_results[bond]
             if bond == 'provenance' or bond == 'p':
                 continue
             for param in wbos[bond]:
                 if param == 'parent':
                     continue
                 params = param.split('_')
-                if 'path' in params:
-                    params.remove('length')
-                threshold = float(params[0])
-                hueristic = params[1]
-                rotors = params[2]
-                if rotors == 'True':
-                    # Do not keep non rotor substituent unless it is meta to bond of interest. It just makes fragments bigger
-                    # but does not improve their score.
-                    continue
-                # key = '{}_{}'.format(hueristic, rotors)
-                if len(params) > 3:
-                    f = params[-1]
-                    if f == 'False':
-                        # Do not use results from scheme that did not tag functional groups. It can have weird results and should not be done.
+                if not params[0] == 'pfizer':
+                    if 'path' not in params:
                         continue
+                    else:
+                        params.remove('length')
+                    threshold = params[0]
+                    hueristic = params[1]
+                    rotors = params[2]
+                    if rotors == 'True':
+                        continue
+                    if len(params) > 3:
+                        f = params[3]
+                        if f == 'False':
+                            continue
+                if param == 'pfizer':
+                    threshold = 'pfizer'
+                    hueristic = 'pfizer'
 
                 if threshold not in scores:
+                    print(threshold)
                     scores[threshold] = {}
                     lower_left[threshold] = {}
                 if hueristic not in scores[threshold]:
+                    print(hueristic)
                     scores[threshold][hueristic] = {'scores': [], 'size': []}
                     lower_left[threshold][hueristic] = {'lower_left': 0, 'outside': 0}
                 parent = wbos[bond]['parent']['wbo_dist']
                 y = wbos[bond][param]['wbo_dist']
                 score = mmd_x_xsqred(x=parent, y=y)
                 heavy_atoms = n_heavy_atoms(wbos[bond][param]['frag'])
+
                 if score < 0.05 and heavy_atoms**3 < 10000:
                     lower_left[threshold][hueristic]['lower_left'] += 1
                 else:
                     lower_left[threshold][hueristic]['outside'] += 1
-                if threshold == 0.05 and heavy_atoms > 25 and hueristic == 'path':
+                if threshold == ('0.03', '0.05', '0.1') and heavy_atoms > 25 and hueristic == 'path':
                     too_big.append((n, bond, wbos[bond][param]['frag']))
-                if threshold == 0.01 and score > 0.2 and hueristic == 'path':
+                if threshold in ('0.01', '0.03', '0.05') and score > 0.2 and hueristic == 'path':
                     too_bad.append((n, bond, wbos[bond][param]['frag']))
+                if threshold == 'pfizer' and score > 0.3:
+                    pfizer_failure.append((n, bond, wbos[bond][param]['frag']))
                 scores[threshold][hueristic]['scores'].append(score)
                 scores[threshold][hueristic]['size'].append(heavy_atoms)
     print('Could not find a small enough fragment for:')
     print(too_big)
     print('Could not find a fragment with low enough score:')
     print(too_bad)
+    print('pfizer failure')
+    print(pfizer_failure)
 
     # Plot distributions
-    for i in (0.001, 0.005, 0.01, 0.03,  0.05, 0.07,  0.1):
+    print(scores.keys())
+    for i in ('0.001', '0.005', '0.01', '0.03',  '0.05', '0.07',  '0.1'):
         joint_plot(scores[i]['path']['scores'], np.asarray(scores[i]['path']['size']) ** 3,
                    fname='jointplot_{}.pdf'.format(i))
+    print(scores['pfizer'].keys())
+    print(max(scores['pfizer']['pfizer']['scores']))
+    joint_plot(scores['pfizer']['pfizer']['scores'], np.asarray(scores['pfizer']['pfizer']['size'])** 3,
+               fname='jointplot_pfizer.pdf')
     with open('summary.json', 'w') as f:
         json.dump(lower_left, f, indent=2, sort_keys=True)
 
