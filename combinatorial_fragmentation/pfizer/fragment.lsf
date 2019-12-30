@@ -1,0 +1,13 @@
+#!/bin/bash
+#BSUB -J JOB_NAME_score
+#BSUB -n 1
+#BSUB -R rusage[mem=8]
+#BSUB -R span[hosts=1]
+#BSUB -W 4:00
+#BSUB -o /home/chayas/job_output/JOB_NAME_pfizer_fragment.stdout
+#BSUB -eo /home/chayas/job_output/JOB_NAME_pfizer_fragment.stderr
+
+source /home/chayas/.bashrc
+conda activate qcf-manager-openff
+
+python fragment.py  -n JOB_NAME
