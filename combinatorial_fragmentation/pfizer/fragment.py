@@ -75,7 +75,7 @@ if __name__ == '__main__':
             if smiles in results:
                 elf10_wbo = results[smiles]['elf_estimate']
                 wbo_dists[bond]['elf10_wbo'] = elf10_wbo
-                wbo_dists[bond]['wbo_dists'] = results[smiles]['individual_confs']
+                wbo_dists[bond]['wbo_dist'] = results[smiles]['individual_confs']
             else:
                 print("{} not found in results".format(smiles))
                 charged = fragmenter.chemi.get_charges(frag.fragments[bond], strict_types=False, keep_confs=-1)
