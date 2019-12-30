@@ -40,32 +40,61 @@ if __name__ == '__main__':
 
     for i, state in enumerate(states):
         new_name = '{}_{}'.format(name, i)
-        with open('../fragment_bond_orders/validation_set/{}/{}_oe_wbo_by_bond.json'.format(new_name, new_name), 'r') as f:
-            combinatorial_results = json.load(f)
-        # Deserialize
-        combinatorial_results_des = {}
-        for bond in combinatorial_results:
-            bond_des = fragmenter.utils.deserialize_bond(bond)
-            combinatorial_results_des[bond_des] = combinatorial_results[bond]
+        compute_parent_wbo = False
+        try:
+            with open('../fragment_bond_orders/validation_set/{}/{}_oe_wbo_by_bond.json'.format(new_name, new_name), 'r') as f:
+                combinatorial_results = json.load(f)
+                # Deserialize
+                combinatorial_results_des = {}
+                for bond in combinatorial_results:
+                    bond_des = fragmenter.utils.deserialize_bond(bond)
+                    combinatorial_results_des[bond_des] = combinatorial_results[bond]
+        except FileNotFoundError:
+            print('combinatorial fragmentation did not completet for {}'.format(new_name))
+            combinatorial_results_des = {}
+            compute_parent_wbo = True
+
         wbo_dists = {}
         print(state)
         mol = fragmenter.chemi.smiles_to_oemol(state)
         frag = fragmenter.fragment.PfizerFragmenter(mol)
         frag.fragment()
+        if compute_parent_wbo:
+            # Compute parent WBO
+            print("Computing parent WBO")
+            charged = fragmenter.chemi.get_charges(frag.molecule, strict_types=False, keep_confs=-1)
+            for bond in frag.fragments:
+                oe_bond = get_bond(charged, bond)
+                combinatorial_results_des[bond] = {
+                    '{}_parent'.format(state): {'elf_estimate': oe_bond.GetData('WibergBondOrder'),
+                                                'individual_confs': []}}
+            for i, conf in enumerate(charged.GetConfs()):
+                print(i)
+                mol_copy = oechem.OEMol(conf)
+                if oequacpac.OEAssignPartialCharges(mol_copy, oequacpac.OECharges_AM1BCCSym):
+                    for bond in frag.fragments:
+                        bo = get_bond(mol_copy, bond)
+                        combinatorial_results_des[bond]['{}_parent'.format(state)]['individual_confs'].append(
+                            bo.GetData('WibergBondOrder'))
 
         for bond in frag.fragments:
             # First check if wbos were already calculated in combinatorial fragmentation
             if not bond in combinatorial_results_des:
+                print(combinatorial_results_des.keys())
+                print(bond)
+                print(tuple(reversed(bond)))
                 results = combinatorial_results_des[tuple(reversed(bond))]
             else:
                 results = combinatorial_results_des[bond]
 
             # Find parent
+            parent_found = False
             for m in results:
                 if 'parent' in m:
+                    parent_found = True
                     parent_elf10_wbo = results[m]['elf_estimate']
                     parent_wbo_dist = results[m]['individual_confs']
-            print(results.keys())
+
             fragment = frag.fragments[bond]
             fragment_copy = oechem.OEMol(fragment)
             cmiles.utils.remove_atom_map(fragment_copy)
@@ -75,7 +104,7 @@ if __name__ == '__main__':
             if smiles in results:
                 elf10_wbo = results[smiles]['elf_estimate']
                 wbo_dists[bond]['elf10_wbo'] = elf10_wbo
-                wbo_dists[bond]['wbo_dists'] = results[smiles]['individual_confs']
+                wbo_dists[bond]['wbo_dist'] = results[smiles]['individual_confs']
             else:
                 print("{} not found in results".format(smiles))
                 charged = fragmenter.chemi.get_charges(frag.fragments[bond], strict_types=False, keep_confs=-1)
