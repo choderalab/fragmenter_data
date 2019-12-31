@@ -62,9 +62,11 @@ if __name__ == '__main__':
         if compute_parent_wbo:
             # Compute parent WBO
             print("Computing parent WBO")
-            charged = fragmenter.chemi.get_charges(frag.molecule, strict_types=False, keep_confs=-1)
+            charged = fragmenter.chemi.get_charges(frag.molecule, strict_types=False,strict_stereo=False, keep_confs=-1)
             for bond in frag.fragments:
                 oe_bond = get_bond(charged, bond)
+                if oe_bond.GetOrder() > 1:
+                    continue
                 combinatorial_results_des[bond] = {
                     '{}_parent'.format(state): {'elf_estimate': oe_bond.GetData('WibergBondOrder'),
                                                 'individual_confs': []}}
@@ -74,15 +76,14 @@ if __name__ == '__main__':
                 if oequacpac.OEAssignPartialCharges(mol_copy, oequacpac.OECharges_AM1BCCSym):
                     for bond in frag.fragments:
                         bo = get_bond(mol_copy, bond)
+                        if bo.GetOrder() > 1:
+                            continue
                         combinatorial_results_des[bond]['{}_parent'.format(state)]['individual_confs'].append(
                             bo.GetData('WibergBondOrder'))
 
         for bond in frag.fragments:
             # First check if wbos were already calculated in combinatorial fragmentation
             if not bond in combinatorial_results_des:
-                print(combinatorial_results_des.keys())
-                print(bond)
-                print(tuple(reversed(bond)))
                 results = combinatorial_results_des[tuple(reversed(bond))]
             else:
                 results = combinatorial_results_des[bond]
@@ -107,16 +108,17 @@ if __name__ == '__main__':
                 wbo_dists[bond]['wbo_dist'] = results[smiles]['individual_confs']
             else:
                 print("{} not found in results".format(smiles))
-                charged = fragmenter.chemi.get_charges(frag.fragments[bond], strict_types=False, keep_confs=-1)
-                print(bond)
+                charged = fragmenter.chemi.get_charges(frag.fragments[bond], strict_types=False,strict_stereo=False, keep_confs=-1)
+               
                 oe_bond = get_bond(charged, bond)
-                print(oe_bond)
                 elf10_wbo = oe_bond.GetData('WibergBondOrder')
                 wbo_dists[bond]['elf10_wbo'] = elf10_wbo
                 for conf in charged.GetConfs():
                     mol_copy = oechem.OEMol(conf)
                     if oequacpac.OEAssignPartialCharges(mol_copy, oequacpac.OECharges_AM1BCCSym):
                         bo = get_bond(mol_copy, bond)
+                        if bo.GetOrder() > 1:
+                            continue
                         wbo_dists[bond]['wbo_dist'].append(bo.GetData('WibergBondOrder'))
             wbo_dists[bond]['parent_elf10_wbo'] = parent_elf10_wbo
             wbo_dists[bond]['parent_wbo_dist'] = parent_wbo_dist
