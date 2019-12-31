@@ -58,6 +58,7 @@ if __name__ == '__main__':
         print(state)
         mol = fragmenter.chemi.smiles_to_oemol(state)
         frag = fragmenter.fragment.PfizerFragmenter(mol)
+        parent_smiles = oechem.OEMolToSmiles(frag.molecule)
         frag.fragment()
         if compute_parent_wbo:
             # Compute parent WBO
@@ -128,7 +129,8 @@ if __name__ == '__main__':
         for bond in wbo_dists:
             bond_ser = fragmenter.utils.serialize_bond(bond)
             wbo_dists_ser[bond_ser] = wbo_dists[bond]
-        wbo_dists_ser['provenance'] = {'fragmenter_version': fragmenter.__version__, 'openeye_versoin': openeye.__version__}
+        wbo_dists_ser['provenance'] = {'fragmenter_version': fragmenter.__version__, 'openeye_versoin': openeye.__version__,
+                                       'parent_smiles': parent_smiles}
 
         try:
             os.mkdir('{}'.format(new_name))
