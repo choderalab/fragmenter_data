@@ -6,9 +6,9 @@ import itertools
 jobs_to_run = glob.glob('../enumerate_states/validation_set/*_states.json')
 
 for dir in jobs_to_run:
-    name = dir.split('/')[-2]
+    name = dir.split('/')[-1]
+    name = name[:-12]
     print(name)
-
     with open('fragment.lsf', 'r') as f:
         filedata = f.read()
     filedata = filedata.replace('JOB_NAME', name)
