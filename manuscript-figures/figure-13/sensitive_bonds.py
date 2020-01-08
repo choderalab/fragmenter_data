@@ -1,11 +1,9 @@
 import fragmenter
 import json
-from openeye import oechem, oequacpac, oedepict, oegraphsim, oegrapheme
+from openeye import oechem,  oedepict
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import glob
-import seaborn as sbn
-import cmiles
-import itertools
 import numpy as np
 import itertools
 
@@ -219,8 +217,9 @@ def generate_figure(mol_names, fname):
             oechem.OESmilesToMol(mol, s)
             mols.append(mol)
 
-        visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=4, cols=3,
+    visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=5, cols=5,
                                         fname=fname)
+    return all_scores
 
 # Generate SI with all molecules
 mol_names = glob.glob('../../combinatorial_fragmentation/rank_fragments/selected/*')
@@ -231,7 +230,34 @@ generate_figure(all_mols, fname='all_selected_mols.pdf')
 panel_1_mols = [ 'Ademetionine_0', 'Almitrine_1', 'Amlodipine_0', 'Bosutinib_0', 'Ceftazidime_0', 'Eltrombopag_1',
                  'Sulfinpyrazone_0', 'Fostamatinib_0', 'Nizatidine_0']
 
-generate_figure(panel_1_mols, fname='panel_1.pdf')
+all_scores = generate_figure(panel_1_mols, fname='panel_1.pdf')
+# Generate colorbars to use in figure
+font_size = 14
+fig, axs = plt.subplots(6, 3)
+n = 0
+for i in range(5):
+    for j in range(3):
+        print(n)
+        if n > 8:
+            continue
+        #f = plt.subplot(1, i+1)
+        cmap = mpl.cm.coolwarm
+        norm = mpl.colors.Normalize(0, max(all_scores[n]))
+        cb1 = mpl.colorbar.ColorbarBase(axs[i, j], cmap=cmap,
+                            norm=norm,
+                        orientation='horizontal')
+        cb1.ax.tick_params(labelsize=font_size)
+        cb1.set_label(n)
+        mi = 0
+        mx = max(all_scores[n])
+        mid = (mi + mx)/2
+        cb1.set_ticks([mi, mid, mx])
+        cb1.set_ticklabels([mi, round(mid, 2), round(mx, 2)])
+        #cb1.ax.locator_params(nbins=2)
+        n+=1
+plt.tight_layout()
+plt.savefig('colorbars_panel_1.pdf')
+
 
 panel_2_mols = ['Dacomitinib_0', 'Tedizolid_phosphate_0', 'Acemetacin_0']
 
@@ -283,3 +309,28 @@ atoms = [[([29], all_bonds[0].index((28, 17))), ([30], all_bonds[0].index((27, 1
 visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=4, cols=3, atoms=atoms,
                                     fname='panel_2.pdf')
 
+fig, axs = plt.subplots(6, 3)
+n = 0
+for i in range(5):
+    for j in range(3):
+        if n > 2:
+            continue
+        print(n)
+        #f = plt.subplot(1, i+1)
+        # f = plt.subplot(1, i+1)
+        cmap = mpl.cm.coolwarm
+        norm = mpl.colors.Normalize(0, max(all_scores[n]))
+        cb1 = mpl.colorbar.ColorbarBase(axs[i, j], cmap=cmap,
+                                        norm=norm,
+                                        orientation='horizontal')
+        cb1.ax.tick_params(labelsize=font_size)
+        cb1.set_label(n)
+        mi = 0
+        mx = max(all_scores[n])
+        mid = (mi + mx) / 2
+        cb1.set_ticks([mi, mid, mx])
+        cb1.set_ticklabels([mi, round(mid, 2), round(mx, 2)])
+        # cb1.ax.locator_params(nbins=2)
+        n += 1
+plt.tight_layout()
+plt.savefig('colorbars_panel_2.pdf')
