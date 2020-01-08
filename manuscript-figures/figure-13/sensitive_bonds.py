@@ -68,7 +68,7 @@ def rbg_to_int(rbg, alpha):
     return colors
 
 
-def visualize_bond_atom_sensitivity(mols, bonds, scores, fname, rows, cols, atoms=None):
+def visualize_bond_atom_sensitivity(mols, bonds, scores, fname, rows, cols, atoms=None, min_scale=True):
     """
 
     Parameters
@@ -107,12 +107,13 @@ def visualize_bond_atom_sensitivity(mols, bonds, scores, fname, rows, cols, atom
     opts.SetDefaultBondPen(pen)
     oedepict.OESetup2DMolDisplayOptions(opts, itf)
 
-    minscale = float("inf")
-    for m in mols:
-        oedepict.OEPrepareDepiction(m, False, True)
-        minscale = min(minscale, oedepict.OEGetMoleculeScale(m, opts))
+    if min_scale:
+        minscale = float("inf")
+        for m in mols:
+            oedepict.OEPrepareDepiction(m, False, True)
+            minscale = min(minscale, oedepict.OEGetMoleculeScale(m, opts))
 
-    opts.SetScale(minscale)
+        opts.SetScale(minscale)
     for i, mol in enumerate(mols):
         cell = report.NewCell()
         oedepict.OEPrepareDepiction(mol, False, True)
@@ -176,7 +177,7 @@ def visualize_bond_atom_sensitivity(mols, bonds, scores, fname, rows, cols, atom
 
     return oedepict.OEWriteReport(fname, report)
 
-def generate_figure(mol_names, fname):
+def generate_figure(mol_names, fname, rows=4, cols=3, min_scale=True):
     all_bonds = []
     all_scores = []
     lengths = []
@@ -217,20 +218,20 @@ def generate_figure(mol_names, fname):
             oechem.OESmilesToMol(mol, s)
             mols.append(mol)
 
-    visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=5, cols=5,
+    visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=rows, cols=cols, min_scale=min_scale,
                                         fname=fname)
     return all_scores
 
 # Generate SI with all molecules
 mol_names = glob.glob('../../combinatorial_fragmentation/rank_fragments/selected/*')
 all_mols = [name.split('/')[-1] for name in mol_names]
-generate_figure(all_mols, fname='all_selected_mols.pdf')
+generate_figure(all_mols, rows=5, cols=5, min_scale=False, fname='all_selected_mols.pdf')
 
 #ToDo Generate colorbars for molecules in panel 1 and 2.
 panel_1_mols = [ 'Ademetionine_0', 'Almitrine_1', 'Amlodipine_0', 'Bosutinib_0', 'Ceftazidime_0', 'Eltrombopag_1',
                  'Sulfinpyrazone_0', 'Fostamatinib_0', 'Nizatidine_0']
 
-all_scores = generate_figure(panel_1_mols, fname='panel_1.pdf')
+all_scores = generate_figure(panel_1_mols, min_scale=True, rows=4, cols=3, fname='panel_1.pdf')
 # Generate colorbars to use in figure
 font_size = 14
 fig, axs = plt.subplots(6, 3)
@@ -306,7 +307,7 @@ atoms = [[([29], all_bonds[0].index((28, 17))), ([30], all_bonds[0].index((27, 1
              [([24, 25, 27, 29, 31], all_bonds[1].index((9, 23)))],
              [([23], [all_bonds[2].index((17, 28)), all_bonds[2].index((15, 22))])]]
 
-visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=4, cols=3, atoms=atoms,
+visualize_bond_atom_sensitivity(mols, bonds=all_bonds, scores=all_scores, rows=4, cols=3, atoms=atoms, min_scale=True,
                                     fname='panel_2.pdf')
 
 fig, axs = plt.subplots(6, 3)
