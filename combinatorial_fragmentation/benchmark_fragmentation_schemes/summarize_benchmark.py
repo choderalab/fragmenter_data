@@ -79,6 +79,7 @@ def joint_plot(x, y, fname):
     fname : str
         filename
     """
+    plt.rcParams.update({'font.size': 14})
     ig = plt.figure(figsize=(8,8))
     gs = gridspec.GridSpec(3, 3)
     ax_main = plt.subplot(gs[1:3, :2])
