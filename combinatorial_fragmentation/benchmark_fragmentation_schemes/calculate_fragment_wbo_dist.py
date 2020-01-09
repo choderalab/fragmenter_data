@@ -13,7 +13,7 @@ import itertools
 import os
 
 
-def fragment_bond(mapped_mol, bond, threshold, path, keep_non_rotor, functional_groups, keep_confs=-1):
+def fragment_bond(mapped_mol, bond, threshold,  keep_confs=-1):
     """
     Fragment molecule around specified bond using provided parameters. Because it is fragmenting for one
     bond, this function mostly uses hidden function because it is not the canonical way to use fragmenter
@@ -36,21 +36,21 @@ def fragment_bond(mapped_mol, bond, threshold, path, keep_non_rotor, functional_
     WBOFragmenter
 
     """
-    f = fragmenter.fragment.WBOFragmenter(mapped_mol, functional_groups)
+    f = fragmenter.fragment.WBOFragmenter(mapped_mol)
     # Capture options
-    f._options['keep_non_rotor_ring_substituents'] = keep_non_rotor
+    #f._options['keep_non_rotor_ring_substituents'] = keep_non_rotor
 
     # Add threshold as attribute because it is used in more than one function
     setattr(f, 'threshold', threshold)
-    f._options.update({'threshold': threshold, 'path': path})
+    f._options.update({'threshold': threshold, 'path': 'path_length'})
     f._get_rotor_wbo()
     # Find ring systems
-    f._find_ring_systems(keep_non_rotor_ring_substituents=keep_non_rotor)
+    f._find_ring_systems()
 
     # Build fragment
     if bond not in f.rotors_wbo:
         bond = tuple(reversed(bond))
-    f._build_fragment(bond, heuristic=path, strict_types=False, keep_confs=keep_confs, strict_stereo=False)
+    f._build_fragment(bond, heuristic='path_length', strict_types=False, keep_confs=keep_confs, strict_stereo=False)
 
     return f
 
@@ -122,10 +122,7 @@ if __name__ == '__main__':
     # Calculate WBOs for parent so it does not get calculated every time for fragmneter
     parent_mol = fragmenter.chemi.get_charges(parent_mol, strict_types=False, keep_confs=-1)
 
-    parameters = {'threshold': [0.1, 0.07,  0.05, 0.03, 0.01, 0.005, 0.001],
-                  'path': ['path_length', 'wbo'],
-                  'functional_groups': [None, False],
-                  'keep_non_rotor': [True, False]}
+    thresholds = [0.1, 0.07,  0.05, 0.03, 0.01, 0.005, 0.001]
 
     # First check if molecule has tagged functional group
     parent_mol_copy = oechem.OEMol(parent_mol)
@@ -141,15 +138,14 @@ if __name__ == '__main__':
         print(bond)
         t_bond = tuple(bond)
         ser_bond = fragmenter.utils.serialize_bond(t_bond)
-        for t, p, f, r in itertools.product(parameters['threshold'], parameters['path'], parameters['functional_groups'],
-                                            parameters['keep_non_rotor']):
-
-            if compare_functional_groups:
-                key = '{}_{}_{}_{}'.format(str(t), p, str(r), str(f))
-            else:
-                key = '{}_{}_{}'.format(str(t), p, str(r))
-                if f is False:
-                    continue
+        for t in thresholds:
+            key = str(t)
+            # if compare_functional_groups:
+            #     key = '{}_{}_{}_{}'.format(str(t), p, str(r), str(f))
+            # else:
+            #     key = '{}_{}_{}'.format(str(t), p, str(r))
+            #     if f is False:
+            #         continue
             #if key in already_calculated[ser_bond]:
             #    frags[t_bond][key] = already_calculated[ser_bond][key]
             #    print('already calculated {}, {}'.format(ser_bond, key))
@@ -157,8 +153,7 @@ if __name__ == '__main__':
             print(key)
             # Check
             parent_mol_copy = oechem.OEMol(parent_mol)
-            frgmt = fragment_bond(parent_mol_copy, t_bond, threshold=t, path=p, functional_groups=f, keep_non_rotor=r,
-                                 keep_confs=-1)
+            frgmt = fragment_bond(parent_mol_copy, t_bond, threshold=t, keep_confs=-1)
             if not t_bond in frgmt.fragments:
                 frag = frgmt.fragments[tuple(reversed(t_bond))]
             else:
@@ -204,5 +199,5 @@ if __name__ == '__main__':
         os.mkdir('{}'.format(name))
     except FileExistsError:
         print('{} already exists. Files will be overwritten'.format(name))
-    with open('{}/{}_wbo_dists.json'.format(name, name), 'w') as f:
+    with open('{}/{}_wbo_dists_fixed.json'.format(name, name), 'w') as f:
         json.dump(frags_ser, f, indent=2, sort_keys=True)
