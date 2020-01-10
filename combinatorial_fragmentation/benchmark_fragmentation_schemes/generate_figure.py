@@ -223,18 +223,18 @@ if __name__ == '__main__':
         des_bond = fragmenter.utils.deserialize_bond(bond)
 
         plt.figure()
-        sbn.kdeplot(results[bond]['parent']['wbo_dist'], shade=True, label='parent molecule')
+        sbn.kdeplot(results[bond]['parent']['wbo_dist'], shade=True, label='parent molecule', color=sbn.color_palette('colorblind')[0])
         sbn.distplot(results[bond]['parent']['wbo_dist'], rug=True, hist=False, color=sbn.color_palette('colorblind')[0])
-        #sbn.distplot(results['parent']['wbo_dist'], hist=False, color=sbn.color_palette()[0])
 
         score = mmd_x_xsqred(results[bond]['parent']['wbo_dist'], pfizer_results[bond]['wbo_dist'])
-        sbn.kdeplot(pfizer_results[bond]['wbo_dist'], shade=True, label='Pfizer; score: {}'.format(round(score, 3)))
-        sbn.distplot(pfizer_results[bond]['wbo_dist'], rug=True, hist=False, color=sbn.color_palette()[1])
-        #sbn.distplot(pfizer_results[bond]['wbo_dist'], hist=False, color=sbn.color_palette()[1])
+        sbn.kdeplot(pfizer_results[bond]['wbo_dist'], shade=True, color=sbn.color_palette('colorblind')[1],
+                    label='Pfizer; score: {}'.format(round(score, 3)))
+        sbn.distplot(pfizer_results[bond]['wbo_dist'], rug=True, hist=False, color=sbn.color_palette('colorblind')[1])
 
         score = mmd_x_xsqred(results[bond]['parent']['wbo_dist'], results[bond]['0.03']['wbo_dist'])
-        sbn.kdeplot(results[bond]['0.03']['wbo_dist'], shade=True, label='WBO scheme; score: {}'.format(round(score, 3)))
-        sbn.distplot(results[bond]['0.03']['wbo_dist'], rug=True, hist=False, color=sbn.color_palette()[2])
+        sbn.kdeplot(results[bond]['0.03']['wbo_dist'], shade=True, color=sbn.color_palette('colorblind')[2],
+                    label='WBO scheme; score: {}'.format(round(score, 3)))
+        sbn.distplot(results[bond]['0.03']['wbo_dist'], rug=True, hist=False, color=sbn.color_palette('colorblind')[2])
         #sbn.distplot(results['0.03']['wbo_dist'], hist=False, color=sbn.color_palette()[2])
 
         plt.legend()
@@ -248,18 +248,18 @@ if __name__ == '__main__':
         # combine both scan and omega wbos
         plt.figure()
         x_parent = results[bond]['parent']['wbo_dist'] + scan_results[bond]['parent']['wbos']
-        sbn.kdeplot(x_parent, shade=True, label='parent molecule')
-        sbn.distplot(x_parent, rug=True, hist=False, color=sbn.color_palette()[0])
+        sbn.kdeplot(x_parent, shade=True, color=sbn.color_palette('colorblind')[0], label='parent molecule')
+        sbn.distplot(x_parent, rug=True, hist=False, color=sbn.color_palette('colorblind')[0])
 
         x = pfizer_results[bond]['wbo_dist'] + scan_results[bond]['pfizer']['wbos']
         score = mmd_x_xsqred(x_parent, x)
-        sbn.kdeplot(x, shade=True, label='Pfizer; score: {}'.format(round(score, 3)))
-        sbn.distplot(x, rug=True, hist=False, color=sbn.color_palette()[1])
+        sbn.kdeplot(x, shade=True, color=sbn.color_palette('colorblind')[1], label='Pfizer; score: {}'.format(round(score, 3)))
+        sbn.distplot(x, rug=True, hist=False, color=sbn.color_palette('colorblind')[1])
 
         x = results[bond]['0.03']['wbo_dist'] + scan_results[bond]['wbo_scheme']['wbos']
         score = mmd_x_xsqred(x_parent, x)
-        sbn.kdeplot(x, shade=True, label='WBO scheme; score: {}'.format(round(score, 3)))
-        sbn.distplot(x, rug=True, hist=False, color=sbn.color_palette()[2])
+        sbn.kdeplot(x, shade=True, color=sbn.color_palette('colorblind')[2], label='WBO scheme; score: {}'.format(round(score, 3)))
+        sbn.distplot(x, rug=True, hist=False, color=sbn.color_palette('colorblind')[2])
 
         plt.legend()
         plt.xticks(fontsize=14)
@@ -272,7 +272,8 @@ if __name__ == '__main__':
 
         smiles = [results[bond]['parent']['frag'], pfizer_results[bond]['frag'], results[bond]['0.03']['frag']]
         wbos = [results[bond]['parent']['elf10_wbo'], pfizer_results[bond]['elf10_wbo'], results[bond]['0.03']['elf10_wbo']]
-        colors = [rbg_to_int(list(i), alpha=255) for i in sbn.color_palette()[:3]]
+        colors = [rbg_to_int(list(i), alpha=255) for i in sbn.color_palette('colorblind')[:3]]
+        #colors.append(rbg_to_int(list(sbn.color_palette('colorblind')[4]), alpha=255))
         visualize_mols(smiles, cols=2, rows=2, bond_idx=des_bond, colors=colors, wbos=wbos,
                        fname='{}/{}_bond_{}_{}_frags_fixed_test.pdf'.format(name, name, des_bond[0], des_bond[1]),
                        align_to=2)
