@@ -1,0 +1,50 @@
+{
+  "0.001": {
+    "path": {
+      "lower_left": 155,
+      "outside": 203
+    }
+  },
+  "0.005": {
+    "path": {
+      "lower_left": 205,
+      "outside": 153
+    }
+  },
+  "0.01": {
+    "path": {
+      "lower_left": 232,
+      "outside": 126
+    }
+  },
+  "0.03": {
+    "path": {
+      "lower_left": 246,
+      "outside": 112
+    }
+  },
+  "0.05": {
+    "path": {
+      "lower_left": 207,
+      "outside": 151
+    }
+  },
+  "0.07": {
+    "path": {
+      "lower_left": 180,
+      "outside": 178
+    }
+  },
+  "0.1": {
+    "path": {
+      "lower_left": 162,
+      "outside": 196
+    }
+  },
+  "pfizer": {
+    "pfizer": {
+      "lower_left": 189,
+      "outside": 169
+    }
+  }
+}
