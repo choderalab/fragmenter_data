@@ -120,11 +120,11 @@ def visualize_mols(smiles, fname, rows, cols, bond_idx, wbos, colors, align_to=0
         disp = oedepict.OE2DMolDisplay(mol, opts)
         oedepict.OEAddHighlighting(disp, hcolor, hstyle, atom_bond_set)
 
-        #font = oedepict.OEFont(oedepict.OEFontFamily_Default, oedepict.OEFontStyle_Bold, 12,
-        #                       oedepict.OEAlignment_Default, oechem.OEBlack)
+        font = oedepict.OEFont(oedepict.OEFontFamily_Default, oedepict.OEFontStyle_Default, 24,
+                               oedepict.OEAlignment_Default, oechem.OEBlack)
         bond_label = oedepict.OEHighlightLabel("{:.2f}".format((wbos[i])), hcolor)
-        bond_label.SetFontScale(1.4)
-        #bond_label.SetFont(font)
+        bond_label.SetFontScale(4.0)
+        bond_label.SetFont(font)
 
         oedepict.OEAddLabel(disp, bond_label, atom_bond_set)
         oedepict.OERenderMolecule(cell, disp)
@@ -263,7 +263,7 @@ if __name__ == '__main__':
 
         plt.legend()
         plt.xticks(fontsize=14)
-        plt.xlim(0.54)
+        plt.xlim(0.54, 1.45)
         plt.yticks([])
         plt.xlabel('Wiberg Bond Order', fontsize=14)
         plt.tight_layout()
