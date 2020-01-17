@@ -1,14 +1,19 @@
-import json
-from openeye import oechem, oequacpac
+import qcfractal.interface as ptl
+from openeye import oechem
 import fragmenter
 import cmiles
-import glob
-from openmoltools import openeye
-import matplotlib.pyplot as plt
-import seaborn as sbn
+
 import numpy as np
+import json
 import argparse
 
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
+import seaborn as sbn
+import arch.bootstrap
+from decimal import Decimal
+
+# Plotting functions
 def get_atom_map(molecule, mapped_smiles):
     """
     The canonical mapping on oemols and cmiles mapped SMILES does not lend itself to easy sorting of bonds
@@ -62,49 +67,13 @@ def get_atom_map(molecule, mapped_smiles):
         raise RuntimeError("Matched molecule, input molecule and mapped SMILES are not the same ")
     return atom_map
 
-def get_bond_wbos(mols_wbos):
-    """
-    Collect all bonds wbos from list of oemols that have wbos calculated
-
-    Parameters
-    ----------
-    mols_wbos: list of mapped oemols
-
-    Returns
-    -------
-    bonds: dict
-        maps type of bonds --> bonds
-                bonds --> list of WBOs
-        bond --> (map_idx_1, map_idx_2)
-    """
-    bonds = {'rotors': {}, 'rings': {}, 'others': {}}
-    for mol in mols_wbos:
-        for bond in mol.GetBonds():
-            a1 = bond.GetBgn()
-            a2 = bond.GetEnd()
-            if not a1.IsHydrogen() and not a2.IsHydrogen():
-                if bond.IsRotor():
-                    key = (bond.GetBgn().GetMapIdx(), bond.GetEnd().GetMapIdx())
-                    if key not in bonds['rotors']:
-                        bonds['rotors'][key] = []
-                    bonds['rotors'][key].append(bond.GetData('WibergBondOrder'))
-                elif bond.IsInRing():
-                    key = (bond.GetBgn().GetMapIdx(), bond.GetEnd().GetMapIdx())
-                    if key not in bonds['rings']:
-                        bonds['rings'][key] = []
-                    bonds['rings'][key].append(bond.GetData('WibergBondOrder'))
-                else:
-                    key = (bond.GetBgn().GetMapIdx(), bond.GetEnd().GetMapIdx())
-                    if key not in bonds['others']:
-                        bonds['others'][key] = []
-                    bonds['others'][key].append(bond.GetData('WibergBondOrder'))
-    return bonds
-
-def plot_distributions(bond_keys, bond_wbos, name, fname):
+def plot_distributions(bond_keys, bond_wbos, bond_order_type, name, fname):
     """
     Plot distribution of wbos
     bond_keys: list of tuples for bonds to plot
     bond_wbos: dict of bond_tuple:wbos (return from get_bond_wbos)
+    bond_order_type: str
+        wiberg_lowdin or mayer
     name: str, name of molecule
     """
     # Generate WBO distributions
@@ -117,40 +86,46 @@ def plot_distributions(bond_keys, bond_wbos, name, fname):
     sorted_bond_keys = sorted(list(bond_keys.keys()))
     for b in sorted_bond_keys:
         try:
-            wbo = bond_wbos['rotors'][bond_keys[b]]
+            wbo = bond_wbos['rotors'][bond_keys[b]][bond_order_type]
         except KeyError:
-            wbo = bond_wbos['others'][bond_keys[b]]
+            wbo = bond_wbos['others'][bond_keys[b]][bond_order_type]
         if min(wbo) < x_min:
             x_min = min(wbo)
         if max(wbo) > x_max:
             x_max = max(wbo)
 
-    #sorted_rot_bonds = sorted(bonds['rotors'].keys())
+    # Format labels
+    f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
+    g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))
+    fmt = mticker.FuncFormatter(g)
     for i, bond in enumerate(sorted_bond_keys):
         try:
-            wbo = bond_wbos['rotors'][bond_keys[bond]]
+            wbo = bond_wbos['rotors'][bond_keys[bond]][bond_order_type]
         except KeyError:
-            wbo = bond_wbos['others'][bond_keys[bond]]
+            wbo = bond_wbos['others'][bond_keys[bond]][bond_order_type]
+        var = np.var(wbo)
+        ci = arch.bootstrap.IIDBootstrap(np.asarray(wbo)).conf_int(np.var, 1000)
         ax = plt.subplot(n, 1, i+1)
         ax.spines['left'].set_visible(False)
         ax.spines['right'].set_visible(False)
         ax.spines['top'].set_visible(False)
         ax.spines['bottom'].set_visible(False)
         ax.patch.set_facecolor('none')
-        sbn.kdeplot(wbo, shade= True, alpha=0.85, color=colors[i])
-      #sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
-        sbn.kdeplot(wbo, lw=1.5, color=colors[i])
-        #plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
+        # format values
+        var_txt = '{0:.2g}'.format(var/1e-5)
+        ci_0_txt = '{0:.2g}'.format(ci[0][0]/1e-5)
+        ci_1_txt = '{0:.2g}'.format(ci[1][0]/1e-5)
+        textstr = r'%s$_{%s}^{%s}$' % (var_txt, ci_0_txt, ci_1_txt)
+        sbn.kdeplot(wbo, shade= True, alpha=0.85, color=colors[i], label=textstr)
+        plt.legend(fontsize='xx-small', loc='lower left', frameon=False, markerscale=0.2)
         plt.xlim(x_min-0.05, x_max+0.05)
         plt.yticks([])
-        #ax.set_yticklabels(bond_order_std_rot_bonds_opt['Imatinib']['bonds'], fontsize=6, rotation=0)
-        #ax.yaxis.grid(False)
         ax.yaxis.set_label_coords(-0.05, 0)
         plt.ylabel(bond, rotation=0, size=8)
         if i != n-1:
             plt.xticks([])
         else:
-            plt.xlabel('Bond order')
+            plt.xlabel('{} bond order'.format(bond_order_type))
         if i == 0:
             #plt.legend(prop={'size': 10}, bbox_to_anchor=(1.35, 1))
             plt.title("{} WBO".format(name))
@@ -200,7 +175,7 @@ def sort_rings(tagged_smiles):
 
     return aliphatic_ring_bonds + aromatic_ring_bonds, aliphatic_ring_sizes + aromatic_ring_sizes
 
-def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, ring_sizes, fname):
+def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, bo_type, ring_sizes, fname):
     """
     Generate correlation plot of bond WBOs
     parameters
@@ -210,6 +185,8 @@ def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, ring_sizes, fname
         map of bond tuple in sorted bonds to corresponding bond tuple in molecule
     bonds_wbos: dict
         mapping of bond tuple (in molecule) to list of WBOs
+    bo_type: str
+     wiberg_lowdin or mayer
     fname: str
         filename
     """
@@ -225,8 +202,8 @@ def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, ring_sizes, fname
                 bond_2_mapping = bonds_mappings[bond_2]
             except KeyError:
                 bond_2_mapping = bonds_mappings[tuple(reversed(bond_2))]
-            bond_1_wbo = bonds_wbos[bond_1_mapping]
-            bond_2_wbo = bonds_wbos[bond_2_mapping]
+            bond_1_wbo = bonds_wbos[bond_1_mapping][bo_type]
+            bond_2_wbo = bonds_wbos[bond_2_mapping][bo_type]
             corr_coef = np.corrcoef(bond_1_wbo, bond_2_wbo)
             correlation_coef[i][j] = corr_coef[0, 1]
 
@@ -270,34 +247,112 @@ if __name__ == "__main__":
         sm = sm.split(' ')
         if sm[-1] == name:
             tagged_smiles = sm[0]
+    # Get dataset
+    client = ptl.FractalClient()
+    ds = client.get_collection('OptimizationDataset', 'Kinase Inhibitors: WBO Distributions')
 
-    oemols = fragmenter.chemi.file_to_oemols('../data_generation/data/{}_am1_wbo.oeb'.format(name))
-    atom_map = get_atom_map(oemols[0], tagged_smiles)
+    with open('../data_generation/data/kinase_inhibitors_cmiles_ids.json', 'r') as f:
+        identifiers = json.load(f)
+    cmiles_ids = identifiers[name]
+    idx_smiles = cmiles_ids['canonical_isomeric_smiles']
 
-    bonds_wbos = get_bond_wbos(oemols)
+    # Download all Bond orders and save
+    bond_wbos = {'hf3c': {'rotors': {}, 'rings': {}, 'others': {}},
+                 'default': {'rotors': {}, 'rings': {}, 'others': {}}}
+    for index in ds.df.index:
+        if idx_smiles in index:
+            print(index)
+            entry = ds.get_entry(index)
+            mapped_smiles = entry.attributes['canonical_isomeric_explicit_hydrogen_mapped_smiles']
+            mapped_mol = oechem.OEMol()
+            oechem.OESmilesToMol(mapped_mol, mapped_smiles)
+            n_atoms = mapped_mol.GetMaxAtomIdx()
+            for spec in bond_wbos:
+                rec = ds.get_record(index, spec)
+                opt = rec.get_trajectory()[-1]
+                wiberg = np.array(opt.extras['qcvars']['WIBERG_LOWDIN_INDICES']).reshape(-1, n_atoms)
+                mayer = np.array(opt.extras['qcvars']['MAYER_INDICES']).reshape(-1, n_atoms)
+                for bond in mapped_mol.GetBonds():
+                    a_1 = bond.GetBgn()
+                    a_2 = bond.GetEnd()
+                    if a_1.IsHydrogen() or a_2.IsHydrogen():
+                        continue
+                    idx_1 = a_1.GetMapIdx()
+                    idx_2 = a_2.GetMapIdx()
+                    wbo = wiberg[idx_1 - 1][idx_2 - 1]
+                    mbo = mayer[idx_1 - 1][idx_2 - 1]
+                    bond_tuple = (idx_1, idx_2)
+                    if bond.IsRotor():
+                        if bond_tuple not in bond_wbos[spec]['rotors']:
+                            bond_wbos[spec]['rotors'][bond_tuple] = {'wiberg_lowdin': [], 'mayer': []}
+                        bond_wbos[spec]['rotors'][bond_tuple]['wiberg_lowdin'].append(wbo)
+                        bond_wbos[spec]['rotors'][bond_tuple]['mayer'].append(mbo)
+                    elif bond.IsInRing():
+                        if bond_tuple not in bond_wbos[spec]['rings']:
+                            bond_wbos[spec]['rings'][bond_tuple] = {'wiberg_lowdin': [], 'mayer': []}
+                        bond_wbos[spec]['rings'][bond_tuple]['wiberg_lowdin'].append(wbo)
+                        bond_wbos[spec]['rings'][bond_tuple]['mayer'].append(mbo)
+                    else:
+                        if bond_tuple not in bond_wbos[spec]['others']:
+                            bond_wbos[spec]['others'][bond_tuple] = {'wiberg_lowdin': [], 'mayer': []}
+                        bond_wbos[spec]['others'][bond_tuple]['wiberg_lowdin'].append(wbo)
+                        bond_wbos[spec]['others'][bond_tuple]['mayer'].append(mbo)
+    # serialize and save
+    bond_wbos_ser = {}
+    for spec in bond_wbos:
+        bond_wbos_ser[spec] = {}
+        for bond_type in bond_wbos[spec]:
+            bond_wbos_ser[spec][bond_type] = {}
+            for bond_tuple in bond_wbos[spec][bond_type]:
+                ser_bond = fragmenter.utils.serialize_bond(bond_tuple)
+                bond_wbos_ser[spec][bond_type][ser_bond] = bond_wbos[spec][bond_type][bond_tuple]
+    fname = '../data_generation/data/{}_hf3c_b3lyp_wbos.json'.format(name)
+    with open(fname, 'w') as f:
+        json.dump(bond_wbos_ser, f, indent=2, sort_keys=True)
 
-    # Some data munging to get bonds sorted in the right order for better plotting
-    mapped_rotor_bonds = {(atom_map[bond[0]], atom_map[bond[1]]): bond for bond in bonds_wbos['rotors']}
-    mapped_other_bonds = {(atom_map[bond[0]], atom_map[bond[1]]): bond for bond in bonds_wbos['others']}
-    mapped_ring_bonds = {(atom_map[bond[0]], atom_map[bond[1]]): bond for bond in bonds_wbos['rings']}
+    # Some data munging for plotting
+    # First get old atom map that is more pleasing for visualization
+    with open('../data_generation/archive/clinical_kinase_inhibitors_tagged.smi', 'r') as f:
+        smiles = f.read()
+    smiles = smiles.split('\n')
+    for sm in smiles:
+        sm = sm.split(' ')
+        if sm[-1] == name:
+            old_mapped_smiles = sm[0]
 
-    bonds_to_highlight = {**mapped_rotor_bonds, **mapped_other_bonds}
-    bonds_to_highlight_sorted = sorted(list(bonds_to_highlight.keys()))
-    rotor_bonds_sorted = sorted(list(mapped_rotor_bonds.keys()))
+    atom_map = get_atom_map(mapped_mol, old_mapped_smiles)
+    for spec in bond_wbos:
+        if spec == 'default':
+            dir_name = 'b3lyp'
+        else:
+            dir_name = spec
+        mapped_rotor_bonds = {(atom_map[bond[0]], atom_map[bond[1]]): bond for bond in bond_wbos[spec]['rotors']}
+        mapped_other_bonds = {(atom_map[bond[0]], atom_map[bond[1]]): bond for bond in bond_wbos[spec]['others']}
+        mapped_ring_bonds = {(atom_map[bond[0]], atom_map[bond[1]]): bond for bond in bond_wbos[spec]['rings']}
 
-    fragmenter.chemi.highlight_bond_by_map_idx(tagged_smiles, bond_map_idx=bonds_to_highlight_sorted, map_idx=True,
-                                           label_scale=1.5, fname='am1_figures/{}_all_single_bonds_highlighted.pdf'.format(name))
-    fragmenter.chemi.highlight_bond_by_map_idx(tagged_smiles, bond_map_idx=rotor_bonds_sorted, map_idx=True,
-                                           label_scale=1.5, fname='am1_figures/{}_rotor_bonds_highlighted.pdf'.format(name))
+        bonds_to_highlight = {**mapped_rotor_bonds, **mapped_other_bonds}
+        bonds_to_highlight_sorted = sorted(list(bonds_to_highlight.keys()))
+        rotor_bonds_sorted = sorted(list(mapped_rotor_bonds.keys()))
 
-    plot_distributions(bonds_to_highlight, bonds_wbos, name, fname='am1_figures/{}_all_single_wbo_distributions.pdf'.format(name))
-    plot_distributions(mapped_rotor_bonds, bonds_wbos, name, fname='am1_figures/{}_rotor_wbo_distributions.pdf'.format(name))
+        fragmenter.chemi.highlight_bond_by_map_idx(old_mapped_smiles, bond_map_idx=bonds_to_highlight_sorted,
+                                                   map_idx=True,
+                                                   label_scale=1.5,
+                                                   fname='{}_figures/{}_all_single_bonds_highlighted.pdf'.format(dir_name, name))
+        fragmenter.chemi.highlight_bond_by_map_idx(old_mapped_smiles, bond_map_idx=rotor_bonds_sorted, map_idx=True,
+                                                   label_scale=1.5, fname='{}_figures/{}_rotor_bonds_highlighted.pdf'.format(dir_name, name))
 
+        for bo_type in ('wiberg_lowdin', 'mayer'):
+            plot_distributions(bonds_to_highlight, bond_wbos[spec], name=name,
+                               bond_order_type=bo_type, fname='{}_figures/{}_all_single_{}_distributions.pdf'.format(dir_name, name, bo_type))
+            plot_distributions(mapped_rotor_bonds, bond_wbos[spec], name=name,
+                               bond_order_type=bo_type, fname='{}_figures/{}_rotor_{}_distributions.pdf'.format(dir_name, name, bo_type))
 
-    # More data munging to get bonds sorted in order for correlation plot
-    sorted_ring_bonds, ring_sizes = sort_rings(tagged_smiles)
-    bonds_wbos_all = {**bonds_wbos['rotors'], **bonds_wbos['others'], **bonds_wbos['rings']}
-    sorted_bonds = bonds_to_highlight_sorted + sorted_ring_bonds
-    bonds_mappings = {**bonds_to_highlight, **mapped_ring_bonds}
+        # More data munging to get bonds sorted in order for correlation plot
+        sorted_ring_bonds, ring_sizes = sort_rings(old_mapped_smiles)
+        bonds_wbos_all = {**bond_wbos[spec]['rotors'], **bond_wbos[spec]['others'], **bond_wbos[spec]['rings']}
+        sorted_bonds = bonds_to_highlight_sorted + sorted_ring_bonds
+        bonds_mappings = {**bonds_to_highlight, **mapped_ring_bonds}
 
-    correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos_all, ring_sizes, fname='am1_figures/{}_wbo_correlations.pdf'.format(name))
+        for bo_type in ('wiberg_lowdin', 'mayer'):
+            correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos_all, bo_type, ring_sizes,
+                             fname='{}_figures/{}_{}_correlations.pdf'.format(dir_name, name, bo_type))
