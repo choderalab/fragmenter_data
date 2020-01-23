@@ -23,6 +23,8 @@ for i in range(1, 13):
             dfs.append(pd.read_json(f))
 df = pd.concat(dfs)
 
+drug_mols = pd.read_csv('../drugbank_small_mols.csv')
+
 # Select on CPU to be consistent
 
 df_intel = df[df['cpu'].str.contains('Intel*')]
@@ -34,7 +36,7 @@ def power_law(x, m, c):
     return  x**m * c
 
 def compute_stat(x, y):
-    return curve_fit(power_law, x, y, method='dogbox')[0][0]
+    return curve_fit(power_law, x, y, method='dogbox')[0]
 
 df_intel_one['cpu_time'] = df_intel_one['wall_time']*df_intel_one['nthreads']
 x = df_intel_one['heavy_atoms'].values
@@ -42,8 +44,8 @@ y = df_intel_one['cpu_time'].values
 
 popt, pcov = curve_fit(power_law, x, y, method='dogbox')
 # Boostrap 95% CI
-def compute_stat(x, y):
-    return curve_fit(power_law, x, y, method='dogbox')[0]
+# def compute_stat(x, y):
+#     return curve_fit(power_law, x, y, method='dogbox')[0]
 ci = arch.bootstrap.IIDBootstrap(x, y).conf_int(compute_stat, 1000)
 
 # Now do a bunch of manipulations to get everything to line up right
@@ -54,27 +56,202 @@ wall_time = [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -
 sbn.set_style('whitegrid')
 sbn.set_context('paper', font_scale=1.5)
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(8, 10))
+
+# Boxplot
 unique = np.sort(df_intel_one["heavy_atoms"].unique())
 x_new = list(df_intel_one['heavy_atoms'].values) + heavy_atoms
 y_new = list(df_intel_one['wall_time']*df_intel_one['nthreads']) + wall_time
-sbn.boxplot(x_new, y_new, fliersize=0.3)
-ax.set_ylim(0, 4500)
+sbn.boxplot(x_new, y_new, fliersize=0.3, ax=ax[0])
+ax[0].set_ylim(0, 4200)
 xlables = [' ', ' ', ' ', ' ', ' ', '5', ' ', '7', ' ', '9', ' ', '11', ' ', '13', ' ', '15', ' ', '17', ' ', '19', ' ',
           ' ', ' ', '23', ' ', ' ', '26', ' ', '28', ' ', ' ', '31', ' ', ' ', ' ', ' ', ' ', '37', ' ']
-ax.set_xticks(unique, minor=True);
-ax.xaxis.grid(True, which='minor')
-ax.set_xticklabels(xlables)
-ax.set_xlabel('Heavy atoms')
-ax.set_ylabel('CPU time (seconds)')
+ax[0].set_xticks(unique, minor=True);
+ax[0].xaxis.grid(True, which='minor')
+ax[0].xaxis.set_ticks_position('bottom')
+ax[0].tick_params(which='major', width=0.75, length=2.5)
+ax[0].tick_params(which='minor', width=1.0, length=5.0)
+ax[0].set_xlim(0, 38)
+ax[0].set_xticklabels([])
+ax[0].set_ylabel('CPU time (seconds)')
 
-plt.plot(list(sorted(x)), power_law(sorted(x), *popt), color='black')
-plt.plot(list(sorted(x)), power_law(sorted(x), *ci[0]), '--', color='grey')
-plt.plot(list(sorted(x)), power_law(sorted(x), *ci[1]), '--', color='grey')
-plt.fill_between(sorted(x), power_law(sorted(x), *ci[0]), power_law(sorted(x), *ci[1]), alpha=0.2, color='grey')
+
+# Fitted power law
+ax[0].plot(list(sorted(x)), power_law(sorted(x), *popt), color='black')
+ax[0].plot(list(sorted(x)), power_law(sorted(x), *ci[0]), '--', color='grey')
+ax[0].plot(list(sorted(x)), power_law(sorted(x), *ci[1]), '--', color='grey')
+ax[0].fill_between(sorted(x), power_law(sorted(x), *ci[0]), power_law(sorted(x), *ci[1]), alpha=0.2, color='grey')
 textstr = r'CPU time = %.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
 props = dict(boxstyle='square', facecolor='white', alpha=0.5)
-ax.text(0.05, 0.95, textstr, transform=ax.transAxes, fontsize=14,
+ax[0].text(0.05, 0.95, textstr, transform=ax[0].transAxes, fontsize=14,
         verticalalignment='top', bbox=props);
-ax.set_title('CPU time as a funtion of heavy atoms');
+
+# Heavy atoms distribution
+sbn.kdeplot(drug_mols.heavy_atoms, shade=True, color='grey', ax=ax[1], legend=False)
+ax[1].set_xlim(0, 38)
+xlables = ['5', ' ', '7', ' ', '9', ' ', '11', ' ', '13', ' ', '15', ' ', '17', ' ', '19', '23', '26', ' ', '28', ' ', '31', '37']
+ax[1].set_xticks(unique, minor=False);
+ax[1].xaxis.grid(True, which='minor')
+ax[1].xaxis.set_ticks_position('bottom')
+ax[1].tick_params(which='major', width=0.75, length=2.5)
+ax[1].tick_params(which='minor', width=1.0, length=5.0)
+ax[1].set_xticklabels(xlables)
+#ax[1].set_yticklabels([])
+ax[1].set_ylabel('Fraction of DrugBank')
+ax[1].set_xlabel('Heavy atoms')
+
+ax[0].set_title('CPU time as a funtion of heavy atoms');
+ax[1].set_title('Distribution of DrugBank small molecule sizes')
 plt.savefig('B3LYP_scaling.pdf', bbox_inches='tight')
+
+# Generate SI figure. Separate for Intel and AMD CPUs
+def find_missing(lst):
+    return [x for x in range(0, 38)
+            if x not in lst]
+
+sbn.set_context('paper', font_scale=1.3)
+cpu_seen = []
+fig, ax = plt.subplots(nrows=4, ncols=3, figsize=(12, 16))
+i = 0
+j = 0
+n = 0
+for cpu in df_intel['cpu']:
+    if cpu == 'Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz':
+        # this one is in main text. No need for SI
+        continue
+    if cpu in cpu_seen:
+        continue
+    if not 'Xeon(R)' in cpu:
+        print(cpu)
+        print('This should not happen')
+    # print(cpu)
+    n += 1
+    print(i, j)
+    new_df = df[(df['cpu'] == cpu)]
+    unique = np.sort(new_df["heavy_atoms"].unique())
+    missing = find_missing(unique)
+    fake_data = []
+    for value in missing:
+        fake_data.append(-1000)
+
+    x_new = list(new_df['heavy_atoms']) + missing
+    y_new = list(new_df['wall_time'] * new_df['nthreads']) + fake_data
+
+    xlabels = ['', '1', '', '', '', '5', '', '', '', '9', '', '', '', '13', '', '', '', '17', '',
+               '', '', '21', '', '', '', '25', '', '', '', '29', '', '', '', '33', '', '', '', '37']
+    sbn.boxplot(x_new, y_new, fliersize=0.5, ax=ax[i, j])
+    ax[i, j].set_xticks(unique, minor=True);
+    ax[i, j].xaxis.grid(True, which='minor')
+    ax[i, j].xaxis.set_ticks_position('bottom')
+    ax[i, j].tick_params(which='major', width=0.75, length=2.5)
+    ax[i, j].tick_params(which='minor', width=1.0, length=5.0)
+    if i == 3:
+        ax[i, j].set_xticklabels(xlabels)
+        ax[i, j].set_xlabel('Heavy atoms');
+    else:
+        ax[i, j].set_xticklabels([])
+
+    ax[i, j].set_ylim(0, 4500)
+    ax[i, j].set_xlim(0, 38)
+    if len(unique) > 2:
+        new_df['cpu_time'] = new_df['wall_time'] * new_df['nthreads']
+        x = new_df['heavy_atoms'].values
+        y = new_df['cpu_time'].values
+
+        popt, pcov = curve_fit(power_law, x, y, method='dogbox')
+        ci = arch.bootstrap.IIDBootstrap(x, y).conf_int(compute_stat, 1000)
+        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *popt), color='black')
+        textstr = r'%.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
+        props = dict(boxstyle='square', facecolor='white', alpha=0.0)
+        ax[i, j].text(0.02, 0.98, textstr, transform=ax[i, j].transAxes,  # fontsize=14,
+                      verticalalignment='top', bbox=props);
+        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[0]), '--', color='grey')
+        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[1]), '--', color='grey')
+        ax[i, j].fill_between(sorted(x_new), power_law(sorted(x_new), *ci[0]), power_law(sorted(x_new), *ci[1]),
+                              alpha=0.2, color='grey')
+
+    if j == 0:
+        ax[i, j].set_ylabel('CPU time (seconds)')
+    else:
+        ax[i, j].set_yticklabels([])
+
+    ax[i, j].set_title(cpu[17:]);
+    cpu_seen.append(cpu)
+    j += 1
+    if (n % 3) == 0:
+        j = 0
+        i += 1
+plt.savefig('SI_Intel_scaling.pdf', bbox_inches='tight')
+
+# AMD
+sbn.set_context('paper', font_scale=1.5)
+cpu_seen = []
+fig, ax = plt.subplots(nrows=2, ncols=2, figsize=(10, 10))
+print(ax)
+i = 0
+j = 0
+n = 0
+for cpu in df_amd['cpu']:
+    if cpu == 'Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz':
+        # this one is in main text. No need for SI
+        continue
+    if cpu in cpu_seen:
+        continue
+    n += 1
+    print(i, j)
+    new_df = df[(df['cpu'] == cpu)]
+    unique = np.sort(new_df["heavy_atoms"].unique())
+    missing = find_missing(unique)
+    fake_data = []
+    for value in missing:
+        fake_data.append(-10000)
+
+    x_new = list(new_df['heavy_atoms']) + missing
+    y_new = list(new_df['wall_time'] * new_df['nthreads']) + fake_data
+
+    xlabels = ['', '1', '', '', '', '5', '', '', '', '9', '', '', '', '13', '', '', '', '17', '',
+               '', '', '21', '', '', '', '25', '', '', '', '29', '', '', '', '33', '', '', '', '37']
+    sbn.boxplot(x_new, y_new, fliersize=0.5, ax=ax[i, j])
+    ax[i, j].set_xticks(unique, minor=True);
+    ax[i, j].xaxis.grid(True, which='minor')
+    ax[i, j].xaxis.set_ticks_position('bottom')
+    ax[i, j].tick_params(which='major', width=0.75, length=2.5)
+    ax[i, j].tick_params(which='minor', width=1.0, length=5.0)
+    # ax[i, j].set_xticks([1, 5, 9, 13, 17, 21, 25, 29, 33, 37], minor=False);
+    if i == 1:
+        ax[i, j].set_xticklabels(xlabels)
+        ax[i, j].set_xlabel('Heavy atoms');
+    else:
+        ax[i, j].set_xticklabels([])
+
+    ax[i, j].set_ylim(0, 20000)
+    ax[i, j].set_xlim(0, 38)
+    if len(unique) > 2:
+        new_df['cpu_time'] = new_df['wall_time'] * new_df['nthreads']
+        x = new_df['heavy_atoms'].values
+        y = new_df['cpu_time'].values
+
+        popt, pcov = curve_fit(power_law, x, y, method='dogbox')
+        ci = arch.bootstrap.IIDBootstrap(x, y).conf_int(compute_stat, 1000)
+        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *popt), color='black')
+        textstr = r'%.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
+        props = dict(boxstyle='square', facecolor='white', alpha=0.80)
+        ax[i, j].text(0.53, 0.98, textstr, transform=ax[i, j].transAxes,  # fontsize=14,
+                      verticalalignment='top', bbox=props);
+        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[0]), '--', color='grey')
+        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[1]), '--', color='grey')
+        ax[i, j].fill_between(sorted(x_new), power_law(sorted(x_new), *ci[0]), power_law(sorted(x_new), *ci[1]),
+                              alpha=0.2, color='grey')
+
+    if j == 0:
+        ax[i, j].set_ylabel('CPU time (seconds)')
+    else:
+        ax[i, j].set_yticklabels([])
+
+    ax[i, j].set_title(cpu);
+    cpu_seen.append(cpu)
+    j += 1
+    if (n % 2) == 0:
+        j = 0
+        i += 1
+plt.savefig('SI_AMD_scaling.pdf', bbox_inches='tight')
