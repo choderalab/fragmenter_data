@@ -58,6 +58,16 @@ sbn.set_context('paper', font_scale=1.5)
 
 fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(8, 10))
 
+# Fitted power law
+ax[0].plot(list(sorted(x)), power_law(sorted(x), *popt), color='black')
+ax[0].plot(list(sorted(x)), power_law(sorted(x), *ci[0]), '--', color='grey')
+ax[0].plot(list(sorted(x)), power_law(sorted(x), *ci[1]), '--', color='grey')
+ax[0].fill_between(sorted(x), power_law(sorted(x), *ci[0]), power_law(sorted(x), *ci[1]), alpha=0.2, color='grey')
+textstr = r'CPU time = %.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
+props = dict(boxstyle='square', facecolor='white', alpha=0.5)
+ax[0].text(0.05, 0.95, textstr, transform=ax[0].transAxes, fontsize=14,
+        verticalalignment='top', bbox=props);
+
 # Boxplot
 unique = np.sort(df_intel_one["heavy_atoms"].unique())
 x_new = list(df_intel_one['heavy_atoms'].values) + heavy_atoms
@@ -75,16 +85,6 @@ ax[0].set_xlim(0, 38)
 ax[0].set_xticklabels([])
 ax[0].set_ylabel('CPU time (seconds)')
 
-
-# Fitted power law
-ax[0].plot(list(sorted(x)), power_law(sorted(x), *popt), color='black')
-ax[0].plot(list(sorted(x)), power_law(sorted(x), *ci[0]), '--', color='grey')
-ax[0].plot(list(sorted(x)), power_law(sorted(x), *ci[1]), '--', color='grey')
-ax[0].fill_between(sorted(x), power_law(sorted(x), *ci[0]), power_law(sorted(x), *ci[1]), alpha=0.2, color='grey')
-textstr = r'CPU time = %.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
-props = dict(boxstyle='square', facecolor='white', alpha=0.5)
-ax[0].text(0.05, 0.95, textstr, transform=ax[0].transAxes, fontsize=14,
-        verticalalignment='top', bbox=props);
 
 # Heavy atoms distribution
 sbn.kdeplot(drug_mols.heavy_atoms, shade=True, color='grey', ax=ax[1], legend=False)
@@ -226,22 +226,6 @@ for cpu in df_amd['cpu']:
 
     ax[i, j].set_ylim(0, 20000)
     ax[i, j].set_xlim(0, 38)
-    if len(unique) > 2:
-        new_df['cpu_time'] = new_df['wall_time'] * new_df['nthreads']
-        x = new_df['heavy_atoms'].values
-        y = new_df['cpu_time'].values
-
-        popt, pcov = curve_fit(power_law, x, y, method='dogbox')
-        ci = arch.bootstrap.IIDBootstrap(x, y).conf_int(compute_stat, 1000)
-        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *popt), color='black')
-        textstr = r'%.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
-        props = dict(boxstyle='square', facecolor='white', alpha=0.80)
-        ax[i, j].text(0.53, 0.98, textstr, transform=ax[i, j].transAxes,  # fontsize=14,
-                      verticalalignment='top', bbox=props);
-        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[0]), '--', color='grey')
-        ax[i, j].plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[1]), '--', color='grey')
-        ax[i, j].fill_between(sorted(x_new), power_law(sorted(x_new), *ci[0]), power_law(sorted(x_new), *ci[1]),
-                              alpha=0.2, color='grey')
 
     if j == 0:
         ax[i, j].set_ylabel('CPU time (seconds)')
@@ -255,3 +239,112 @@ for cpu in df_amd['cpu']:
         j = 0
         i += 1
 plt.savefig('SI_AMD_scaling.pdf', bbox_inches='tight')
+
+# Plot gradients per optimization and optimizations per torsiondrive
+dfs = []
+with open('gradients_per_opt_ki.json', 'r') as f:
+    dfs.append(pd.read_json(f))
+with open('gradients_per_opt.json', 'r') as f:
+    dfs.append(pd.read_json(f))
+with open('gradients_per_opt_0.json', 'r') as f:
+    dfs.append(pd.read_json(f))
+
+for i in range(1, 13):
+    with open('gradients_per_opt_0_{}.json'.format(i), 'r') as f:
+        dfs.append(pd.read_json(f))
+
+df = pd.concat(dfs)
+
+fig, ax = plt.subplots()
+unique = np.sort(df["heavy_atoms"].unique())
+
+missing = find_missing(unique)
+fake_data = []
+for value in missing:
+    fake_data.append(-1000)
+
+x = df['heavy_atoms']
+y = df['gradients_per_opt']
+#popt, pcov = curve_fit(power_law, x, y, method='dogbox')
+
+x_new = list(df['heavy_atoms']) + missing
+y_new = list(df['gradients_per_opt']) + fake_data
+# ax.plot(list(sorted(x_new)), power_law(sorted(x_new), *popt), color='black')
+# ci = arch.bootstrap.IIDBootstrap(x, y).conf_int(compute_stat, 100)
+# textstr = r'%.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
+# props = dict(boxstyle='square', facecolor='white', alpha=0.80)
+# ax.text(0.53, 0.98, textstr, transform=ax.transAxes,  # fontsize=14,
+#         verticalalignment='top', bbox=props);
+# ax.plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[0]), '--', color='grey')
+# ax.plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[1]), '--', color='grey')
+# ax.fill_between(sorted(x_new), power_law(sorted(x_new), *ci[0]), power_law(sorted(x_new), *ci[1]), alpha=0.2,
+#                 color='grey')
+
+xlabels = ['', '1', '', '', '', '5', '', '', '', '9', '', '', '', '13', '', '', '', '17', '',
+           '', '', '21', '', '', '', '25', '', '', '', '29', '', '', '', '33', '', '', '', '37']
+sbn.boxplot(x=x_new, y=y_new, fliersize=0.3, ax=ax)
+ax.set_ylim(0)
+ax.set_xticks(unique, minor=True);
+ax.xaxis.grid(True, which='minor')
+ax.xaxis.set_ticks_position('bottom')
+ax.tick_params(which='major', width=0.75, length=2.5)
+ax.tick_params(which='minor', width=1.0, length=5.0)
+ax.set_xticklabels(xlabels);
+ax.set_xlabel('Heavy atoms')
+ax.set_ylabel('Number of gradient evaluations')
+plt.title('Gradient evaluations per optimization');
+plt.savefig('gradients_per_opts.pdf', bbox_inches='tight')
+
+dfs = []
+with open('opts_per_td.json', 'r') as f:
+    dfs.append(pd.read_json(f))
+with open('opts_per_td_0.json', 'r') as f:
+    dfs.append(pd.read_json(f))
+
+for i in range(1, 13):
+    with open('opts_per_td_0_{}.json'.format(i), 'r') as f:
+        dfs.append(pd.read_json(f))
+df = pd.concat(dfs)
+
+def find_missing(lst):
+    return [x for x in range(0, 20)
+            if x not in lst]
+
+fig, ax = plt.subplots()
+unique = np.sort(df["heavy_atoms"].unique())
+
+missing = find_missing(unique)
+fake_data = []
+for value in missing:
+    fake_data.append(-1000)
+
+x = df['heavy_atoms']
+y = df['opts_per_td']
+popt, pcov = curve_fit(power_law, x, y, method='dogbox')
+
+x_new = list(df['heavy_atoms']) + missing
+y_new = list(df['opts_per_td']) + fake_data
+# ax.plot(list(sorted(x_new)), power_law(sorted(x_new), *popt), color='black')
+# ci = arch.bootstrap.IIDBootstrap(x, y).conf_int(compute_stat, 100)
+# textstr = r'%.2f*(NHeavy)$^{%.2f}$' % (popt[1], popt[0])
+# props = dict(boxstyle='square', facecolor='white', alpha=0.80)
+# ax.text(0.53, 0.98, textstr, transform=ax.transAxes, #fontsize=14,
+# verticalalignment='top', bbox=props);
+# ax.plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[0]), '--', color='grey')
+# ax.plot(list(sorted(x_new)), power_law(sorted(x_new), *ci[1]), '--', color='grey')
+# ax.fill_between(sorted(x_new), power_law(sorted(x_new), *ci[0]), power_law(sorted(x_new), *ci[1]), alpha=0.2, color='grey')
+
+xlabels = ['', '1', '', '', '', '5', '', '', '', '9', '', '', '', '13', '', '', '', '17', '',
+           '', '', '21', '', '', '', '25', '', '', '', '29', '', '', '', '33', '', '', '', '37']
+sbn.boxplot(x=x_new, y=y_new, fliersize=0.3, ax=ax)
+ax.set_ylim(0)
+ax.set_xticks(unique, minor=True);
+ax.xaxis.grid(True, which='minor')
+ax.xaxis.set_ticks_position('bottom')
+ax.tick_params(which='major', width=0.75, length=2.5)
+ax.tick_params(which='minor', width=1.0, length=5.0)
+ax.set_xticklabels(xlabels);
+plt.title('Optimizations per torsion drive')
+ax.set_xlabel('Heavy atoms')
+ax.set_ylabel('Number of optimizations per torsion drive')
+plt.savefig('opts_per_td.pdf', bbox_inches='tight')
