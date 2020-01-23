@@ -10,7 +10,7 @@ from openeye import oechem
 
 client = ptl.FractalClient()
 collections = ['OpenFF Group1 Torsions', 'SMIRNOFF Coverage Torsion Set 1']
-for c in collections:
+for j, c in enumerate(collections):
 
     td_dataset = client.get_collection('TorsionDriveDataset', c)
     print(td_dataset.status(['default']))
@@ -20,6 +20,8 @@ for c in collections:
                   'natoms': [], 'heavy_atoms': [], 'cpu': [], 'nthreads': [], 'wall_time': [] }
 
     for i, index in enumerate(td_dataset.df.index):
+        if i < 445:
+            continue
         print(i, index)
         entry = td_dataset.get_entry(index)
         smiles = entry.attributes['canonical_isomeric_smiles']
@@ -50,11 +52,11 @@ for c in collections:
         opts_per_td['opts_per_td'].append(n_opts)
         opts_per_td['heavy_atoms'].append(heavy_atoms)
 
-        with open('off_torsions_cpu_time.json', 'w') as f:
+        with open('off_torsions_cpu_time_{}_12.json'.format(j), 'w') as f:
             json.dump(dictionary, f, indent=2, sort_keys=True)
-        with open('opts_per_td.json', 'w') as f:
+        with open('opts_per_td_{}_12.json'.format(j), 'w') as f:
             json.dump(opts_per_td, f, indent=2, sort_keys=True)
-        with open('gradients_per_opt.json', 'w') as f:
+        with open('gradients_per_opt_{}_12.json'.format(j), 'w') as f:
             json.dump(gradients_per_opts, f, indent=2, sort_keys=True)
 
 
