@@ -38,12 +38,14 @@ Where Pfizer fails
 
 
 ## Manifest
-* `calculate_fragment_wbo_dist.py` - script to generate wbo distributions
+* `calculate_fragment_wbo_dist.py` - script to fragment molecules using different thresholds and generate wbo distributions
 * `pfizer_fragmentation.py` - script to generate fragments and their WBO distribution using Pfizer's fragmenation scheme described in https://pubs.acs.org/doi/10.1021/acs.jcim.9b00373
 * `summarize_benchmark.py` - script to generate 2D plots of benchmarking results with fragment computational cost vs distance score
 * `pareto_front.py` - script to generate Pareto front of all fragments from combinatorial fragmentation that have all 1-4 atoms with fragmenter
 results plotted in red for visualization.
 * `visualize_results.py` - script to visualize results from benchmarking
+* `torsion_scan_wbos.py` - script to generate conformers from a torsion scan to add some higher energy conformers to WBO distributions to verify the results of
+the benchmark.
 * `jointplot_{}.pdf.format(threshold)` - figures generated with `summarize_benchmark.py`
 
 __note__:
