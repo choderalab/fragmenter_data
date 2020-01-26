@@ -10,6 +10,9 @@ Steps taken to generate this set:
 4. Generate conformers and calculate their WBOs. scripts are in the `fragment_bond_orders/` folder. All resulting JSON
 files are on Lilac.
 
+__note__: Some fragments failed to generate conformers or have WBO calcualated. There was a known bug in OpenEye version 2019.Apr.2 where
+carboxylic acid failed. The failed fragments were not used for choosing the benchmark set.
+
 ### Choose benchmark set.
 The goal here is to find molecules that are challenging to fragment by finding fragments where remote
 chemical changes cause large changes to the WBO distributions of the central bonds. To do that, each fragment is scored
