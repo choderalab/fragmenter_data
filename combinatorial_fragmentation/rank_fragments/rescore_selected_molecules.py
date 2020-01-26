@@ -220,7 +220,7 @@ if __name__ == '__main__':
     chemi.mol_to_image_atoms_label(parent_mol, fname='selected/{}/{}.png'.format(name, name))
 
 
-    # Only keep fragments if all 1-5 atoms are around central bonds
+    # Keep all frags that have bond of interest, irrespective of how many atoms it has around that bond
     full_frags = {}
     for bond in bonds:
         b = get_bond(parent_mol, bond)

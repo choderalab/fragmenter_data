@@ -38,10 +38,24 @@ Where Pfizer fails
 
 
 ## Manifest
-* `calculate_fragment_wbo_dist.py` - script to generate wbo distributions
+* `calculate_fragment_wbo_dist.py` - script to fragment molecules using different thresholds and generate wbo distributions
 * `pfizer_fragmentation.py` - script to generate fragments and their WBO distribution using Pfizer's fragmenation scheme described in https://pubs.acs.org/doi/10.1021/acs.jcim.9b00373
 * `summarize_benchmark.py` - script to generate 2D plots of benchmarking results with fragment computational cost vs distance score
 * `pareto_front.py` - script to generate Pareto front of all fragments from combinatorial fragmentation that have all 1-4 atoms with fragmenter
 results plotted in red for visualization.
 * `visualize_results.py` - script to visualize results from benchmarking
+* `torsion_scan_wbos.py` - script to generate conformers from a torsion scan to add some higher energy conformers to WBO distributions to verify the results of
+the benchmark.
 * `jointplot_{}.pdf.format(threshold)` - figures generated with `summarize_benchmark.py`
+
+__note__:
+
+Files with `fixed` in them denote that they were generated with updates to `fragmenter` because some functional groups were
+not in the yaml file so they were fragmented, the minimal fragment was different than outlined in the Pfizer paper.
+Also, for the second time around, the parameters for fragmentation were set to the default
+values because the previous run showed that those had the best results in general. The default parameters are:
+1. `functional_groups`: None - use `fragmenter`s internal yaml file for functional groups not to fragment. If you don't tag these groups you can end up with weird fragments
+2. `keep_non_rotor_ring_substituents` - `False`. There is no need to add these before building out fragment. It just leads to larger fragments in general
+3. `huerisitc` - `path_length`. This led to smaller fragments than using the `wbo` heuristic.
+
+I will need to come back to this to generate SI figures for the different parameters to show that we should use default parameters

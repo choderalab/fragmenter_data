@@ -1,29 +1,45 @@
-## Brute force fragmentation 
-### All possible fragments from parent molecule
+## Exhuastive fragmentation
 
-To find how well WBO correlates with change in torsion profiles, set of 
-kinase inhibitors are fragmented combinatorially to find all possible fragments. 
+### Generate all possible fragments for a set of molecules
+We generated this set to investigate how a bond's chemical environment changes with different remote chemical changes.
 
-Full combinatorial fragmentation and running torsion scans on all is too expensive.
-For the kinase inhibitor set it generated 24,000 fragments. To decrease cost:  
+Steps taken to generate this set:
+1. Filter DrugBank. Scripts used are in the `filter/` folder
+2. Generate reasonable tautomers for filtered molecules. Scripts used for this step are in the `enumerate_states/` folder. Resulting JSON files are on Lilac.
+3. Exhaustive fragmentation. Scripts for this step are in the `fragment/` folder. Resulting fragments are in JSON files on Lilac.
+4. Generate conformers and calculate their WBOs. scripts are in the `fragment_bond_orders/` folder. All resulting JSON
+files are on Lilac.
 
-1. Filter kinase inhibitor 
-    1. Less than 40 atoms 
-    2. At least 4 rotatable bond and at most 8 rotatable bonds
-    3. Ring systems up to 14 atoms
-    4. Remove carbon chains with more than 4 carbons
-    (For the first try I removed Trametinib from the list because of the amount of fragments it produced with combinatorial fragmentation)
-    
-1. Create list of functional groups not to fragment (lives in yam file)
-    1. amide
-    2. Triflouro methyl
-    3. Sulfonamide
-    4. Sulfone
-    5. Ester
-    6. Phosphate
-    7. P(=O)(C)(C) 
-2. Combinatorially fragmment without fragmenting functional group in list
-3. Calculate WBO for all fragments
-4. For each rotatable bond in parent molecule:
-    1. Find pair of bonds that are closest in molecular weight but furthest in WBO
-    2. Run 1D torsion profile of those bonds
+__note__: Some fragments failed to generate conformers or have WBO calcualated. There was a known bug in OpenEye version 2019.Apr.2 where
+carboxylic acid failed. The failed fragments were not used for choosing the benchmark set.
+
+### Choose benchmark set.
+The goal here is to find molecules that are challenging to fragment by finding fragments where remote
+chemical changes cause large changes to the WBO distributions of the central bonds. To do that, each fragment is scored
+by its bonds' WBO distribution distance to parent WBO (using the `mmd_x_xsqred` function in the `score_fragments.py` script in `rank_fragments`).
+Distance scores were sorted and the bonds with the top 100 scores were selected for the benchmark score.
+__note__: Not all bonds in a selected molecules is part of the benchmark set, only the bonds that had distance scores over 0.001 (should be 0.03 with sqrt)
+The initial selection had a bug where the sqrt was not taken for the mmd score so the distances are in general lower than they should be.
+It was fixed later for the final benchmark of different fragmentation scheme. The selection might be slightly different if this was fixed
+before the final 100 moelecules were chosen, but the difference does not change the conclusions of the study because the distances used
+for later analysis and the actual benchmark did have the sqrt taken.
+
+* `rank_fragments/` - folder containing scripts to select 100 molecules for the benchmark set
+
+### Benchmark fragmentation schemes
+Generate fragments for the benchmark set using different fragmenation schemes.
+Schemes that were tested:
+1. Scheme described by the Pfizer group
+2. WBO fragmentation with different thresholds and parameters.
+
+* `benchmark_fragmentation_schemes/` - scripts to generate fragments using different schemes and analyze results.
+
+__note__:
+A good experiment to do with this set is run QC torsion scans of 2 fragments for each molecule
+1. Smallest fragment with greatest distance to parent
+2. Smallest fragment with largest distance to parent.
+This will provide the best evidence for the way we are evaluating fragmentation schemes. I just didn't have time to do it -
+reviewers might ask for it though and OFF should do it regardless.
+
+This directory also includes some scripts and data for the original experiment on kinase ihibitors and mini drugbank that
+then inspired me to look at the entire DrugBank to find more interesting chemistries that will have long range effects.
