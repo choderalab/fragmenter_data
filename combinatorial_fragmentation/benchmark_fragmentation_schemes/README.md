@@ -45,3 +45,12 @@ Where Pfizer fails
 results plotted in red for visualization.
 * `visualize_results.py` - script to visualize results from benchmarking
 * `jointplot_{}.pdf.format(threshold)` - figures generated with `summarize_benchmark.py`
+
+__note__:
+
+Files with `fixed` in them denote that they were generated with updates to `fragmenter` because some functional groups were
+not in the yaml file so they were fragmented. Also, for the second time around, the parameters for fragmentation were set to the default
+values because the previous run showed that those had the best results in general. The default parameters are:
+1. `functional_groups`: None - use `fragmenter`s internal yaml file for functional groups not to fragment. If you don't tag these groups you can end up with weird fragments
+2. `keep_non_rotor_ring_substituents` - `False`. There is no need to add these before building out fragment. It just leads to larger fragments in general
+3. `huerisitc` - `path_length`. This led to smaller fragments than using the `wbo` heuristic.
