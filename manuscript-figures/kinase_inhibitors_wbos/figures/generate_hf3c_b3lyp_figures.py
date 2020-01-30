@@ -117,7 +117,7 @@ def plot_distributions(bond_keys, bond_wbos, bond_order_type, name, fname):
         textstr = r'%s$_{%s}^{%s}$' % (var_txt, ci_0_txt, ci_1_txt)
         sbn.kdeplot(wbo, shade= True, alpha=0.85, color=colors[i], label=textstr)
         plt.legend(fontsize=12, loc='lower left', frameon=False, markerscale=0.1)
-        plt.xlim(x_min-0.1, x_max+0.05)
+        plt.xlim(x_min-0.15, x_max+0.05)
         plt.xticks(fontsize=14)
         plt.yticks([])
         ax.yaxis.set_label_coords(-0.05, 0)
@@ -125,7 +125,11 @@ def plot_distributions(bond_keys, bond_wbos, bond_order_type, name, fname):
         if i != n-1:
             plt.xticks([])
         else:
-            plt.xlabel('Wiberg Löwdin bond order'.format(bond_order_type), fontsize=14)
+            if bond_order_type == 'wiberg_lowdin':
+                bond_order_type_str = 'Wiberg'
+            else:
+                bond_order_type_str = bond_order_type
+            plt.xlabel('{} bond order'.format(bond_order_type_str), fontsize=14)
         if i == 0:
             #plt.legend(prop={'size': 10}, bbox_to_anchor=(1.35, 1))
             #plt.title("Wiberg Löwding distributions over conformations for highlighted bonds", fontsize=14)
@@ -136,8 +140,7 @@ def plot_distributions(bond_keys, bond_wbos, bond_order_type, name, fname):
 
 def sort_rings(tagged_smiles):
     """
-    Sort ring bonds for nicer plotting
-
+    Sort ring bonds for nicer plottin
     Paramerts
     ---------
     tagged_smiles: mapped SMILES for plotting
