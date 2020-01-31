@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.colors as mcolors
 import pandas as pd
+import arch.bootstrap
+
 import math
 
 import qcfractal.interface as ptl
@@ -71,10 +73,11 @@ for i, fgroup in enumerate(fgroup_wbos):
     plt.xlim(0.70, 1.4)
     plt.yticks([])
     ax.yaxis.set_label_coords(-0.05, 0)
-    plt.ylabel(fgroup_symbols_colors[fgroup][0], rotation=0, size=8,
+    plt.ylabel(fgroup_symbols_colors[fgroup][0], rotation=0, size=10,
                color=colors[fgroup_symbols_colors[fgroup][1]])
     if i == len(fgroup_wbos)-1:
-        plt.xlabel('Bond order')
+        plt.xlabel('AM1 ELF10 Wiberg bond order', fontsize=14)
+        plt.xticks(fontsize=14)
     else:
         plt.xticks([])
 
@@ -101,7 +104,7 @@ df = pd.DataFrame(hammet_sigmas)
 
 # plot correlation
 markersize=9
-fontsize=6
+fontsize=8
 for sigma in ('m', 'p'):
     fig, ax = plt.subplots()
     for row in df.iterrows():
@@ -114,7 +117,7 @@ for sigma in ('m', 'p'):
         if row[1].substituent == 'H':
             plt.plot(x, y, '.', color='black', markersize=markersize, label='H')
             plt.annotate('H', (x, y),
-                     textcoords='offset points', xytext=(3, 2), color= 'black', fontsize=fontsize)
+                     textcoords='offset points', xytext=(3, 2), color='black', fontsize=fontsize)
             continue
         plt.plot(x, y, '.', markersize=markersize, color=fgroup_symbols_colors[row[1].substituent][1],
                      label=fgroup_symbols_colors[row[1].substituent][0])
@@ -123,8 +126,10 @@ for sigma in ('m', 'p'):
 
     plt.xlim(0.83, 1.16)
     plt.ylim(-0.86, 0.85)
-    plt.ylabel(r'$\sigma_{}$'.format(sigma))
-    plt.xlabel('Wiberg Bond Order');
+    plt.ylabel(r'$\sigma_{}$'.format(sigma), fontsize=14)
+    plt.xlabel('AM1 ELF10 Wiberg Bond Order', fontsize=14);
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
     if sigma == 'm':
         r_value = df.corr().sigma_m.wbo_r_meta
     if sigma == 'p':
@@ -132,7 +137,7 @@ for sigma in ('m', 'p'):
     print(r_value)
     textstr = r'$\rho =%.2f$' % (r_value)
     props = dict(boxstyle='square', facecolor='white', alpha=0.5)
-    ax.text(0.75, 0.95, textstr, transform=ax.transAxes, fontsize=12,
+    ax.text(0.75, 0.95, textstr, transform=ax.transAxes, fontsize=14,
             verticalalignment='top', bbox=props)
     plt.tight_layout()
     fig.savefig('figures/hammett_sigma_{}.pdf'.format(sigma))
@@ -142,37 +147,86 @@ for sigma in ('m', 'p'):
 with open('../../phenyl_benchmark/data/qcarchive_torsiondrives.json', 'r') as f:
     fgroups_td = json.load(f)
 
+# Generate 2 plots. One for good lines and one for lines that have issues
+plot_1 = ['dimethylamino', 'methylamino', 'ethylamino', 'propylamino', 'hydroxy', 'methoxy', 'phenylurea', 'benzoicacid', 'nitro']
+plot_2 = ['amino', 'ethoxy', 'dimethylurea', 'urea', 'ethylamide', 'amide', 'carbamate', 'ethoxycarbonyl']
+symbols = ['o', 'P', '^', '*', 's', 'p',  'X', 'd', 'H', '>']
+
+def r_value_ci(am1_wbos, max_energies):
+    return stats.linregress(am1_wbos, max_energies)[2]**2
+
+fontsize = 14
 fig, ax = plt.subplots()
-for fgroup in fgroup_symbols_colors:
+colors = []
+r_values = []
+for i, fgroup in enumerate(plot_1):
     if fgroup not in fgroups_td:
         continue
     energies = fgroups_td[fgroup]['energy']
     am1_wbos = fgroups_td[fgroup]['elf10_am1_wbo']
     max_energies = [max(energy) for energy in energies]
     slope, intercept, r_value, p_value, std_err = stats.linregress(am1_wbos, max_energies)
-    fgroups_td[fgroup]['stats'] = [slope, r_value**2, p_value, std_err]
-    plt.plot(np.unique(am1_wbos), np.poly1d([slope, intercept])(np.unique(am1_wbos)), fgroup_symbols_colors[fgroup][1], label=fgroup_symbols_colors[fgroup][0])
-    plt.scatter(x=am1_wbos, y=max_energies, color=fgroup_symbols_colors[fgroup][1], s=4)
+    r_ci = arch.bootstrap.IIDBootstrap(np.asarray(am1_wbos), np.asarray(max_energies)).conf_int(r_value_ci, 1000, method='percentile')
+    print(r_ci)
+    fgroups_td[fgroup]['stats'] = [slope, std_err, r_value**2, r_ci[0][0], r_ci[1][0]]
+    plt.plot(np.unique(am1_wbos), np.poly1d([slope, intercept])(np.unique(am1_wbos)), fgroup_symbols_colors[fgroup][1])
+    plt.scatter(x=am1_wbos, y=max_energies, color=fgroup_symbols_colors[fgroup][1], marker=symbols[i], label=fgroup_symbols_colors[fgroup][0])
+    colors.append(fgroup_symbols_colors[fgroup][1])
+    r_values.append([r_value**2, r_ci[0][0], r_ci[1][0]])
 
-l = ax.legend(bbox_to_anchor=(1, 1))
-for line, text in zip(l.get_lines(), l.get_texts()):
-    text.set_color(line.get_color())
+l = ax.legend(bbox_to_anchor=(1, 1), fontsize=fontsize)
+for i, text in enumerate(l.get_texts()):
+    text.set_color(colors[i])
 
-plt.xlabel('ELF10 AM1 Wiberg bond order')
-plt.ylabel('Torsion barrier height (kJ/mol)')
+plt.xlabel('AM1 ELF10 Wiberg bond order', fontsize=fontsize)
+plt.ylabel('Torsion barrier height (kJ/mol)', fontsize=fontsize)
+plt.xlim(0.8, 1.3)
+plt.ylim(0, 50)
+plt.xticks(fontsize=fontsize)
+plt.yticks(fontsize=fontsize)
 plt.tight_layout()
-plt.savefig('figures/energy_vs_wbo.pdf')
+plt.savefig('figures/energy_vs_wbo_1.pdf')
+
+colors = []
+ig, ax = plt.subplots()
+for i, fgroup in enumerate(plot_2):
+    if fgroup not in fgroups_td:
+        continue
+    energies = fgroups_td[fgroup]['energy']
+    am1_wbos = fgroups_td[fgroup]['elf10_am1_wbo']
+    max_energies = [max(energy) for energy in energies]
+    slope, intercept, r_value, p_value, std_err = stats.linregress(am1_wbos, max_energies)
+    r_ci = arch.bootstrap.IIDBootstrap(np.asarray(am1_wbos), np.asarray(max_energies)).conf_int(r_value_ci, 10000, method='percentile')
+    print(r_ci)
+    fgroups_td[fgroup]['stats'] = [slope, std_err, r_value**2, r_ci[0][0], r_ci[1][0]]
+    plt.plot(np.unique(am1_wbos), np.poly1d([slope, intercept])(np.unique(am1_wbos)), fgroup_symbols_colors[fgroup][1])
+    plt.scatter(x=am1_wbos, y=max_energies, color=fgroup_symbols_colors[fgroup][1], marker=symbols[i], label=fgroup_symbols_colors[fgroup][0])
+    colors.append(fgroup_symbols_colors[fgroup][1])
+
+l = ax.legend(bbox_to_anchor=(1, 1), fontsize=fontsize)
+for i, text in enumerate(l.get_texts()):
+    text.set_color(colors[i])
+
+plt.xlabel('AM1 ELF10 Wiberg bond order', fontsize=fontsize)
+plt.ylabel('Torsion barrier height (kJ/mol)', fontsize=fontsize)
+plt.xticks(fontsize=fontsize)
+plt.yticks(fontsize=fontsize)
+plt.xlim(0.8, 1.3)
+plt.ylim(0, 50)
+plt.tight_layout()
+plt.savefig('figures/energy_vs_wbo_2.pdf')
 
 # generate table
-stats_table = {'functional group': [], 'slope': [], 'r^2': [], 'P value': [], 'standard error': []}
+stats_table = {'functional group': [], 'slope': [],'standard error': [],  'r^2': [], 'CI_1': [], 'CI_2': []}
 for fgroup in fgroup_symbols_colors:
     if fgroup not in fgroups_td:
         continue
     stats_table['functional group'].append(fgroup_symbols_colors[fgroup][0])
     stats_table['slope'].append(fgroups_td[fgroup]['stats'][0])
-    stats_table['r^2'].append(fgroups_td[fgroup]['stats'][1])
-    stats_table['P value'].append(fgroups_td[fgroup]['stats'][2])
-    stats_table['standard error'].append(fgroups_td[fgroup]['stats'][3])
+    stats_table['standard error'].append(fgroups_td[fgroup]['stats'][1])
+    stats_table['r^2'].append(fgroups_td[fgroup]['stats'][2])
+    stats_table['CI_1'].append(fgroups_td[fgroup]['stats'][3])
+    stats_table['CI_2'].append(fgroups_td[fgroup]['stats'][4])
 latex_table = pd.DataFrame(stats_table).to_latex(index=False)
 with open('figures/stats_ov.tex', 'w') as f:
     f.write(latex_table)
