@@ -7,34 +7,13 @@ To benchmark each scheme:
 1. Fragment the selected bonds with scheme
 2. For each fragment generate distribution of WBOs from fragments
 3. Get distance of distribution to parent
+4. Plot against computational cost of fragment (NHeavy)^2.6^
 
-Figures to do:
-1. 2D plot of size vs distance for all parameters in 0.1, 0.05, 0.01, 0.005, 0.001
-2. Find the one 2D that looks the best and generate plots separating out different parameters (functional groups, rotors, huerisitc (6 2D plots))
-
-For paper
-Figure 1 - all molecules in benchmark set (supplementary)
-Figure 2 - example of combinatorial fragmentation of a molecule that has good binning. Pareto front
-Figure 3 - summary of benchmark for current scheme with different parameters. Supplementary separate out different parameters.
-Figure 4 - show an example of figure 3 in benchmark (nice example:  (Abemaciclib (34, 16), Bosutinib (30, 10), Cefepime_1 (19, 25), Ceftazidime_0 (11, 7) (25, 35)?
-Cibmimetnib_0 (13, 22) Dacomitinib_0 (28, 17), Aceclofenac_0 (14, 21),
-Also - add Bemis Murco fragmentation, Pfizer fragmentation
-
-Bonds in molecules where you inevitably get the parent back even though there is a more optimal fragment, this scheme is not finding it
-0.1 - Fostamatinib_0 (29, 14), Pemetrexed_0 (13, 25)
-0.05 - Abemaciclib_0 (14, 34), Bosutinib_0 (11, 30)
-
-Bonds in molecule where score is too high for 0.05.
-Hydroxychloroquin_0 (8, 20) - not finding optimal.
-Netarsudil_0 (30, 23)
-Proguanil_4 (7, 13)
-
-Where Pfizer fails
-1. Menadiol_diphosphate - need phosphate group on other side.
-2. Gemifloxacin (8, 22) no one gets. Pfizer does worse in the score but fragmenter does worse in the size.
-3. Phenformin_3 (13, 7) - Pfizer drops a positively charged nitrogen
-4. Proguanil_0 (14, 7) Pfizer drops a positively charged nitrogen (ridge plot is better for figure)
-5. Tiludronic_acid_0 (16, 7) - loss of chlorine seems to matter here.
+To verify benchmark
+1. Besides Omega conformers, generate torsion grid conformers so we get higher energy conformers that are relevant to torsion scans
+2. Get distances of 0.03 to parent and Pfizer fragment to parent
+3. Compare the distances (This histogram is used in figure 13 in manuscript)
+4. By inspection, find functional groups that have strong long distance through-bond effects (shown in figure 14 in manuscript)
 
 
 ## Manifest
@@ -42,11 +21,15 @@ Where Pfizer fails
 * `pfizer_fragmentation.py` - script to generate fragments and their WBO distribution using Pfizer's fragmenation scheme described in https://pubs.acs.org/doi/10.1021/acs.jcim.9b00373
 * `summarize_benchmark.py` - script to generate 2D plots of benchmarking results with fragment computational cost vs distance score
 * `pareto_front.py` - script to generate Pareto front of all fragments from combinatorial fragmentation that have all 1-4 atoms with fragmenter
-results plotted in red for visualization.
-* `visualize_results.py` - script to visualize results from benchmarking
+results plotted in red for visualization (not used to generate figure but helpful to look at).
+* `visualize_results.py` - script to visualize results from benchmarking (rudimentary - was not used to generate figures)
 * `torsion_scan_wbos.py` - script to generate conformers from a torsion scan to add some higher energy conformers to WBO distributions to verify the results of
 the benchmark.
+* `generate_figure.py` - script to generate distributions and fragment visualization that were used to generate manuscript figure.
+* `compare_scores.py` - script to generate score comparison figure
 * `jointplot_{}.pdf.format(threshold)` - figures generated with `summarize_benchmark.py`
+
+*`{NAME}/optimal_fragment.py` - script to generate figure 15 in manuscript showing where WBO fragmentation fails.
 
 __note__:
 
@@ -59,3 +42,5 @@ values because the previous run showed that those had the best results in genera
 3. `huerisitc` - `path_length`. This led to smaller fragments than using the `wbo` heuristic.
 
 I will need to come back to this to generate SI figures for the different parameters to show that we should use default parameters
+
+How should we handle carbonyl on Pixantrone? It is meta to central bond, but it is on a fused ring so should probably be included.
