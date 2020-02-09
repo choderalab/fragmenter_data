@@ -82,11 +82,11 @@ x3 = array[(array == 0)]
 counts, bins = np.histogram(array, bins=30)
 # finally, do the plot
 f, ax = plt.subplots()
-sbn.distplot(x1, bins=bins, kde=False, rug=True, color=sbn.color_palette('colorblind')[0], label='WBO scheme better (176 fragments)')
-sbn.distplot(x2, bins=bins, kde=False, color=sbn.color_palette('colorblind')[4], rug=True, label='Pfizer scheme better (83 fragments)')
-sbn.distplot(x3, bins=bins, color=sbn.color_palette('colorblind')[2], label='Equally good (99 fragments)')
+sbn.distplot(x1, bins=bins, kde=False, rug=True, color=sbn.color_palette('colorblind')[0], label='WBO scheme better ({} fragments)'.format(len(x1)))
+sbn.distplot(x2, bins=bins, kde=False, color=sbn.color_palette('colorblind')[4], rug=True, label='Pfizer scheme better ({} fragments)'.format(len(x2)))
+sbn.distplot(x3, bins=bins, color=sbn.color_palette('colorblind')[2], label='Equally good ({} fragments)'.format(len(x3)))
 plt.legend()
 plt.xlim(-0.1);
 plt.xlabel('Differences in distance score (Pfizer scheme - WBO scheme)')
 plt.ylabel('Counts');
-plt.savefig('combined_score_differences.pdf')
+plt.savefig('combined-score-differences-fixed.pdf')
