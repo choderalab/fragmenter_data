@@ -46,7 +46,7 @@ if __name__ == '__main__':
         selected = json.load(f)
     with open('../rank_fragments/selected/{}/{}_oe_wbo_with_score.json'.format(name, name), 'r') as f:
         wbo_dists = json.load(f)
-    with open('{}/{}_wbo_dists_fixed_1.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         already_calculated = json.load(f)
 
     # deserialize

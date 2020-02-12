@@ -124,12 +124,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
     name = args.name
 
-    with open('{}/{}_wbo_dists_fixed_1.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         results = json.load(f)
     with open('{}/{}_pfizer_wbo_dists.json'.format(name, name), 'r') as f:
         pfizer_results = json.load(f)
-    with open('{}/{}_wbo_scans.json'.format(name, name), 'r') as f:
-        scan_results = json.load(f)
 
     torsion_scans = {}
     for bond in results:
@@ -159,11 +157,6 @@ if __name__ == '__main__':
             torsion_scans[bond][frag_type]['frag'] = smiles
             torsion_scans[bond][frag_type]['elf10_wbo'] = oe_wbo
 
-            if smiles == scan_results[bond][frag_type]['frag']:
-                print('{} already scanned'.format(smiles))
-                torsion_scans[bond][frag_type]['wbos'] = scan_results[bond][frag_type]['wbos']
-                continue
-            print('{} not found. scanning...'.format(smiles))
             mol = oechem.OEMol()
             oechem.OESmilesToMol(mol, smiles)
             dih = fragmenter.torsions.find_torsion_around_bond(molecule=mol, bond=bond_des)
@@ -179,7 +172,7 @@ if __name__ == '__main__':
     # save wbos
     torsion_scans['provenance'] = {'fragmenter_version': fragmenter.__version__,
                                'openeye_version': openeye.__version__}
-    with open('{}/{}_wbo_scans_fixed-test.json'.format(name, name), 'w') as f:
+    with open('{}/{}_wbo_scans.json'.format(name, name), 'w') as f:
         json.dump(torsion_scans, f, indent=2, sort_keys=True)
     # with open('{}/{}_wbo_scans.json'.format(name, name), 'r') as f:
     #     torsion_scans = json.load(f)
@@ -199,7 +192,7 @@ if __name__ == '__main__':
         plt.yticks([])
         plt.xlabel('Wiberg Bond Order', fontsize=14)
         plt.tight_layout()
-        plt.savefig('{}/{}_bond_{}_{}_wbo_scan_dist_fixed.pdf'.format(name, name, bond_des[0], bond_des[1]))
+        plt.savefig('{}/{}_bond_{}_{}_wbo_scan_distributions.pdf'.format(name, name, bond_des[0], bond_des[1]))
 
         colors = [rbg_to_int(list(i), alpha=255) for i in sbn.color_palette()[:3]]
         wbos = []
@@ -208,7 +201,7 @@ if __name__ == '__main__':
             wbos.append(torsion_scans[bond][frag_type]['elf10_wbo'])
             frags.append(torsion_scans[bond][frag_type]['frag'])
 
-        visualize_mols(frags, cols=2, rows=2, bond_idx=bond_des, colors=colors, wbos=wbos, fname='{}/{}_bond_{}_{}_frags_fixed.pdf'.format(name, name, bond_des[0], bond_des[1]),
+        visualize_mols(frags, cols=2, rows=2, bond_idx=bond_des, colors=colors, wbos=wbos, fname='{}/{}_bond_{}_{}_frags.pdf'.format(name, name, bond_des[0], bond_des[1]),
                        align_to=2)
 
 
