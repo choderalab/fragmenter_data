@@ -46,7 +46,7 @@ if __name__ == '__main__':
         selected = json.load(f)
     with open('../rank_fragments/selected/{}/{}_oe_wbo_with_score.json'.format(name, name), 'r') as f:
         wbo_dists = json.load(f)
-    with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_dists_fixed_1.json'.format(name, name), 'r') as f:
         already_calculated = json.load(f)
 
     # deserialize
@@ -105,7 +105,8 @@ if __name__ == '__main__':
             for b in already_seen:
                 if smiles not in already_seen[b]:
                     already_seen[b][smiles] = []
-            for conf in frag.GetConfs():
+            for i, conf in enumerate(frag.GetConfs()):
+                print('{} out of {}'.format(i, frag.GetMaxConfIdx()))
                 mol_copy = oechem.OEMol(conf)
                 if oequacpac.OEAssignPartialCharges(mol_copy, oequacpac.OECharges_AM1BCCSym):
                     for b in already_seen:
