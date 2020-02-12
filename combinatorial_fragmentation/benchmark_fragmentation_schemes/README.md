@@ -17,29 +17,31 @@ To verify benchmark
 
 
 ## Manifest
+### Scripts (in order they were run)
 * `calculate_fragment_wbo_dist.py` - script to fragment molecules using different thresholds and generate wbo distributions
 * `pfizer_fragmentation.py` - script to generate fragments and their WBO distribution using Pfizer's fragmenation scheme described in https://pubs.acs.org/doi/10.1021/acs.jcim.9b00373
+* `torsion_scan_wbos.py` - script to generate conformers from a torsion scan to add some higher energy conformers to WBO distributions to verify the results of
+the benchmark.
 * `summarize_benchmark.py` - script to generate 2D plots of benchmarking results with fragment computational cost vs distance score
+* `compare_scores.py` - script to generate score comparison figure
+* `generate_figure.py` - script to generate distributions and fragment visualization that were used to generate manuscript figure.
+*`{NAME}/optimal_fragment.py` - script to generate figure 15 in manuscript showing where WBO fragmentation fails.
+### scripts that were used for exploration but results were not used for final figures
 * `pareto_front.py` - script to generate Pareto front of all fragments from combinatorial fragmentation that have all 1-4 atoms with fragmenter
 results plotted in red for visualization (not used to generate figure but helpful to look at).
 * `visualize_results.py` - script to visualize results from benchmarking (rudimentary - was not used to generate figures)
-* `torsion_scan_wbos.py` - script to generate conformers from a torsion scan to add some higher energy conformers to WBO distributions to verify the results of
-the benchmark.
-* `generate_figure.py` - script to generate distributions and fragment visualization that were used to generate manuscript figure.
-* `compare_scores.py` - script to generate score comparison figure
+### PDF figures
 * `jointplot_{}.pdf.format(threshold)` - figures generated with `summarize_benchmark.py`
-
-*`{NAME}/optimal_fragment.py` - script to generate figure 15 in manuscript showing where WBO fragmentation fails.
+* `combined-score-differences.pdf` - figure generated with `compare_scores.py`
 
 __note__:
-
-Files with `fixed` in them denote that they were generated with updates to `fragmenter` because some functional groups were
-not in the yaml file so they were fragmented, the minimal fragment was different than outlined in the Pfizer paper.
-Also, for the second time around, the parameters for fragmentation were set to the default
-values because the previous run showed that those had the best results in general. The default parameters are:
-1. `functional_groups`: None - use `fragmenter`s internal yaml file for functional groups not to fragment. If you don't tag these groups you can end up with weird fragments
-2. `keep_non_rotor_ring_substituents` - `False`. There is no need to add these before building out fragment. It just leads to larger fragments in general
-3. `huerisitc` - `path_length`. This led to smaller fragments than using the `wbo` heuristic.
+Decisions I made based on intermediate results.
+1. While there are several options with fragmenters, I settled on the defaults which are:
+    1. Tag functional groups because otherwise fragmenter can generate fragments with weird chemistries
+    2. `keep_non_rotor_ring_substituents` set to `False`. There is no need to add these before building out fragment.
+    It just leads to larger fragments in general.
+    3.  `heuristic` - `path_length`. This led to smaller fragments in general than using the `wbo` heuristic without significantly changing the distance scores.
+2. I found a discrepancy with WBO generated on Linux vs Mac for nitrile guanidinium. WBOs on Linux look more correct than Mac so only WBOs that were run on the cluster should be used.
 
 I will need to come back to this to generate SI figures for the different parameters to show that we should use default parameters
 
