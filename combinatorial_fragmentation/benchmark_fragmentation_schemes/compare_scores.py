@@ -42,11 +42,11 @@ differences = []
 bonds = []
 for name in names:
     name = name.split('/')[0]
-    with open('{}/{}_wbo_dists_fixed.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         omega_results = json.load(f)
     with open('{}/{}_pfizer_wbo_dists.json'.format(name, name), 'r') as f:
         pfizer_results = json.load(f)
-    with open('{}/{}_wbo_scans_fixed.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_scans.json'.format(name, name), 'r') as f:
         scan_results = json.load(f)
     for bond in omega_results:
         if bond == 'provenance':
@@ -86,7 +86,7 @@ sbn.distplot(x1, bins=bins, kde=False, rug=True, color=sbn.color_palette('colorb
 sbn.distplot(x2, bins=bins, kde=False, color=sbn.color_palette('colorblind')[4], rug=True, label='Pfizer scheme better ({} fragments)'.format(len(x2)))
 sbn.distplot(x3, bins=bins, color=sbn.color_palette('colorblind')[2], label='Equally good ({} fragments)'.format(len(x3)))
 plt.legend()
-plt.xlim(-0.1);
+ax.set_xticks([-0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7])
 plt.xlabel('Differences in distance score (Pfizer scheme - WBO scheme)')
 plt.ylabel('Counts');
-plt.savefig('combined-score-differences-fixed.pdf')
+plt.savefig('combined-score-differences.pdf')
