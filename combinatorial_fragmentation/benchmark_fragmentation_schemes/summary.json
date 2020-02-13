@@ -1,50 +1,38 @@
 {
   "0.001": {
-    "path": {
-      "lower_left": 155,
-      "outside": 203
-    }
+    "lower_left": 182,
+    "outside": 176
   },
   "0.005": {
-    "path": {
-      "lower_left": 205,
-      "outside": 153
-    }
+    "lower_left": 232,
+    "outside": 126
   },
   "0.01": {
-    "path": {
-      "lower_left": 232,
-      "outside": 126
-    }
+    "lower_left": 268,
+    "outside": 90
   },
   "0.03": {
-    "path": {
-      "lower_left": 246,
-      "outside": 112
-    }
+    "lower_left": 284,
+    "outside": 74
   },
   "0.05": {
-    "path": {
-      "lower_left": 207,
-      "outside": 151
-    }
+    "lower_left": 243,
+    "outside": 115
   },
   "0.07": {
-    "path": {
-      "lower_left": 180,
-      "outside": 178
-    }
+    "lower_left": 224,
+    "outside": 134
   },
   "0.1": {
-    "path": {
-      "lower_left": 162,
-      "outside": 196
-    }
+    "lower_left": 208,
+    "outside": 150
+  },
+  "parent": {
+    "lower_left": 148,
+    "outside": 210
   },
   "pfizer": {
-    "pfizer": {
-      "lower_left": 189,
-      "outside": 169
-    }
+    "lower_left": 197,
+    "outside": 161
   }
 }

@@ -138,7 +138,7 @@ if __name__ == '__main__':
     names = glob.glob('*/')
     for n in names:
         n = n[:-1]
-        with open('{}/{}_wbo_dists_fixed.json'.format(n, n), 'r') as f:
+        with open('{}/{}_wbo_dists.json'.format(n, n), 'r') as f:
             wbos = json.load(f)
         with open('{}/{}_pfizer_wbo_dists.json'.format(n, n), 'r') as f:
             pfizer_results = json.load(f)
@@ -210,12 +210,12 @@ if __name__ == '__main__':
     print(scores.keys())
     for i in ('0.001', '0.005', '0.01', '0.03',  '0.05', '0.07',  '0.1'):
         joint_plot(scores[i]['scores'], np.asarray(scores[i]['size']) ** 2.6,
-                   fname='jointplot_fixed_{}.pdf'.format(i))
+                   fname='jointplot_{}.pdf'.format(i))
     print(scores['pfizer'].keys())
     print(max(scores['pfizer']['scores']))
     joint_plot(scores['pfizer']['scores'], np.asarray(scores['pfizer']['size'])** 2.6,
                fname='jointplot_pfizer_fixed.pdf')
-    with open('summary_fixed.json', 'w') as f:
+    with open('summary.json', 'w') as f:
         json.dump(lower_left, f, indent=2, sort_keys=True)
 
 

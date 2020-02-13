@@ -1,31 +1,31 @@
 {
   "0.001": {
-    "lower_left": 184,
-    "outside": 174
+    "lower_left": 182,
+    "outside": 176
   },
   "0.005": {
-    "lower_left": 229,
-    "outside": 129
+    "lower_left": 232,
+    "outside": 126
   },
   "0.01": {
-    "lower_left": 264,
-    "outside": 94
+    "lower_left": 268,
+    "outside": 90
   },
   "0.03": {
-    "lower_left": 281,
-    "outside": 77
+    "lower_left": 284,
+    "outside": 74
   },
   "0.05": {
-    "lower_left": 241,
-    "outside": 117
+    "lower_left": 243,
+    "outside": 115
   },
   "0.07": {
-    "lower_left": 225,
-    "outside": 133
+    "lower_left": 224,
+    "outside": 134
   },
   "0.1": {
-    "lower_left": 209,
-    "outside": 149
+    "lower_left": 208,
+    "outside": 150
   },
   "parent": {
     "lower_left": 148,
