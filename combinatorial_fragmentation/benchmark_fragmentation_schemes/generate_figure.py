@@ -94,9 +94,7 @@ def visualize_mols(smiles, fname, rows, cols, bond_idx, wbos, colors, align_to=0
         mols.append(mol)
         oedepict.OEPrepareDepiction(mol, False, True)
         minscale = min(minscale, oedepict.OEGetMoleculeScale(mol, opts))
-        print(minscale)
 
-    print(minscale)
     opts.SetScale(minscale)
     for i, mol in enumerate(mols):
 
@@ -185,9 +183,9 @@ if __name__ == '__main__':
 
     #print(bond)
 
-    with open('{}/{}_wbo_dists_fixed.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'r') as f:
         results = json.load(f)
-    with open('{}/{}_wbo_scans_fixed.json'.format(name, name), 'r') as f:
+    with open('{}/{}_wbo_scans.json'.format(name, name), 'r') as f:
         scan_results = json.load(f)
     with open('{}/{}_pfizer_wbo_dists.json'.format(name, name), 'r') as f:
         pfizer_results = json.load(f)
@@ -265,7 +263,7 @@ if __name__ == '__main__':
         plt.yticks([])
         plt.xlabel('Wiberg Bond Order', fontsize=14)
         plt.tight_layout()
-        plt.savefig('{}/{}_bond_{}_{}_wbo_dist_fixed.pdf'.format(name, name, des_bond[0], des_bond[1]))
+        plt.savefig('{}/{}_bond_{}_{}_wbo_dist.pdf'.format(name, name, des_bond[0], des_bond[1]))
 
         # combine both scan and omega wbos
         plt.figure()
@@ -289,18 +287,14 @@ if __name__ == '__main__':
         plt.yticks([])
         plt.xlabel('Wiberg Bond Order', fontsize=14)
         plt.tight_layout()
-        print('figure')
         plt.savefig('{}/{}_bond_{}_{}_wbo_combined.pdf'.format(name, name, des_bond[0], des_bond[1]))
-
-        print(results[bond]['parent'].keys())
-        print(results[bond]['0.03'].keys())
 
         smiles = [results[bond]['parent']['frag'], pfizer_results[bond]['frag'], results[bond]['0.03']['frag']]
         wbos = [results[bond]['parent']['elf10_wbo'], pfizer_results[bond]['elf10_wbo'], results[bond]['0.03']['elf10_wbo']]
         colors = [rbg_to_int(list(i), alpha=255) for i in sbn.color_palette('colorblind')[:3]]
         #colors.append(rbg_to_int(list(sbn.color_palette('colorblind')[4]), alpha=255))
         visualize_mols(smiles, cols=2, rows=2, bond_idx=des_bond, colors=colors, wbos=wbos,
-                       fname='{}/{}_bond_{}_{}_frags_fixed_test.pdf'.format(name, name, des_bond[0], des_bond[1]),
-                       circle=[14, 1], align_to=2)
+                       fname='{}/{}_bond_{}_{}_frags.pdf'.format(name, name, des_bond[0], des_bond[1]),
+                        align_to=2)
 
 
