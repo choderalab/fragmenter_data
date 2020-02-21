@@ -312,7 +312,7 @@ for sm in smiles:
         #crds, idx = find_improper_angles(mol)
         #crds = crds[idx_to_use]
         angle = calc_improper_angle(crds[0], crds[1], crds[2], crds[3])
-        a.append(angle)
+        a.append(np.degrees(angle))
     all_angles.append(a)
 
 plt.figure()
