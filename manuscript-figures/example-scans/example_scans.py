@@ -11,6 +11,8 @@ import math
 
 from fragmenter import chemi
 from openeye import oedepict, oechem, oegraphsim
+import qcfractal.interface as ptl
+import cmiles
 
 sbn.set_style('whitegrid')
 sbn.set_context('paper', font_scale=1.7)
@@ -98,6 +100,111 @@ def visualize_phenyls(smiles, fname, rows, cols, bond_idx, wbos, colors):
 
     return(oedepict.OEWriteReport(fname, report))
 
+def unit_vector(vector):
+    """ Returns the unit vector of the vector.  """
+    return vector / np.linalg.norm(vector)
+
+
+def angle_between(v1, v2):
+    """ Returns the angle in radians between vectors 'v1' and 'v2'::
+
+            >>> angle_between((1, 0, 0), (0, 1, 0))
+            1.5707963267948966
+            >>> angle_between((1, 0, 0), (1, 0, 0))
+            0.0
+            >>> angle_between((1, 0, 0), (-1, 0, 0))
+            3.141592653589793
+    """
+    v1_u = unit_vector(v1)
+    v2_u = unit_vector(v2)
+    return np.arccos(np.clip(np.dot(v1_u, v2_u), -1.0, 1.0))
+
+
+def find_improper_angles(mol):
+    """
+    Find the improper dihedral angles in some molecule. Currently supports
+    those with a central trivalent nitrogen atom.
+    Parameters
+    ----------
+    mol : OpenEye oemol
+        oemol in which to look for improper angles
+    Returns
+    -------
+    list
+        Each element in the list is a 4-tuple of the coordinates for the
+        atoms involved in the improper. The central atom is listed first
+        in the tuple. Each member of the tuple is a numpy array.
+    list
+        List of strings for atoms in the improper, central atom is first.
+    """
+    mol_coords = mol.GetCoords()
+    crdlist = []
+    Idxlist = []
+    for atom in mol.GetAtoms(oechem.OEIsInvertibleNitrogen()):
+        # central atom
+        aidx = atom.GetIdx()
+        crd0 = np.asarray(mol_coords[aidx])
+        # sort the neighbors
+        nbors = sorted(list(atom.GetAtoms()))
+        #check if there are 3 atoms connected to central atom in improper
+        if len(nbors) != 3:
+            return crdlist, namelist
+        crd1 = np.asarray(mol_coords[nbors[0].GetIdx()])
+        crd2 = np.asarray(mol_coords[nbors[1].GetIdx()])
+        crd3 = np.asarray(mol_coords[nbors[2].GetIdx()])
+        # store coordinates
+        crdlist.append([crd0, crd1, crd2, crd3])
+        Idxlist.append([atom.GetIdx(), nbors[0].GetIdx(), nbors[1].GetIdx(),nbors[2].GetIdx()])
+    return crdlist, Idxlist
+
+
+def calc_improper_angle(atom0, atom1, atom2, atom3, translate=True):
+    """
+    Calculate the improper dihedral angle of a set of given four atoms.
+    Parameters
+    ----------
+    atom0 : numpy array
+        CENTRAL atom coordinates
+    atom1 : numpy array
+        outer atom coordinates
+    atom2 : numpy array
+        outer atom coordinates
+    atom3 : numpy array
+        outer atom coordinates
+    translate : bool
+        True to translate central atom to origin, False to keep as is.
+        This should not affect the results of the calculation.
+    Returns
+    -------
+    float
+        Angle in degrees.
+    """
+    if translate:
+        atom1 = atom1 - atom0
+        atom2 = atom2 - atom0
+        atom3 = atom3 - atom0
+        atom0 = atom0 - atom0 # central must be moved last
+    # calculate vectors
+    v0 = atom0-atom1
+    v1 = atom2-atom1
+    v2 = atom2-atom3
+    w1 = np.cross(v0, v1)
+    w2 = np.cross(v1, v2)
+    angle = angle_between(w1,w2) # this angle should be in range [0,90]
+    # compute distance from plane to central atom
+    # eq 6 from http://mathworld.wolfram.com/Point-PlaneDistance.html
+    # here I'm using atom1 for (x,y,z), but could also use atom2 or atom3
+    numer = w2[0]*(atom0[0]-atom1[0]) + w2[1]*(atom0[1]-atom1[1]) + w2[2]*(atom0[2]-atom1[2])
+    denom = np.sqrt(w2[0]**2 + w2[1]**2 + w2[2]**2)
+    dist = numer/denom
+    # set reference so that if central atom is above plane, angle -> [90,180]
+    #print("this is the distance:" + str(dist))
+    if dist < 0:
+        angle = angle*-1
+    #angle = abs(angle)
+    return angle
+
+
 # Generate QC scan, WBO and highlight molecule
 colors = chemi._KELLYS_COLORS[3:]
 angles = np.arange(-180, 195, 15)
@@ -106,8 +213,8 @@ symbols = ['o', 'P', '^', '*', 's', 'p',  'X', 'd', 'H', '>']
 with open('../../phenyl_benchmark/data/qcarchive_torsiondrives.json', 'r') as f:
         fgroups_td = json.load(f)
 
-fgroups = ['nitro', 'phenylurea']
-indices = [[1, 3, 5], [0, 3, 8, 7]]
+fgroups = ['nitro', 'phenylurea', 'amino', 'carbamate']
+indices = [[1, 3, 5], [0, 3, 8, 7], [0, 2, 8], [0, 2, 5]]
 for fgroup, index in zip(fgroups, indices):
     print(fgroup)
 
@@ -137,7 +244,7 @@ for fgroup, index in zip(fgroups, indices):
         w.insert(0, w[-1])
         plt.plot(angles, w, color=colors[i], linewidth=linewidth)
         plt.plot(angles, w, symbols[i], color=colors[i])
-        plt.xlabel('angles (degree)')
+        plt.xlabel('Torsion angles (degree)')
         plt.ylabel('Wiberg bond order')
     plt.tight_layout()
     ax.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
@@ -161,3 +268,63 @@ for fgroup, index in zip(fgroups, indices):
     plt.savefig('{}_scatter.pdf'.format(fgroup))
     plt.close()
 
+
+# Plot pyramidal nitrogen for amino group
+with open('../../phenyl_benchmark/data/qcarchive_torsiondrive_conformers.json', 'r') as f:
+    td_conformers = json.load(f)
+
+client = ptl.FractalClient()
+ds = client.get_collection('TorsionDriveDataset', 'OpenFF Substituted Phenyl Set 1')
+
+fgroup = 'amino'
+index = [0, 2, 8]
+smiles = [fgroups_td[fgroup]['indices'][i] for i in index]
+
+all_angles = []
+for sm in smiles:
+    print(sm)
+    a = []
+    oemols = [cmiles.utils.mol_from_json(c) for c in td_conformers['amino'][sm]]
+    entry = ds.get_entry(sm)
+    dih = entry.td_keywords.dihedrals[0]
+    print(dih)
+    crds, indxs = find_improper_angles(oemols[0])
+
+    if not crds:
+        print('no trivalent nitrogen in {}'.format(fgroup))
+        continue
+    idx_to_use = None
+    for j, idx in enumerate(indxs):
+        n = 0
+        for k in idx:
+            if k in dih:
+                n += 1
+        if n == 3:
+            idx_to_use = idx
+            print(idx, dih)
+    if idx_to_use == None:
+        print('trivalent nitrogen is not in dihedral {}'.format(fgroup))
+        continue
+    for mol in td_conformers['amino'][sm]:
+        coords = mol['geometry']
+        coords = np.array(coords, dtype=float).reshape(int(len(coords)/3), 3)
+        crds = [coords[i] for i in idx_to_use]
+        #crds, idx = find_improper_angles(mol)
+        #crds = crds[idx_to_use]
+        angle = calc_improper_angle(crds[0], crds[1], crds[2], crds[3])
+        a.append(angle)
+    all_angles.append(a)
+
+plt.figure()
+angles = np.arange(-165, 195, 15)
+for i, angle in enumerate(all_angles):
+    plt.plot(angles, angle, symbols[i] ,color=colors[i])
+    plt.plot(angles, angle ,color=colors[i])
+    #plt.plot(angles, angles_0,  linewidth=0.8)
+    plt.title('Improper angles along QC torsion scan')
+    plt.xlabel('Torsion angle (degrees)')
+    plt.ylabel('Improper angles (degrees)')
+    #plt.xticks(fontsize=14)
+    #plt.yticks(fontsize=14);
+plt.tight_layout()
+plt.savefig("example-improper-angles.pdf")
