@@ -66,7 +66,7 @@ def get_atom_map(molecule, mapped_smiles):
         raise RuntimeError("Matched molecule, input molecule and mapped SMILES are not the same ")
     return atom_map
 
-def plot_distributions(bond_keys, bond_wbos, bond_order_type, name, fname):
+def plot_distributions(bond_keys, bond_wbos, bond_order_type, spec, fname):
     """
     Plot distribution of wbos
     bond_keys: list of tuples for bonds to plot
@@ -115,24 +115,36 @@ def plot_distributions(bond_keys, bond_wbos, bond_order_type, name, fname):
         ci_0_txt = '{0:.2g}'.format(ci[0][0]/1e-5)
         ci_1_txt = '{0:.2g}'.format(ci[1][0]/1e-5)
         textstr = r'%s$_{%s}^{%s}$' % (var_txt, ci_0_txt, ci_1_txt)
+        if i==0:
+            ax.text(-0.11, 0.84, 'Bonds   Variance (1E-5)', transform=ax.transAxes, fontsize=12,
+                    verticalalignment='top')#, bbox=props)
         sbn.kdeplot(wbo, shade= True, alpha=0.85, color=colors[i], label=textstr)
-        plt.legend(fontsize=12, loc='lower left', frameon=False, markerscale=0.1)
-        plt.xlim(x_min-0.15, x_max+0.05)
+        l = plt.legend(handlelength=0, fontsize=12, loc='lower left', frameon=False, markerscale=0.1)
+        plt.setp(l.get_texts(), color=colors[i])
+        plt.xlim(0.65, 1.45)
         plt.xticks(fontsize=14)
         plt.yticks([])
         ax.yaxis.set_label_coords(-0.05, 0)
-        plt.ylabel(bond, rotation=0, size=14)
+        plt.ylabel(bond, rotation=0, size=14, color=colors[i])
         if i != n-1:
             plt.xticks([])
         else:
             if bond_order_type == 'wiberg_lowdin':
                 bond_order_type_str = 'Wiberg'
             else:
-                bond_order_type_str = bond_order_type
+                bond_order_type_str = 'Mayer'
             plt.xlabel('{} bond order'.format(bond_order_type_str), fontsize=14)
         if i == 0:
+            if bond_order_type == 'wiberg_lowdin':
+                bond_order_type_str = 'Wiberg'
+            else:
+                bond_order_type_str = 'Mayer'
             #plt.legend(prop={'size': 10}, bbox_to_anchor=(1.35, 1))
             #plt.title("Wiberg Löwding distributions over conformations for highlighted bonds", fontsize=14)
+            if spec == 'default':
+                spec = 'b3lyp'
+            plt.title('{} {} bond order distributions'.format(spec.upper(), bond_order_type_str))
+
             overlap=0.5
     h_pad = 5 + (- 5*(1 + overlap))
     fig.tight_layout(h_pad=h_pad)
@@ -178,7 +190,7 @@ def sort_rings(tagged_smiles):
 
     return aliphatic_ring_bonds + aromatic_ring_bonds, aliphatic_ring_sizes + aromatic_ring_sizes
 
-def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, bo_type, ring_sizes, fname):
+def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, bo_type, spec, ring_sizes, fname):
     """
     Generate correlation plot of bond WBOs
     parameters
@@ -228,7 +240,15 @@ def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, bo_type, ring_siz
         ax.axhline(y=x_1, color='white', linewidth=linewidth)
 
     fig.colorbar(corr)
-    #ax.set_title('{} {} conformers'.format(name, len(bond_1_wbo)));
+    if spec == 'default':
+        spec = 'B3LYP'
+    else:
+        spec = 'HF3C'
+    if bo_type == 'wiberg_lowdin':
+        bo_type = 'WBO'
+    else:
+        bo_type = 'MBO'
+    ax.set_title('{} {} correlations'.format(spec, bo_type));
     fig.savefig(fname)
 
 
@@ -361,9 +381,9 @@ if __name__ == "__main__":
                                                    label_scale=1.5, fname='{}_figures/{}_rotor_bonds_highlighted.pdf'.format(dir_name, name))
 
         for bo_type in ('wiberg_lowdin', 'mayer'):
-            plot_distributions(bonds_to_highlight, bond_wbos[spec], name=name,
+            plot_distributions(bonds_to_highlight, bond_wbos[spec], spec=spec,
                                bond_order_type=bo_type, fname='{}_figures/{}_all_single_{}_distributions.pdf'.format(dir_name, name, bo_type))
-            plot_distributions(mapped_rotor_bonds, bond_wbos[spec], name=name,
+            plot_distributions(mapped_rotor_bonds, bond_wbos[spec], spec=spec,
                                bond_order_type=bo_type, fname='{}_figures/{}_rotor_{}_distributions.pdf'.format(dir_name, name, bo_type))
 
         # More data munging to get bonds sorted in order for correlation plot
@@ -373,5 +393,5 @@ if __name__ == "__main__":
         bonds_mappings = {**bonds_to_highlight, **mapped_ring_bonds}
 
         for bo_type in ('wiberg_lowdin', 'mayer'):
-            correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos_all, bo_type, ring_sizes,
+            correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos_all, bo_type, spec, ring_sizes,
                              fname='{}_figures/{}_{}_correlations.pdf'.format(dir_name, name, bo_type))
