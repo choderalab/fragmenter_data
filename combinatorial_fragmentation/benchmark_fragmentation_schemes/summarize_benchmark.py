@@ -20,6 +20,7 @@ from openeye import oechem
 import json
 import matplotlib.pyplot as plt
 from matplotlib import gridspec
+import seaborn as sbn
 import numpy as np
 import glob
 from scipy import stats
@@ -79,6 +80,9 @@ def joint_plot(x, y, fname):
     fname : str
         filename
     """
+
+    #sbn.set_style('whitegrid')
+    #sbn.set_context('paper', font_scale=1.7)
     plt.rcParams.update({'font.size': 14})
     ig = plt.figure(figsize=(8,8))
     gs = gridspec.GridSpec(3, 3)
@@ -87,8 +91,9 @@ def joint_plot(x, y, fname):
     ax_yDist = plt.subplot(gs[1:3, 2])
 
     ax_main.grid(True)
-    ax_main.scatter(x, y, alpha=0.7, edgecolor='black', zorder=2)
-    ax_main.set(xlabel="Distance Score", ylabel="Computational cost")
+    ax_main.scatter(x, y, alpha=0.5, edgecolor='black', zorder=2)
+    ax_main.set_xticks([0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8], minor=False)
+    ax_main.set(xlabel="Distance Score", ylabel=r'CPU seconds $\propto$ NHeavy$^{2.6}$')
 
 
     # Remove Nans
@@ -98,13 +103,13 @@ def joint_plot(x, y, fname):
     ax_xDist.plot(sorted(xx),kde(sorted(xx)), color='black')
     ax_xDist.set_yticks([])
     ax_xDist.tick_params(labelbottom=False)
-    ax_xDist.set_xlim(-0.05, 0.8)
+    ax_xDist.set_xlim(-0.05, 0.8, 0.1)
     ax_xDist.set_ylim(0, 80)
     ax_xDist.fill_betweenx(kde(sorted(xx)), 0, sorted(xx), alpha=0.3)
     ax_xDist.spines['left'].set_visible(False)
     ax_xDist.spines['right'].set_visible(False)
     ax_xDist.spines['top'].set_visible(False)
-    ax_main.set_xlim(-0.05, 0.8)
+    ax_main.set_xlim(-0.05, 0.8, 0.1)
 
     ys = [i for i in y if not np.isnan(i)]
     kde_y = stats.gaussian_kde(ys)
@@ -113,12 +118,12 @@ def joint_plot(x, y, fname):
     ax_yDist.fill_betweenx(sorted(yy), 0, kde_y(sorted(yy)), alpha=0.3)
     ax_yDist.set_xticks([])
     ax_yDist.tick_params(labelleft=False)
-    ax_yDist.set_ylim(-5000, 70000)
-    ax_yDist.set_xlim(0, 0.0003)
+    ax_yDist.set_ylim(-500, 15000)
+    ax_yDist.set_xlim(0, 0.001)
     ax_yDist.spines['top'].set_visible(False)
     ax_yDist.spines['right'].set_visible(False)
     ax_yDist.spines['bottom'].set_visible(False)
-    ax_main.set_ylim(-5000, 70000)
+    ax_main.set_ylim(-500, 15000)
 
     plt.subplots_adjust(wspace=0, hspace=0)
     plt.savefig(fname)
@@ -133,7 +138,7 @@ if __name__ == '__main__':
     names = glob.glob('*/')
     for n in names:
         n = n[:-1]
-        with open('{}/{}_wbo_dists_fixed.json'.format(n, n), 'r') as f:
+        with open('{}/{}_wbo_dists.json'.format(n, n), 'r') as f:
             wbos = json.load(f)
         with open('{}/{}_pfizer_wbo_dists.json'.format(n, n), 'r') as f:
             pfizer_results = json.load(f)
@@ -174,9 +179,15 @@ if __name__ == '__main__':
                 parent = wbos[bond]['parent']['wbo_dist']
                 y = wbos[bond][threshold]['wbo_dist']
                 score = mmd_x_xsqred(x=parent, y=y)
+                if 'frag' not in wbos[bond][threshold]:
+                    print('frag not in dictionary')
+                    print(n)
+                    print(bond)
+                    print(threshold)
+                    print(wbos[bond][threshold].keys())
                 heavy_atoms = n_heavy_atoms(wbos[bond][threshold]['frag'])
 
-                if score < 0.05 and heavy_atoms**3 < 10000:
+                if score < 0.05 and heavy_atoms**2.6 < 4000:
                     lower_left[threshold]['lower_left'] += 1
                 else:
                     lower_left[threshold]['outside'] += 1
@@ -198,13 +209,13 @@ if __name__ == '__main__':
     # Plot distributions
     print(scores.keys())
     for i in ('0.001', '0.005', '0.01', '0.03',  '0.05', '0.07',  '0.1'):
-        joint_plot(scores[i]['scores'], np.asarray(scores[i]['size']) ** 3,
-                   fname='jointplot_fixed_{}.pdf'.format(i))
+        joint_plot(scores[i]['scores'], np.asarray(scores[i]['size']) ** 2.6,
+                   fname='jointplot_{}.pdf'.format(i))
     print(scores['pfizer'].keys())
     print(max(scores['pfizer']['scores']))
-    joint_plot(scores['pfizer']['scores'], np.asarray(scores['pfizer']['size'])** 3,
+    joint_plot(scores['pfizer']['scores'], np.asarray(scores['pfizer']['size'])** 2.6,
                fname='jointplot_pfizer_fixed.pdf')
-    with open('summary_fixed.json', 'w') as f:
+    with open('summary.json', 'w') as f:
         json.dump(lower_left, f, indent=2, sort_keys=True)
 
 

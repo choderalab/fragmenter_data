@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import seaborn as sbn
 import numpy as np
 import argparse
+import arch.bootstrap
+
 
 def get_atom_map(molecule, mapped_smiles):
     """
@@ -131,30 +133,34 @@ def plot_distributions(bond_keys, bond_wbos, name, fname):
             wbo = bond_wbos['rotors'][bond_keys[bond]]
         except KeyError:
             wbo = bond_wbos['others'][bond_keys[bond]]
+        var = np.var(wbo)
+        ci = arch.bootstrap.IIDBootstrap(np.asarray(wbo)).conf_int(np.var, 1000)
         ax = plt.subplot(n, 1, i+1)
         ax.spines['left'].set_visible(False)
         ax.spines['right'].set_visible(False)
         ax.spines['top'].set_visible(False)
         ax.spines['bottom'].set_visible(False)
         ax.patch.set_facecolor('none')
-        sbn.kdeplot(wbo, shade= True, alpha=0.85, color=colors[i])
-      #sbn.distplot(wbo, hist=False, rug=True, kde=False, color='black')
-        sbn.kdeplot(wbo, lw=1.5, color=colors[i])
-        #plt.axvline(x=wbo_s, ymin=0, ymax=1, color='black', linewidth=0.5)
-        plt.xlim(x_min-0.05, x_max+0.05)
+        # format values
+        var_txt = '{0:.2g}'.format(var / 1e-5)
+        ci_0_txt = '{0:.2g}'.format(ci[0][0] / 1e-5)
+        ci_1_txt = '{0:.2g}'.format(ci[1][0] / 1e-5)
+        textstr = r'%s$_{%s}^{%s}$' % (var_txt, ci_0_txt, ci_1_txt)
+        sbn.kdeplot(wbo, shade=True, alpha=0.85, color=colors[i], label=textstr)
+        plt.legend(fontsize=12, loc='lower left', frameon=False, markerscale=0.1)
+        plt.xlim(x_min - 0.1, x_max + 0.05)
+        plt.xticks(fontsize=14)
         plt.yticks([])
-        #ax.set_yticklabels(bond_order_std_rot_bonds_opt['Imatinib']['bonds'], fontsize=6, rotation=0)
-        #ax.yaxis.grid(False)
         ax.yaxis.set_label_coords(-0.05, 0)
-        plt.ylabel(bond, rotation=0, size=8)
-        if i != n-1:
+        plt.ylabel(bond, rotation=0, size=14)
+        if i != n - 1:
             plt.xticks([])
         else:
-            plt.xlabel('Bond order')
+            plt.xlabel('AM1 Wiberg Bond Orders', fontsize=14)
         if i == 0:
-            #plt.legend(prop={'size': 10}, bbox_to_anchor=(1.35, 1))
-            plt.title("{} WBO".format(name))
-            overlap=0.5
+            # plt.legend(prop={'size': 10}, bbox_to_anchor=(1.35, 1))
+            # plt.title("Wiberg Löwding distributions over conformations for highlighted bonds", fontsize=14)
+            overlap = 0.5
     h_pad = 5 + (- 5*(1 + overlap))
     fig.tight_layout(h_pad=h_pad)
     plt.savefig(fname)
@@ -234,8 +240,8 @@ def correlation_plot(sorted_bonds, bonds_mappings, bonds_wbos, ring_sizes, fname
     corr = ax.imshow(correlation_coef, cmap='coolwarm')
     ax.xaxis.set_ticks_position('bottom')
 
-    plt.xticks(np.arange(len(sorted_bonds)), sorted_bonds, rotation='vertical', size=5.0);
-    plt.yticks(np.arange(len(sorted_bonds)), sorted_bonds, size=5.0);
+    plt.xticks(np.arange(len(sorted_bonds)), sorted_bonds, rotation='vertical', size=8);
+    plt.yticks(np.arange(len(sorted_bonds)), sorted_bonds, size=8);
 
     linewidth = 1.0
     x_1 = len(sorted_bonds) - np.cumsum(ring_sizes)[-1] - 0.5

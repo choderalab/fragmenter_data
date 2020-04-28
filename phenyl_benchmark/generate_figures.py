@@ -6,11 +6,18 @@ from scipy import stats
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.colors as mcolors
+from matplotlib.ticker import FormatStrFormatter
+
 import pandas as pd
 import math
+import arch.bootstrap
+import seaborn as sbn
 
 from fragmenter import chemi
 from openeye import oedepict, oechem, oegraphsim
+
+sbn.set_style('whitegrid')
+sbn.set_context('paper', font_scale=1.7)
 
 def get_bond(mol, bond_idx):
     atoms = [mol.GetAtom(oechem.OEHasMapIdx(i)) for i in bond_idx]
@@ -46,15 +53,31 @@ def visualize_phenyls(smiles, fname, rows, cols, bond_idx, wbos, colors):
     opts = oedepict.OE2DMolDisplayOptions(cellwidth, cellheight, oedepict.OEScale_AutoScale)
     oedepict.OESetup2DMolDisplayOptions(opts, itf)
 
+    pen = oedepict.OEPen(oechem.OEBlack, oechem.OEBlack, oedepict.OEFill_Off, 0.9)
+    opts.SetDefaultBondPen(pen)
+
     # align to first molecule
     ref_mol = oechem.OEGraphMol()
-    oechem.OESmilesToMol(ref_mol, smiles[0])
+    oechem.OESmilesToMol(ref_mol, smiles[-1])
     oedepict.OEPrepareDepiction(ref_mol)
 
-    for i, s  in enumerate(smiles):
-        cell = report.NewCell()
+    mols = []
+    minscale = float("inf")
+    for s in smiles:
         mol = oechem.OEMol()
         oechem.OESmilesToMol(mol, s)
+        mols.append(mol)
+        oedepict.OEPrepareDepiction(mol, False, True)
+        minscale = min(minscale, oedepict.OEGetMoleculeScale(mol, opts))
+        print(minscale)
+
+    print(minscale)
+    opts.SetScale(minscale)
+
+    for i, mol in enumerate(mols):
+        cell = report.NewCell()
+        #mol = oechem.OEMol()
+        #oechem.OESmilesToMol(mol, s)
         oedepict.OEPrepareDepiction(mol, False, True)
 
         bond = get_bond(mol, bond_idx)
@@ -63,7 +86,7 @@ def visualize_phenyls(smiles, fname, rows, cols, bond_idx, wbos, colors):
         atom_bond_set.AddBond(bond)
 
         hstyle = oedepict.OEHighlightStyle_BallAndStick
-        hcolor = oechem.OEColor(colors[i])
+        hcolor = oechem.OEColor(colors[len(mols)-i-1])
 
         overlaps = oegraphsim.OEGetFPOverlap(ref_mol, mol, oegraphsim.OEGetFPType(oegraphsim.OEFPType_Tree))
         oedepict.OEPrepareMultiAlignedDepiction(mol, ref_mol, overlaps)
@@ -71,7 +94,11 @@ def visualize_phenyls(smiles, fname, rows, cols, bond_idx, wbos, colors):
         disp = oedepict.OE2DMolDisplay(mol, opts)
         oedepict.OEAddHighlighting(disp, hcolor, hstyle, atom_bond_set)
 
-        bond_label = oedepict.OEHighlightLabel("{:.2f}".format((wbos[i])), hcolor)
+        font = oedepict.OEFont(oedepict.OEFontFamily_Default, oedepict.OEFontStyle_Default, 24,
+                               oedepict.OEAlignment_Default, oechem.OEBlack)
+        bond_label = oedepict.OEHighlightLabel("{:.2f}".format(wbos[i]), hcolor)
+        bond_label.SetFontScale(4.0)
+        bond_label.SetFont(font)
         oedepict.OEAddLabel(disp, bond_label, atom_bond_set)
         oedepict.OERenderMolecule(cell, disp)
         #oedepict.OEDrawCurvedBorder(cell, oedepict.OELightGreyPen, 10.0)
@@ -148,50 +175,67 @@ with open('figures/qcarchive_torsiondrives/stats.tex', 'w') as f:
 colors = chemi._KELLYS_COLORS
 angles = np.arange(-180, 195, 15)
 
+def r_value_ci(am1_wbos, max_energies):
+    return stats.linregress(am1_wbos, max_energies)[2]**2
+
 for j, fgroup in enumerate(fgroups_smarts):
+    print(fgroup)
     n = len(fgroups_td[fgroup]['indices'])
     cols = 3
     rows = math.ceil(n/cols)
-    visualize_phenyls(fgroups_td[fgroup]['indices'], rows=5, cols=3, 
-                        wbos=fgroups_td[fgroup]['elf10_am1_wbo'], bond_idx=(2,3), colors=colors,
+    visualize_phenyls(list(reversed(fgroups_td[fgroup]['indices'])), rows=6, cols=2,
+                        wbos=list(reversed(fgroups_td[fgroup]['elf10_am1_wbo'])), bond_idx=(2,3), colors=colors,
                        fname='figures/qcarchive_torsiondrives/{}_driven_mols.pdf'.format(fgroup))
      
-    plt.figure()
+    fig, ax = plt.subplots()
+    #ax.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
     linewidth = 1.0
     for i, e in enumerate(fgroups_td[fgroup]['energy']):
         plt.plot(angles, e, color=colors[i], linewidth=linewidth)
         plt.plot(angles, e, '.', color=colors[i])
         plt.xlabel('angles (degree)')
         plt.ylabel('relative energy (kJ/mol)')
-    plt.savefig('figures/qcarchive_torsiondrives/{}_qc_drives.pdf'.format(fgroup))
+        plt.xlim(-180, 180)
+    plt.title('QC torsion scans')
+    fig.tight_layout()
+    plt.savefig('figures/qcarchive_torsiondrives/{}_qc_drives.pdf'.format(fgroup), bbox='tight')
     plt.close()
 
-    plt.figure()
+    fig, ax = plt.subplots()
+    ax.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
     for i, w in enumerate(fgroups_td[fgroup]['lowdin_wbos']):
         plt.plot(angles[1:], w, color=colors[i], linewidth=linewidth)
         plt.plot(angles[1:], w, '*', color=colors[i])
         plt.xlabel('angles (degree)')
-        plt.ylabel('Lowdin-Wiberg bond order')
-    plt.savefig('figures/qcarchive_torsiondrives/{}_lowdin_wiberg.pdf'.format(fgroup))
+        plt.ylabel('Wiberg bond order')
+        plt.xlim(-180, 180)
+    plt.title('WBO along torsion scans')
+    fig.tight_layout()
+    plt.savefig('figures/qcarchive_torsiondrives/{}_lowdin_wiberg.pdf'.format(fgroup), bbbox='tight')
     plt.close()
     
     fig, ax = plt.subplots()
+    ax.xaxis.set_major_formatter(FormatStrFormatter('%.2f'))
     energies = fgroups_td[fgroup]['energy']
     max_energies = [max(energy) for energy in energies]
     am1_wbos = fgroups_td[fgroup]['elf10_am1_wbo']
     slope, intercept, r_value, p_value, std_err = stats.linregress(am1_wbos, max_energies)
+    r_ci = arch.bootstrap.IIDBootstrap(np.asarray(am1_wbos), np.asarray(max_energies)).conf_int(r_value_ci, 10000,
+                                                                                                method='percentile')
     plt.plot(np.unique(am1_wbos), np.poly1d([slope, intercept])(np.unique(am1_wbos)), 'black')
     for i, (wbo, en) in enumerate(zip(am1_wbos, max_energies)):
-        plt.scatter(wbo, en, c=colors[i])
+        ax.scatter(wbo, en, c=colors[i], s=50)
     textstr = '\n'.join((
-        r'slope=%.2f' % (slope),
-        r'$r^2=%.2f$' % (r_value**2, ),
-        r'P value=%.3f' % (p_value, ),
-        r'standard error=%.2f' % (std_err, )))
+        r'slope=%.2f kJ/mol' % (slope, ),
+        r'$r^2=%.2f_{%.2f}^{%.2f}$' % (r_value**2, r_ci[0][0], r_ci[1][0])))
+        #r'P value=%.3f' % (p_value, ),
+        #r'standard error=%.2f' % (std_err, )))
     props = dict(boxstyle='square', facecolor='white', alpha=0.5)
-    ax.text(0.05, 0.95, textstr, transform=ax.transAxes, fontsize=12,
+    ax.text(0.05, 0.95, textstr, transform=ax.transAxes, #fontsize=12,
             verticalalignment='top', bbox=props)
     plt.xlabel('ELF10 AM1 Wiberg Bond Order')
     plt.ylabel('Energy Barrier height (kJ/mol)')
+    ax.set_title('WBO vs torsion energy barrier')
+    fig.tight_layout()
     plt.savefig('figures/qcarchive_torsiondrives/{}_energy_vs_wbo.pdf'.format(fgroup), bbox='tight')
     plt.close()

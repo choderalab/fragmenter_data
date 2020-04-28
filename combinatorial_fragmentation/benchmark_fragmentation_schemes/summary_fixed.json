@@ -1,38 +1,38 @@
 {
   "0.001": {
-    "lower_left": 153,
-    "outside": 205
+    "lower_left": 182,
+    "outside": 176
   },
   "0.005": {
-    "lower_left": 197,
-    "outside": 161
+    "lower_left": 232,
+    "outside": 126
   },
   "0.01": {
-    "lower_left": 229,
-    "outside": 129
+    "lower_left": 268,
+    "outside": 90
   },
   "0.03": {
-    "lower_left": 259,
-    "outside": 99
+    "lower_left": 284,
+    "outside": 74
   },
   "0.05": {
-    "lower_left": 231,
-    "outside": 127
+    "lower_left": 243,
+    "outside": 115
   },
   "0.07": {
-    "lower_left": 214,
-    "outside": 144
+    "lower_left": 224,
+    "outside": 134
   },
   "0.1": {
-    "lower_left": 200,
-    "outside": 158
+    "lower_left": 208,
+    "outside": 150
   },
   "parent": {
-    "lower_left": 121,
-    "outside": 237
+    "lower_left": 148,
+    "outside": 210
   },
   "pfizer": {
-    "lower_left": 189,
-    "outside": 169
+    "lower_left": 197,
+    "outside": 161
   }
 }

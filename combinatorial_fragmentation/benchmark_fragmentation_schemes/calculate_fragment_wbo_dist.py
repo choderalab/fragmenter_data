@@ -199,5 +199,5 @@ if __name__ == '__main__':
         os.mkdir('{}'.format(name))
     except FileExistsError:
         print('{} already exists. Files will be overwritten'.format(name))
-    with open('{}/{}_wbo_dists_fixed.json'.format(name, name), 'w') as f:
+    with open('{}/{}_wbo_dists.json'.format(name, name), 'w') as f:
         json.dump(frags_ser, f, indent=2, sort_keys=True)
