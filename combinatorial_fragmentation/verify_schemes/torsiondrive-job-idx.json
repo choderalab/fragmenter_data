@@ -1,0 +1,37 @@
+{
+  "Menadiol_diphosphate_0": {
+    "parent": "Cc1c[c:2]([c:1]2ccccc2c1OP(=O)([O-])[O-])[O:3][P:4](=O)([O-])[O-]",
+    "0.03": "Cc1c[c:2]([c:1]2ccccc2c1OP(=O)([O-])[O-])[O:3][P:4](=O)([O-])[O-]",
+    "pfizer": "c1cc[c:1]2c(c1)ccc[c:2]2[O:3][P:4](=O)([O-])[O-]"
+  },
+  "Phenformin_3": {
+    "parent": "c1ccc(cc1)C[CH2:1][NH:2]/[C:3](=[NH+:4]/C(=[NH2+])N)/N",
+    "0.03": "C[CH2:1][NH:2]/[C:3](=[NH+:4]/C=[NH2+])/N",
+    "pfizer": "C[CH2:1][NH:2]/[C:3](=[NH+:4]/C)/N"
+  },
+  "Cimetidine_5": {
+    "parent": "Cc1c([nH]cn1)CSC[CH2:1][NH:2]/[C:3](=N\\C#N)/[NH:4]C",
+    "0.03": "C[CH2:1][NH:2]/[C:3](=[N:4]\\C#N)/NC",
+    "pfizer": "C[CH2:1][NH:2]/[C:3](=[N:4]\\C)/NC"
+  },
+  "Furosemide_0": {
+    "parent": "c1cc(oc1)CNc2c[c:1]([c:2](cc2C(=O)[O-])[S:3](=[O:4])(=O)N)Cl",
+    "0.03": "c1c[c:1]([c:2](cc1C(=O)[O-])[S:3](=[O:4])(=O)N)Cl",
+    "pfizer": "c1cc[c:1]([c:2](c1)[S:3](=[O:4])(=O)N)Cl"
+  },
+  "Chloroprocaine_0": {
+    "parent": "CC[NH+](CC)C[CH2:4][O:3][C:2](=[O:1])c1ccc(cc1Cl)N",
+    "0.03": "c1ccc(c(c1)[C:3](=[O:4])[O:2][CH2:1]C[NH3+])Cl",
+    "pfizer": "C[CH2:1][O:2][C:3](=[O:4])c1ccccc1Cl"
+  },
+  "Dextrothyroxine_0": {
+    "parent": "c1c(cc([c:2]([c:1]1I)[O:3][c:4]2cc(c(c(c2)I)[O-])I)I)C[C@H](C(=O)[O-])[NH3+]",
+    "0.03": "Cc1c[c:1]([c:2](c(c1)I)[O:3][c:4]2cc(c(c(c2)I)[O-])I)I",
+    "pfizer": "c1cc[c:1](cc1)[O:2][c:3]2c(ccc[c:4]2I)I"
+  },
+  "Nitazoxanide_0": {
+    "parent": "CC(=O)Oc1ccccc1[C:1](=O)[NH:2][c:3]2ncc([s:4]2)[N+](=O)[O-]",
+    "0.03": "CC(=O)Oc1ccccc1[C:1](=O)[NH:2][c:3]2ncc([s:4]2)[N+](=O)[O-]",
+    "pfizer": "CC(=O)Oc1ccccc1[C:1](=O)[NH:2][c:3]2ncc[s:4]2"
+  }
+}
