@@ -22,7 +22,7 @@ for mol in frags_mols:
             smiles = data[bond][frag]['frag']
             oemol = cmiles.utils.load_molecule(smiles)
             torsion = fragmenter.torsions.find_torsion_around_bond(oemol, bond=bond_idx)
-            conformers = fragmenter.chemi.generate_conformers(oemol, max_confs=5, strict_stereo=False, strict_types=False)
+            conformers = fragmenter.chemi.generate_conformers(oemol, max_confs=1, strict_stereo=False, strict_types=False)
             cmiles_ids = cmiles.get_molecule_ids(smiles, strict=False)
             mapped_smiles = cmiles_ids['canonical_isomeric_explicit_hydrogen_mapped_smiles']
             qcarchive_mols = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in conformers.GetConfs()]
@@ -40,7 +40,7 @@ for mol in frags_mols:
         smiles = data_pfizer[bond]['frag']
         oemol = cmiles.utils.load_molecule(smiles)
         torsion = fragmenter.torsions.find_torsion_around_bond(oemol, bond=bond_idx)
-        conformers = fragmenter.chemi.generate_conformers(oemol, max_confs=5, strict_stereo=False, strict_types=False)
+        conformers = fragmenter.chemi.generate_conformers(oemol, max_confs=1, strict_stereo=False, strict_types=False)
         cmiles_ids = cmiles.get_molecule_ids(smiles, strict=False)
         mapped_smiles = cmiles_ids['canonical_isomeric_explicit_hydrogen_mapped_smiles']
         qcarchive_mols = [cmiles.utils.mol_to_map_ordered_qcschema(conf, mapped_smiles) for conf in

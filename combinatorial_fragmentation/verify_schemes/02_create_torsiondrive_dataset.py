@@ -93,7 +93,7 @@ for canonical_torsion_index, torsion_data in selected_torsions.items():
                  attributes=torsion_data['cmiles_identifiers'])
     i += 1
 print("Submitting tasks...")
-#comp = ds.compute("default", tag="openff")
-#print(comp)
+comp = ds.compute("default", tag="openff")
+print(comp)
 
 print("Complete!")
