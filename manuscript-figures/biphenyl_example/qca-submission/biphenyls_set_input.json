@@ -8,7 +8,7 @@
       "canonical_smiles": "c1cc(ccc1c2cc[nH+]cc2)O",
       "inchi_key": "DANMQSWQAGVFKV-UHFFFAOYSA-O",
       "molecular_formula": "C11H10NO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H9NO/c13-11-3-1-9(2-4-11)10-5-7-12-8-6-10/h1-8,13H/p+1",
       "unique_protomer_representation": "C1=CC(=O)C=CC1=C2C=CNC=C2",
       "unique_tautomer_representation": "Oc1ccc(-c2cc[nH+]cc2)cc1"
@@ -247,7 +247,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -261,7 +261,7 @@
       "canonical_smiles": "c1cc(ccc1c2cc[nH+]cc2)[O-]",
       "inchi_key": "DANMQSWQAGVFKV-UHFFFAOYSA-N",
       "molecular_formula": "C11H9NO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H9NO/c13-11-3-1-9(2-4-11)10-5-7-12-8-6-10/h1-8,13H",
       "unique_protomer_representation": "C1=CC(=O)C=CC1=C2C=CNC=C2",
       "unique_tautomer_representation": "[O-]c1ccc(-c2cc[nH+]cc2)cc1"
@@ -491,7 +491,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -505,7 +505,7 @@
       "canonical_smiles": "c1cc(ccc1c2ccncc2)O",
       "inchi_key": "DANMQSWQAGVFKV-UHFFFAOYSA-N",
       "molecular_formula": "C11H9NO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H9NO/c13-11-3-1-9(2-4-11)10-5-7-12-8-6-10/h1-8,13H",
       "unique_protomer_representation": "C1=CC(=O)C=CC1=C2C=CNC=C2",
       "unique_tautomer_representation": "Oc1ccc(-c2ccncc2)cc1"
@@ -735,7 +735,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -749,7 +749,7 @@
       "canonical_smiles": "c1cc(ccc1c2ccncc2)[O-]",
       "inchi_key": "DANMQSWQAGVFKV-UHFFFAOYSA-M",
       "molecular_formula": "C11H8NO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H9NO/c13-11-3-1-9(2-4-11)10-5-7-12-8-6-10/h1-8,13H/p-1",
       "unique_protomer_representation": "C1=CC(=O)C=CC1=C2C=CNC=C2",
       "unique_tautomer_representation": "[O-]c1ccc(-c2ccncc2)cc1"
@@ -970,7 +970,504 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
+      "openeye_version": "2019.Apr.2",
+      "username": "sternc1"
+    }
+  },
+  "c1[cH:1][c:2](c(cc1O)Cl)[c:4]2[cH:3]c[nH+]cc2": {
+    "cmiles_identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c([n+](c(c2[H])[H])[H])[H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:10]([c:5]([c:11]([c:8]1[c:9]2[c:3]([c:6]([n+:12]([c:7]([c:4]2[H:18])[H:21])[H:22])[H:20])[H:17])[Cl:14])[H:19])[O:13][H:23])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c([n+](c(c2[H])[H])[H])[H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1O)Cl)c2cc[nH+]cc2",
+      "canonical_smiles": "c1cc(c(cc1O)Cl)c2cc[nH+]cc2",
+      "inchi_key": "VTRBEGPZOUEXPD-UHFFFAOYSA-O",
+      "molecular_formula": "C11H9ClNO",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
+      "standard_inchi": "InChI=1S/C11H8ClNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H/p+1",
+      "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)Cl",
+      "unique_tautomer_representation": "Oc1ccc(-c2cc[nH+]cc2)c(Cl)c1"
+    },
+    "dihedral": [
+      [
+        0,
+        7,
+        8,
+        2
+      ]
+    ],
+    "grid": [
+      15
+    ],
+    "input_molecules": {
+      "connectivity": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          7,
+          2
+        ],
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          3,
+          6,
+          2
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          2,
+          8,
+          2
+        ],
+        [
+          4,
+          9,
+          1
+        ],
+        [
+          4,
+          10,
+          2
+        ],
+        [
+          6,
+          11,
+          1
+        ],
+        [
+          5,
+          11,
+          2
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          9,
+          12,
+          1
+        ],
+        [
+          10,
+          13,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          3,
+          17,
+          1
+        ],
+        [
+          2,
+          16,
+          1
+        ],
+        [
+          4,
+          18,
+          1
+        ],
+        [
+          6,
+          20,
+          1
+        ],
+        [
+          5,
+          19,
+          1
+        ],
+        [
+          11,
+          21,
+          1
+        ],
+        [
+          12,
+          22,
+          1
+        ]
+      ],
+      "geometry": [
+        3.5624000055548612,
+        -1.9583354703330393,
+        -0.21248154729677868,
+        1.5241702589919799,
+        -0.8749633019008043,
+        1.0601482773642665,
+        7.50049755370151,
+        -6.712238359119367,
+        -0.9849205294473965,
+        9.70097594552841,
+        -2.728940477571181,
+        -0.8615740375909943,
+        3.400940153382219,
+        -2.0383339352833616,
+        5.056294599285629,
+        9.518165177572671,
+        -7.7198277635048225,
+        -2.3227815322045906,
+        11.663047116513829,
+        -3.8373974039373904,
+        -2.202369332626277,
+        5.519899488122058,
+        -3.081889060705708,
+        1.149224677370924,
+        7.601031446503818,
+        -4.189051118390143,
+        -0.25056519974812536,
+        1.4434283934414738,
+        -0.9148888138164472,
+        3.69451783603825,
+        5.439172040037737,
+        -3.1218132773021234,
+        3.7835860135837236,
+        11.517278423554883,
+        -6.271242760536529,
+        -2.886132083934223,
+        -0.5451564415406346,
+        0.14227844122063932,
+        4.937070714303064,
+        7.812255435944399,
+        -4.488285178521936,
+        5.5683142406642085,
+        3.592209243257685,
+        -1.914468076734922,
+        -2.2669370538458757,
+        0.002003077429682691,
+        -0.007558503603061048,
+        -0.010622070851997387,
+        5.885263762371291,
+        -7.895682104026115,
+        -0.5349189141844674,
+        9.830716921547394,
+        -0.7557085545296863,
+        -0.3125217263595783,
+        3.319207762850195,
+        -2.060425323118823,
+        7.109769352065643,
+        9.603361589628642,
+        -9.656529600553787,
+        -2.9683328168443626,
+        13.364120699328542,
+        -2.850242279867714,
+        -2.756346503879229,
+        12.978809410066013,
+        -7.048353198845006,
+        -3.8721214206990657,
+        -1.74401589321142,
+        0.8420604476548974,
+        3.7385722061509594
+      ],
+      "molecular_charge": 1,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "O",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "provenance": {
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
+      "openeye_version": "2019.Apr.2",
+      "username": "sternc1"
+    }
+  },
+  "c1[cH:1][c:2](c(cc1O)Cl)[c:4]2[cH:3]cncc2": {
+    "cmiles_identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:10]([c:5]([c:11]([c:8]1[c:9]2[c:3]([c:6]([n:12][c:7]([c:4]2[H:18])[H:21])[H:20])[H:17])[Cl:14])[H:19])[O:13][H:22])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])O[H])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1O)Cl)c2ccncc2",
+      "canonical_smiles": "c1cc(c(cc1O)Cl)c2ccncc2",
+      "inchi_key": "VTRBEGPZOUEXPD-UHFFFAOYSA-N",
+      "molecular_formula": "C11H8ClNO",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
+      "standard_inchi": "InChI=1S/C11H8ClNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H",
+      "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)Cl",
+      "unique_tautomer_representation": "Oc1ccc(-c2ccncc2)c(Cl)c1"
+    },
+    "dihedral": [
+      [
+        0,
+        7,
+        8,
+        2
+      ]
+    ],
+    "grid": [
+      15
+    ],
+    "input_molecules": {
+      "connectivity": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          7,
+          2
+        ],
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          3,
+          6,
+          2
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          2,
+          8,
+          2
+        ],
+        [
+          4,
+          9,
+          1
+        ],
+        [
+          4,
+          10,
+          2
+        ],
+        [
+          6,
+          11,
+          1
+        ],
+        [
+          5,
+          11,
+          2
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          9,
+          12,
+          1
+        ],
+        [
+          10,
+          13,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          3,
+          17,
+          1
+        ],
+        [
+          2,
+          16,
+          1
+        ],
+        [
+          4,
+          18,
+          1
+        ],
+        [
+          6,
+          20,
+          1
+        ],
+        [
+          5,
+          19,
+          1
+        ],
+        [
+          12,
+          21,
+          1
+        ]
+      ],
+      "geometry": [
+        3.5624000055548612,
+        -1.9583354703330393,
+        -0.21248154729677868,
+        1.5241702589919799,
+        -0.8749633019008043,
+        1.0601482773642665,
+        7.504188425044968,
+        -6.7107781401222795,
+        -0.9823837312174966,
+        9.70128772323467,
+        -2.733950321797692,
+        -0.8632907297951459,
+        3.400940153382219,
+        -2.0383339352833616,
+        5.056294599285629,
+        9.540277966334502,
+        -7.679362441380637,
+        -2.3135354309215774,
+        11.63919702307666,
+        -3.880653406860084,
+        -2.1994374057137343,
+        5.519899488122058,
+        -3.081889060705708,
+        1.149224677370924,
+        7.601031446503818,
+        -4.189051118390143,
+        -0.25056519974812536,
+        1.4434283934414738,
+        -0.9148888138164472,
+        3.69451783603825,
+        5.439172040037737,
+        -3.1218132773021234,
+        3.7835860135837236,
+        11.612734664985027,
+        -6.324594594155536,
+        -2.9430078616710107,
+        -0.5451564415406346,
+        0.14227844122063932,
+        4.937070714303064,
+        7.812255435944399,
+        -4.488285178521936,
+        5.5683142406642085,
+        3.592209243257685,
+        -1.914468076734922,
+        -2.2669370538458757,
+        0.002003077429682691,
+        -0.007558503603061048,
+        -0.010622070851997387,
+        5.896099389301242,
+        -7.903836082245585,
+        -0.5388238511098419,
+        9.84658514526768,
+        -0.7607216652133801,
+        -0.3232813236826928,
+        3.319207762850195,
+        -2.060425323118823,
+        7.109769352065643,
+        9.556118256214054,
+        -9.634743908056038,
+        -2.9294676081938453,
+        13.320284393391887,
+        -2.8281930180662633,
+        -2.720531715691466,
+        -1.74401589321142,
+        0.8420604476548974,
+        3.7385722061509594
+      ],
+      "molecular_charge": 0,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "O",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "provenance": {
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -984,7 +1481,7 @@
       "canonical_smiles": "c1cc(c(cc1O)F)c2cc[nH+]cc2",
       "inchi_key": "RZMUYWBNZXFULV-UHFFFAOYSA-O",
       "molecular_formula": "C11H9FNO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H8FNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H/p+1",
       "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)F",
       "unique_tautomer_representation": "Oc1ccc(-c2cc[nH+]cc2)c(F)c1"
@@ -1223,7 +1720,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -1237,7 +1734,7 @@
       "canonical_smiles": "c1cc(c(cc1O)F)c2ccncc2",
       "inchi_key": "RZMUYWBNZXFULV-UHFFFAOYSA-N",
       "molecular_formula": "C11H8FNO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H8FNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H",
       "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)F",
       "unique_tautomer_representation": "Oc1ccc(-c2ccncc2)c(F)c1"
@@ -1467,7 +1964,486 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
+      "openeye_version": "2019.Apr.2",
+      "username": "sternc1"
+    }
+  },
+  "c1[cH:1][c:2](c(cc1[O-])Cl)[c:4]2[cH:3]c[nH+]cc2": {
+    "cmiles_identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c([n+](c(c2[H])[H])[H])[H])[H])Cl)[H])[O-])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:10]([c:5]([c:11]([c:8]1[c:9]2[c:3]([c:6]([n+:12]([c:7]([c:4]2[H:18])[H:21])[H:22])[H:20])[H:17])[Cl:14])[H:19])[O-:13])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c([n+](c(c2[H])[H])[H])[H])[H])Cl)[H])[O-])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1[O-])Cl)c2cc[nH+]cc2",
+      "canonical_smiles": "c1cc(c(cc1[O-])Cl)c2cc[nH+]cc2",
+      "inchi_key": "VTRBEGPZOUEXPD-UHFFFAOYSA-N",
+      "molecular_formula": "C11H8ClNO",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
+      "standard_inchi": "InChI=1S/C11H8ClNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H",
+      "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)Cl",
+      "unique_tautomer_representation": "[O-]c1ccc(-c2cc[nH+]cc2)c(Cl)c1"
+    },
+    "dihedral": [
+      [
+        0,
+        7,
+        8,
+        2
+      ]
+    ],
+    "grid": [
+      15
+    ],
+    "input_molecules": {
+      "connectivity": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          7,
+          2
+        ],
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          3,
+          6,
+          2
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          2,
+          8,
+          2
+        ],
+        [
+          4,
+          9,
+          1
+        ],
+        [
+          4,
+          10,
+          2
+        ],
+        [
+          6,
+          11,
+          1
+        ],
+        [
+          5,
+          11,
+          2
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          9,
+          12,
+          1
+        ],
+        [
+          10,
+          13,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          3,
+          17,
+          1
+        ],
+        [
+          2,
+          16,
+          1
+        ],
+        [
+          4,
+          18,
+          1
+        ],
+        [
+          6,
+          20,
+          1
+        ],
+        [
+          5,
+          19,
+          1
+        ],
+        [
+          11,
+          21,
+          1
+        ]
+      ],
+      "geometry": [
+        3.5624000055548612,
+        -1.9583354703330393,
+        -0.21248154729677868,
+        1.5241702589919799,
+        -0.8749633019008043,
+        1.0601482773642665,
+        7.503580188190272,
+        -6.708748881756687,
+        -0.9880713089911753,
+        9.701429194621614,
+        -2.724151851341452,
+        -0.8598723823535281,
+        3.400940153382219,
+        -2.0383339352833616,
+        5.056294599285629,
+        9.522335429666793,
+        -7.7136363628698374,
+        -2.32632417397383,
+        11.664654663993499,
+        -3.8299399695530014,
+        -2.2011814685763476,
+        5.519899488122058,
+        -3.081889060705708,
+        1.149224677370924,
+        7.602237107113571,
+        -4.186261338683271,
+        -0.25106215178570274,
+        1.4434283934414738,
+        -0.9148888138164472,
+        3.69451783603825,
+        5.439172040037737,
+        -3.1218132773021234,
+        3.7835860135837236,
+        11.520690857582636,
+        -6.263168528926896,
+        -2.8875208914191117,
+        -0.42870087902034504,
+        0.08167393925187855,
+        4.862365261626051,
+        7.814178365496875,
+        -4.489336301916014,
+        5.565957886034535,
+        3.595411497661204,
+        -1.9102074902042323,
+        -2.2668656423336766,
+        0.021127406338441766,
+        -0.009729164717758181,
+        -0.047145635369802846,
+        5.888971303910025,
+        -7.89370871334199,
+        -0.5398239501899982,
+        9.829710402189328,
+        -0.751408151012305,
+        -0.30872832768334507,
+        3.3534393330324757,
+        -2.0781914710986698,
+        7.1151182320204205,
+        9.6090006210904,
+        -9.64961011787644,
+        -2.973860788761911,
+        13.365265986798644,
+        -2.841106111764365,
+        -2.7535815041923635,
+        12.983043639666333,
+        -7.0383033238221575,
+        -3.8738429562707637
+      ],
+      "molecular_charge": 0,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "O",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "provenance": {
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
+      "openeye_version": "2019.Apr.2",
+      "username": "sternc1"
+    }
+  },
+  "c1[cH:1][c:2](c(cc1[O-])Cl)[c:4]2[cH:3]cncc2": {
+    "cmiles_identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])[O-])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:10]([c:5]([c:11]([c:8]1[c:9]2[c:3]([c:6]([n:12][c:7]([c:4]2[H:18])[H:21])[H:20])[H:17])[Cl:14])[H:19])[O-:13])[H:16]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])[O-])[H]",
+      "canonical_isomeric_smiles": "c1cc(c(cc1[O-])Cl)c2ccncc2",
+      "canonical_smiles": "c1cc(c(cc1[O-])Cl)c2ccncc2",
+      "inchi_key": "VTRBEGPZOUEXPD-UHFFFAOYSA-M",
+      "molecular_formula": "C11H7ClNO",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
+      "standard_inchi": "InChI=1S/C11H8ClNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H/p-1",
+      "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)Cl",
+      "unique_tautomer_representation": "[O-]c1ccc(-c2ccncc2)c(Cl)c1"
+    },
+    "dihedral": [
+      [
+        0,
+        7,
+        8,
+        2
+      ]
+    ],
+    "grid": [
+      15
+    ],
+    "input_molecules": {
+      "connectivity": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          7,
+          2
+        ],
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          3,
+          6,
+          2
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          2,
+          8,
+          2
+        ],
+        [
+          4,
+          9,
+          1
+        ],
+        [
+          4,
+          10,
+          2
+        ],
+        [
+          6,
+          11,
+          1
+        ],
+        [
+          5,
+          11,
+          2
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          9,
+          12,
+          1
+        ],
+        [
+          10,
+          13,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          3,
+          17,
+          1
+        ],
+        [
+          2,
+          16,
+          1
+        ],
+        [
+          4,
+          18,
+          1
+        ],
+        [
+          6,
+          20,
+          1
+        ],
+        [
+          5,
+          19,
+          1
+        ]
+      ],
+      "geometry": [
+        3.5624000055548612,
+        -1.9583354703330393,
+        -0.21248154729677868,
+        1.5241702589919799,
+        -0.8749633019008043,
+        1.0601482773642665,
+        7.507270158442093,
+        -6.7072886627595985,
+        -0.9855316948499112,
+        9.701745477786055,
+        -2.7291607944763263,
+        -0.8615943121528175,
+        3.400940153382219,
+        -2.0383339352833616,
+        5.056294599285629,
+        9.54442028458789,
+        -7.673166535287469,
+        -2.3170280621049866,
+        11.640832504397064,
+        -3.873214444854245,
+        -2.1983033818890902,
+        5.519899488122058,
+        -3.081889060705708,
+        1.149224677370924,
+        7.602237107113571,
+        -4.186261338683271,
+        -0.2510622362630437,
+        1.4434283934414738,
+        -0.9148888138164472,
+        3.69451783603825,
+        5.439172040037737,
+        -3.1218132773021234,
+        3.7835860135837236,
+        11.616199362327702,
+        -6.3163991657207825,
+        -2.9444212239029968,
+        -0.42870087902034504,
+        0.08167393925187855,
+        4.862365261626051,
+        7.814178365496875,
+        -4.489336301916014,
+        5.565957886034535,
+        3.595411497661204,
+        -1.9102074902042323,
+        -2.2668656423336766,
+        0.021127406338441766,
+        -0.009729164717758181,
+        -0.047145635369802846,
+        5.89981413957307,
+        -7.901851878461822,
+        -0.543733110982419,
+        9.845585834642707,
+        -0.7564003113154483,
+        -0.31948798132468686,
+        3.3534393330324757,
+        -2.0781914710986698,
+        7.1151182320204205,
+        9.561730254926715,
+        -9.627896512709617,
+        -2.9349870197408463,
+        13.321403549204527,
+        -2.819122854925294,
+        -2.7177588314527803
+      ],
+      "molecular_charge": -1,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "O",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "provenance": {
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -1481,7 +2457,7 @@
       "canonical_smiles": "c1cc(c(cc1[O-])F)c2cc[nH+]cc2",
       "inchi_key": "RZMUYWBNZXFULV-UHFFFAOYSA-N",
       "molecular_formula": "C11H8FNO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H8FNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H",
       "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)F",
       "unique_tautomer_representation": "[O-]c1ccc(-c2cc[nH+]cc2)c(F)c1"
@@ -1711,7 +2687,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -1725,7 +2701,7 @@
       "canonical_smiles": "c1cc(c(cc1[O-])F)c2ccncc2",
       "inchi_key": "RZMUYWBNZXFULV-UHFFFAOYSA-M",
       "molecular_formula": "C11H7FNO",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H8FNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H/p-1",
       "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)F",
       "unique_tautomer_representation": "[O-]c1ccc(-c2ccncc2)c(F)c1"
@@ -1946,7 +2922,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -1960,7 +2936,7 @@
       "canonical_smiles": "c1ccc(cc1)c2ccncc2",
       "inchi_key": "JVZRCNQLWOELDU-UHFFFAOYSA-N",
       "molecular_formula": "C11H9N",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H9N/c1-2-4-10(5-3-1)11-6-8-12-9-7-11/h1-9H",
       "unique_protomer_representation": "c1ccc(cc1)c2ccncc2",
       "unique_tautomer_representation": "c1ccc(-c2ccncc2)cc1"
@@ -2181,7 +3157,242 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
+      "openeye_version": "2019.Apr.2",
+      "username": "sternc1"
+    }
+  },
+  "c1ccc([c:2]([cH:1]1)[c:3]2[cH:4]cncc2)Cl": {
+    "cmiles_identifiers": {
+      "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])[H]",
+      "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:4]([c:11]([c:9]([c:3]1[H:16])[c:10]2[c:5]([c:7]([n:12][c:8]([c:6]2[H:19])[H:21])[H:20])[H:18])[Cl:13])[H:17])[H:15]",
+      "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1[H])c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])[H]",
+      "canonical_isomeric_smiles": "c1ccc(c(c1)c2ccncc2)Cl",
+      "canonical_smiles": "c1ccc(c(c1)c2ccncc2)Cl",
+      "inchi_key": "VJNKARHHXUXBIG-UHFFFAOYSA-N",
+      "molecular_formula": "C11H8ClN",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
+      "standard_inchi": "InChI=1S/C11H8ClN/c12-11-4-2-1-3-10(11)9-5-7-13-8-6-9/h1-8H",
+      "unique_protomer_representation": "c1ccc(c(c1)c2ccncc2)Cl",
+      "unique_tautomer_representation": "Clc1ccccc1-c1ccncc1"
+    },
+    "dihedral": [
+      [
+        2,
+        8,
+        9,
+        4
+      ]
+    ],
+    "grid": [
+      15
+    ],
+    "input_molecules": {
+      "connectivity": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          8,
+          1
+        ],
+        [
+          3,
+          10,
+          1
+        ],
+        [
+          5,
+          7,
+          2
+        ],
+        [
+          5,
+          9,
+          1
+        ],
+        [
+          4,
+          6,
+          1
+        ],
+        [
+          4,
+          9,
+          2
+        ],
+        [
+          7,
+          11,
+          1
+        ],
+        [
+          6,
+          11,
+          2
+        ],
+        [
+          8,
+          9,
+          1
+        ],
+        [
+          8,
+          10,
+          2
+        ],
+        [
+          10,
+          12,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          1,
+          14,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          3,
+          16,
+          1
+        ],
+        [
+          5,
+          18,
+          1
+        ],
+        [
+          4,
+          17,
+          1
+        ],
+        [
+          7,
+          20,
+          1
+        ],
+        [
+          6,
+          19,
+          1
+        ]
+      ],
+      "geometry": [
+        3.5624000055548612,
+        -1.9583354703330393,
+        -0.21248154729677868,
+        1.5241702589919799,
+        -0.8749633019008043,
+        1.0601482773642665,
+        5.519899488122058,
+        -3.081889060705708,
+        1.149224677370924,
+        1.4434283934414738,
+        -0.9148888138164472,
+        3.69451783603825,
+        7.414559993774446,
+        -6.8698036932386835,
+        5.707244098647282,
+        9.610910034268327,
+        -2.892762541469135,
+        5.832853569512515,
+        9.443346637895266,
+        -7.914334700903453,
+        6.991287966591625,
+        11.541207813056072,
+        -4.115232790429348,
+        7.111611183370826,
+        5.439172040037737,
+        -3.1218132773021234,
+        3.7835860135837236,
+        7.5148618554803335,
+        -4.3097685627603495,
+        5.123975592109634,
+        3.400940153382219,
+        -2.0383339352833616,
+        5.056294599285629,
+        11.511343834036325,
+        -6.598374167191219,
+        7.711248470032883,
+        3.2016463919371323,
+        -2.033017719900411,
+        8.318748231769975,
+        3.6248794469066707,
+        -1.9269684704634669,
+        -2.2637066403287136,
+        0.00020611834581952138,
+        -0.00032502365431983054,
+        -0.00047495916484100554,
+        7.0939907869631975,
+        -3.9173359462938797,
+        0.12542678861547332,
+        -0.15920033673478856,
+        -0.06171711782725741,
+        4.655861190177909,
+        5.810431255773518,
+        -8.035470251793036,
+        5.183723374165131,
+        9.756776045124024,
+        -0.8905038098565098,
+        5.413282776226973,
+        9.458057859954176,
+        -9.903143062929662,
+        7.488844636657174,
+        13.215679368575481,
+        -3.093339006858902,
+        7.709222816033837
+      ],
+      "molecular_charge": 0,
+      "molecular_multiplicity": 1,
+      "symbols": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    },
+    "provenance": {
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
@@ -2195,7 +3406,7 @@
       "canonical_smiles": "c1ccc(c(c1)c2ccncc2)F",
       "inchi_key": "SVKRUYRFORNEGX-UHFFFAOYSA-N",
       "molecular_formula": "C11H8FN",
-      "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+      "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
       "standard_inchi": "InChI=1S/C11H8FN/c12-11-4-2-1-3-10(11)9-5-7-13-8-6-9/h1-8H",
       "unique_protomer_representation": "c1ccc(c(c1)c2ccncc2)F",
       "unique_tautomer_representation": "Fc1ccccc1-c1ccncc1"
@@ -2416,7 +3627,7 @@
       ]
     },
     "provenance": {
-      "fragmenter_version": "v0.0.2+187.g92b03d8.dirty",
+      "fragmenter_version": "0.0.6+2.g8de492d.dirty",
       "openeye_version": "2019.Apr.2",
       "username": "sternc1"
     }
