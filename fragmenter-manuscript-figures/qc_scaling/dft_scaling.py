@@ -23,7 +23,7 @@ for i in range(1, 13):
             dfs.append(pd.read_json(f))
 df = pd.concat(dfs)
 
-drug_mols = pd.read_csv('../drugbank_small_mols.csv')
+drug_mols = pd.read_csv('drugbank_small_mols.csv')
 
 # Select on CPU to be consistent
 
@@ -87,8 +87,11 @@ ax[0].set_ylabel('CPU time (seconds)')
 
 
 # Heavy atoms distribution
-sbn.kdeplot(drug_mols.heavy_atoms, shade=True, color='grey', ax=ax[1], legend=False)
+sbn.kdeplot(drug_mols.heavy_atoms, shade=True, color='grey', ax=ax[1], label='_nolegend_')
+average = drug_mols.heavy_atoms.mean()
+ax[1].axvline(x=average, color='grey', label='Average molecule size: {}'.format(round(average)))
 ax[1].set_xlim(0, 38)
+ax[1].legend()
 xlables = ['5', ' ', '7', ' ', '9', ' ', '11', ' ', '13', ' ', '15', ' ', '17', ' ', '19', '23', '26', ' ', '28', ' ', '31', '37']
 ax[1].set_xticks(unique, minor=False);
 ax[1].xaxis.grid(True, which='minor')
@@ -100,7 +103,7 @@ ax[1].set_xticklabels(xlables)
 ax[1].set_ylabel('Fraction of DrugBank')
 ax[1].set_xlabel('Heavy atoms')
 
-ax[0].set_title('CPU time as a funtion of heavy atoms');
+ax[0].set_title('CPU time as for a single gradient evaluation');
 ax[1].set_title('Distribution of DrugBank small molecule sizes')
 plt.savefig('B3LYP_scaling.pdf', bbox_inches='tight')
 
