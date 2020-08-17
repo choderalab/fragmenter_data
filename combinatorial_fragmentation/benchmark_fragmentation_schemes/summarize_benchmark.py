@@ -214,7 +214,7 @@ if __name__ == '__main__':
     print(scores['pfizer'].keys())
     print(max(scores['pfizer']['scores']))
     joint_plot(scores['pfizer']['scores'], np.asarray(scores['pfizer']['size'])** 2.6,
-               fname='jointplot_pfizer_fixed.pdf')
+               fname='jointplot_pfizer.pdf')
     with open('summary.json', 'w') as f:
         json.dump(lower_left, f, indent=2, sort_keys=True)
 

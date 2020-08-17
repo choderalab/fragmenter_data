@@ -259,7 +259,7 @@ if __name__ == '__main__':
 
         plt.legend()
         plt.xticks(fontsize=14)
-        plt.xlim(0.54, 1.45)
+        plt.xlim(0.54, 1.8)
         plt.yticks([])
         plt.xlabel('Wiberg Bond Order', fontsize=14)
         plt.tight_layout()
@@ -295,6 +295,6 @@ if __name__ == '__main__':
         #colors.append(rbg_to_int(list(sbn.color_palette('colorblind')[4]), alpha=255))
         visualize_mols(smiles, cols=2, rows=2, bond_idx=des_bond, colors=colors, wbos=wbos,
                        fname='{}/{}_bond_{}_{}_frags.pdf'.format(name, name, des_bond[0], des_bond[1]),
-                        align_to=2)
+                        align_to=2, circle=[15])
 
 
