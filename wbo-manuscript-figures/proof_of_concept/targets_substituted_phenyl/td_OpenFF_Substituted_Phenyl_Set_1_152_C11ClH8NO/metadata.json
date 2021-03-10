@@ -1,0 +1,112 @@
+{
+  "dihedrals": [
+    [
+      0,
+      7,
+      8,
+      2
+    ]
+  ],
+  "grid_spacing": [
+    15
+  ],
+  "dihedral_ranges": null,
+  "energy_decrease_thresh": null,
+  "energy_upper_limit": 0.1,
+  "dataset_name": "OpenFF Substituted Phenyl Set 1",
+  "entry_label": "c1[cH:1][c:2](c(cc1O)Cl)[c:4]2[cH:3]cncc2",
+  "canonical_smiles": "c1cc(c(cc1O)Cl)c2ccncc2",
+  "attributes": {
+    "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])O[H])[H]",
+    "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:10]([c:5]([c:11]([c:8]1[c:9]2[c:3]([c:6]([n:12][c:7]([c:4]2[H:18])[H:21])[H:20])[H:17])[Cl:14])[H:19])[O:13][H:22])[H:16]",
+    "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1c2c(c(nc(c2[H])[H])[H])[H])Cl)[H])O[H])[H]",
+    "canonical_isomeric_smiles": "c1cc(c(cc1O)Cl)c2ccncc2",
+    "canonical_smiles": "c1cc(c(cc1O)Cl)c2ccncc2",
+    "inchi_key": "VTRBEGPZOUEXPD-UHFFFAOYSA-N",
+    "molecular_formula": "C11H8ClNO",
+    "provenance": "cmiles_v0.1.5+1.gdbd63e8_openeye_2019.Apr.2",
+    "standard_inchi": "InChI=1S/C11H8ClNO/c12-11-7-9(14)1-2-10(11)8-3-5-13-6-4-8/h1-7,14H",
+    "unique_protomer_representation": "C1=CC(=C2C=CNC=C2)C(=CC1=O)Cl",
+    "unique_tautomer_representation": "Oc1ccc(-c2ccncc2)c(Cl)c1"
+  },
+  "torsion_grid_ids": [
+    [
+      -165
+    ],
+    [
+      -150
+    ],
+    [
+      -135
+    ],
+    [
+      -120
+    ],
+    [
+      -105
+    ],
+    [
+      -90
+    ],
+    [
+      -75
+    ],
+    [
+      -60
+    ],
+    [
+      -45
+    ],
+    [
+      -30
+    ],
+    [
+      -15
+    ],
+    [
+      0
+    ],
+    [
+      15
+    ],
+    [
+      30
+    ],
+    [
+      45
+    ],
+    [
+      60
+    ],
+    [
+      75
+    ],
+    [
+      90
+    ],
+    [
+      105
+    ],
+    [
+      120
+    ],
+    [
+      135
+    ],
+    [
+      150
+    ],
+    [
+      165
+    ],
+    [
+      180
+    ]
+  ],
+  "smirks": [
+    "[*:1]~[#6X3:2]~!@[#6X3:3]~[*:4]"
+  ],
+  "smirks_ids": [
+    "TIG-fit0"
+  ]
+}

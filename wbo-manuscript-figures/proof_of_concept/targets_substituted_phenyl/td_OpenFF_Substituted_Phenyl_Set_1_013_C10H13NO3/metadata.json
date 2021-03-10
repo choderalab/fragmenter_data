@@ -1,0 +1,112 @@
+{
+  "dihedrals": [
+    [
+      2,
+      3,
+      5,
+      13
+    ]
+  ],
+  "grid_spacing": [
+    15
+  ],
+  "dihedral_ranges": null,
+  "energy_decrease_thresh": null,
+  "energy_upper_limit": 0.1,
+  "dataset_name": "OpenFF Substituted Phenyl Set 1",
+  "entry_label": "CCOc1cc[c:2]([cH:1]n1)[C:3](=O)[O:4]CC",
+  "canonical_smiles": "CCOc1ccc(cn1)C(=O)OCC",
+  "attributes": {
+    "canonical_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1C(=O)OC([H])([H])C([H])([H])[H])[H])OC([H])([H])C([H])([H])[H])[H]",
+    "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:15][c:1]1[c:2]([c:5]([n:11][c:3]([c:4]1[C:6](=[O:12])[O:14][C:10]([H:26])([H:27])[C:8]([H:21])([H:22])[H:23])[H:17])[O:13][C:9]([H:24])([H:25])[C:7]([H:18])([H:19])[H:20])[H:16]",
+    "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1C(=O)OC([H])([H])C([H])([H])[H])[H])OC([H])([H])C([H])([H])[H])[H]",
+    "canonical_isomeric_smiles": "CCOc1ccc(cn1)C(=O)OCC",
+    "canonical_smiles": "CCOc1ccc(cn1)C(=O)OCC",
+    "inchi_key": "FBQJIRFPCZOBRI-UHFFFAOYSA-N",
+    "molecular_formula": "C10H13NO3",
+    "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+    "standard_inchi": "InChI=1S/C10H13NO3/c1-3-13-9-6-5-8(7-11-9)10(12)14-4-2/h5-7H,3-4H2,1-2H3",
+    "unique_protomer_representation": "CCOc1ccc(cn1)C(=O)OCC",
+    "unique_tautomer_representation": "CCOC(=O)c1ccc(OCC)nc1"
+  },
+  "torsion_grid_ids": [
+    [
+      -165
+    ],
+    [
+      -150
+    ],
+    [
+      -135
+    ],
+    [
+      -120
+    ],
+    [
+      -105
+    ],
+    [
+      -90
+    ],
+    [
+      -75
+    ],
+    [
+      -60
+    ],
+    [
+      -45
+    ],
+    [
+      -30
+    ],
+    [
+      -15
+    ],
+    [
+      0
+    ],
+    [
+      15
+    ],
+    [
+      30
+    ],
+    [
+      45
+    ],
+    [
+      60
+    ],
+    [
+      75
+    ],
+    [
+      90
+    ],
+    [
+      105
+    ],
+    [
+      120
+    ],
+    [
+      135
+    ],
+    [
+      150
+    ],
+    [
+      165
+    ],
+    [
+      180
+    ]
+  ],
+  "smirks": [
+    "[*:1]~[#6X3:2]~!@[#6X3:3]~[*:4]"
+  ],
+  "smirks_ids": [
+    "TIG-fit0"
+  ]
+}

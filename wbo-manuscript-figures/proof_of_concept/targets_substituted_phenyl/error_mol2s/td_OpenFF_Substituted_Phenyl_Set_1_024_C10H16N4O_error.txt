@@ -1,0 +1,6 @@
+OpenFF Substituted Phenyl Set 1
+target_name td_OpenFF_Substituted_Phenyl_Set_1_024_C10H16N4O
+entry CC[CH2:4][NH:3][c:2]1[cH:1]cc(nc1)NC(=O)NC
+td_keywords {'dihedrals': [(0, 3, 11, 9)], 'grid_spacing': [15], 'dihedral_ranges': None, 'energy_decrease_thresh': None, 'energy_upper_limit': 0.1}
+error message:
+One or more internal H bonds exist.
