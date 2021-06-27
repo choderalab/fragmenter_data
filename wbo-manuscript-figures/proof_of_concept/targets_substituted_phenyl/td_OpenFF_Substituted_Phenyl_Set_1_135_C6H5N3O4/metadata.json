@@ -1,0 +1,112 @@
+{
+  "dihedrals": [
+    [
+      0,
+      3,
+      12,
+      5
+    ]
+  ],
+  "grid_spacing": [
+    15
+  ],
+  "dihedral_ranges": null,
+  "energy_decrease_thresh": null,
+  "energy_upper_limit": 0.1,
+  "dataset_name": "OpenFF Substituted Phenyl Set 1",
+  "entry_label": "[cH:1]1cc(nc[c:2]1[O:3][C:4](=O)N)[N+](=O)[O-]",
+  "canonical_smiles": "c1cc(ncc1OC(=O)N)[N+](=O)[O-]",
+  "attributes": {
+    "canonical_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1OC(=O)N([H])[H])[H])[N+](=O)[O-])[H]",
+    "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:14][c:1]1[c:2]([c:5]([n:7][c:3]([c:4]1[O:13][C:6](=[O:11])[N:8]([H:17])[H:18])[H:16])[N+:9](=[O:12])[O-:10])[H:15]",
+    "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(nc(c1OC(=O)N([H])[H])[H])[N+](=O)[O-])[H]",
+    "canonical_isomeric_smiles": "c1cc(ncc1OC(=O)N)[N+](=O)[O-]",
+    "canonical_smiles": "c1cc(ncc1OC(=O)N)[N+](=O)[O-]",
+    "inchi_key": "WVROFKMRVQDYSN-UHFFFAOYSA-N",
+    "molecular_formula": "C6H5N3O4",
+    "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+    "standard_inchi": "InChI=1S/C6H5N3O4/c7-6(10)13-4-1-2-5(8-3-4)9(11)12/h1-3H,(H2,7,10)",
+    "unique_protomer_representation": "c1cc(ncc1OC(=O)N)[N+](=O)[O-]",
+    "unique_tautomer_representation": "NC(=O)Oc1ccc([N+](=O)[O-])nc1"
+  },
+  "torsion_grid_ids": [
+    [
+      -165
+    ],
+    [
+      -150
+    ],
+    [
+      -135
+    ],
+    [
+      -120
+    ],
+    [
+      -105
+    ],
+    [
+      -90
+    ],
+    [
+      -75
+    ],
+    [
+      -60
+    ],
+    [
+      -45
+    ],
+    [
+      -30
+    ],
+    [
+      -15
+    ],
+    [
+      0
+    ],
+    [
+      15
+    ],
+    [
+      30
+    ],
+    [
+      45
+    ],
+    [
+      60
+    ],
+    [
+      75
+    ],
+    [
+      90
+    ],
+    [
+      105
+    ],
+    [
+      120
+    ],
+    [
+      135
+    ],
+    [
+      150
+    ],
+    [
+      165
+    ],
+    [
+      180
+    ]
+  ],
+  "smirks": [
+    "[*:1]~[#6X3:2]-[#8X2:3]-[*:4]"
+  ],
+  "smirks_ids": [
+    "t96"
+  ]
+}

@@ -1,0 +1,6 @@
+OpenFF Substituted Phenyl Set 1
+target_name td_OpenFF_Substituted_Phenyl_Set_1_133_C6H6N4O3
+entry [cH:1]1cc(nc[c:2]1[N+:3](=O)[O-:4])NC(=O)N
+td_keywords {'dihedrals': [(0, 3, 9, 10)], 'grid_spacing': [15], 'dihedral_ranges': None, 'energy_decrease_thresh': None, 'energy_upper_limit': 0.1}
+error message:
+One or more internal H bonds exist.

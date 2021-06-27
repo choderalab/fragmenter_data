@@ -1,0 +1,1950 @@
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_000_C10H15N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_001_C10H17N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_002_C10H16N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_003_C11H18N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_004_C10H16N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_005_C9H14N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_006_C8H11N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_007_C9H9NO4
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_008_C12H16N2O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_009_C11H13NO3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_010_C11H17N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_011_C9H13N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_012_C8H11NO2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_013_C10H13NO3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_014_C8H11N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_015_C9FH10NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_016_C11H18N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_017_C11H16N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_018_C11H14N2O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_019_C8H9N3O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_020_C11H18N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_021_C8H9N3O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_022_C11H18N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_023_C10H16N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_025_C11H16N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_026_C12H21N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_027_C11H20N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_028_C12H19N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_029_C12H21N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_030_C9H11N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_031_C11H20N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_032_C8H10N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_033_C9H10O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_034_C9H12N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_035_C10H14N4O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_036_C10F3H11N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_037_C9H11IN2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_038_C12H20N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_039_C11H19N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_040_C12H20N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_041_C8H10N4O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_042_C11H19N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_043_C9H13N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_044_C9H13NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_045_C10H16N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_046_C9H12N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_047_C11H16N4O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_048_C7H8N4O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_049_C10H17N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_050_C8H11N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_051_C10H17N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_052_C10H15N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_053_C11H18N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_054_C11H18N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_055_C8H13N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_056_C7H8N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_057_C6H7N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_058_C7H7IN2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_059_C10H16N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_060_C8H10N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_061_C10H16N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_062_C10H14N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_063_C11H17N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_064_C7H7N3O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_065_C11H17N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_066_C9H14N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_067_C10H16N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_068_C7H11N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_069_C10H18N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_070_BrC7H9N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_071_C7ClH9N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_072_C8H10N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_073_C10H18N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_074_C8H9IO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_075_C11H18NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_077_C7H8N2O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_078_C10H17N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_080_C11H16N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_081_C10H17N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_082_C9H15N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_083_C9H14N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_084_C9H13N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_085_C8H12N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_086_C9H15N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_087_C9H15N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_088_C9H14N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_089_C9H15N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_090_C10H15N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_091_C10H16NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_092_C10H16N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_093_C11H17N3O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_094_C10H18N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_095_C11H19N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_096_C10H16N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_097_C7H9N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_098_C10H18N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_099_C9H12N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_100_C8F3H9N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_101_C7H8N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_102_C8H12N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_103_C7H8N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_105_C6H8N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_106_C9H16N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_107_C6H9N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_108_C9H16N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_109_C9H16N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_110_C6H6N2O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_111_C8H8O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_112_C7H10N4O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_113_C8H14N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_114_C9H11NO2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_115_C8H12N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_116_C9H15N2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_117_C6H8N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_118_C5H5N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_119_C5H5N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_120_C8H14N3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_121_C6H5NO3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_122_C7H8O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_123_C5H6N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_124_C8H11N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_125_C8H13N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_126_C8H11NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_127_C8H13N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_128_C9H14NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_129_C8H13N2O
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_130_C7H8N4O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_131_C7H4N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_132_C5FH3N2O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_134_C6H6N4O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_135_C6H5N3O4
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_136_C5H5N3O2
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_137_C6H6N4O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_138_C8H8N2O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_139_C8H8N2O3
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_141_C11H10NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_142_C11H9NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_143_C11H9NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_144_C11H8NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_145_C11FH9NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_146_C11FH8NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_147_C11FH8NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_148_C11FH7NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_149_C11H9N
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_150_C11FH8N
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_151_C11ClH9NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_152_C11ClH8NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_153_C11ClH8NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_154_C11ClH7NO
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end
+
+$target
+name td_OpenFF_Substituted_Phenyl_Set_1_155_C11ClH8N
+type TorsionProfile_SMIRNOFF
+mol2 input.mol2
+pdb conf.pdb
+coords scan.xyz
+writelevel 2
+attenuate
+energy_denom 1.0
+energy_upper 5.0
+remote 1
+$end

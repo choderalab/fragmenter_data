@@ -1,0 +1,112 @@
+{
+  "dihedrals": [
+    [
+      0,
+      3,
+      7,
+      8
+    ]
+  ],
+  "grid_spacing": [
+    15
+  ],
+  "dihedral_ranges": null,
+  "energy_decrease_thresh": null,
+  "energy_upper_limit": 0.1,
+  "dataset_name": "OpenFF Substituted Phenyl Set 1",
+  "entry_label": "[cH:1]1cnc(c[c:2]1[N+:3](=O)[O-:4])N",
+  "canonical_smiles": "c1cnc(cc1[N+](=O)[O-])N",
+  "attributes": {
+    "canonical_explicit_hydrogen_smiles": "[H]c1c(nc(c(c1[N+](=O)[O-])[H])N([H])[H])[H]",
+    "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:3]([n:6][c:5]([c:2]([c:4]1[N+:8](=[O:10])[O-:9])[H:12])[N:7]([H:14])[H:15])[H:13]",
+    "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(nc(c(c1[N+](=O)[O-])[H])N([H])[H])[H]",
+    "canonical_isomeric_smiles": "c1cnc(cc1[N+](=O)[O-])N",
+    "canonical_smiles": "c1cnc(cc1[N+](=O)[O-])N",
+    "inchi_key": "DBDHHHBAZZYVJG-UHFFFAOYSA-N",
+    "molecular_formula": "C5H5N3O2",
+    "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+    "standard_inchi": "InChI=1S/C5H5N3O2/c6-5-3-4(8(9)10)1-2-7-5/h1-3H,(H2,6,7)",
+    "unique_protomer_representation": "c1cnc(cc1[N+](=O)[O-])N",
+    "unique_tautomer_representation": "N=c1cc([N+](=O)[O-])cc[nH]1"
+  },
+  "torsion_grid_ids": [
+    [
+      -165
+    ],
+    [
+      -150
+    ],
+    [
+      -135
+    ],
+    [
+      -120
+    ],
+    [
+      -105
+    ],
+    [
+      -90
+    ],
+    [
+      -75
+    ],
+    [
+      -60
+    ],
+    [
+      -45
+    ],
+    [
+      -30
+    ],
+    [
+      -15
+    ],
+    [
+      0
+    ],
+    [
+      15
+    ],
+    [
+      30
+    ],
+    [
+      45
+    ],
+    [
+      60
+    ],
+    [
+      75
+    ],
+    [
+      90
+    ],
+    [
+      105
+    ],
+    [
+      120
+    ],
+    [
+      135
+    ],
+    [
+      150
+    ],
+    [
+      165
+    ],
+    [
+      180
+    ]
+  ],
+  "smirks": [
+    "[#8X1:1]~[#7X3:2]~[#6X3:3]~[*:4]"
+  ],
+  "smirks_ids": [
+    "t72"
+  ]
+}
