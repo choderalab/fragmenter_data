@@ -1,0 +1,112 @@
+{
+  "dihedrals": [
+    [
+      0,
+      4,
+      8,
+      6
+    ]
+  ],
+  "grid_spacing": [
+    15
+  ],
+  "dihedral_ranges": null,
+  "energy_decrease_thresh": null,
+  "energy_upper_limit": 0.1,
+  "dataset_name": "OpenFF Substituted Phenyl Set 1",
+  "entry_label": "[CH3:4][NH:3][c:2]1[cH:1]cc(cc1)NC",
+  "canonical_smiles": "CNc1ccc(cc1)NC",
+  "attributes": {
+    "canonical_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C([H])([H])[H])[H])[H])N([H])C([H])([H])[H])[H]",
+    "canonical_isomeric_explicit_hydrogen_mapped_smiles": "[H:11][c:1]1[c:2]([c:6]([c:4]([c:3]([c:5]1[N:9]([H:21])[C:7]([H:15])([H:16])[H:17])[H:13])[H:14])[N:10]([H:22])[C:8]([H:18])([H:19])[H:20])[H:12]",
+    "canonical_isomeric_explicit_hydrogen_smiles": "[H]c1c(c(c(c(c1N([H])C([H])([H])[H])[H])[H])N([H])C([H])([H])[H])[H]",
+    "canonical_isomeric_smiles": "CNc1ccc(cc1)NC",
+    "canonical_smiles": "CNc1ccc(cc1)NC",
+    "inchi_key": "PVRZMTHMPKVOBP-UHFFFAOYSA-N",
+    "molecular_formula": "C8H12N2",
+    "provenance": "cmiles_v0.1.4+9.g7ed3036_openeye_2019.Apr.2",
+    "standard_inchi": "InChI=1S/C8H12N2/c1-9-7-3-5-8(10-2)6-4-7/h3-6,9-10H,1-2H3",
+    "unique_protomer_representation": "CNc1ccc(cc1)NC",
+    "unique_tautomer_representation": "CNc1ccc(NC)cc1"
+  },
+  "torsion_grid_ids": [
+    [
+      -165
+    ],
+    [
+      -150
+    ],
+    [
+      -135
+    ],
+    [
+      -120
+    ],
+    [
+      -105
+    ],
+    [
+      -90
+    ],
+    [
+      -75
+    ],
+    [
+      -60
+    ],
+    [
+      -45
+    ],
+    [
+      -30
+    ],
+    [
+      -15
+    ],
+    [
+      0
+    ],
+    [
+      15
+    ],
+    [
+      30
+    ],
+    [
+      45
+    ],
+    [
+      60
+    ],
+    [
+      75
+    ],
+    [
+      90
+    ],
+    [
+      105
+    ],
+    [
+      120
+    ],
+    [
+      135
+    ],
+    [
+      150
+    ],
+    [
+      165
+    ],
+    [
+      180
+    ]
+  ],
+  "smirks": [
+    "[*:1]~[#7X3,#7X2-1:2]-!@[#6X3:3]~[*:4]"
+  ],
+  "smirks_ids": [
+    "t69"
+  ]
+}

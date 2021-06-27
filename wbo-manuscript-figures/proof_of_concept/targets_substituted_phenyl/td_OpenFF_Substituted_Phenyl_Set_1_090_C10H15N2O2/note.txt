@@ -1,0 +1,1 @@
+Target generated from dataset OpenFF Substituted Phenyl Set 1, entry C[N+](C)(C)c1cc[c:2]([cH:1]c1)[O:3][C:4](=O)N
